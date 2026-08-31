@@ -4,10 +4,30 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
 
 ## Licensing (the real risk)
 
-- **Fonts.** Noto Sans Coptic and Cairo are SIL OFL 1.1 — safe to self-host and
-  redistribute. `Athanasuis-Plain.ttf` has **no confirmed licence**; related
-  Athanasius fonts appear as OFL in some places and personal-use-only in others.
-  It stays out of the repo until a licence is confirmed in writing.
+- **Fonts in use** (self-hosted via `next/font`; listed on `/about`):
+  - **GNU FreeSerif** — GPL-3.0-or-later WITH Font-exception-2.0.
+    Coptic glyphs (serif). Redistributable today. The file in
+    `src/app/fonts/FreeSerif.ttf` is a *subset* of GNU FreeFont 20120503
+    (cmap probe: U+2C80, U+2C81, U+03E2, U+03EF, U+0304, U+0305).
+    A subset is a modification. Font-exception-2.0 covers embedding
+    *unaltered* portions; we extend that exception to this subset in
+    `src/app/fonts/NOTICE`. `COPYING` and `README` stay beside the TTF.
+    The app licence stays MIT (ADR-013). This is the only manuscript-style
+    Coptic face we can legally deploy right now.
+  - **Noto Sans Coptic** — SIL Open Font License 1.1. Fallback if FreeSerif
+    misses a codepoint.
+  - **Cairo** — SIL Open Font License 1.1. Arabic UI.
+
+- **Legacy mapped fonts — not shipped.** Latin keystrokes, not Unicode.
+  They cannot render U+2C80. A permission *request* is not a grant, and a
+  grant is not a cmap. Requests were emailed on 2026-08-29. Until a reply
+  *and* a Unicode cmap, they stay out of the repo:
+  - CS Avva Shenouda, Pope Shenouda III, CS Pishoi, CS New Athanasius,
+    Athanasius — Coptic Font Standard project, copticchurch.net
+  - Antinoou — Michael Everson / Evertype
+    (same request, not a grant; do not write "written permission" until
+    a reply exists)
+
 - **Artwork.** Every image needs a `license` value at the moment it is added.
   Backfilling this later is not realistically possible.
 - **Recordings.** Written consent from each reciter before publishing, covering
