@@ -46,6 +46,15 @@ export function getLetterByGlyph(ch: string): Letter | undefined {
   );
 }
 
+/** Match a letter by this project's explorer Athanasius key (upper or lower). */
+export function getLetterByAthanasiusKey(key: string): Letter | undefined {
+  return getLetters().find(
+    (letter) =>
+      letter.athanasiusKey != null &&
+      (letter.athanasiusKey.upper === key || letter.athanasiusKey.lower === key),
+  );
+}
+
 export function neighborsByOrder(id: string): {
   prev: Letter | null;
   next: Letter | null;

@@ -115,6 +115,21 @@ export default function AboutPage() {
         </li>
       </ul>
 
+      <h2 className="mt-10 text-xl font-semibold text-text">الصوت</h2>
+      <p className="mt-4 text-base text-text">
+        نطق الحروف من فيديوهات{" "}
+        <a
+          href="https://www.copticliteracy.org/letter-names-and-sounds/"
+          dir="ltr"
+          className="inline-block text-text underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+        >
+          Coptic Literacy
+        </a>
+        {" — "}
+        أسماء الحروف. صاحب الموقع صرّح باستخدامها كمواد كنسية في ١ سبتمبر
+        ٢٠٢٦. الكلمات لسه من غير تسجيل.
+      </p>
+
       <h2 className="mt-10 text-xl font-semibold text-text">المحتوى والكود</h2>
       <ul className="mt-4 flex flex-col gap-3 text-base text-text">
         <li>

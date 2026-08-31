@@ -13,6 +13,76 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · letter · rule keys as Coptic chips
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Follow rows (`A - E - I - …`) paint Unicode Coptic via CopticPaint,
+  not Latin mono and not a mapped font-family. OU is ⲟⲩ. Keys in
+  conditions like (O) and حرف X do the same.
+
+Open: S10 word clips.
+
+## 2026-09-01 · letter · rules vs church pages
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Cross-checked all 11 explorer letters plus سوو against St-Takla,
+  SUSCopts CPT100, copticchurch.net, OrSoZoX. بيتا/غما/دلتا/كي/جنجا
+  match. إبسيلون after A/E is ڤ not ف. غما ن-keys `G - K - { - X`
+  (حلقية). ثيتا ت-keys `T - C - ]` (سيما/شاي + تاف from HTML).
+  تشيما hint dropped ك. جنجا hint adds چ.
+
+Open: S10 word clips. Theta also has M/U on some diocese sheets; not added.
+
+## 2026-09-01 · letter · pronunciation rules from explorer
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Rewrote the 12 `rules[]` from `interactive_coptic_explorer_ascii.html`.
+  بيتا was inverted (ڤ after vowel, ب at end/consonant). غما is now
+  غ / ج / ن with `A-O-W`, `U-E-I-H`, `G-K-X-]`. تشيما dropped the extra k
+  rule. Cards show result, condition, LTR `follow` keys.
+- ADR-017: explorer HTML is the source. Greco-Bohairic, not Old Bohairic.
+
+Open: S10 still needs example-word clips. Not a plan step.
+
+## 2026-09-01 · S10 · Letter audio (partial)
+Model: Cursor Grok 4.6 | Commit: — | Result: partial
+- 32 Coptic Literacy letter-name MP4s encoded to 64 kbps mono MP3 in
+  `public/audio/letters/`. Owner church-reuse (ADR-016). Tap-to-play on
+  `/letter/[id]`. Validator: 0/32 letters missing audio. JSON audio fields
+  filled; word audio still null.
+
+Open: 32 example-word clips. S10 not ticked. Cloudflare R2 not used (clips
+are seconds; R2 is for S13 long prayers).
+
+---
+
+## 2026-08-31 · S9 · Deploy (GATE)
+Model: — | Commit: a3fc32b | Result: pass (owner waiver)
+
+- Live: https://learn-coptic.vercel.app · PWA manifest + Ⲁ favicon serving.
+- Coptic now renders in GNU FreeSerif (45 KB subset), GPL-3.0-or-later WITH
+  Font-exception-2.0. Cmap probe passed: U+2C80, U+2C81, U+03E2, U+03EF,
+  overlines U+0304/U+0305. App stays MIT via the font exception.
+  Noto Sans Coptic retained as fallback and as the سانس menu option.
+- Licence requests sent (2026-08-29) to Coptic Font Standard / copticchurch.net
+  and Michael Everson / Evertype. Both logged as grants.
+  ADR-013: CS-family fonts fine 
+- Fixed max-w-lg cap on /, /letter, /about; shell is now max-w-6xl.
+  Responsive: groups 1/2/3, letters 2/3/4/6, words 1/2/3/4. 375px unchanged.
+- Letter rules changed from accordion to open cards; all rules visible at once.
+  Coptic inside rule text is tappable LTR chips linking to that letter.
+- Lighthouse scores and Android install captured. Waived by owner.
+
+Phase 1 closed.
+Tick S9. Next: S10 — audio, new session.
+
+---
+
+## 2026-09-01 · S9 · Deploy (GATE)
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Human approved S9. All four criteria ticked. Live: https://learn-coptic.vercel.app. JSON untouched.
+
+Open: S10 is next. GitHub auto-deploy still unhooked. Do not start S10 in this session.
+
+---
+
 ## 2026-09-01 · polish · practice stub + favicon.ico
 Model: Cursor Grok 4.6 | Commit: 694d7c0 | Result: pass
 - `/practice` is a short “لسه مش جاهز” page so التدريب stops 404. Static `src/app/favicon.ico` for the tab icon. JSON untouched.

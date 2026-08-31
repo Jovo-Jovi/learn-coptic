@@ -146,3 +146,39 @@ copticchurch.net has not granted a licence; `/about` must not say it has.
 The letter-page copy button still writes Unicode. Redistribution of
 Athanasius Plain is an owner decision, not a third-party grant.
 
+## ADR-016 — Church letter-name clips from Coptic Literacy
+S10 needs 32 letter recordings. No CC pack exists. The owner said Coptic
+Literacy's letter-name videos are church material we may reuse (2026-09-01).
+We download those MP4s, strip video, and ship 64 kbps mono MP3 in
+`public/audio/letters/{id}.mp3` (a few seconds each — git + Vercel CDN).
+`reciter` is `Coptic Literacy`. Dialect is `bohairic-modern`.
+
+Do **not** hotlink copticliteracy.org (CSP is `media-src 'self'`; their
+host is not ours). Do **not** put the raw ~2.6 MB videos in git.
+
+Word clips and long prayers are still missing. Clips over ~2 minutes go
+to object storage (Cloudflare R2 is fine), not git.
+
+**Cost:** a written grant from Coptic Literacy is still not on file; this
+is an owner church-reuse decision, same class as ADR-015. Credit them on
+`/about`. St-Takla was not copied (no per-file URLs; one source only).
+
+## ADR-017 — Pronunciation rules copy from the live explorer
+Letter `rules[]` are Greco-Bohairic. Arabic layout and most conditions
+come from `interactive_coptic_explorer_ascii.html`. Sound letters and
+the “what follows” rows were cross-checked against church pages:
+
+- St-Takla written pronunciation
+- SUSCopts CPT100 / deacon Coptic lessons
+- copticchurch.net alphabet table (too short; Veeta row there is wrong)
+- OrSoZoX Sunday-school hymn for throat letters and epsilon
+
+`follow` keys are this project’s explorer map (`]` = shai, `{` = eksi,
+`X` = khi). The HTML’s gamma `]` and theta `{` were CS-font leftovers;
+church حلقية are غما كبا إكسي كي → `G - K - { - X`. Epsilon after A/E
+is ڤ (church), not the HTML’s ف.
+
+**Cost:** this is church-school Greco-Bohairic, not Old Bohairic.
+copticchurch.net’s one-line table is not used where it contradicts the
+lessons.
+

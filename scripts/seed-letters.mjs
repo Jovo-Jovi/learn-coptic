@@ -47,6 +47,7 @@ const T = [
 ];
 
 // Conditional pronunciation rules — the teaching core of the flip-card backs.
+// Stale seed copy. Canonical Greco-Bohairic rules are in letters.json (ADR-017).
 const RULES = {
   vida:    [["قبل حرف متحرك أو في أول الكلمة", "تُنطق (b) كالباء"],
             ["في آخر الكلمة أو قبل حرف ساكن", "تُنطق (v) كالڤاء"]],

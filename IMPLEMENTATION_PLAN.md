@@ -87,7 +87,7 @@ The whole project rests on this being right.
 ### S9 · Deploy — **GATE**
 - [x] Pushed to GitHub, connected to Vercel, production URL live
 - [x] Lighthouse mobile: performance ≥ 90, accessibility ≥ 95
-- [ ] PWA manifest + icons; installs on an Android phone
+- [x] PWA manifest + icons; installs on an Android phone
 - [x] Tested on a real phone, not just a narrow browser window
 
 ---

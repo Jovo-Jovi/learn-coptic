@@ -7,15 +7,15 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `694d7c0` (practice stub + favicon.ico). S9 GATE still open.
+**Last commit:** `694d7c0` (practice stub + favicon.ico). S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
-**Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished
+**Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished · 0/32 letters missing audio · 147/147 words missing audio
 
 ## Current position
 
-**Done:** S0–S8. S9: GitHub + Vercel URL live, Lighthouse 97/100, real-phone test. Header inset for tap targets. GATE not passed.
-**Next:** Android Add to Home screen, then say **PASS**. Optional: hook Vercel GitHub app so pushes auto-deploy.
-**Blocked on:** human GATE PASS. Android install not confirmed. Other CS/Antinoou files still missing.
+**Done:** S0–S9. S10 letter clips live locally (Coptic Literacy → MP3, ADR-016). GATE passed.
+**Next:** 32 example-word recordings, then S10 can tick. Optional: hook Vercel GitHub app.
+**Blocked on:** word audio. Other CS/Antinoou files still missing.
 
 ## Open decisions
 
@@ -28,7 +28,8 @@ Update it in the same commit as the work it describes.
 
 ## Known state of the data
 
-- `letters.json` — 32, keys complete, 12 carry rules, no audio, `exampleWords[]` empty
+- `letters.json` — 32, keys complete, 12 carry rules, **letter audio filled**
+  (Coptic Literacy, `public/audio/letters/{id}.mp3`), `exampleWords[]` empty
 - `words.json` — 147 (121 lexicon / 11 drill / 15 name), Unicode, all teaches[] resolve
   · 6 drills have `meaning: null`; 5 drills have a meaning
 - `prayers.json` — 1 sample, no real recording
@@ -39,7 +40,9 @@ Update it in the same commit as the work it describes.
   `/practice` (coming-soon stub, not the S11 quiz).
 - Cards show lowercase only. Letter page stacks كبير/صغير. Example words
   derived from `words.teaches`, not `letters.exampleWords`.
-- Letter rules are always-on cards; Coptic in the condition is LTR chips.
+- Letter rules are always-on cards (ADR-017). Follow keys paint as
+  Unicode Coptic chips (`ⲁ - ⲉ - ⲓ …`), not ASCII. Manuscript mode
+  still uses stored athanasiusKey.
 - PWA: `/manifest.webmanifest`, `/icons/icon-{192,512}.png`, SW `/sw.js` (prod).
 - README hero snap: `docs/readme-hero.png` (landing floating glyphs, no glass tiles).
 - Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
@@ -57,6 +60,8 @@ Update it in the same commit as the work it describes.
 - ADR-013 subset is GPL; Font-exception-2.0 extended; a request is not a grant.
 - ADR-014 Coptic face picker: سيريف / سانس / أثناسيوس. Key `learn-coptic:coptic-font`.
 - ADR-015 optional mapped Athanasius manuscript mode via `CopticPaint`.
+- ADR-016 church letter clips from Coptic Literacy (owner reuse).
+- ADR-017 pronunciation rules copy from the live explorer HTML.
 - Shell `max-w-6xl`. Phone first, then widen.
 - `arabicHint` belongs on the letter surface.
 - UI group numbers are Eastern digits (١..٧); routes stay ASCII (`/alphabet/4`).

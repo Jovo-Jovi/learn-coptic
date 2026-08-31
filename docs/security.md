@@ -32,8 +32,10 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
 
 - **Artwork.** Every image needs a `license` value at the moment it is added.
   Backfilling this later is not realistically possible.
-- **Recordings.** Written consent from each reciter before publishing, covering
-  redistribution under the content licence. Keep the consent, not just the file.
+- **Recordings.** Letter-name clips in `public/audio/letters/` come from
+  Coptic Literacy MP4s. Owner authorized church reuse on 2026-09-01
+  (ADR-016). Credit on `/about`. Word and prayer reciters still need
+  written consent before those files publish.
 - **Prayer texts.** Note the source edition in `prayers.json`.
 
 ## Secrets

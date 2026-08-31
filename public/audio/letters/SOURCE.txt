@@ -1,0 +1,45 @@
+Letter-name audio
+=================
+
+Source: Coptic Literacy “Letter Names & Sounds”
+https://www.copticliteracy.org/letter-names-and-sounds/
+
+Owner authorized church reuse on 2026-09-01 (ADR-016).
+Original files are MP4. We ship 64 kbps mono MP3 (video stripped).
+
+Mapping (Literacy filename → letters.json id):
+
+  alpha_post   → alpha
+  veeta_post   → vida
+  gamma_post   → gamma
+  delta_post   → dalda
+  eey_post     → ei
+  so-oo_post   → sou
+  zeeta_post   → zeta
+  eeta_post    → eta
+  theeta_post  → theta
+  yota_post    → iota
+  kappa_post   → kappa
+  lavla_post   → lola
+  mey_post     → mi
+  ney_post     → ni
+  eksi_post    → eksi
+  o_post       → o
+  pee_post     → pi
+  ro_post      → ro
+  seema_post   → sima
+  tav_post     → tav
+  epsilon_post → epsilon
+  fey_post     → fi
+  key_post     → khi
+  epsi_post    → epsi
+  oo_post      → oou
+  shai_post    → shai
+  fai_post     → fai
+  khai_post    → khai
+  hori_post    → hori
+  ganga_post   → janja
+  cheema_post  → cheema
+  tee_post     → ti
+
+Re-encode: node scripts/import-letter-audio.mjs <ffmpeg.exe>

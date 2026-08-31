@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import type { Letter } from "@/data/schema";
 import { CopticPaint } from "@/components/CopticPaint";
 import { copyText } from "@/lib/copy-text";
+import { AudioButton } from "@/components/AudioButton";
 
 export function LetterHero({ letter }: { letter: Letter }) {
   const [copied, setCopied] = useState(false);
@@ -63,6 +64,11 @@ export function LetterHero({ letter }: { letter: Letter }) {
       <p className="relative z-10 mt-4 text-center text-base text-text">
         الشكل واحد، والفرق في الحجم فقط.
       </p>
+      {letter.audio ? (
+        <div className="relative z-10 mt-6">
+          <AudioButton src={letter.audio.src} />
+        </div>
+      ) : null}
     </div>
   );
 }

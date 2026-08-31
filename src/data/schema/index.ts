@@ -97,11 +97,15 @@ export const Letter = z.object({
     note: Localized.optional(),
   }),
 
-  /** The teaching core: conditional pronunciation rules. */
+  /** The teaching core: conditional pronunciation rules.
+   *  Copy matches the live explorer: result first (ينطق (ڤ)), then
+   *  condition, then optional `follow` key row (A - E - I - …). */
   rules: z.array(z.object({
     id: slug,
-    condition: Localized,   // "قبل حرف متحرك"
-    result: Localized,      // "تُنطق (v)"
+    condition: Localized,   // "إذا جاء بعده حرف متحرك"
+    result: Localized,      // "ينطق (ڤ)"
+    /** Athanasuis key row from the explorer, shown LTR as taught. */
+    follow: z.string().min(1).optional(),
     examples: z.array(z.string()).default([]),  // word ids
   })).default([]),
 

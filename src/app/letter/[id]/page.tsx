@@ -66,7 +66,7 @@ export default async function LetterPage({ params }: PageProps<"/letter/[id]">) 
           </Link>
         </p>
 
-        <RulesAccordion rules={letter.rules} letterId={letter.id} />
+        <RulesAccordion letter={letter} />
 
         <LetterNeighbors prev={prev} next={next} />
       </div>

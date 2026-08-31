@@ -57,11 +57,22 @@ set `meaning` to null, and tag `kind: "drill"` when it is a reading set.
 `khen` (ϧⲉⲛ): two prepositional senses, written `في / بـ` — not the HTML
 string `ب-في`. It is published; `prayers.json` names it in `keyWords`.
 
-## Pronunciation rules
+## Letter audio
 
-On `/letter/[id]`, rules are always visible — condition then result, no
-accordion. Coptic letters inside a rule are LTR glyph chips. Latin in
-parentheses (`(gh)`) is an LTR isolate.
+On `/letter/[id]`, a real `<button>` (اسمع) starts playback from a user tap.
+No autoplay. iOS Safari only plays after that tap. Native `<audio controls>`
+is not used — the chrome is Arabic.
+
+Clips are 64 kbps mono MP3 in `public/audio/letters/{id}.mp3`, sourced from
+Coptic Literacy letter-name videos with owner church-reuse authorization
+(ADR-016). Word audio is still empty.
+
+On `/letter/[id]`, rules are always visible — no accordion. Copy matches
+the live explorer layout: result first (`ينطق (ڤ):`), then the condition,
+then an optional LTR `follow` row. Explorer keys (`A - E - I - …`) are
+painted as Unicode Coptic chips (`ⲁ ⲉ ⲓ …`) via `CopticPaint`. Do not
+set a mapped TTF as a Unicode `font-family`. Latin in parentheses that
+is not a key (`(ڤ)`, `(TCH)`) stays an LTR isolate.
 
 ## Vocabulary cards
 

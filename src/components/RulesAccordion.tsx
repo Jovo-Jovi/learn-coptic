@@ -1,44 +1,47 @@
-import { MixedCopticText } from "@/components/MixedCopticText";
-import { easternDigits } from "@/lib/letters";
+import { FollowKeyRow, MixedCopticText } from "@/components/MixedCopticText";
 import type { Letter } from "@/data/schema";
 
-type Rule = Letter["rules"][number];
+function rulesHeading(letter: Letter): string {
+  if (letter.id === "vida") return "بيتا (ڤيتا)";
+  if (letter.id === "gamma") return "غما";
+  return letter.name.ar;
+}
 
-export function RulesAccordion({
-  rules,
-  letterId,
-}: {
-  rules: Rule[];
-  letterId: string;
-}) {
+export function RulesAccordion({ letter }: { letter: Letter }) {
+  const rules = letter.rules;
   if (rules.length === 0) return null;
 
   return (
     <section className="mt-8">
-      <h2 className="mb-4 text-lg text-text">قواعد النطق</h2>
+      <h2 className="mb-4 text-center text-lg font-semibold text-text">
+        {rulesHeading(letter)}
+        {" - "}
+        قواعد النطق
+      </h2>
       <ol className="flex flex-col gap-3">
-        {rules.map((rule, index) => (
+        {rules.map((rule) => (
           <li
             key={rule.id}
             className="rounded-[20px] border border-hairline bg-surface px-4 py-4"
           >
-            <p className="flex flex-wrap items-center gap-x-2 gap-y-2 text-base font-medium text-text">
-              <span className="inline-flex min-h-7 min-w-7 items-center justify-center rounded-full bg-surface-2 text-sm text-text-dim">
-                {easternDigits(index + 1)}
-              </span>
-              <span className="min-w-0 leading-loose">
-                <MixedCopticText
-                  text={rule.condition.ar}
-                  currentLetterId={letterId}
-                />
-              </span>
-            </p>
-            <p className="mt-3 text-base leading-relaxed text-text">
+            <p className="text-base font-semibold leading-loose text-text">
               <MixedCopticText
-                text={rule.result.ar}
-                currentLetterId={letterId}
+                text={`${rule.result.ar}:`}
+                currentLetterId={letter.id}
               />
             </p>
+            <p className="mt-2 text-base leading-relaxed text-text">
+              <MixedCopticText
+                text={rule.condition.ar}
+                currentLetterId={letter.id}
+              />
+            </p>
+            {rule.follow ? (
+              <FollowKeyRow
+                follow={rule.follow}
+                currentLetterId={letter.id}
+              />
+            ) : null}
           </li>
         ))}
       </ol>
