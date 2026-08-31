@@ -16,7 +16,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ---
 
 ## 2026-08-31 · S1 · Freeze the letter map (GATE)
-Model: — | Commit: `TBDSHA` | Result: pass
+Model: — | Commit: `a370f95` | Result: pass
 
 - Extractor rewritten for object literals (brace counting; `({…})` wrap for vm).
 - All 32 athanasiusKey values written from `.extract/ascii-map.json`, not by hand.

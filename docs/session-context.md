@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `TBDSHA`
+**Last commit:** `a370f95`
 **Validator:** ✓ 32 letters (0 missing keys), 8 words, 1 prayer, 2 levels
 
 ## Current position
