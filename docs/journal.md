@@ -16,7 +16,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ---
 
 ## 2026-08-31 · S3 · Design tokens and fonts
-Model: — | Commit: `<sha>` | Result: pass
+Model: — | Commit: `cb8d7e9` | Result: pass
 
 - Cairo (Arabic) + Noto Sans Coptic via next/font, self-hosted woff2. No Google <link>.
 - All 7 original fills fail 4.5:1 against white. No hue shifted; --group-N-fg is
