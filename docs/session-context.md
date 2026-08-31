@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `b915616` (copy fallback + /og.png). S9 GATE still open.
+**Last commit:** `6eb4bd1` (header inset). S9 GATE still open.
 **Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished
 

@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-09-01 · polish · header below the phone chrome
-Model: Cursor Grok 4.6 | Commit: — | Result: pass
+Model: Cursor Grok 4.6 | Commit: 6eb4bd1 | Result: pass
 - Header (تعلّم القبطي / font picker / فاتح) sits below `safe-area-inset-top` plus 2.75rem so it is tappable on a real phone. JSON untouched.
 
 Open: S9 GATE not PASS. Android Add-to-Home-screen not confirmed. GitHub auto-deploy still unhooked.
