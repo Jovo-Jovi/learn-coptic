@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-31",
+  "words": [
+    {
+      "id": "anok",
+      "coptic": "ⲁⲛⲟⲕ",
+      "athanasiusKey": "anok",
+      "translit": { "ar": "أنوك", "en": "anok" },
+      "meaning": { "ar": "أنا", "en": "I" },
+      "kind": "lexicon",
+      "teaches": ["alpha", "ni", "o", "kappa"],
+      "group": 1,
+      "partOfSpeech": "pronoun",
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ran",
+      "coptic": "ⲣⲁⲛ",
+      "athanasiusKey": "ran",
+      "translit": { "ar": "ران", "en": "ran" },
+      "meaning": { "ar": "اسم", "en": "name" },
+      "kind": "lexicon",
+      "teaches": ["ro", "alpha", "ni"],
+      "group": 3,
+      "partOfSpeech": "noun",
+      "art": {
+        "src": "/images/words/ran.webp",
+        "width": 800, "height": 800,
+        "alt": { "ar": "لوحة اسم مكتوب عليها بالقبطي", "en": "A name plate written in Coptic" },
+        "style": "illustration",
+        "license": "commissioned",
+        "credit": { "name": "—" }
+      },
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khimi",
+      "coptic": "ⲭⲏⲙⲓ",
+      "athanasiusKey": "xhmi",
+      "translit": { "ar": "خيمي", "en": "khimi" },
+      "meaning": { "ar": "مصر", "en": "Egypt" },
+      "kind": "lexicon",
+      "teaches": ["khi", "eta", "mi", "iota"],
+      "group": 7,
+      "partOfSpeech": "noun",
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "zaki",
+      "coptic": "ⲍⲁⲕⲓ",
+      "athanasiusKey": "zaki",
+      "translit": { "ar": "زكي", "en": "zaki" },
+      "meaning": { "ar": "اسم عَلَم — تمرين قراءة", "en": "A modern name, used for reading practice" },
+      "kind": "drill",
+      "teaches": ["zeta", "alpha", "kappa", "iota"],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khen",
+      "coptic": "ϧⲉⲛ",
+      "athanasiusKey": "qen",
+      "translit": { "ar": "خين", "en": "khen" },
+      "meaning": { "ar": "في / باسم", "en": "in" },
+      "kind": "lexicon",
+      "teaches": ["khai", "ei", "ni"],
+      "group": 4,
+      "partOfSpeech": "preposition",
+      "art": null, "audio": null, "published": true
+    },
+    {
+      "id": "efran",
+      "coptic": "ⲫⲣⲁⲛ",
+      "athanasiusKey": "vran",
+      "translit": { "ar": "إفران", "en": "efran" },
+      "meaning": { "ar": "الاسم", "en": "the name" },
+      "kind": "lexicon",
+      "teaches": ["fi", "ro", "alpha", "ni"],
+      "group": 4,
+      "partOfSpeech": "noun",
+      "art": null, "audio": null, "published": true
+    },
+    {
+      "id": "efiot",
+      "coptic": "ⲫⲓⲱⲧ",
+      "athanasiusKey": "viwt",
+      "translit": { "ar": "إفيوت", "en": "efiot" },
+      "meaning": { "ar": "الآب", "en": "the Father" },
+      "kind": "lexicon",
+      "teaches": ["fi", "iota", "oou", "tav"],
+      "group": 4,
+      "partOfSpeech": "noun",
+      "art": null, "audio": null, "published": true
+    },
+    {
+      "id": "tonk",
+      "coptic": "ⲧⲱⲛⲕ",
+      "athanasiusKey": "twnk",
+      "translit": { "ar": "تونك", "en": "tonk" },
+      "meaning": { "ar": "قُمْ", "en": "arise" },
+      "kind": "lexicon",
+      "teaches": ["tav", "oou", "ni", "kappa"],
+      "group": 3,
+      "partOfSpeech": "verb",
+      "art": null,
+      "audio": null,
+      "published": false
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-31",
+  "levels": [
+    {
+      "id": "level-1-alphabet",
+      "order": 1,
+      "title": { "ar": "المستوى الأول: الحروف", "en": "Level 1: The alphabet" },
+      "goal": { "ar": "تقرأ أي كلمة قبطية بصوت صحيح", "en": "Read any Coptic word aloud correctly" },
+      "colorToken": "level-1",
+      "lessons": [
+        {
+          "id": "g1-like-english", "order": 1, "kind": "letters",
+          "title": { "ar": "حروف تشبه الإنجليزية", "en": "Letters that look like English" },
+          "summary": { "ar": "خمسة حروف تعرفها بالفعل" },
+          "body": null,
+          "refs": { "letters": ["zeta", "kappa", "ni", "o", "tav"], "words": [], "prayers": [] },
+          "requires": [], "estMinutes": 8, "status": "published"
+        },
+        {
+          "id": "g2-slight-change", "order": 2, "kind": "letters",
+          "title": { "ar": "تغيير بسيط", "en": "Slight change" },
+          "summary": { "ar": "أربعة حروف قريبة من شكلها الإنجليزي" },
+          "body": null,
+          "refs": { "letters": ["alpha", "ei", "iota", "mi"], "words": [], "prayers": [] },
+          "requires": ["g1-like-english"], "estMinutes": 8, "status": "published"
+        },
+        {
+          "id": "g3-same-shape", "order": 3, "kind": "letters",
+          "title": { "ar": "نفس الشكل، نطق مختلف", "en": "Same shape, different sound" },
+          "summary": { "ar": "احذر: الشكل مألوف والنطق ليس كذلك" },
+          "body": null,
+          "refs": { "letters": ["eta", "ro", "sima", "oou"], "words": [], "prayers": [] },
+          "requires": ["g2-slight-change"], "estMinutes": 10, "status": "published"
+        },
+        {
+          "id": "g4-no-twin", "order": 4, "kind": "letters",
+          "title": { "ar": "حروف ليس لها مقابل إنجليزي", "en": "No English twin" },
+          "summary": { "ar": "سبعة حروف مصرية أصيلة" },
+          "body": null,
+          "refs": { "letters": ["lola", "pi", "fi", "shai", "fai", "khai", "hori"], "words": [], "prayers": [] },
+          "requires": ["g3-same-shape"], "estMinutes": 12, "status": "published"
+        },
+        {
+          "id": "g5-special-sounds", "order": 5, "kind": "letters",
+          "title": { "ar": "أصوات خاصة", "en": "Special sounds" },
+          "summary": { "ar": "حروف نطقها يتغيّر حسب موضعها" },
+          "body": "g5-special-sounds.mdx",
+          "refs": { "letters": ["vida", "dalda", "theta", "janja"], "words": [], "prayers": [] },
+          "requires": ["g4-no-twin"], "estMinutes": 12, "status": "published"
+        },
+        {
+          "id": "g6-doubles", "order": 6, "kind": "letters",
+          "title": { "ar": "الحروف المزدوجة", "en": "Double letters" },
+          "summary": { "ar": "حرف واحد بصوتين" },
+          "body": null,
+          "refs": { "letters": ["sou", "eksi", "epsi", "cheema", "ti"], "words": [], "prayers": [] },
+          "requires": ["g5-special-sounds"], "estMinutes": 10, "status": "published"
+        },
+        {
+          "id": "g7-three-sounds", "order": 7, "kind": "letters",
+          "title": { "ar": "ثلاثة أصوات", "en": "Three sounds" },
+          "summary": { "ar": "أصعب ثلاثة حروف، وقواعدها" },
+          "body": "g7-three-sounds.mdx",
+          "refs": { "letters": ["gamma", "epsilon", "khi"], "words": [], "prayers": [] },
+          "requires": ["g6-doubles"], "estMinutes": 15, "status": "published"
+        },
+        {
+          "id": "l1-first-prayer", "order": 8, "kind": "prayer",
+          "title": { "ar": "أول صلاة: خين إفران", "en": "First prayer" },
+          "summary": { "ar": "اقرأ نصًا كاملًا بنفسك" },
+          "body": null,
+          "refs": { "letters": [], "words": [], "prayers": ["khen-efran"] },
+          "requires": ["g7-three-sounds"], "estMinutes": 10, "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "level-2-grammar-basics",
+      "order": 2,
+      "title": { "ar": "المستوى الثاني: أساسيات القواعد", "en": "Level 2: Grammar basics" },
+      "goal": { "ar": "تفهم بنية الجملة القبطية البسيطة", "en": "Understand simple Coptic sentence structure" },
+      "colorToken": "level-2",
+      "lessons": [
+        {
+          "id": "articles", "order": 1, "kind": "grammar",
+          "title": { "ar": "أدوات التعريف", "en": "The article" },
+          "summary": { "ar": "ⲡⲓ / ϯ / ⲛⲓ وكيف تختار بينها" },
+          "body": "articles.mdx",
+          "refs": { "letters": [], "words": [], "prayers": [] },
+          "requires": ["l1-first-prayer"], "estMinutes": 15, "status": "draft"
+        }
+      ]
+    }
+  ]
+}

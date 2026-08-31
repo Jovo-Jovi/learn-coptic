@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-31",
+  "prayers": [
+    {
+      "id": "khen-efran",
+      "title": { "ar": "باسم الآب والابن والروح القدس", "en": "In the name of the Father" },
+      "titleCoptic": "Ϧⲉⲛ ⲫⲣⲁⲛ",
+      "occasion": ["daily", "agpeya"],
+      "level": 1,
+      "audio": {
+        "full": { "src": "/audio/prayers/khen-efran.mp3", "durationSec": 18, "reciter": "—", "dialect": "bohairic-modern" },
+        "slow": { "src": "/audio/prayers/khen-efran-slow.mp3", "durationSec": 31, "reciter": "—", "dialect": "bohairic-modern" }
+      },
+      "lines": [
+        {
+          "id": "l1", "role": "none",
+          "coptic": "Ϧⲉⲛ ⲫⲣⲁⲛ ⲙ̀ⲫⲓⲱⲧ",
+          "translit": { "ar": "خين إفران إم إفيوت", "en": "khen efran em-efiot" },
+          "translation": { "ar": "باسم الآب", "en": "In the name of the Father" },
+          "startSec": 0, "endSec": 4.2,
+          "tokens": [
+            { "coptic": "Ϧⲉⲛ", "wordId": "khen", "gloss": "باسم / في", "startSec": 0 },
+            { "coptic": "ⲫⲣⲁⲛ", "wordId": "efran", "gloss": "الاسم", "startSec": 1.4 },
+            { "coptic": "ⲙ̀ⲫⲓⲱⲧ", "wordId": "efiot", "gloss": "الآب", "startSec": 2.8 }
+          ]
+        },
+        {
+          "id": "l2", "role": "none",
+          "coptic": "ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ",
+          "translit": { "ar": "نيم إبشيري", "en": "nem ep-sheeri" },
+          "translation": { "ar": "والابن", "en": "and the Son" },
+          "startSec": 4.2, "endSec": 7.5,
+          "tokens": []
+        },
+        {
+          "id": "l3", "role": "none",
+          "coptic": "ⲛⲉⲙ ⲡⲓⲠ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ",
+          "translit": { "ar": "نيم بي إبنِفما إثؤواب", "en": "nem pi-Epnevma ethowab" },
+          "translation": { "ar": "والروح القدس", "en": "and the Holy Spirit" },
+          "startSec": 7.5, "endSec": 13.0,
+          "tokens": []
+        }
+      ],
+      "keyWords": ["khen", "efran", "efiot"],
+      "source": { "name": "الأجبية — صلاة بدء كل ساعة" }
+    }
+  ]
+}

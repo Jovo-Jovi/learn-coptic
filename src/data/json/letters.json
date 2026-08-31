@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-31",
+  "letters": [
+    {
+      "id": "alpha",
+      "order": 1,
+      "unicode": {
+        "upper": "Ⲁ",
+        "lower": "ⲁ"
+      },
+      "athanasiusKey": {
+        "upper": "A",
+        "lower": "a"
+      },
+      "name": {
+        "coptic": "Ⲁⲗⲫⲁ",
+        "ar": "ألفا",
+        "latin": "Alpha"
+      },
+      "group": 2,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "a"
+        ],
+        "arabicHint": [
+          "ا"
+        ]
+      },
+      "rules": [],
+      "numericValue": 1,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "vida",
+      "order": 2,
+      "unicode": {
+        "upper": "Ⲃ",
+        "lower": "ⲃ"
+      },
+      "athanasiusKey": {
+        "upper": "B",
+        "lower": "b"
+      },
+      "name": {
+        "coptic": "Ⲃⲏⲧⲁ",
+        "ar": "ڤيدا",
+        "latin": "Vida"
+      },
+      "group": 5,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "v",
+          "b"
+        ],
+        "arabicHint": [
+          "ڤ",
+          "ب"
+        ]
+      },
+      "rules": [
+        {
+          "id": "vida-rule-1",
+          "condition": {
+            "ar": "قبل حرف متحرك أو في أول الكلمة"
+          },
+          "result": {
+            "ar": "تُنطق (b) كالباء"
+          },
+          "examples": []
+        },
+        {
+          "id": "vida-rule-2",
+          "condition": {
+            "ar": "في آخر الكلمة أو قبل حرف ساكن"
+          },
+          "result": {
+            "ar": "تُنطق (v) كالڤاء"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 2,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "gamma",
+      "order": 3,
+      "unicode": {
+        "upper": "Ⲅ",
+        "lower": "ⲅ"
+      },
+      "athanasiusKey": {
+        "upper": "G",
+        "lower": "g"
+      },
+      "name": {
+        "coptic": "Ⲅⲁⲙⲙⲁ",
+        "ar": "غَما",
+        "latin": "Gamma"
+      },
+      "group": 7,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ɣ",
+          "g",
+          "ŋ"
+        ],
+        "arabicHint": [
+          "غ",
+          "ج",
+          "ن"
+        ]
+      },
+      "rules": [
+        {
+          "id": "gamma-rule-1",
+          "condition": {
+            "ar": "قبل Ⲉ Ⲓ Ⲏ"
+          },
+          "result": {
+            "ar": "تُنطق (gh) غين"
+          },
+          "examples": []
+        },
+        {
+          "id": "gamma-rule-2",
+          "condition": {
+            "ar": "قبل Ⲅ أو Ⲕ"
+          },
+          "result": {
+            "ar": "تُنطق (n) نون"
+          },
+          "examples": []
+        },
+        {
+          "id": "gamma-rule-3",
+          "condition": {
+            "ar": "في باقي المواضع"
+          },
+          "result": {
+            "ar": "تُنطق (g) جيم مصرية"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 3,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "dalda",
+      "order": 4,
+      "unicode": {
+        "upper": "Ⲇ",
+        "lower": "ⲇ"
+      },
+      "athanasiusKey": {
+        "upper": "D",
+        "lower": "d"
+      },
+      "name": {
+        "coptic": "Ⲇⲁⲗⲇⲁ",
+        "ar": "دلدا",
+        "latin": "Dalda"
+      },
+      "group": 5,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ð",
+          "d"
+        ],
+        "arabicHint": [
+          "ذ",
+          "د"
+        ]
+      },
+      "rules": [
+        {
+          "id": "dalda-rule-1",
+          "condition": {
+            "ar": "في الكلمات القبطية الأصيلة"
+          },
+          "result": {
+            "ar": "تُنطق (d) دال"
+          },
+          "examples": []
+        },
+        {
+          "id": "dalda-rule-2",
+          "condition": {
+            "ar": "في الكلمات اليونانية"
+          },
+          "result": {
+            "ar": "تُنطق (th) ذال مفخّمة"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 4,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "ei",
+      "order": 5,
+      "unicode": {
+        "upper": "Ⲉ",
+        "lower": "ⲉ"
+      },
+      "athanasiusKey": {
+        "upper": "E",
+        "lower": "e"
+      },
+      "name": {
+        "coptic": "Ⲉⲓ",
+        "ar": "إي",
+        "latin": "Ei"
+      },
+      "group": 2,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "e"
+        ],
+        "arabicHint": [
+          "إ"
+        ]
+      },
+      "rules": [],
+      "numericValue": 5,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "sou",
+      "order": 6,
+      "unicode": {
+        "upper": "Ⲋ",
+        "lower": "ⲋ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲥⲟⲟⲩ",
+        "ar": "صو",
+        "latin": "Sou"
+      },
+      "group": 6,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "s"
+        ],
+        "arabicHint": [
+          "س"
+        ]
+      },
+      "rules": [
+        {
+          "id": "sou-rule-1",
+          "condition": {
+            "ar": "لا يُستخدم في الكتابة"
+          },
+          "result": {
+            "ar": "حرف رقمي فقط، قيمته ٦"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 6,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "zeta",
+      "order": 7,
+      "unicode": {
+        "upper": "Ⲍ",
+        "lower": "ⲍ"
+      },
+      "athanasiusKey": {
+        "upper": "Z",
+        "lower": "z"
+      },
+      "name": {
+        "coptic": "Ⲍⲏⲧⲁ",
+        "ar": "زيتا",
+        "latin": "Zeta"
+      },
+      "group": 1,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "z"
+        ],
+        "arabicHint": [
+          "ز"
+        ]
+      },
+      "rules": [],
+      "numericValue": 7,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "eta",
+      "order": 8,
+      "unicode": {
+        "upper": "Ⲏ",
+        "lower": "ⲏ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲏⲧⲁ",
+        "ar": "إيتا",
+        "latin": "Eta"
+      },
+      "group": 3,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "iː"
+        ],
+        "arabicHint": [
+          "إي"
+        ]
+      },
+      "rules": [],
+      "numericValue": 8,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "theta",
+      "order": 9,
+      "unicode": {
+        "upper": "Ⲑ",
+        "lower": "ⲑ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲑⲏⲧⲁ",
+        "ar": "ثيتا",
+        "latin": "Theta"
+      },
+      "group": 5,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "t",
+          "θ"
+        ],
+        "arabicHint": [
+          "ت",
+          "ث"
+        ]
+      },
+      "rules": [
+        {
+          "id": "theta-rule-1",
+          "condition": {
+            "ar": "بعد حرف Ⲥ أو Ⲧ"
+          },
+          "result": {
+            "ar": "تُنطق (t) تاء"
+          },
+          "examples": []
+        },
+        {
+          "id": "theta-rule-2",
+          "condition": {
+            "ar": "في باقي المواضع"
+          },
+          "result": {
+            "ar": "تُنطق (th) ثاء"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 9,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "iota",
+      "order": 10,
+      "unicode": {
+        "upper": "Ⲓ",
+        "lower": "ⲓ"
+      },
+      "athanasiusKey": {
+        "upper": "I",
+        "lower": "i"
+      },
+      "name": {
+        "coptic": "Ⲓⲱⲧⲁ",
+        "ar": "يوتا",
+        "latin": "Iota"
+      },
+      "group": 2,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "i",
+          "j"
+        ],
+        "arabicHint": [
+          "ي"
+        ]
+      },
+      "rules": [],
+      "numericValue": 10,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "kappa",
+      "order": 11,
+      "unicode": {
+        "upper": "Ⲕ",
+        "lower": "ⲕ"
+      },
+      "athanasiusKey": {
+        "upper": "K",
+        "lower": "k"
+      },
+      "name": {
+        "coptic": "Ⲕⲁⲡⲡⲁ",
+        "ar": "كابا",
+        "latin": "Kappa"
+      },
+      "group": 1,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "k"
+        ],
+        "arabicHint": [
+          "ك"
+        ]
+      },
+      "rules": [],
+      "numericValue": 20,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "lola",
+      "order": 12,
+      "unicode": {
+        "upper": "Ⲗ",
+        "lower": "ⲗ"
+      },
+      "athanasiusKey": {
+        "upper": "L",
+        "lower": "l"
+      },
+      "name": {
+        "coptic": "Ⲗⲟⲗⲁ",
+        "ar": "لولا",
+        "latin": "Lola"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "l"
+        ],
+        "arabicHint": [
+          "ل"
+        ]
+      },
+      "rules": [],
+      "numericValue": 30,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "mi",
+      "order": 13,
+      "unicode": {
+        "upper": "Ⲙ",
+        "lower": "ⲙ"
+      },
+      "athanasiusKey": {
+        "upper": "M",
+        "lower": "m"
+      },
+      "name": {
+        "coptic": "Ⲙⲓ",
+        "ar": "مي",
+        "latin": "Mi"
+      },
+      "group": 2,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "m"
+        ],
+        "arabicHint": [
+          "م"
+        ]
+      },
+      "rules": [],
+      "numericValue": 40,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "ni",
+      "order": 14,
+      "unicode": {
+        "upper": "Ⲛ",
+        "lower": "ⲛ"
+      },
+      "athanasiusKey": {
+        "upper": "N",
+        "lower": "n"
+      },
+      "name": {
+        "coptic": "Ⲛⲓ",
+        "ar": "ني",
+        "latin": "Ni"
+      },
+      "group": 1,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "n"
+        ],
+        "arabicHint": [
+          "ن"
+        ]
+      },
+      "rules": [],
+      "numericValue": 50,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "eksi",
+      "order": 15,
+      "unicode": {
+        "upper": "Ⲝ",
+        "lower": "ⲝ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲉⲝⲓ",
+        "ar": "إكسي",
+        "latin": "Eksi"
+      },
+      "group": 6,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ks"
+        ],
+        "arabicHint": [
+          "كس"
+        ]
+      },
+      "rules": [
+        {
+          "id": "eksi-rule-1",
+          "condition": {
+            "ar": "دائمًا"
+          },
+          "result": {
+            "ar": "حرف مزدوج = Ⲕ + Ⲥ"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 60,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "o",
+      "order": 16,
+      "unicode": {
+        "upper": "Ⲟ",
+        "lower": "ⲟ"
+      },
+      "athanasiusKey": {
+        "upper": "O",
+        "lower": "o"
+      },
+      "name": {
+        "coptic": "Ⲟ",
+        "ar": "أو",
+        "latin": "O"
+      },
+      "group": 1,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "o"
+        ],
+        "arabicHint": [
+          "أو"
+        ]
+      },
+      "rules": [],
+      "numericValue": 70,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "pi",
+      "order": 17,
+      "unicode": {
+        "upper": "Ⲡ",
+        "lower": "ⲡ"
+      },
+      "athanasiusKey": {
+        "upper": "P",
+        "lower": "p"
+      },
+      "name": {
+        "coptic": "Ⲡⲓ",
+        "ar": "بي",
+        "latin": "Pi"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "p"
+        ],
+        "arabicHint": [
+          "ب"
+        ]
+      },
+      "rules": [],
+      "numericValue": 80,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "ro",
+      "order": 18,
+      "unicode": {
+        "upper": "Ⲣ",
+        "lower": "ⲣ"
+      },
+      "athanasiusKey": {
+        "upper": "R",
+        "lower": "r"
+      },
+      "name": {
+        "coptic": "Ⲣⲱ",
+        "ar": "رو",
+        "latin": "Ro"
+      },
+      "group": 3,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "r"
+        ],
+        "arabicHint": [
+          "ر"
+        ]
+      },
+      "rules": [],
+      "numericValue": 100,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "sima",
+      "order": 19,
+      "unicode": {
+        "upper": "Ⲥ",
+        "lower": "ⲥ"
+      },
+      "athanasiusKey": {
+        "upper": "C",
+        "lower": "c"
+      },
+      "name": {
+        "coptic": "Ⲥⲏⲙⲁ",
+        "ar": "سيما",
+        "latin": "Sima"
+      },
+      "group": 3,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "s"
+        ],
+        "arabicHint": [
+          "س"
+        ]
+      },
+      "rules": [],
+      "numericValue": 200,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "tav",
+      "order": 20,
+      "unicode": {
+        "upper": "Ⲧ",
+        "lower": "ⲧ"
+      },
+      "athanasiusKey": {
+        "upper": "T",
+        "lower": "t"
+      },
+      "name": {
+        "coptic": "Ⲧⲁⲩ",
+        "ar": "تاڤ",
+        "latin": "Tav"
+      },
+      "group": 1,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "t"
+        ],
+        "arabicHint": [
+          "ت"
+        ]
+      },
+      "rules": [],
+      "numericValue": 300,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "epsilon",
+      "order": 21,
+      "unicode": {
+        "upper": "Ⲩ",
+        "lower": "ⲩ"
+      },
+      "athanasiusKey": {
+        "upper": "U",
+        "lower": "u"
+      },
+      "name": {
+        "coptic": "Ⲉⲡⲥⲓⲗⲟⲛ",
+        "ar": "إبسلون",
+        "latin": "Epsilon"
+      },
+      "group": 7,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "i",
+          "v",
+          "w"
+        ],
+        "arabicHint": [
+          "إي",
+          "ڤ",
+          "و"
+        ]
+      },
+      "rules": [
+        {
+          "id": "epsilon-rule-1",
+          "condition": {
+            "ar": "بعد Ⲁ أو Ⲉ وقبل حرف متحرك"
+          },
+          "result": {
+            "ar": "تُنطق (w) واو"
+          },
+          "examples": []
+        },
+        {
+          "id": "epsilon-rule-2",
+          "condition": {
+            "ar": "بعد Ⲁ أو Ⲉ وقبل ساكن"
+          },
+          "result": {
+            "ar": "تُنطق (v) ڤاء"
+          },
+          "examples": []
+        },
+        {
+          "id": "epsilon-rule-3",
+          "condition": {
+            "ar": "في باقي المواضع"
+          },
+          "result": {
+            "ar": "تُنطق (i) ياء"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 400,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "fi",
+      "order": 22,
+      "unicode": {
+        "upper": "Ⲫ",
+        "lower": "ⲫ"
+      },
+      "athanasiusKey": {
+        "upper": "V",
+        "lower": "v"
+      },
+      "name": {
+        "coptic": "Ⲫⲓ",
+        "ar": "في",
+        "latin": "Fi"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "f"
+        ],
+        "arabicHint": [
+          "ف"
+        ]
+      },
+      "rules": [],
+      "numericValue": 500,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "khi",
+      "order": 23,
+      "unicode": {
+        "upper": "Ⲭ",
+        "lower": "ⲭ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲭⲓ",
+        "ar": "خي",
+        "latin": "Khi"
+      },
+      "group": 7,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "k",
+          "x",
+          "ʃ"
+        ],
+        "arabicHint": [
+          "ك",
+          "خ",
+          "ش"
+        ]
+      },
+      "rules": [
+        {
+          "id": "khi-rule-1",
+          "condition": {
+            "ar": "في الكلمات القبطية"
+          },
+          "result": {
+            "ar": "تُنطق (k) كاف"
+          },
+          "examples": []
+        },
+        {
+          "id": "khi-rule-2",
+          "condition": {
+            "ar": "في الكلمات اليونانية قبل حرف متحرك"
+          },
+          "result": {
+            "ar": "تُنطق (kh) خاء"
+          },
+          "examples": []
+        },
+        {
+          "id": "khi-rule-3",
+          "condition": {
+            "ar": "في بعض أسماء الأعلام"
+          },
+          "result": {
+            "ar": "تُنطق (sh) شين"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 600,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "epsi",
+      "order": 24,
+      "unicode": {
+        "upper": "Ⲯ",
+        "lower": "ⲯ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ⲯⲓ",
+        "ar": "إبسي",
+        "latin": "Epsi"
+      },
+      "group": 6,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ps"
+        ],
+        "arabicHint": [
+          "بس"
+        ]
+      },
+      "rules": [
+        {
+          "id": "epsi-rule-1",
+          "condition": {
+            "ar": "دائمًا"
+          },
+          "result": {
+            "ar": "حرف مزدوج = Ⲡ + Ⲥ"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": 700,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "oou",
+      "order": 25,
+      "unicode": {
+        "upper": "Ⲱ",
+        "lower": "ⲱ"
+      },
+      "athanasiusKey": {
+        "upper": "W",
+        "lower": "w"
+      },
+      "name": {
+        "coptic": "Ⲱⲟⲩ",
+        "ar": "أوو",
+        "latin": "Oou"
+      },
+      "group": 3,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "oː"
+        ],
+        "arabicHint": [
+          "أو"
+        ]
+      },
+      "rules": [],
+      "numericValue": 800,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "shai",
+      "order": 26,
+      "unicode": {
+        "upper": "Ϣ",
+        "lower": "ϣ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ϣⲁⲓ",
+        "ar": "شاي",
+        "latin": "Shai"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ʃ"
+        ],
+        "arabicHint": [
+          "ش"
+        ]
+      },
+      "rules": [],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "fai",
+      "order": 27,
+      "unicode": {
+        "upper": "Ϥ",
+        "lower": "ϥ"
+      },
+      "athanasiusKey": {
+        "upper": "F",
+        "lower": "f"
+      },
+      "name": {
+        "coptic": "Ϥⲁⲓ",
+        "ar": "فاي",
+        "latin": "Fai"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "f"
+        ],
+        "arabicHint": [
+          "ف"
+        ]
+      },
+      "rules": [],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "khai",
+      "order": 28,
+      "unicode": {
+        "upper": "Ϧ",
+        "lower": "ϧ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ϧⲁⲓ",
+        "ar": "خاي",
+        "latin": "Khai"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "x"
+        ],
+        "arabicHint": [
+          "خ"
+        ]
+      },
+      "rules": [],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "hori",
+      "order": 29,
+      "unicode": {
+        "upper": "Ϩ",
+        "lower": "ϩ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ϩⲟⲣⲓ",
+        "ar": "هوري",
+        "latin": "Hori"
+      },
+      "group": 4,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "h"
+        ],
+        "arabicHint": [
+          "ه"
+        ]
+      },
+      "rules": [],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "janja",
+      "order": 30,
+      "unicode": {
+        "upper": "Ϫ",
+        "lower": "ϫ"
+      },
+      "athanasiusKey": {
+        "upper": "J",
+        "lower": "j"
+      },
+      "name": {
+        "coptic": "Ϫⲁⲛϫⲁ",
+        "ar": "جنجا",
+        "latin": "Janja"
+      },
+      "group": 5,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "g",
+          "dʒ"
+        ],
+        "arabicHint": [
+          "ج"
+        ]
+      },
+      "rules": [
+        {
+          "id": "janja-rule-1",
+          "condition": {
+            "ar": "في الكلمات القبطية"
+          },
+          "result": {
+            "ar": "تُنطق (g) جيم مصرية"
+          },
+          "examples": []
+        },
+        {
+          "id": "janja-rule-2",
+          "condition": {
+            "ar": "في الكلمات اليونانية"
+          },
+          "result": {
+            "ar": "تُنطق (j) جيم معطشة"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "cheema",
+      "order": 31,
+      "unicode": {
+        "upper": "Ϭ",
+        "lower": "ϭ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ϭⲓⲙⲁ",
+        "ar": "تشيما",
+        "latin": "Cheema"
+      },
+      "group": 6,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "tʃ",
+          "k"
+        ],
+        "arabicHint": [
+          "تش",
+          "ك"
+        ]
+      },
+      "rules": [
+        {
+          "id": "cheema-rule-1",
+          "condition": {
+            "ar": "في الكلمات القبطية"
+          },
+          "result": {
+            "ar": "تُنطق (ch) تش"
+          },
+          "examples": []
+        },
+        {
+          "id": "cheema-rule-2",
+          "condition": {
+            "ar": "في بعض الكلمات"
+          },
+          "result": {
+            "ar": "تُنطق (k) كاف"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    },
+    {
+      "id": "ti",
+      "order": 32,
+      "unicode": {
+        "upper": "Ϯ",
+        "lower": "ϯ"
+      },
+      "athanasiusKey": null,
+      "name": {
+        "coptic": "Ϯ",
+        "ar": "تي",
+        "latin": "Ti"
+      },
+      "group": 6,
+      "alsoTaughtIn": [],
+      "sound": {
+        "ipa": [
+          "ti"
+        ],
+        "arabicHint": [
+          "تي"
+        ]
+      },
+      "rules": [
+        {
+          "id": "ti-rule-1",
+          "condition": {
+            "ar": "دائمًا"
+          },
+          "result": {
+            "ar": "حرف مزدوج = Ⲧ + Ⲓ"
+          },
+          "examples": []
+        }
+      ],
+      "numericValue": null,
+      "audio": null,
+      "exampleWords": []
+    }
+  ]
+}

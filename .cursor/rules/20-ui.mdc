@@ -1,0 +1,51 @@
+---
+description: UI conventions for pages and components
+globs: src/app/**,src/components/**,src/styles/**
+---
+
+# UI rules
+
+## Layout
+
+Phone first. Design at 375px, then widen. The old version had eight wrapping
+tabs — do not recreate them. Navigation is a fixed bottom bar with four items:
+الحروف · الكلمات · التدريب · عن الموقع.
+
+## Coptic and Arabic together
+
+`<html dir="rtl" lang="ar">`. Any Coptic or Latin string inside Arabic text is
+wrapped so it cannot flip the line:
+
+```tsx
+<span dir="ltr" className="inline-block">{letter.unicode.upper}</span>
+```
+
+Coptic glyphs are the largest thing on any page. Arabic is the reading language.
+English, when present, is one small line — never a parallel column.
+
+## The seven group colors
+
+They are pedagogy, not decoration — a learner recognises "group 4 letters" by
+color. Defined once as CSS custom properties `--group-1` … `--group-7` and used
+through Tailwind tokens. Never hardcode a hex in a component. Every group color
+must pass 4.5:1 against its own text color in both themes; if one fails, adjust
+the token and say which.
+
+## Interaction
+
+Expanding panels, not CSS 3D flips. The old 450px flip cards were slow on
+phones and invisible to screen readers. A panel:
+
+- is a real `<button>` with `aria-expanded`
+- animates height and opacity only, and respects `prefers-reduced-motion`
+- keeps the glyph visible while the back content opens
+
+Audio buttons are labelled in Arabic (`aria-label="استمع"`), never an icon alone.
+
+## Things that were broken in the old version — do not repeat
+
+- invalid CSS: `space-y` as a property, a gradient used as a border color
+- dark-mode header text bound to a variable that resolves to dark gray
+- tab lists without `role="tablist"` / `aria-selected`
+- Google Fonts loaded by `<link>` while Coptic was local — use `next/font`
+  for both, self-hosted
