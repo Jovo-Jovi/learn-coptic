@@ -73,10 +73,15 @@ export const Letter = z.object({
   /** Legacy Athanasius/Antonious keystroke. Kept only so the optional
    *  "manuscript mode" can still work. Never rendered as the default. */
   athanasiusKey: z.object({ upper: z.string(), lower: z.string() }).nullable(),
+  /** Extra keystrokes that produce the same glyph in some sources
+   *  (e.g. hori: explorer `|`, vocabulary `\`). Never rendered. */
+  athanasiusAliases: z.array(z.string().min(1)).default([]),
 
   name: z.object({
     coptic: copticText,
     ar: z.string().min(1),
+    /** Longer teaching form (khi: كي، خي، شي). Search/sort use `ar`. */
+    arDisplay: z.string().min(1).optional(),
     latin: z.string().min(1),
   }),
 

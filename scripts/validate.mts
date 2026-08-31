@@ -31,11 +31,18 @@ const prayerIds = new Set(P.map((x) => x.id));
 if (new Set(L.map((x) => x.order)).size !== 32) fail("letter `order` values are not 1..32 unique");
 for (const g of [1, 2, 3, 4, 5, 6, 7]) if (!L.some((x) => x.group === g)) fail(`group ${g} is empty`);
 const dupKeys = new Map<string, string[]>();
-L.filter((x) => x.athanasiusKey).forEach((x) => {
-  const k = x.athanasiusKey!.lower;
-  dupKeys.set(k, [...(dupKeys.get(k) ?? []), x.id]);
+L.forEach((x) => {
+  const claimed = new Set<string>();
+  if (x.athanasiusKey) {
+    claimed.add(x.athanasiusKey.upper);
+    claimed.add(x.athanasiusKey.lower);
+  }
+  for (const a of x.athanasiusAliases) claimed.add(a);
+  for (const k of claimed) dupKeys.set(k, [...(dupKeys.get(k) ?? []), x.id]);
 });
-dupKeys.forEach((ids, k) => { if (ids.length > 1) fail(`Athanasius key "${k}" claimed by ${ids.join(" and ")}`); });
+dupKeys.forEach((ids, k) => {
+  if (ids.length > 1) fail(`Athanasius key ${JSON.stringify(k)} claimed by ${ids.join(" and ")}`);
+});
 
 // ---- 3. Cross-references --------------------------------------------
 L.forEach((l) => l.exampleWords.forEach((w) => { if (!wordIds.has(w)) fail(`letter ${l.id} → unknown word ${w}`); }));

@@ -7,31 +7,28 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `8df36c5` scaffold
-**Validator:** ✓ 32 letters, 8 words, 1 prayer, 2 levels
+**Last commit:** `TBDSHA`
+**Validator:** ✓ 32 letters (0 missing keys), 8 words, 1 prayer, 2 levels
 
 ## Current position
 
-**Done:** S0 setup
-**Next:** S1 — freeze the letter map (GATE)
+**Done:** S0, S1
+**Next:** S2 — migrate vocabulary (GATE)
 **Blocked on:** nothing
 
 ## Open decisions
 
-- 11 letters have no confirmed `athanasiusKey`: Sou, Eta, Theta, Eksi, Khi,
-  Epsi, Shai, Khai, Hori, Cheema, Ti. Resolve in S1 from the live HTML.
-- Arabic letter names in `letters.json` use standard Egyptian church forms.
-  Not yet checked against the project's own curriculum.
-- Nobody has yet rendered all 32 glyphs on screen for a Coptic reader to check.
+- soic gloss: HTML arabic: رب is the meaning, تشويس is pronunciation. Keep them in separate fields in S2.
+- /s1-glyph-check to be deleted at S4.
 
 ## Known state of the data
 
-- `letters.json` — 32, groups 5/4/4/7/4/5/3, 12 letters carry rules, no audio
+- `letters.json` — 32, keys complete, 12 carry rules, no audio
 - `words.json` — 8 sample words only; the real ~145 arrive in S2
 - `prayers.json` — 1 sample, no real recording
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 
 ## Notes
 
-- `create-next-app` also added stock `AGENTS.md` and `CLAUDE.md`. Left as-is.
+- Markdown keymap (ADR-007) is an alternative Athanasuis layout. Do not merge it.
 - `legacy/` and `.extract/` are gitignored — inputs, not product.

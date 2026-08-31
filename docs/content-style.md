@@ -10,9 +10,11 @@ never equal weight. This is not a bilingual site with Arabic added.
 
 ## Letter names
 
-Use the forms Egyptian churches teach: ألفا، ڤيدا، غَما، دلدا، لولا، تاڤ.
-If the project's own curriculum differs, the curriculum wins — but change it in
-`letters.json` once, not per page.
+Use the forms this project's curriculum teaches (live explorer): ألفا، بيتا،
+غَما، دلتا، لولا، تاف، سوو، بسي، إبسيلون. Khi is `name.ar` كي with
+`name.arDisplay` كي، خي، شي — sort/search use `ar`, the page shows `arDisplay`.
+If a later curriculum file disagrees, change the name in `letters.json` once,
+not per page.
 
 ## Transliteration
 

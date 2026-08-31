@@ -46,7 +46,7 @@
       },
       "name": {
         "coptic": "Ⲃⲏⲧⲁ",
-        "ar": "ڤيدا",
+        "ar": "بيتا",
         "latin": "Vida"
       },
       "group": 5,
@@ -166,7 +166,7 @@
       },
       "name": {
         "coptic": "Ⲇⲁⲗⲇⲁ",
-        "ar": "دلدا",
+        "ar": "دلتا",
         "latin": "Dalda"
       },
       "group": 5,
@@ -245,10 +245,13 @@
         "upper": "Ⲋ",
         "lower": "ⲋ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": ",",
+        "lower": ","
+      },
       "name": {
         "coptic": "Ⲥⲟⲟⲩ",
-        "ar": "صو",
+        "ar": "سوو",
         "latin": "Sou"
       },
       "group": 6,
@@ -315,7 +318,10 @@
         "upper": "Ⲏ",
         "lower": "ⲏ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "H",
+        "lower": "h"
+      },
       "name": {
         "coptic": "Ⲏⲧⲁ",
         "ar": "إيتا",
@@ -343,7 +349,10 @@
         "upper": "Ⲑ",
         "lower": "ⲑ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "Q",
+        "lower": "q"
+      },
       "name": {
         "coptic": "Ⲑⲏⲧⲁ",
         "ar": "ثيتا",
@@ -432,7 +441,7 @@
       },
       "name": {
         "coptic": "Ⲕⲁⲡⲡⲁ",
-        "ar": "كابا",
+        "ar": "كبّا",
         "latin": "Kappa"
       },
       "group": 1,
@@ -550,7 +559,10 @@
         "upper": "Ⲝ",
         "lower": "ⲝ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "{",
+        "lower": "["
+      },
       "name": {
         "coptic": "Ⲉⲝⲓ",
         "ar": "إكسي",
@@ -719,7 +731,7 @@
       },
       "name": {
         "coptic": "Ⲧⲁⲩ",
-        "ar": "تاڤ",
+        "ar": "تاف",
         "latin": "Tav"
       },
       "group": 1,
@@ -750,7 +762,7 @@
       },
       "name": {
         "coptic": "Ⲉⲡⲥⲓⲗⲟⲛ",
-        "ar": "إبسلون",
+        "ar": "إبسيلون",
         "latin": "Epsilon"
       },
       "group": 7,
@@ -841,10 +853,14 @@
         "upper": "Ⲭ",
         "lower": "ⲭ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "X",
+        "lower": "x"
+      },
       "name": {
         "coptic": "Ⲭⲓ",
-        "ar": "خي",
+        "ar": "كي",
+        "arDisplay": "كي، خي، شي",
         "latin": "Khi"
       },
       "group": 7,
@@ -904,10 +920,13 @@
         "upper": "Ⲯ",
         "lower": "ⲯ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "Y",
+        "lower": "y"
+      },
       "name": {
         "coptic": "Ⲯⲓ",
-        "ar": "إبسي",
+        "ar": "بسي",
         "latin": "Epsi"
       },
       "group": 6,
@@ -974,7 +993,10 @@
         "upper": "Ϣ",
         "lower": "ϣ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "}",
+        "lower": "]"
+      },
       "name": {
         "coptic": "Ϣⲁⲓ",
         "ar": "شاي",
@@ -1033,7 +1055,10 @@
         "upper": "Ϧ",
         "lower": "ϧ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "\"",
+        "lower": "'"
+      },
       "name": {
         "coptic": "Ϧⲁⲓ",
         "ar": "خاي",
@@ -1061,7 +1086,13 @@
         "upper": "Ϩ",
         "lower": "ϩ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "\\",
+        "lower": "\\"
+      },
+      "athanasiusAliases": [
+        "|"
+      ],
       "name": {
         "coptic": "Ϩⲟⲣⲓ",
         "ar": "هوري",
@@ -1142,7 +1173,10 @@
         "upper": "Ϭ",
         "lower": "ϭ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": "S",
+        "lower": "s"
+      },
       "name": {
         "coptic": "Ϭⲓⲙⲁ",
         "ar": "تشيما",
@@ -1193,7 +1227,10 @@
         "upper": "Ϯ",
         "lower": "ϯ"
       },
-      "athanasiusKey": null,
+      "athanasiusKey": {
+        "upper": ":",
+        "lower": ";"
+      },
       "name": {
         "coptic": "Ϯ",
         "ar": "تي",

@@ -27,3 +27,13 @@ Grammar arrives as Level 2+ with an MDX body and needs no schema change.
 
 ## ADR-006 — `main` is the default branch
 Set at scaffold time; `master` removed from the remote.
+
+## ADR-007 — Live explorer keymap, not coptic-groups.md
+The 11 keys where `coptic-groups.md` disagrees with the live explorer
+(Sou, Eta, Theta, Eksi, Khi, Epsi, Shai, Khai, Hori, Cheema, Ti) are a
+coherent alternative Athanasuis layout, not typos. The same keystrokes
+are assigned to different letters. `letters.json` freezes the explorer
+map (vocabulary corroborates it). Hori is the one split: words are typed
+with `\`, the explorer card shows `|` — primary key is `\`, alias `|`.
+**Cost:** anyone typing from the markdown table will hit the wrong glyphs.
+Do not "reconcile" the two maps.
