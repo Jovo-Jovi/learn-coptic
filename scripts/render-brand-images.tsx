@@ -1,8 +1,7 @@
 /**
  * Rasterise README hero + PWA icons from Unicode in letters.json + FreeSerif.
  * Run: npx tsx scripts/render-brand-images.tsx
- * Does not invent glyphs. Glass tiles mimic landing `.glyph-glass`
- * (satori cannot paint backdrop-filter, so the frost is a gradient).
+ * Does not invent glyphs. README snap is the landing letters at readable opacity.
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -17,15 +16,15 @@ const HERO_LETTER_IDS = ["alpha", "shai", "ni", "gamma", "ti", "theta"] as const
 
 /** Same as `.hero-glyphs > span:nth-child(n)` — RTL `inset-inline-start` / `top`. */
 const HERO_SLOTS = [
-  { inlineStart: 3, top: 8 },
-  { inlineStart: 18, top: 52 },
-  { inlineStart: 38, top: 12 },
-  { inlineStart: 56, top: 48 },
-  { inlineStart: 72, top: 6 },
-  { inlineStart: 82, top: 54 },
+  { inlineStart: 2, top: 6 },
+  { inlineStart: 20, top: 58 },
+  { inlineStart: 40, top: 10 },
+  { inlineStart: 58, top: 50 },
+  { inlineStart: 74, top: 4 },
+  { inlineStart: 84, top: 62 },
 ] as const;
 
-/** `--group-N-from` / `--group-N-to` in globals.css */
+/** `--group-N-from` in globals.css */
 const GROUP_FROM: Record<number, string> = {
   1: "#667eea",
   2: "#f093fb",
@@ -35,46 +34,23 @@ const GROUP_FROM: Record<number, string> = {
   6: "#fda085",
   7: "#a8edea",
 };
-const GROUP_TO: Record<number, string> = {
-  1: "#8f6bb3",
-  2: "#f5576c",
-  3: "#00f2fe",
-  4: "#38f9d7",
-  5: "#fda085",
-  6: "#f5576c",
-  7: "#fed6e3",
-};
-
-function hexRgba(hex: string, alpha: number): string {
-  const n = hex.replace("#", "");
-  const r = Number.parseInt(n.slice(0, 2), 16);
-  const g = Number.parseInt(n.slice(2, 4), 16);
-  const b = Number.parseInt(n.slice(4, 6), 16);
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-}
 
 async function png(
   element: ReactElement,
   size: { width: number; height: number },
-  fonts: { name: string; data: Buffer; weight: 400 | 600; style: "normal" }[],
+  fonts: { name: string; data: Buffer; weight: 400; style: "normal" }[],
 ): Promise<Buffer> {
   const res = new ImageResponse(element, { ...size, fonts });
   return Buffer.from(await res.arrayBuffer());
 }
 
 async function main() {
-  const { cairo, freeSerif } = await loadOgFonts();
+  const { freeSerif } = await loadOgFonts();
   const fonts = [
     {
       name: "FreeSerif",
       data: freeSerif,
       weight: 400 as const,
-      style: "normal" as const,
-    },
-    {
-      name: "Cairo",
-      data: cairo,
-      weight: 600 as const,
       style: "normal" as const,
     },
   ];
@@ -105,43 +81,28 @@ async function main() {
           position: "absolute",
           top: -80,
           left: -60,
-          width: 560,
-          height: 360,
-          borderRadius: 280,
-          background: "rgba(102, 126, 234, 0.34)",
-        }}
-      />
-      <div
-        style={{
-          display: "flex",
-          position: "absolute",
-          bottom: -70,
-          right: -40,
           width: 520,
-          height: 340,
+          height: 320,
           borderRadius: 260,
-          background: "rgba(67, 233, 123, 0.26)",
+          background: "rgba(102, 126, 234, 0.28)",
         }}
       />
       <div
         style={{
           display: "flex",
           position: "absolute",
-          top: 80,
-          right: 280,
-          width: 280,
-          height: 220,
-          borderRadius: 200,
-          background: "rgba(240, 147, 251, 0.18)",
+          bottom: -90,
+          right: -40,
+          width: 480,
+          height: 300,
+          borderRadius: 240,
+          background: "rgba(67, 233, 123, 0.22)",
         }}
       />
       {hero.map((letter, i) => {
         const slot = HERO_SLOTS[i];
-        const from = GROUP_FROM[letter.group];
-        const to = GROUP_TO[letter.group];
-        if (!slot || !from || !to) {
-          throw new Error(`no slot/colour for ${letter.id}`);
-        }
+        const color = GROUP_FROM[letter.group];
+        if (!slot || !color) throw new Error(`no slot/colour for ${letter.id}`);
         return (
           <div
             key={letter.id}
@@ -150,46 +111,19 @@ async function main() {
               position: "absolute",
               right: `${slot.inlineStart}%`,
               top: `${slot.top}%`,
-              width: 128,
-              height: 140,
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: 28,
-              background: `linear-gradient(155deg, rgba(255,255,255,0.22), ${hexRgba(from, 0.2)} 55%, ${hexRgba(to, 0.14)})`,
-              border: "1px solid rgba(255,255,255,0.32)",
-              boxShadow: `0 14px 32px ${hexRgba(from, 0.32)}`,
-              color: from,
-              fontSize: 76,
+              fontSize: 92,
               lineHeight: 1,
               fontFamily: "FreeSerif",
+              color,
+              opacity: 0.72,
             }}
           >
             {letter.unicode.lower}
           </div>
         );
       })}
-      <div
-        style={{
-          display: "flex",
-          position: "absolute",
-          left: 0,
-          right: 0,
-          bottom: 0,
-          height: 108,
-          paddingBottom: 22,
-          alignItems: "flex-end",
-          justifyContent: "center",
-          background:
-            "linear-gradient(180deg, rgba(10,10,15,0) 0%, rgba(10,10,15,0.88) 70%)",
-          color: "#F5F5F7",
-          fontFamily: "Cairo",
-          fontSize: 34,
-        }}
-      >
-        تعلّم القبطي البحيري
-      </div>
     </div>,
-    { width: 1200, height: 480 },
+    { width: 1200, height: 420 },
     fonts,
   );
 

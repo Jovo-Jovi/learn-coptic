@@ -11,13 +11,11 @@ export function HeroGlyphs({ letters }: { letters: Letter[] }) {
           dir="ltr"
           className="glyph-float"
         >
-          <span className="glyph-glass">
-            <CopticPaint
-              unicode={letter.unicode.lower}
-              mapped={letter.athanasiusKey?.lower}
-              className="glyph-fill"
-            />
-          </span>
+          <CopticPaint
+            unicode={letter.unicode.lower}
+            mapped={letter.athanasiusKey?.lower}
+            className="glyph-fill"
+          />
         </span>
       ))}
     </div>
