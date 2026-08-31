@@ -21,6 +21,8 @@ starts in Arabic, the way a Sunday-school teacher talks.
 
 No login. No backend. Your progress stays on the phone.
 
+**Live:** [learn-coptic.vercel.app](https://learn-coptic.vercel.app)
+
 ## What’s live
 
 - **٣٢ حرف** in seven colour-coded groups, from the letters that look like

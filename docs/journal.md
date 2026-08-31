@@ -13,6 +13,16 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-08-31 · S9 leftover · production URL + Lighthouse
+Model: Cursor Grok 4.6 | Commit: — | Result: partial
+- Pushed `main` to GitHub. Vercel project `learn-coptic` live at https://learn-coptic.vercel.app. GitHub auto-deploy did not connect (Vercel GitHub app / repo access).
+- Lighthouse mobile on that URL: performance 97, accessibility 100, best-practices 96, SEO 100. README hero snap + PWA files shipped in 6965c77.
+- JSON untouched.
+
+Open: GATE — GitHub↔Vercel git hook, Android install, real phone. Do not tick GATE until human PASS.
+
+---
+
 ## 2026-08-31 · S9 leftover · PWA + README hero snap
 Model: Cursor Grok 4.6 | Commit: 6965c77 | Result: partial
 - README banner `docs/readme-hero.png`: same six landing glyphs (ⲁ ϣ ⲛ ⲅ ϯ ⲑ) in group colours / RTL slots, painted with FreeSerif from letters.json. Opacity raised vs the live 0.18 so GitHub can see them.

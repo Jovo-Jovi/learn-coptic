@@ -8,13 +8,14 @@ Update it in the same commit as the work it describes.
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
 **Last commit:** `6965c77` (learner UI + PWA shell). S9 GATE still open.
+**Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished
 
 ## Current position
 
-**Done:** S0–S8. S9 PWA + headers + README snap in the tree; GATE not passed.
-**Next:** push `main`, Vercel production URL, Lighthouse mobile, real-phone install.
-**Blocked on:** human phone test + GATE PASS. Other CS/Antinoou files still missing.
+**Done:** S0–S8. S9: code on GitHub, production URL live, Lighthouse mobile 97/100. GATE not passed.
+**Next:** GitHub↔Vercel git hook, Android install, real-phone test, GATE PASS.
+**Blocked on:** human phone test + Vercel GitHub app on `Jovo-Jovi/learn-coptic`. Other CS/Antinoou files still missing.
 
 ## Open decisions
 
@@ -41,6 +42,7 @@ Update it in the same commit as the work it describes.
 - Letter rules are always-on cards; Coptic in the condition is LTR chips.
 - PWA: `/manifest.webmanifest`, `/icons/icon-{192,512}.png`, SW `/sw.js` (prod).
 - README hero snap: `docs/readme-hero.png` (landing glyph set, not a live screenshot).
+- Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
 
 ## Notes
 
