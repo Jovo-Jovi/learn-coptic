@@ -41,10 +41,10 @@ The whole project rests on this being right.
 - [x] A type scale, not ad-hoc font sizes
 
 ### S4 · App shell
-- [ ] `dir="rtl" lang="ar"`, correct `<title>` and description in Arabic
-- [ ] Bottom nav, 4 items, active state, safe-area padding on iOS
-- [ ] Dark/light toggle, no flash on load
-- [ ] Renders correctly at 375px with no horizontal scroll
+- [x] `dir="rtl" lang="ar"`, correct `<title>` and description in Arabic
+- [x] Bottom nav, 4 items, active state, safe-area padding on iOS
+- [x] Dark/light toggle, no flash on load
+- [x] Renders correctly at 375px with no horizontal scroll
 
 ### S5 · `/alphabet` and `/group/[id]`
 - [ ] All 32 letters, grouped, color-coded, statically generated

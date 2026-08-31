@@ -15,6 +15,38 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 
 ---
 
+## 2026-08-31 · S4 · App shell
+Model: — | Commit: `<sha>` | Result: pass
+
+- Root layout dir="rtl" lang="ar", title تعلّم القبطي البحيري.
+- Bottom nav (الحروف · الكلمات · التدريب · عن الموقع) with aria-current and
+  safe-area-inset-bottom; viewport-fit=cover.
+- Theme toggle with no flash: blocking head script writes learn-coptic:theme
+  onto <html> before paint.
+- /s1-glyph-check and /s3-tokens deleted, after the S3 commit preserved them.
+- Home left empty; S8 owns the landing.
+- Verified from prerendered HTML: RTL root, Arabic metadata, four nav links,
+  theme script, local woff2 preloads.
+- Live 375×812 Chrome: scrollWidth = clientWidth = 375. No horizontal scroll.
+
+Open: dark-mode swatch edges resolve at S5 when chips exist.
+
+## 2026-08-31 · S4 · App shell
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Root layout: `dir="rtl" lang="ar"`, title تعلّم القبطي البحيري.
+- Bottom nav: الحروف / الكلمات / التدريب / عن الموقع. `aria-current` on the
+  active item. `pb-[env(safe-area-inset-bottom)]`, `viewport-fit=cover`.
+- Theme: `learn-coptic:theme` in localStorage. Blocking script in `<head>`
+  before paint. `.dark` / `.light` override OS; no-JS still follows
+  `prefers-color-scheme` via `:root:not(.light)`.
+- Deleted `/s1-glyph-check` and `/s3-tokens` (committed in `cb8d7e9` first).
+- 375px: overflow-x clip, min-w-0, 4-column nav. Checked from prerendered
+  HTML, not a live 375 viewport.
+
+Open: dark-mode surface contrast for group swatches still unverified. S8
+replaces the empty home.
+
 ## 2026-08-31 · S3 · Design tokens and fonts
 Model: — | Commit: `cb8d7e9` | Result: pass
 

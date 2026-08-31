@@ -16,6 +16,7 @@
 */
 
 :root {
+  color-scheme: light;
   --background: #f7fafc;
   --foreground: #171717;
   --muted: #4a5568;
@@ -37,18 +38,20 @@
   --group-7-fg: #171717;
 }
 
+.dark {
+  color-scheme: dark;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #a0aec0;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
+    color-scheme: dark;
     --background: #0a0a0a;
     --foreground: #ededed;
     --muted: #a0aec0;
   }
-}
-
-.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --muted: #a0aec0;
 }
 
 @theme inline {
@@ -91,6 +94,10 @@
   --text-3xl--line-height: 1.2;
   --text-glyph: 4rem;
   --text-glyph--line-height: 1;
+}
+
+html {
+  overflow-x: clip;
 }
 
 body {
