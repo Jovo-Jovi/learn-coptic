@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-08-31 · S9 leftover · PWA + README hero snap
-Model: Cursor Grok 4.6 | Commit: — | Result: partial
+Model: Cursor Grok 4.6 | Commit: 6965c77 | Result: partial
 - README banner `docs/readme-hero.png`: same six landing glyphs (ⲁ ϣ ⲛ ⲅ ϯ ⲑ) in group colours / RTL slots, painted with FreeSerif from letters.json. Opacity raised vs the live 0.18 so GitHub can see them.
 - PWA: `manifest.ts`, 192/512/maskable icons, `public/sw.js` registered in production only. Headers in `next.config.ts` (CSP, nosniff, referrer, frame-ancestors/DENY).
 - `npm run validate` and `npm run build` passed. JSON untouched.
@@ -24,7 +24,7 @@ Open: GATE — push, Vercel URL, Lighthouse mobile, real-phone install. Do not t
 ---
 
 ## 2026-08-31 · S9 leftover · favicon + WhatsApp preview
-Model: Cursor Grok 4.6 | Commit: — | Result: pass
+Model: Cursor Grok 4.6 | Commit: 6965c77 | Result: pass
 - Favicon / Apple icon: Coptic Ⲁ on #0A0A0F via `icon.tsx` / `apple-icon.tsx`.
 - Open Graph 1200×630 with Arabic title (Cairo subset) + Ⲁ ϣ Ⲛ (FreeSerif). WhatsApp uses this when a link is pasted.
 - `metadataBase` from `NEXT_PUBLIC_SITE_URL` / Vercel URL. JSON untouched.

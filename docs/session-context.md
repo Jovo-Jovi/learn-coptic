@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `75f9f4c` (ADR-013 / security.md). S5–S9 app work still uncommitted until this session’s commit.
+**Last commit:** `6965c77` (learner UI + PWA shell). S9 GATE still open.
 **Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished
 
 ## Current position
