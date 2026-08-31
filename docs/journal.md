@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-08-31 · polish · copy + WhatsApp preview
-Model: Cursor Grok 4.6 | Commit: — | Result: pass
+Model: Cursor Grok 4.6 | Commit: b915616 | Result: pass
 - Letter copy: Clipboard API + execCommand fallback, and an error line if both fail (silent catch was “nothing happens” on HTTP phones).
 - Link preview: static `public/og.png` (no query string). Dynamic `opengraph-image` removed so WhatsApp gets `/og.png`.
 
