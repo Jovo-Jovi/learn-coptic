@@ -1,15 +1,44 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { cairo, notoCoptic } from "./fonts";
+import { athanasius, cairo, freeSerif, notoCoptic } from "./fonts";
 import { BottomNav } from "@/components/BottomNav";
+import { MotionProvider } from "@/components/MotionProvider";
+import { FontSelect } from "@/components/FontSelect";
+import { PwaRegister } from "@/components/PwaRegister";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { themeBootScript } from "@/lib/theme";
+import { siteUrl } from "@/lib/site";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
+const description =
+  "تعلّم الحروف القبطية البحيرية بالعربي — مجانًا، بدون حساب، يشتغل على الموبايل.";
+
 export const metadata: Metadata = {
-  title: "تعلّم القبطي البحيري",
-  description:
-    "تعلّم الحروف القبطية البحيرية بالعربي — مجانًا، بدون حساب، يشتغل على الموبايل.",
+  metadataBase: siteUrl(),
+  applicationName: "تعلّم القبطي",
+  title: {
+    default: "تعلّم القبطي البحيري",
+    template: "%s — تعلّم القبطي البحيري",
+  },
+  description,
+  openGraph: {
+    type: "website",
+    locale: "ar_EG",
+    siteName: "تعلّم القبطي",
+    title: "تعلّم القبطي البحيري",
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "تعلّم القبطي البحيري",
+    description,
+  },
+  appleWebApp: {
+    capable: true,
+    title: "تعلّم القبطي",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export const viewport: Viewport = {
@@ -17,8 +46,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7fafc" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: light)", color: "#F5F5F7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0A0A0F" },
   ],
 };
 
@@ -28,24 +57,40 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ar"
       dir="rtl"
       suppressHydrationWarning
-      className={`${cairo.variable} ${notoCoptic.variable} h-full antialiased`}
+      data-coptic-font="serif"
+      className={cn(
+        "h-full antialiased",
+        cairo.variable,
+        freeSerif.variable,
+        notoCoptic.variable,
+        athanasius.variable,
+        "font-sans",
+      )}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
-      <body className="font-sans flex min-h-full flex-col overflow-x-clip bg-background text-foreground">
-        <div className="flex min-w-0 flex-1 flex-col pb-[calc(2.75rem+env(safe-area-inset-bottom,0px))]">
-          <header className="flex items-center justify-between gap-3 px-4 py-3">
-            <p className="text-lg font-semibold">
-              <Link href="/" className="text-foreground">
-                تعلّم القبطي
-              </Link>
-            </p>
-            <ThemeToggle />
-          </header>
-          <main className="min-w-0 flex-1 px-4">{children}</main>
-        </div>
-        <BottomNav />
+      <body className="flex min-h-full flex-col overflow-x-clip bg-bg font-sans text-text">
+        <MotionProvider>
+          <div className="relative z-10 flex min-w-0 flex-1 flex-col pb-[calc(2.75rem+env(safe-area-inset-bottom,0px))]">
+            <header className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+              <p className="min-w-0 truncate text-lg font-semibold">
+                <Link href="/" className="text-text">
+                  تعلّم القبطي
+                </Link>
+              </p>
+              <div className="flex shrink-0 items-center gap-1">
+                <FontSelect />
+                <ThemeToggle />
+              </div>
+            </header>
+            <main className="mx-auto w-full min-w-0 max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
+              {children}
+            </main>
+          </div>
+          <BottomNav />
+          <PwaRegister />
+        </MotionProvider>
       </body>
     </html>
   );

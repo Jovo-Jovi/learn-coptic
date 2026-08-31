@@ -1,0 +1,12 @@
+GNU FreeSerif (regular), subsetted from GNU FreeFont 20120503
+Source: http://www.gnu.org/software/freefont/
+Licence: GPL-3.0-or-later WITH Font-exception-2.0 (see COPYING and README)
+
+This file keeps Coptic (U+2C80–U+2CFF), Demotic-derived letters
+(U+03E2–U+03EF), combining marks (U+0300–U+036F including overline U+0305),
+and the punctuation used in this project's Coptic strings.
+
+Cmap probe on the upstream TTF and on this subset: U+2C80, U+2C81, U+03E2,
+U+03EF, U+0304, U+0305 all present.
+
+The Font-exception-2.0 in README applies to this subset as well.

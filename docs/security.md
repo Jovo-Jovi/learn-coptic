@@ -6,27 +6,29 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
 
 - **Fonts in use** (self-hosted via `next/font`; listed on `/about`):
   - **GNU FreeSerif** — GPL-3.0-or-later WITH Font-exception-2.0.
-    Coptic glyphs (serif). Redistributable today. The file in
+    Coptic glyphs (serif). Default Unicode face. The file in
     `src/app/fonts/FreeSerif.ttf` is a *subset* of GNU FreeFont 20120503
     (cmap probe: U+2C80, U+2C81, U+03E2, U+03EF, U+0304, U+0305).
     A subset is a modification. Font-exception-2.0 covers embedding
     *unaltered* portions; we extend that exception to this subset in
     `src/app/fonts/NOTICE`. `COPYING` and `README` stay beside the TTF.
-    The app licence stays MIT (ADR-013). This is the only manuscript-style
-    Coptic face we can legally deploy right now.
+    The app licence stays MIT (ADR-013).
   - **Noto Sans Coptic** — SIL Open Font License 1.1. Fallback if FreeSerif
-    misses a codepoint.
-  - **Cairo** — SIL Open Font License 1.1. Arabic UI.
+    misses a codepoint. Optional سانس picker face.
+  - **Athanasius Plain** — mapped Latin cmap, optional أثناسيوس picker.
+    File `src/app/fonts/Athanasuis-Plain.ttf` (see `ATHANASIUS.txt`).
+    Cmap has no U+2C80. Paint is `athanasiusKey` only (ADR-015). Owner
+    authorized shipping this local copy on 2026-08-31. A written licence
+    from copticchurch.net was requested 2026-08-29 and is not yet a grant.
+  - **Cairo** — SIL Open Font License 1.1. Arabic UI. A SemiBold subset
+    (`Cairo-SemiBold.ttf`) is used to rasterise the WhatsApp / Open Graph
+    preview. See `src/app/fonts/CAIRO.txt`.
 
-- **Legacy mapped fonts — not shipped.** Latin keystrokes, not Unicode.
-  They cannot render U+2C80. A permission *request* is not a grant, and a
-  grant is not a cmap. Requests were emailed on 2026-08-29. Until a reply
-  *and* a Unicode cmap, they stay out of the repo:
-  - CS Avva Shenouda, Pope Shenouda III, CS Pishoi, CS New Athanasius,
-    Athanasius — Coptic Font Standard project, copticchurch.net
+- **Other mapped fonts — not shipped.** No file on this machine, so they
+  stay out. Same copticchurch.net / Evertype requests as before:
+  - CS Avva Shenouda, Pope Shenouda III, CS Pishoi, CS New Athanasius
   - Antinoou — Michael Everson / Evertype
-    (same request, not a grant; do not write "written permission" until
-    a reply exists)
+  - `Coptic1.ttf` from the old explorer — unknown keymap, not shipped
 
 - **Artwork.** Every image needs a `license` value at the moment it is added.
   Backfilling this later is not realistically possible.
@@ -54,5 +56,19 @@ Prefer zero-dependency over convenient.
 
 ## Headers
 
-Set CSP, `X-Content-Type-Options`, `Referrer-Policy` in `next.config`. Static
-site, so CSP can be strict — no `unsafe-inline` once Tailwind is compiled.
+Set in `next.config.ts` for every route: CSP, `X-Content-Type-Options: nosniff`,
+`Referrer-Policy: strict-origin-when-cross-origin`, `X-Frame-Options: DENY`,
+`Permissions-Policy` with camera/mic/geo off.
+
+CSP is `default-src 'self'` plus `script-src`/`style-src` `'self' 'unsafe-inline'`.
+Next still inlines the theme boot script and App Router flight payloads, so
+script hashes-only is not enough without a nonce middleware. Tailwind is
+compiled; the style `'unsafe-inline'` is for Next’s remaining inline CSS.
+Development also allows `'unsafe-eval'` (React refresh). Production does not.
+
+## Generated images
+
+`docs/readme-hero.png` and `public/icons/*.png` are rasterised from Unicode
+in `letters.json` with GNU FreeSerif (`scripts/render-brand-images.tsx`).
+They are not commissioned art; the font licence is the same FreeSerif
+embedding as the site.

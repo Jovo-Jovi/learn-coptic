@@ -16,6 +16,23 @@ Use the forms this project's curriculum teaches (live explorer): ألفا، بي
 If a later curriculum file disagrees, change the name in `letters.json` once,
 not per page.
 
+## Group numbers in the UI
+
+Learner-facing labels use Eastern Arabic digits (المجموعة ٤, chips ١..٧).
+Routes stay ASCII (`/group/4`, `?group=4`).
+
+## Coptic font picker
+
+Header control labels: سيريف (GNU FreeSerif), سانس (Noto Sans Coptic),
+أثناسيوس (Athanasius Plain, optional manuscript). Default is سيريف.
+Do not offer CS / Antinoou faces that are not in `src/app/fonts/`.
+
+## Unicase on cards
+
+Bohairic letters are one shape. Cards show the **lowercase** (reading) glyph
+only. The letter page stacks both, labelled كبير and صغير, and says
+الشكل واحد، والفرق في الحجم فقط. Never show the upper+lower pair on a card.
+
 ## Transliteration
 
 Arabic transliteration is for reading aloud, not for linguistics. Write what a
@@ -39,3 +56,25 @@ set `meaning` to null, and tag `kind: "drill"` when it is a reading set.
 
 `khen` (ϧⲉⲛ): two prepositional senses, written `في / بـ` — not the HTML
 string `ب-في`. It is published; `prayers.json` names it in `keyWords`.
+
+## Pronunciation rules
+
+On `/letter/[id]`, rules are always visible — condition then result, no
+accordion. Coptic letters inside a rule are LTR glyph chips. Latin in
+parentheses (`(gh)`) is an LTR isolate.
+
+## Vocabulary cards
+
+Meaning stays hidden until the learner taps a real `<button>` (`aria-expanded`).
+Not hover. The Coptic word and `translit.ar` stay visible while the back opens.
+
+- `lexicon` — ordinary card.
+- `name` — same card plus a small badge: اسم علم.
+- `drill` — dashed card, group stripe, and the line
+  تمرين قراءة — مش كلمة في القاموس
+  on the front. A drill with `meaning: null` shows translit only; never an
+  empty meaning slot.
+
+Part of speech, when present: اسم، فعل، ضمير، صفة، حرف جر، أداة، عبارة، أخرى.
+Example words on `/letter/[id]` are derived from `words.teaches`, lexicon
+first, capped at 6. `letters.json` `exampleWords[]` stays empty.

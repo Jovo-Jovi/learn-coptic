@@ -1,72 +1,83 @@
-# learn-coptic
+<div align="center">
 
-تعلّم الحروف القبطية البحيرية بالعربي — free, no account, works on a phone.
+# تعلّم القبطي البحيري
 
-Bohairic (church) pronunciation. Arabic-first. Unicode Coptic, so every word on
-the site can be copied and pasted into real text.
+**Learn the Coptic of the Church — in Arabic, on your phone.**
+
+<img src="docs/readme-hero.png" alt="الحروف اللي بتطفو في الصفحة الرئيسية: ⲁ ϣ ⲛ ⲅ ϯ ⲑ" width="1200" />
+
+مجاناً. من غير حساب. من غير تحميل.
+
+الحروف اللي بتسمعها في القداس، مكتوبة يونيكود —
+تنسخها وتحطها في واتساب، في درس، في أي حتة.
+
+</div>
 
 ---
 
-## How the data works
+Most Coptic apps teach **Sahidic**, or they teach in English. This one is
+**Bohairic** — the dialect of the Coptic Orthodox Church today — and it
+starts in Arabic, the way a Sunday-school teacher talks.
 
-`src/data/json/` is the only source of truth. HTML is never the database.
+No login. No backend. Your progress stays on the phone.
 
-| File | Holds |
-|---|---|
-| `letters.json` | 32 letters, Unicode + legacy key, groups, pronunciation rules |
-| `words.json` | vocabulary, split into `lexicon` / `drill` / `name` |
-| `prayers.json` | running texts, line-level audio timings, optional per-word tokens |
-| `curriculum.json` | levels → lessons; grammar lessons point at MDX prose |
+## What’s live
 
-`src/data/schema/index.ts` validates all of it. `npm run validate` runs on every
-build via `prebuild`, so bad data cannot deploy.
+- **٣٢ حرف** in seven colour-coded groups, from the letters that look like
+  English to the ones that don’t
+- **قواعد النطق** on the letters that need them — قبل Ⲉ Ⲓ Ⲏ, not a wall of
+  grammar
+- **١٤٧ كلمة**: real vocabulary, names, and reading drills (a drill is never
+  dressed up as a dictionary entry)
+- **Unicode Coptic** you can copy. What you see is Ⲁ, not a Latin `A` in a
+  costume font
+- A **manuscript face** (Athanasius) if you want the old look — default is
+  still Unicode
+
+Phone-first. Dark by default. Works in the browser you already have.
+
+## Who it’s for
+
+A deacon learning the letters. A teacher sending a link in the parish group.
+Someone who grew up hearing Bohairic and wants to read it.
+
+English is a supporting line, not a second site.
+
+## Run it locally
 
 ```bash
-npm run seed:letters   # one time only — writes letters.json
-npm run extract -- ./legacy/interactive_coptic_explorer_ascii.html
+npm install
 npm run validate
 npm run dev
 ```
 
+`npm run validate` runs on every build. Invalid data cannot ship.
+
+## How the content works
+
+HTML is never the database. Everything learners see comes from JSON, checked
+by Zod before the site builds:
+
+| File | What it holds |
+|---|---|
+| `src/data/json/letters.json` | 32 letters, groups, pronunciation rules |
+| `src/data/json/words.json` | lexicon / drill / name |
+| `src/data/json/prayers.json` | prayers with line timings (recording comes later) |
+| `src/data/json/curriculum.json` | levels → lessons |
+
+## Next
+
+Audio for every letter. A small quiz that remembers you. Then prayers with
+the line highlighted as it’s sung.
+
 ## Stack
 
-Next.js (App Router) · TypeScript · Tailwind · Zod · Fuse.js · Vercel.
-No backend. Progress lives in `localStorage`. PWA so it installs on a phone.
-
-Fonts: **Noto Sans Coptic** (SIL OFL 1.1) for Coptic, **Cairo** for Arabic, both
-self-hosted through `next/font`. The Athanasuis TTF is not in this repo and must
-not be added until its licence is confirmed in writing.
-
----
-
-## Roadmap
-
-**Phase 1 — alphabet (ship this first)**
-Freeze the 32-letter map · routes `/`, `/alphabet`, `/group/[1-7]`, `/letter/[id]`,
-`/vocabulary`, `/about` · bottom nav · expanding panels, not 3D flips · deploy.
-
-**Phase 2 — audio**
-32 letter clips + one example word each. Highest-value addition; every competitor
-already has it. 64 kbps mono MP3, in `public/audio/`.
-
-**Phase 3 — practice**
-Leitner-box quiz (5 boxes) in `localStorage`. Client-side search over ~150 words.
-
-**Phase 4 — prayers with sound**
-One full recording per prayer, plus `startSec`/`endSec` per line so the app
-highlights the line being sung. Add `tokens[]` per line later for tap-a-word
-glosses. Recordings over ~2 minutes go to object storage, not the git repo.
-
-**Phase 5 — illustrated vocabulary**
-`art` on each word: 800×800 WebP, `alt` text in Arabic, and a required `license`
-field. Fill in a themed batch at a time (body, family, church, nature) so the
-site never looks half-illustrated.
-
-**Phase 6 — grammar levels**
-Level 2+ lessons are `kind: "grammar"` with an MDX body, so a lesson can hold
-tables and inline `<LetterChip/>` / `<WordCard/>` components. No schema change
-is needed to add them — that is the whole point of the curriculum file.
+Next.js App Router · TypeScript · Tailwind · Zod · Vercel.
+Fonts are self-hosted: GNU FreeSerif, Noto Sans Coptic, Cairo, optional
+Athanasius Plain.
 
 ## Licence
 
-Code MIT. Lesson text and recordings CC BY-SA 4.0.
+Code MIT. Lesson text [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+FreeSerif is GPL-3.0-or-later with Font-exception-2.0 — embedding it does not
+put the app under the GPL. Details: [`docs/security.md`](docs/security.md).

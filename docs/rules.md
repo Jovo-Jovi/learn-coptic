@@ -5,8 +5,10 @@ Machine-readable versions live in `.cursor/rules/`. This is the human copy.
 ## Hard rules
 
 1. Never edit `src/data/json/**` to make a build or test pass. Report and stop.
-2. Coptic renders as Unicode only. `athanasiusKey` is metadata, never displayed.
-3. No Coptic TTF in the repo. See `security.md`.
+2. Default Coptic paint is Unicode. Manuscript mode may paint stored
+   `athanasiusKey` through Athanasius Plain. Never invent keys.
+3. Mapped TTFs ship only as optional picker faces when the file is in
+   `src/app/fonts/` and uses this project's keymap. See `security.md`.
 4. Never invent a glyph, gloss, transliteration, or codepoint. Leave null, say so.
 5. Arabic is primary. `dir="rtl"`, Coptic and Latin wrapped in LTR isolates.
 6. No new dependency without stating why first.

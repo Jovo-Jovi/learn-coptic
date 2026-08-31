@@ -20,11 +20,16 @@ Fuse.js for search. `next/font` for all fonts, self-hosted.
 1. **Never edit files in `src/data/json/` to make a build or test pass.**
    If the validator fails, report the conflict and stop. Data changes are a
    human decision. This is the single most important rule in this repo.
-2. **Coptic is rendered as Unicode only.** The `athanasiusKey` field is legacy
-   metadata for a future optional font mode. It is never displayed, never used
-   as a CSS `font-family` trick, never rendered as text.
-3. **Do not add `Athanasuis-Plain.ttf` or any Coptic TTF to the repo.** The
-   licence is unconfirmed. Coptic renders in Noto Sans Coptic (SIL OFL 1.1).
+2. **Default Coptic paint is Unicode.** Optional manuscript mode (Athanasius
+   Plain) paints stored `athanasiusKey` with the mapped TTF. Unicode stays in
+   the DOM for copy and screen readers. Never invent keys. Never use a mapped
+   face as a Unicode `font-family`.
+3. **Mapped Coptic TTFs may ship as an optional picker face** when the file is
+   in `src/app/fonts/` and the keymap is this project's explorer
+   `athanasiusKey`. A Unicode cmap is required only to use a file as a
+   *Unicode* face. Files not in the repo stay out (CS Avva Shenouda, Pope
+   Shenouda III, CS Pishoi, CS New Athanasius, Antinoou, Coptic1). Default
+   Coptic remains GNU FreeSerif + Noto Sans Coptic.
 4. **Never invent Coptic letters, words, glosses, or Unicode codepoints.**
    If data is missing, leave it null and say so. A wrong glyph teaches a person
    the wrong thing — that is worse than a blank.

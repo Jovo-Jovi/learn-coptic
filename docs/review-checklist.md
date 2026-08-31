@@ -7,7 +7,7 @@ still wrong.
 
 - [ ] Was any file in `src/data/json/**` touched? If yes, was it in scope?
 - [ ] Any value that looks filled-in-from-memory rather than extracted?
-- [ ] `athanasiusKey` leaking into rendered output?
+- [ ] `athanasiusKey` painted outside manuscript mode, or invented keys?
 - [ ] Group colors hardcoded in a component instead of read from tokens?
 - [ ] Coptic or Latin string not wrapped in an LTR isolate?
 - [ ] New dependency added without a stated reason?

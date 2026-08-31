@@ -9,7 +9,8 @@ teach it. Different pronunciation, some different letters in practice.
 **Agpeya** — the Coptic book of hours. Source for the daily prayers.
 
 **Home group** — the one group (1–7) a letter belongs to for navigation.
-Distinct from `alsoTaughtIn`, which lists lessons that revisit it.
+Distinct from `alsoTaughtIn`, which lists lessons that revisit it. Chrome
+shows Eastern digits (١..٧); URLs stay ASCII.
 
 **Group colors** — the seven colors are pedagogy, not decoration. Learners
 recognise a letter's group by color before they recall its name.
@@ -18,10 +19,13 @@ recognise a letter's group by color before they recall its name.
 (including common nouns and titles such as البابا and المسيح). `drill` is a
 reading exercise: modern names (`zaki`, `mona`, `iman`, `dina`) or the group-1
 ⲟ+ⲛ+ⲧ/ⲕ rhyme set. A drill must never be presented as dictionary content.
-`name` is a proper noun (people, places such as رشيد and جلجثة).
+The UI marks drills تمرين قراءة — مش كلمة في القاموس. `name` is a proper noun
+(people, places such as رشيد and جلجثة), badged اسم علم.
 
-**athanasiusKey** — the Latin keystroke that the old mapped TTF painted as a
-Coptic glyph. Legacy metadata. Never rendered.
+**athanasiusKey** — the Latin keystroke that Athanasius Plain paints as a
+Coptic glyph. Stored on letters and words. Default UI never shows it.
+Optional manuscript mode (`data-coptic-font="athanasius"`) paints it with
+the mapped TTF; Unicode stays in the DOM for copy and screen readers.
 
 **Demotic-derived letters** — ϣ ϥ ϧ ϩ ϫ ϭ ϯ. They live at U+03E2–03EF in the
 Greek block, not the Coptic block. Naive regexes miss them.

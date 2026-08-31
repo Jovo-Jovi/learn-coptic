@@ -1,0 +1,5 @@
+Cairo SemiBold (weight 600 instance), subset to Arabic and basic Latin
+for Open Graph / icon rasterisation.
+
+Upstream: Google Fonts Cairo — SIL Open Font License 1.1
+https://github.com/googlefonts/cairo

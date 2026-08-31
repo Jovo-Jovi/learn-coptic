@@ -63,6 +63,7 @@ export const GroupId = z.union([
   z.literal(1), z.literal(2), z.literal(3), z.literal(4),
   z.literal(5), z.literal(6), z.literal(7),
 ]);
+export type GroupId = z.infer<typeof GroupId>;
 
 export const Letter = z.object({
   id: slug,
@@ -70,11 +71,11 @@ export const Letter = z.object({
 
   /** What the site renders and what the learner can copy. */
   unicode: z.object({ upper: copticText, lower: copticText }),
-  /** Legacy Athanasius/Antonious keystroke. Kept only so the optional
-   *  "manuscript mode" can still work. Never rendered as the default. */
+  /** Explorer keymap for optional manuscript paint (Athanasius Plain).
+   *  Default paint is Unicode. Never invent a key. */
   athanasiusKey: z.object({ upper: z.string(), lower: z.string() }).nullable(),
   /** Extra keystrokes that produce the same glyph in some sources
-   *  (e.g. hori: explorer `|`, vocabulary `\`). Never rendered. */
+   *  (e.g. hori: explorer `|`, vocabulary `\`). Not used for paint. */
   athanasiusAliases: z.array(z.string().min(1)).default([]),
 
   name: z.object({
@@ -117,6 +118,7 @@ export type Letter = z.infer<typeof Letter>;
 export const Word = z.object({
   id: slug,
   coptic: copticText,
+  /** Explorer keymap for optional manuscript paint. Null → Unicode fallback. */
   athanasiusKey: z.string().nullable(),
   translit: z.object({ ar: z.string(), en: z.string().optional() }),
   /** Null on reading drills with no dictionary gloss. Pronunciation stays in translit.ar. */
@@ -212,6 +214,7 @@ export const Lesson = z.object({
   estMinutes: z.number().int().positive().default(10),
   status: z.enum(["published", "draft"]).default("draft"),
 });
+export type Lesson = z.infer<typeof Lesson>;
 
 export const Level = z.object({
   id: slug,

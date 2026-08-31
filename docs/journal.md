@@ -13,7 +13,153 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-08-31 · S9 leftover · PWA + README hero snap
+Model: Cursor Grok 4.6 | Commit: — | Result: partial
+- README banner `docs/readme-hero.png`: same six landing glyphs (ⲁ ϣ ⲛ ⲅ ϯ ⲑ) in group colours / RTL slots, painted with FreeSerif from letters.json. Opacity raised vs the live 0.18 so GitHub can see them.
+- PWA: `manifest.ts`, 192/512/maskable icons, `public/sw.js` registered in production only. Headers in `next.config.ts` (CSP, nosniff, referrer, frame-ancestors/DENY).
+- `npm run validate` and `npm run build` passed. JSON untouched.
+
+Open: GATE — push, Vercel URL, Lighthouse mobile, real-phone install. Do not tick until human PASS.
+
 ---
+
+## 2026-08-31 · S9 leftover · favicon + WhatsApp preview
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Favicon / Apple icon: Coptic Ⲁ on #0A0A0F via `icon.tsx` / `apple-icon.tsx`.
+- Open Graph 1200×630 with Arabic title (Cairo subset) + Ⲁ ϣ Ⲛ (FreeSerif). WhatsApp uses this when a link is pasted.
+- `metadataBase` from `NEXT_PUBLIC_SITE_URL` / Vercel URL. JSON untouched.
+
+Open: S9 still GATE — push, Vercel URL, Lighthouse, real phone.
+
+---
+
+## 2026-08-31 · letter · pronunciation rules UX
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Rules always visible (no accordion). Coptic in conditions like قبل Ⲉ Ⲓ Ⲏ is LTR glyph chips; Latin `(gh)` isolated. JSON untouched.
+- Letter page: رجوع + الحروف + المجموعة at top. Prev/next with glyphs after rules and at page end.
+
+Open: S9 deploy GATE.
+
+---
+
+## 2026-08-31 · fonts · ship Athanasius manuscript mode
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Owner granted optional mapped picker faces. Shipped `Athanasuis-Plain.ttf` (Athanasius Plain, 33 596 B, mapped, no U+2C80). `Coptic1.ttf` and other CS files not shipped.
+- Header picker: سيريف / سانس / أثناسيوس. `CopticPaint` shows `athanasiusKey` only in manuscript mode; Unicode stays for copy/AT.
+- ADR-015. Rules, security.md, /about, ATHANASIUS.txt updated. JSON untouched. No new deps.
+
+Open: S9 deploy GATE. CS Avva / Pope Shenouda III / Pishoi / New Athanasius / Antinoou still missing files. copticchurch.net still a request.
+
+---
+
+## 2026-08-31 · fonts · CS/Athanasius cmap probe
+Model: Cursor Grok 4.6 | Commit: — | Result: fail (gate)
+- Asked to add CS Avva Shenouda, Pope Shenouda III, CS Pishoi, CS New Athanasius, Athanasius. None of those files exist on this PC (Windows Fonts, user Fonts, old project folders).
+- Old explorer "great font" is `Athanasuis-Plain.ttf` (family Athanasius Plain, Fontographer 3.3, 33 596 B, same file in `coptic قبطي` and `unicode to coptic`). Cmap: U+2C80/2C81/03E2/03EF **absent**. Coptic block 0/128. Latin A–z present. `Coptic1.ttf` same fail.
+- `unicode to coptic` is ASCII→Unicode for mapped typing, not a Unicode face. Site data is already Unicode. Converter not added.
+- No TTF copied. Picker stays سيريف / سانس. JSON untouched.
+
+Open: Unicode-cmap files + written grant still required (ADR-012/013/014).
+
+---
+
+## 2026-08-31 · desktop width + Coptic font picker
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Shell is `max-w-6xl` (was page-level `max-w-lg` on `/`, `/letter`, `/about` — looked like a phone in a desktop window). 375px still 2-col letters / 1-col words.
+- Header select: سيريف (FreeSerif, default) / سانس (Noto). `learn-coptic:coptic-font`. ADR-014. No mapped fonts in the picker.
+- JSON untouched. No new deps.
+
+Open: S9 deploy GATE.
+
+---
+
+## 2026-08-31 · S6 leftover + S7 · vocabulary
+Model: Cursor Grok 4.6 | Commit: 75f9f4c (TASK 0 docs); S7 uncommitted | Result: pass
+- TASK 0: security.md + ADR-013 — subset is a GPL modification; Font-exception-2.0 extended in NOTICE. Antinoou/CS are requests, not grants.
+- `/vocabulary` SSG: 147 published (121 lexicon / 11 drill / 15 name). Tap-to-reveal `<button aria-expanded>`. Filters `/vocabulary/group/[1-7]` and `/vocabulary/letter/[id]`.
+- Drills: dashed card, group stripe, note تمرين قراءة — مش كلمة في القاموس. Names: badge اسم علم.
+- `/letter/[id]` example words from `words.teaches`, lexicon first, cap 6, link for the rest. JSON untouched.
+- validate ✓. build ✓ — 92 static routes. 375px scrollWidth=375 both themes.
+
+Open: S9 deploy GATE. Prompt said 11 drills have meaning null; data has 6 null, 5 with meaning.
+
+---
+
+## 2026-08-31 · fonts · FreeSerif + permission record
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Corrected CS status: request emailed to copticchurch.net 2026-08-29, not a
+  grant. Antinoou permission is Everson/Evertype. Neither ships until U+2C80.
+- Shipped GNU FreeSerif subset (45 KB). Cmap: U+2C80/2C81/03E2/03EF/0304/0305.
+  GPL-3.0-or-later WITH Font-exception-2.0. Noto remains fallback.
+- No new npm deps. JSON untouched.
+
+Open: S6 example-words → /vocabulary. S7 vocabulary.
+
+## 2026-08-31 · S8 · landing + card scale-up
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Pulled ahead of S6/S7 at request. No JSON edits. No new deps.
+- LetterCard: lowercase glyph only. `/letter/[id]`: stacked كبير/صغير +
+  الشكل واحد، والفرق في الحجم فقط.
+- Cards: 2/3/4 cols, glyph 88/96/104px, min-h 150, gap 14, pad 20/28,
+  radius 24, corner group pill (chip-fill).
+- `/` SSG: hero, seven group cards from CurriculumFile.parse, three lines,
+  footer. `/about`: OFL fonts, CC BY-SA 4.0, MIT, GitHub.
+- chip-fill uses `from` mixed with `--chip-tint`, not `to` (light `to` vs
+  `--g-fg` was 2.82–3.62). Group wash 10% `from`.
+- validate ✓. build ✓ — `/` and `/about` ○. 375px `/` scrollWidth=375 both themes.
+
+Open: S6 example-words → /vocabulary. S7 vocabulary. Font probe still needs a path.
+
+## 2026-08-31 · S5c · visual design pass
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Group tokens are from/to pairs + glow. `--group-N` aliases from.
+  Dark `to` for group 1 lightened #764ba2 → #8f6bb3 (3.10 → 4.63 vs #0A0A0F).
+  Light mode uses darker `to` stops; from unchanged.
+- Dark is the primary skin (#0A0A0F / #13131A / #1C1C26). Light is secondary.
+- Cards: surface + hairline, gradient glyph (clip + --text fallback), hover
+  gradient border and glow. Grain 3%, ambient group-1/4 radials. Pill chips.
+  /letter hero wash at 12%. Grid gap 16px; 2 columns at 375px for 56px glyphs.
+- `/alphabet` static again. `/alphabet/[group]` SSG 1–7. `?group=` ignored.
+- arabicHint is learner-facing (S5b PASS). Logged in the plan, not a deviation.
+- shadcn extra deps logged as ADR-009. No new packages this step. No JSON edits.
+- validate ✓. build ✓ — every route ○ or ●, no ƒ. 375px both themes, no x-scroll.
+
+Open: S6 example-words → /vocabulary. Font probe still needs a path.
+
+## 2026-08-31 · S5b · flat /alphabet, /letter/[id], motion
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- TASK 0: no font path given. No cmap probe. Noto Sans Coptic stays default.
+  Manuscript mode not wired. Did not remap data to Latin keys.
+- /alphabet is one ungrouped 32-letter grid in `order`. Filter chips الكل +
+  ١..٧ are links (`?group=N`). Invalid `?group=` 404s. /group/[1-7] same grid.
+- Cards: Unicode glyph + Arabic name, `--group-N` as border/wash, to /letter/[id].
+- /letter/[id]: SSG 32 ids, unknown 404. Glyph copyable. arDisplay when present.
+  Rules: Radix Accordion, spring height. Prev/next by order. Group link /group/N.
+  athanasiusKey only in للمطورين (Latin, never Coptic). arabicHint also shown
+  on the letter surface for learners.
+- motion + Radix. MotionConfig reducedMotion="user" + CSS reduce. Stagger 30ms,
+  spring hover/glow, layoutId glyph and filter pill. No confetti/SFX/parallax.
+- New deps: motion, shadcn/ui (Radix accordion, tw-animate-css, CVA). No JSON edits.
+- validate ✓ 32 letters. build ✓. 375px scrollWidth=375 on /alphabet and /letter/shai.
+
+Open: S6 example-words → /vocabulary. Manuscript font still needs a path + cmap probe.
+
+## 2026-08-31 · S5 · /alphabet and /group/[id]
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Letters loaded through LettersFile.parse, not raw JSON.
+- /alphabet lists all 32 in groups 5/4/4/7/4/5/3, colored with --group-N.
+- Filter is links (الكل + 1–7), no client JS. /group/8, /group/foo, /group/01 404.
+- generateStaticParams emits 1–7 only; dynamicParams = false.
+- Group chips use outline (black/20, dark white/35) so fills have an edge on
+  near-black. 375×812 /alphabet: scrollWidth = 375.
+- Letter cards link to /letter/[id] (404 until S6).
+
+Open: nothing blocking S6.
 
 ## 2026-08-31 · S4 · App shell
 Model: — | Commit: `e69bb7d` | Result: pass

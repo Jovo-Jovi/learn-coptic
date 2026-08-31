@@ -47,25 +47,42 @@ The whole project rests on this being right.
 - [x] Renders correctly at 375px with no horizontal scroll
 
 ### S5 · `/alphabet` and `/group/[id]`
-- [ ] All 32 letters, grouped, color-coded, statically generated
-- [ ] Group filter works without JavaScript errors
-- [ ] `generateStaticParams` for groups 1–7 only — an invalid id 404s
+- [x] All 32 letters, grouped, color-coded, statically generated
+- [x] Group filter works without JavaScript errors
+- [x] `generateStaticParams` for groups 1–7 only — an invalid id 404s
+
+### S5b · Flat `/alphabet`, `/letter/[id]`, motion
+- [x] `/alphabet` is one ungrouped grid in `order`; chips الكل + ١..٧ are links
+- [x] Cards: large glyph + Arabic name, group color as border/wash, link to `/letter/[id]`
+- [x] `/letter/[id]` SSG for all 32 ids; unknown id 404s; prev/next by `order`
+- [x] Rules in a Radix Accordion (one item per rule); `arabicHint` on the surface; `للمطورين` holds `athanasiusKey` / numeric metadata
+- [x] Motion: stagger, spring hover/glow, `layoutId` glyph + filter pill; `prefers-reduced-motion`
+- [x] `npm run validate` and `npm run build`; 375px no horizontal scroll
+
+### S5c · Visual design pass
+- [x] Group tokens are `from`/`to` pairs + glow; `--group-N` aliases `from`
+- [x] Dark is the primary skin; light keeps working with darker `to` stops
+- [x] Cards: surface + hairline, gradient glyph, hover gradient border + glow
+- [x] Grain, ambient radials, pill chips, letter hero wash; spacing opened up
+- [x] `/alphabet` is static; `/alphabet/[group]` SSG 1–7; no searchParams SSR
+- [x] Contrast table reported; 375px both themes; `npm run validate` and `npm run build`
 
 ### S6 · `/letter/[id]`
-- [ ] Glyph large, upper + lower, Unicode copyable
-- [ ] Pronunciation rules rendered for the 12 letters that have them
-- [ ] Expanding panel, `aria-expanded`, reduced-motion respected
-- [ ] Example words link to `/vocabulary`
-- [ ] Prev/next letter navigation
+- [x] Glyph large, upper + lower, Unicode copyable
+- [x] `arabicHint` on the letter surface (learner-facing)
+- [x] Pronunciation rules rendered for the 12 letters that have them
+- [x] Expanding panel, `aria-expanded`, reduced-motion respected
+- [x] Example words link to `/vocabulary`
+- [x] Prev/next letter navigation
 
 ### S7 · `/vocabulary`
-- [ ] Tap to reveal meaning; filter by group and by letter
-- [ ] `lexicon` and `drill` visually distinct — a drill word is not a dictionary entry
-- [ ] `published: false` words hidden
+- [x] Tap to reveal meaning; filter by group and by letter
+- [x] `lexicon` and `drill` visually distinct — a drill word is not a dictionary entry
+- [x] `published: false` words hidden
 
 ### S8 · `/` and `/about`
-- [ ] Landing states the promise in one Arabic line, then "ابدأ من المجموعة ١"
-- [ ] `/about` lists font licences, content licence, and how to contribute
+- [x] Landing states the promise in one Arabic line, then "ابدأ من المجموعة ١"
+- [x] `/about` lists font licences, content licence, and how to contribute
 
 ### S9 · Deploy — **GATE**
 - [ ] Pushed to GitHub, connected to Vercel, production URL live

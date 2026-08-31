@@ -52,8 +52,12 @@ checklist in `docs/review-checklist.md`.
    did that, it is a blocking failure every time.
 2. Never invent a Coptic glyph, gloss, transliteration, or codepoint. Missing
    stays null. Flag anything that looks filled in from memory.
-3. Coptic is Unicode only. `athanasiusKey` is metadata and must never render.
-4. No Coptic TTF in the repo until its licence is confirmed in writing.
+3. Default Coptic paint is Unicode. Manuscript mode (Athanasius Plain) may
+   paint stored `athanasiusKey`. That key must not be invented, and a mapped
+   TTF must not be used as a Unicode `font-family`.
+4. Other mapped CS / Antinoou files stay out until they are in
+   `src/app/fonts/`. A Unicode cmap is required only to use a file as a
+   Unicode face. See `docs/security.md`.
 5. Arabic is primary. Coptic and Latin strings need LTR isolation.
 6. Flag any new dependency added without a stated reason.
 7. A claimed passing command with no pasted output is a failure.

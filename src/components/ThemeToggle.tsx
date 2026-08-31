@@ -6,12 +6,12 @@ import { THEME_KEY } from "@/lib/theme";
 type Mode = "light" | "dark";
 
 function readMode(): Mode {
-  if (typeof document === "undefined") return "light";
-  return document.documentElement.classList.contains("dark") ? "dark" : "light";
+  if (typeof document === "undefined") return "dark";
+  return document.documentElement.classList.contains("light") ? "light" : "dark";
 }
 
 export function ThemeToggle() {
-  const [mode, setMode] = useState<Mode>("light");
+  const [mode, setMode] = useState<Mode>("dark");
 
   useEffect(() => {
     setMode(readMode());
@@ -38,7 +38,7 @@ export function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={aria}
-      className="min-h-11 rounded-lg px-3 text-sm text-foreground"
+      className="min-h-11 rounded-full px-3 text-sm text-text focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
     >
       {label}
     </button>

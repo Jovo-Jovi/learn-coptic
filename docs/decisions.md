@@ -118,3 +118,31 @@ licensed until a reply exists.
 **Cost:** any later subset or font swap must keep those three files and the
 exception grant. Dropping them to "save space" would drop the licence.
 
+## ADR-014 — Coptic face is user-selectable
+The header offers سيريف (GNU FreeSerif, default), سانس (Noto Sans Coptic),
+and أثناسيوس (Athanasius Plain, ADR-015). Choice lives in `localStorage`
+(`learn-coptic:coptic-font`) and is applied before paint.
+
+**Cost:** Noto is plainer; a learner can pick it anyway. The chrome is one
+control wider on a phone.
+
+## ADR-015 — Optional mapped Athanasius manuscript mode
+The only mapped TTF on disk is Athanasius Plain (`Athanasuis-Plain.ttf`).
+It has no Coptic Unicode cmap. The owner authorized shipping that local
+copy on 2026-08-31 and granted project rules to allow optional mapped
+picker faces.
+
+Default paint stays Unicode (FreeSerif / Noto). Manuscript mode sets
+`data-coptic-font="athanasius"` and `CopticPaint` shows stored
+`athanasiusKey` through the mapped face. Unicode remains in the DOM for
+copy and screen readers. Missing keys fall back to Unicode.
+
+Other CS / Antinoou / Coptic1 files are still absent and stay out. A
+second mapped face that needs a different keymap needs a new ADR. A
+Unicode cmap is still required to use any file as a *Unicode* face.
+copticchurch.net has not granted a licence; `/about` must not say it has.
+
+**Cost:** selecting the visible glyph in manuscript mode can copy Latin.
+The letter-page copy button still writes Unicode. Redistribution of
+Athanasius Plain is an owner decision, not a third-party grant.
+
