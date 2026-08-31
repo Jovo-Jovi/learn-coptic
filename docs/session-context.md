@@ -13,9 +13,9 @@ Update it in the same commit as the work it describes.
 
 ## Current position
 
-**Done:** S0–S8. S9: code on GitHub, production URL live, Lighthouse mobile 97/100. GATE not passed.
-**Next:** GitHub↔Vercel git hook, Android install, real-phone test, GATE PASS.
-**Blocked on:** human phone test + Vercel GitHub app on `Jovo-Jovi/learn-coptic`. Other CS/Antinoou files still missing.
+**Done:** S0–S8. S9: GitHub + Vercel URL live, Lighthouse 97/100, real-phone test. Header inset for tap targets. GATE not passed.
+**Next:** Android Add to Home screen, then say **PASS**. Optional: hook Vercel GitHub app so pushes auto-deploy.
+**Blocked on:** human GATE PASS. Android install not confirmed. Other CS/Antinoou files still missing.
 
 ## Open decisions
 

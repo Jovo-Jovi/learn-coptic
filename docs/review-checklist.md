@@ -24,5 +24,5 @@ still wrong.
 ## Before deploy
 
 - [x] Lighthouse mobile: performance ≥ 90, accessibility ≥ 95
-- [ ] Tested on a real phone
+- [x] Tested on a real phone
 - [ ] `/about` lists every font and content licence actually in use

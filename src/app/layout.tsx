@@ -83,7 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col overflow-x-clip bg-bg font-sans text-text">
         <MotionProvider>
           <div className="relative z-10 flex min-w-0 flex-1 flex-col pb-[calc(2.75rem+env(safe-area-inset-bottom,0px))]">
-            <header className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+            <header className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 pt-[calc(env(safe-area-inset-top,0px)+2.75rem)] pb-5 sm:px-6 lg:px-8 lg:pt-[calc(env(safe-area-inset-top,0px)+2rem)] lg:pb-8">
               <p className="min-w-0 truncate text-lg font-semibold">
                 <Link href="/" className="text-text">
                   تعلّم القبطي
