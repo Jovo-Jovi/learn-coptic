@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+  Group fills are the live HTML hues. White text fails 4.5:1 on all seven
+  (group 1 is 3.66:1; 2–7 are pastels). Dark text #171717 passes on every
+  fill, so --group-N-fg is #171717 in both themes. No hue was shifted.
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  Fill vs #171717 (WCAG 2.1 normal text):
+    1 #667eea  4.90  pass
+    2 #f093fb  8.77  pass
+    3 #4facfe  7.40  pass
+    4 #43e97b 11.25  pass
+    5 #f6d365 12.31  pass
+    6 #fda085  9.00  pass
+    7 #a8edea 13.63  pass
+*/
+
+:root {
+  --background: #f7fafc;
+  --foreground: #171717;
+  --muted: #4a5568;
+
+  --group-1: #667eea;
+  --group-2: #f093fb;
+  --group-3: #4facfe;
+  --group-4: #43e97b;
+  --group-5: #f6d365;
+  --group-6: #fda085;
+  --group-7: #a8edea;
+
+  --group-1-fg: #171717;
+  --group-2-fg: #171717;
+  --group-3-fg: #171717;
+  --group-4-fg: #171717;
+  --group-5-fg: #171717;
+  --group-6-fg: #171717;
+  --group-7-fg: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #a0aec0;
   }
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #a0aec0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --color-group-1: var(--group-1);
+  --color-group-2: var(--group-2);
+  --color-group-3: var(--group-3);
+  --color-group-4: var(--group-4);
+  --color-group-5: var(--group-5);
+  --color-group-6: var(--group-6);
+  --color-group-7: var(--group-7);
+
+  --color-group-1-fg: var(--group-1-fg);
+  --color-group-2-fg: var(--group-2-fg);
+  --color-group-3-fg: var(--group-3-fg);
+  --color-group-4-fg: var(--group-4-fg);
+  --color-group-5-fg: var(--group-5-fg);
+  --color-group-6-fg: var(--group-6-fg);
+  --color-group-7-fg: var(--group-7-fg);
+
+  --font-sans: var(--font-cairo), ui-sans-serif, system-ui, sans-serif;
+  --font-coptic: var(--font-noto-coptic), "Noto Sans Coptic", serif;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.125rem;
+  --text-base--line-height: 1.7;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.875rem;
+  --text-2xl--line-height: 1.3;
+  --text-3xl: 2.25rem;
+  --text-3xl--line-height: 1.2;
+  --text-glyph: 4rem;
+  --text-glyph--line-height: 1;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }

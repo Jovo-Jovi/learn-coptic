@@ -15,6 +15,33 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 
 ---
 
+## 2026-08-31 · S3 · Design tokens and fonts
+Model: — | Commit: `<sha>` | Result: pass
+
+- Cairo (Arabic) + Noto Sans Coptic via next/font, self-hosted woff2. No Google <link>.
+- All 7 original fills fail 4.5:1 against white. No hue shifted; --group-N-fg is
+  #171717 on every fill in both themes. Ratios 4.90 / 8.77 / 7.40 / 11.25 /
+  12.31 / 9.00 / 13.63. Group 1 is the tightest.
+- Type scale: 12/14/18/20/24/30/36, glyph 64. Base 18 because Cairo reads small at 16.
+- /s3-tokens throwaway route, 404 in production. Delete with /s1-glyph-check at S4.
+- Fonts confirmed from build CSS only; dev server could not be started here.
+
+Open: dark-mode surface contrast for group swatches unverified.
+
+## 2026-08-31 · S3 · Design tokens and fonts
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+
+- Cairo (Arabic, variable) + Noto Sans Coptic (400) via `next/font/google`.
+  Build CSS uses `@font-face` + local woff2; no fonts.googleapis.com.
+- Group fills kept from the live HTML. White text fails 4.5:1 on all seven
+  (group 1 is 3.66:1; 2–7 are pastels). `--group-N-fg` is `#171717` for every
+  group in both themes — no hue was shifted.
+- Type scale in `@theme`: xs 12 / sm 14 / base 18 / lg 20 / xl 24 / 2xl 30 /
+  3xl 36 / glyph 64. Arabic body is 18px because Cairo reads small at 16.
+- Throwaway `/s3-tokens` (404 in production). Delete with `/s1-glyph-check` at S4.
+
+Open: nothing blocking S4.
+
 ## 2026-08-31 · S2 · Migrate vocabulary (GATE)
 Model: — | Commit: `2f0a0b2` | Result: pass
 

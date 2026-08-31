@@ -35,10 +35,10 @@ The whole project rests on this being right.
 - [x] Every `teaches` entry resolves to a real letter id
 
 ### S3 · Design tokens and fonts
-- [ ] Noto Sans Coptic + Cairo self-hosted via `next/font`; no `<link>` to Google
-- [ ] `--group-1`…`--group-7` defined for light and dark
-- [ ] Contrast checked; failures listed with the adjusted value
-- [ ] A type scale, not ad-hoc font sizes
+- [x] Noto Sans Coptic + Cairo self-hosted via `next/font`; no `<link>` to Google
+- [x] `--group-1`…`--group-7` defined for light and dark
+- [x] Contrast checked; failures listed with the adjusted value
+- [x] A type scale, not ad-hoc font sizes
 
 ### S4 · App shell
 - [ ] `dir="rtl" lang="ar"`, correct `<title>` and description in Arabic

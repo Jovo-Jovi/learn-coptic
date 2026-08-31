@@ -1,14 +1,8 @@
-import { Noto_Sans_Coptic } from "next/font/google";
 import { notFound } from "next/navigation";
 import { LettersFile } from "@/data/schema";
 import raw from "@/data/json/letters.json";
 
 /** THROWAY S1 — delete at S4. Hidden in production builds. */
-const notoCoptic = Noto_Sans_Coptic({
-  weight: "400",
-  subsets: ["coptic"],
-  display: "swap",
-});
 
 export const metadata = {
   title: "S1 glyph check (throwaway)",
@@ -33,7 +27,7 @@ export default function S1GlyphCheck() {
           <li key={l.id} className="flex items-center gap-4 border-b border-zinc-200 pb-3">
             <span
               dir="ltr"
-              className={`inline-block text-5xl leading-none ${notoCoptic.className}`}
+              className="font-coptic inline-block text-glyph leading-none"
             >
               {l.unicode.upper} {l.unicode.lower}
             </span>
