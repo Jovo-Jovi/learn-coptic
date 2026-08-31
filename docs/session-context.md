@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `6eb4bd1` (header inset). S9 GATE still open.
+**Last commit:** `694d7c0` (practice stub + favicon.ico). S9 GATE still open.
 **Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished
 
@@ -35,8 +35,8 @@ Update it in the same commit as the work it describes.
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 - Group tokens `--group-N-from`/`to`/`glow`; `--group-N` aliases from
 - Shell live. `/` `/about` `/alphabet` `/alphabet/[1-7]` `/group/[1-7]`
-  `/letter/[id]` `/vocabulary` `/vocabulary/group/[1-7]` `/vocabulary/letter/[id]`.
-  `/practice` still unbuilt.
+  `/letter/[id]` `/vocabulary` `/vocabulary/group/[1-7]` `/vocabulary/letter/[id]`
+  `/practice` (coming-soon stub, not the S11 quiz).
 - Cards show lowercase only. Letter page stacks كبير/صغير. Example words
   derived from `words.teaches`, not `letters.exampleWords`.
 - Letter rules are always-on cards; Coptic in the condition is LTR chips.

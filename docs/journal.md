@@ -13,6 +13,14 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · polish · practice stub + favicon.ico
+Model: Cursor Grok 4.6 | Commit: 694d7c0 | Result: pass
+- `/practice` is a short “لسه مش جاهز” page so التدريب stops 404. Static `src/app/favicon.ico` for the tab icon. JSON untouched.
+
+Open: S9 GATE still not PASS. Android install unconfirmed.
+
+---
+
 ## 2026-09-01 · polish · header below the phone chrome
 Model: Cursor Grok 4.6 | Commit: 6eb4bd1 | Result: pass
 - Header (تعلّم القبطي / font picker / فاتح) sits below `safe-area-inset-top` plus 2.75rem so it is tappable on a real phone. JSON untouched.
