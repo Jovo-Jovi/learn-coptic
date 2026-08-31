@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-08-31 · polish · README glass hero + repo description
-Model: Cursor Grok 4.6 | Commit: — | Result: pass
+Model: Cursor Grok 4.6 | Commit: 0b2be44 | Result: pass
 - Landing floating letters: glass tiles (`.glyph-glass`) + hover lift/glow. README banner regenerated with the same six glyphs in glass plates + Cairo title.
 - README marketing/colour (badges, Arabic-first promise). GitHub repo description + topics set. Hover cannot run on a GitHub `<img>` — it lives on the site. JSON untouched.
 
