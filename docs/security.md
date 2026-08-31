@@ -68,7 +68,7 @@ Development also allows `'unsafe-eval'` (React refresh). Production does not.
 
 ## Generated images
 
-`docs/readme-hero.png` and `public/icons/*.png` are rasterised from Unicode
+`docs/readme-hero.png`, `public/og.png`, and `public/icons/*.png` are rasterised from Unicode
 in `letters.json` with GNU FreeSerif (`scripts/render-brand-images.tsx`).
 They are not commissioned art; the font licence is the same FreeSerif
 embedding as the site.

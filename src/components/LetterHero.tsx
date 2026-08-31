@@ -4,19 +4,23 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import type { Letter } from "@/data/schema";
 import { CopticPaint } from "@/components/CopticPaint";
+import { copyText } from "@/lib/copy-text";
 
 export function LetterHero({ letter }: { letter: Letter }) {
   const [copied, setCopied] = useState(false);
+  const [failed, setFailed] = useState(false);
   const text = `${letter.unicode.upper}${letter.unicode.lower}`;
 
   async function copy() {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1500);
-    } catch {
-      /* private mode / old browser — glyphs stay selectable */
+    setFailed(false);
+    const ok = await copyText(text);
+    if (!ok) {
+      setFailed(true);
+      window.setTimeout(() => setFailed(false), 3000);
+      return;
     }
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1500);
   }
 
   return (
@@ -24,7 +28,7 @@ export function LetterHero({ letter }: { letter: Letter }) {
       <div className="hero-wash" aria-hidden="true" />
       <button
         type="button"
-        onClick={copy}
+        onClick={() => void copy()}
         aria-label="نسخ الحرف"
         className="relative z-10 rounded-[24px] px-6 py-4 select-all focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
       >
@@ -50,7 +54,11 @@ export function LetterHero({ letter }: { letter: Letter }) {
         </span>
       </button>
       <p aria-live="polite" className="relative z-10 min-h-5 text-xs text-text-dim">
-        {copied ? "تم النسخ" : "اضغط للنسخ"}
+        {failed
+          ? "ماقدرناش ننسخ — ظلّل الحرف وانسخه بإيدك"
+          : copied
+            ? "تم النسخ"
+            : "اضغط للنسخ"}
       </p>
       <p className="relative z-10 mt-4 text-center text-base text-text">
         الشكل واحد، والفرق في الحجم فقط.

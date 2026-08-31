@@ -25,14 +25,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ar_EG",
+    url: "/",
     siteName: "تعلّم القبطي",
     title: "تعلّم القبطي البحيري",
     description,
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "تعلّم القبطي البحيري",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "تعلّم القبطي البحيري",
     description,
+    images: ["/og.png"],
   },
   appleWebApp: {
     capable: true,

@@ -38,21 +38,30 @@ const GROUP_FROM: Record<number, string> = {
 async function png(
   element: ReactElement,
   size: { width: number; height: number },
-  fonts: { name: string; data: Buffer; weight: 400; style: "normal" }[],
+  fonts: { name: string; data: Buffer; weight: 400 | 600; style: "normal" }[],
 ): Promise<Buffer> {
   const res = new ImageResponse(element, { ...size, fonts });
   return Buffer.from(await res.arrayBuffer());
 }
 
 async function main() {
-  const { freeSerif } = await loadOgFonts();
-  const fonts = [
+  const { cairo, freeSerif } = await loadOgFonts();
+  const copticFonts = [
     {
       name: "FreeSerif",
       data: freeSerif,
       weight: 400 as const,
       style: "normal" as const,
     },
+  ];
+  const ogFonts = [
+    {
+      name: "Cairo",
+      data: cairo,
+      weight: 600 as const,
+      style: "normal" as const,
+    },
+    ...copticFonts,
   ];
 
   const byId = new Map(
@@ -124,7 +133,85 @@ async function main() {
       })}
     </div>,
     { width: 1200, height: 420 },
-    fonts,
+    copticFonts,
+  );
+
+  const ogPng = await png(
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        padding: "72px 88px",
+        background: "#0A0A0F",
+        color: "#F5F5F7",
+        position: "relative",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          position: "absolute",
+          top: -90,
+          right: -70,
+          width: 380,
+          height: 380,
+          borderRadius: 190,
+          background: "rgba(102, 126, 234, 0.32)",
+        }}
+      />
+      <div
+        style={{
+          display: "flex",
+          position: "absolute",
+          bottom: -100,
+          left: -50,
+          width: 340,
+          height: 340,
+          borderRadius: 170,
+          background: "rgba(67, 233, 123, 0.2)",
+        }}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 32,
+          fontSize: 96,
+          fontFamily: "FreeSerif",
+          color: "#C5C8F5",
+        }}
+      >
+        <span>Ⲁ</span>
+        <span>ϣ</span>
+        <span>Ⲛ</span>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          marginTop: 28,
+          fontSize: 60,
+          fontFamily: "Cairo",
+        }}
+      >
+        تعلّم القبطي البحيري
+      </div>
+      <div
+        style={{
+          display: "flex",
+          marginTop: 18,
+          fontSize: 32,
+          fontFamily: "Cairo",
+          color: "#9A9AA8",
+        }}
+      >
+        مجاناً، بالعربي، من موبايلك
+      </div>
+    </div>,
+    { width: 1200, height: 630 },
+    ogFonts,
   );
 
   const icon = async (size: number, fontSize: number) =>
@@ -145,21 +232,23 @@ async function main() {
         Ⲁ
       </div>,
       { width: size, height: size },
-      fonts,
+      copticFonts,
     );
 
+  const publicDir = join(ROOT, "public");
   const docsDir = join(ROOT, "docs");
-  const iconsDir = join(ROOT, "public", "icons");
+  const iconsDir = join(publicDir, "icons");
   await mkdir(iconsDir, { recursive: true });
 
   await Promise.all([
     writeFile(join(docsDir, "readme-hero.png"), heroPng),
+    writeFile(join(publicDir, "og.png"), ogPng),
     writeFile(join(iconsDir, "icon-192.png"), await icon(192, 128)),
     writeFile(join(iconsDir, "icon-512.png"), await icon(512, 340)),
     writeFile(join(iconsDir, "icon-maskable-512.png"), await icon(512, 280)),
   ]);
 
-  console.log("wrote docs/readme-hero.png and public/icons/*.png");
+  console.log("wrote docs/readme-hero.png, public/og.png, and public/icons/*.png");
 }
 
 main().catch((err: unknown) => {

@@ -13,6 +13,15 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-08-31 · polish · copy + WhatsApp preview
+Model: Cursor Grok 4.6 | Commit: — | Result: pass
+- Letter copy: Clipboard API + execCommand fallback, and an error line if both fail (silent catch was “nothing happens” on HTTP phones).
+- Link preview: static `public/og.png` (no query string). Dynamic `opengraph-image` removed so WhatsApp gets `/og.png`.
+
+Open: needs a production deploy before WhatsApp cache picks it up. S9 GATE still open.
+
+---
+
 ## 2026-08-31 · polish · drop glass banner
 Model: Cursor Grok 4.6 | Commit: 0dc9aa3 | Result: pass
 - Removed glass tiles from landing glyphs and `docs/readme-hero.png`. Floating letters only. README marketing/badges kept.

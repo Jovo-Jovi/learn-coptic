@@ -44,6 +44,7 @@ Update it in the same commit as the work it describes.
 - README hero snap: `docs/readme-hero.png` (landing floating glyphs, no glass tiles).
 - Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
 - GitHub description + topics set 2026-08-31.
+- Letter copy uses Clipboard + execCommand fallback. Link preview is `public/og.png`.
 
 ## Notes
 
