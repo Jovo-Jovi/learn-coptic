@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-08-31 · S9 leftover · production URL + Lighthouse
-Model: Cursor Grok 4.6 | Commit: — | Result: partial
+Model: Cursor Grok 4.6 | Commit: 0a210eb | Result: partial
 - Pushed `main` to GitHub. Vercel project `learn-coptic` live at https://learn-coptic.vercel.app. GitHub auto-deploy did not connect (Vercel GitHub app / repo access).
 - Lighthouse mobile on that URL: performance 97, accessibility 100, best-practices 96, SEO 100. README hero snap + PWA files shipped in 6965c77.
 - JSON untouched.
