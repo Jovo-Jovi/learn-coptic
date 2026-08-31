@@ -16,7 +16,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ---
 
 ## 2026-08-31 · S4 · App shell
-Model: — | Commit: `<sha>` | Result: pass
+Model: — | Commit: `e69bb7d` | Result: pass
 
 - Root layout dir="rtl" lang="ar", title تعلّم القبطي البحيري.
 - Bottom nav (الحروف · الكلمات · التدريب · عن الموقع) with aria-current and
