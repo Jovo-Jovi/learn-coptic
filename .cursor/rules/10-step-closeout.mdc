@@ -1,0 +1,37 @@
+---
+description: After every finished task, tick the plan and update related docs
+alwaysApply: true
+---
+
+# Step closeout — plan and docs
+
+A task is not finished until the plan and related docs match reality.
+
+## IMPLEMENTATION_PLAN.md
+
+At the **start** of a step, read `IMPLEMENTATION_PLAN.md` and work only the
+unchecked items for that step.
+
+When a step's acceptance criteria actually passed (commands run, gates cleared):
+
+- Tick `- [x]` on every criterion that is done. Leave unmet items unchecked.
+- Do not tick a GATE step until the human has said **PASS**.
+- Do not start the next numbered step in the same session.
+
+## Related documentation
+
+Update every doc that the finished work affects. At minimum, when a plan step
+ends (pass or fail):
+
+1. `docs/journal.md` — append an entry at the top (date, step, result, what
+   changed, what is still open). Do not rewrite old entries.
+2. `docs/session-context.md` — last commit, validator line, Done/Next, open
+   decisions, known state of the data.
+
+Also edit any other doc the change made stale, for example:
+
+- `docs/decisions.md` — a one-way door
+- `docs/content-style.md` — a naming or wording rule
+- `docs/glossary.md` — a term the UI or data now uses
+
+Do not invent a journal entry for a step the human has not closed.

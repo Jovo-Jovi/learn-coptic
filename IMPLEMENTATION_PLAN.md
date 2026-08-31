@@ -12,27 +12,27 @@ step starts. Do not let the agent proceed past a gate on its own.
 
 ### S0 · Repo setup
 Clean tree, deps installed, validator green.
-- [ ] `npx create-next-app` in an **empty** folder — never inside the old Desktop folder
-- [ ] Scaffold files copied in; `git init`; first commit
-- [ ] `npm run validate` prints ✓ with 32 letters
-- [ ] `npm run build` succeeds
-- [ ] `.gitignore` covers `.extract/`, `node_modules`, `.next`
+- [x] `npx create-next-app` in an **empty** folder — never inside the old Desktop folder
+- [x] Scaffold files copied in; `git init`; first commit
+- [x] `npm run validate` prints ✓ with 32 letters
+- [x] `npm run build` succeeds
+- [x] `.gitignore` covers `.extract/`, `node_modules`, `.next`
 
 ### S1 · Freeze the letter map — **GATE**
 The whole project rests on this being right.
-- [ ] `npm run extract -- ./legacy/*.html` run; `.extract/conflicts.md` read
-- [ ] All 32 `athanasiusKey` values filled, or explicitly left null with a reason
-- [ ] Every letter has exactly one `group`; groups total 5/4/4/7/4/5/3
-- [ ] Arabic letter names checked against the curriculum by a human
-- [ ] Validator green
-- [ ] **A person who reads Coptic has looked at all 32 glyphs on screen**
+- [x] `npm run extract -- ./legacy/*.html` run; `.extract/conflicts.md` read
+- [x] All 32 `athanasiusKey` values filled, or explicitly left null with a reason
+- [x] Every letter has exactly one `group`; groups total 5/4/4/7/4/5/3
+- [x] Arabic letter names checked against the curriculum by a human
+- [x] Validator green
+- [x] **A person who reads Coptic has looked at all 32 glyphs on screen**
 
 ### S2 · Migrate vocabulary — **GATE**
-- [ ] All words converted from Athanasuis keys to Unicode
-- [ ] Every word tagged `lexicon` / `drill` / `name`
-- [ ] Real count reported honestly (was advertised 131, arrays held 145)
-- [ ] Unfinished Arabic glosses set `published: false`, listed in the report
-- [ ] Every `teaches` entry resolves to a real letter id
+- [x] All words converted from Athanasuis keys to Unicode
+- [x] Every word tagged `lexicon` / `drill` / `name`
+- [x] Real count reported honestly (was advertised 131, arrays held 145)
+- [x] Unfinished Arabic glosses set `published: false`, listed in the report
+- [x] Every `teaches` entry resolves to a real letter id
 
 ### S3 · Design tokens and fonts
 - [ ] Noto Sans Coptic + Cairo self-hosted via `next/font`; no `<link>` to Google
@@ -121,3 +121,5 @@ The whole project rests on this being right.
 3. No TypeScript errors, no new `any`
 4. Checked at 375px width
 5. No data file modified unless the step explicitly says so
+6. This file: the step's checkboxes ticked (`[x]`) only for criteria that passed
+7. `docs/journal.md` appended and `docs/session-context.md` updated

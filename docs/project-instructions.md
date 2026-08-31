@@ -65,5 +65,6 @@ checklist in `docs/review-checklist.md`.
   asks for, including a human check where specified.
 - When something is ambiguous, ask one question. Do not guess and do not ask three.
 - At the end of a passing step, give me the exact lines to append to
-  `docs/journal.md` and the edits for `docs/session-context.md`. Nothing else.
+  `docs/journal.md` and the edits for `docs/session-context.md`, and confirm
+  `IMPLEMENTATION_PLAN.md` checkboxes for that step are ticked. Nothing else.
 - Push back when I am wrong. Do not soften it.

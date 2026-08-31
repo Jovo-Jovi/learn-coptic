@@ -49,3 +49,7 @@ shape plus cross-references and runs automatically on `prebuild`.
 Small steps. One route or one component per turn. Show the diff, not the whole
 file. If a step is underspecified, ask one question rather than guessing.
 Never mark a step done that you have not run.
+
+When a step is done, tick it in `IMPLEMENTATION_PLAN.md` and update
+`docs/journal.md`, `docs/session-context.md`, and any other doc the work made
+stale. See `.cursor/rules/10-step-closeout.mdc`.

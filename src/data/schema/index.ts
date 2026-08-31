@@ -119,7 +119,8 @@ export const Word = z.object({
   coptic: copticText,
   athanasiusKey: z.string().nullable(),
   translit: z.object({ ar: z.string(), en: z.string().optional() }),
-  meaning: Localized,
+  /** Null on reading drills with no dictionary gloss. Pronunciation stays in translit.ar. */
+  meaning: Localized.nullable(),
 
   /** The fix for "reads like a broken dictionary":
    *  real Coptic vocabulary vs. reading-practice strings like `zaki`. */
@@ -230,6 +231,11 @@ export type Level = z.infer<typeof Level>;
 const fileMeta = { schemaVersion: z.literal(SCHEMA_VERSION), updated: z.string() };
 
 export const LettersFile = z.object({ ...fileMeta, letters: z.array(Letter).length(32) });
-export const WordsFile = z.object({ ...fileMeta, words: z.array(Word).min(1) });
+export const WordsFile = z.object({
+  ...fileMeta,
+  /** How rows entered this file. Required so a 147-count stays auditable. */
+  provenance: z.string().min(1),
+  words: z.array(Word).min(1),
+});
 export const PrayersFile = z.object({ ...fileMeta, prayers: z.array(Prayer) });
 export const CurriculumFile = z.object({ ...fileMeta, levels: z.array(Level).min(1) });

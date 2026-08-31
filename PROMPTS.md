@@ -20,6 +20,8 @@ Rules for this session:
 - If npm run validate fails, stop and show me the failure. Do not fix data.
 - If something is ambiguous, ask me one question instead of guessing.
 - When done, run: npm run validate && npm run build
+- Tick the step's checkboxes in IMPLEMENTATION_PLAN.md
+- Update docs/journal.md and docs/session-context.md (and any other stale doc)
 - Then output: a list of files changed, the command output, and anything
   you did differently from the step description.
 ```

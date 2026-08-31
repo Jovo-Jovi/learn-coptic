@@ -1,52 +1,204 @@
 {
   "schemaVersion": 1,
   "updated": "2026-08-31",
+  "provenance": "145 rows from legacy/coptic_vocabulary.html. efran and efiot are not in that HTML; they were kept from the scaffold sample in prayers.json (keyWords of khen-efran) so the sample prayer still resolves.",
   "words": [
     {
-      "id": "anok",
-      "coptic": "ⲁⲛⲟⲕ",
-      "athanasiusKey": "anok",
-      "translit": { "ar": "أنوك", "en": "anok" },
-      "meaning": { "ar": "أنا", "en": "I" },
+      "id": "tot",
+      "coptic": "ⲧⲟⲧ",
+      "athanasiusKey": "tot",
+      "translit": {
+        "ar": "توت"
+      },
+      "meaning": {
+        "ar": "يد"
+      },
       "kind": "lexicon",
-      "teaches": ["alpha", "ni", "o", "kappa"],
+      "teaches": [
+        "tav",
+        "o"
+      ],
       "group": 1,
-      "partOfSpeech": "pronoun",
       "art": null,
       "audio": null,
       "published": true
     },
     {
-      "id": "ran",
-      "coptic": "ⲣⲁⲛ",
-      "athanasiusKey": "ran",
-      "translit": { "ar": "ران", "en": "ran" },
-      "meaning": { "ar": "اسم", "en": "name" },
-      "kind": "lexicon",
-      "teaches": ["ro", "alpha", "ni"],
-      "group": 3,
-      "partOfSpeech": "noun",
-      "art": {
-        "src": "/images/words/ran.webp",
-        "width": 800, "height": 800,
-        "alt": { "ar": "لوحة اسم مكتوب عليها بالقبطي", "en": "A name plate written in Coptic" },
-        "style": "illustration",
-        "license": "commissioned",
-        "credit": { "name": "—" }
+      "id": "kot",
+      "coptic": "ⲕⲟⲧ",
+      "athanasiusKey": "kot",
+      "translit": {
+        "ar": "كوت"
       },
+      "meaning": {
+        "ar": "دائرة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "kappa",
+        "o",
+        "tav"
+      ],
+      "group": 1,
+      "art": null,
       "audio": null,
       "published": true
     },
     {
-      "id": "khimi",
-      "coptic": "ⲭⲏⲙⲓ",
-      "athanasiusKey": "xhmi",
-      "translit": { "ar": "خيمي", "en": "khimi" },
-      "meaning": { "ar": "مصر", "en": "Egypt" },
+      "id": "on",
+      "coptic": "ⲟⲛ",
+      "athanasiusKey": "on",
+      "translit": {
+        "ar": "أون"
+      },
+      "meaning": {
+        "ar": "أيضاً"
+      },
       "kind": "lexicon",
-      "teaches": ["khi", "eta", "mi", "iota"],
-      "group": 7,
-      "partOfSpeech": "noun",
+      "teaches": [
+        "o",
+        "ni"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "tonk",
+      "coptic": "ⲧⲟⲛⲕ",
+      "athanasiusKey": "tonk",
+      "translit": {
+        "ar": "تونك"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "tav",
+        "o",
+        "ni",
+        "kappa"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ton",
+      "coptic": "ⲧⲟⲛ",
+      "athanasiusKey": "ton",
+      "translit": {
+        "ar": "تون"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "tav",
+        "o",
+        "ni"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "zont",
+      "coptic": "ⲍⲟⲛⲧ",
+      "athanasiusKey": "zont",
+      "translit": {
+        "ar": "زونت"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "zeta",
+        "o",
+        "ni",
+        "tav"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kont",
+      "coptic": "ⲕⲟⲛⲧ",
+      "athanasiusKey": "kont",
+      "translit": {
+        "ar": "كونت"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "kappa",
+        "o",
+        "ni",
+        "tav"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "not",
+      "coptic": "ⲛⲟⲧ",
+      "athanasiusKey": "not",
+      "translit": {
+        "ar": "نوت"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "ni",
+        "o",
+        "tav"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kotk",
+      "coptic": "ⲕⲟⲧⲕ",
+      "athanasiusKey": "kotk",
+      "translit": {
+        "ar": "كوتك"
+      },
+      "meaning": null,
+      "kind": "drill",
+      "teaches": [
+        "kappa",
+        "o",
+        "tav"
+      ],
+      "group": 1,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "iman",
+      "coptic": "ⲓⲙⲁⲛ",
+      "athanasiusKey": "iman",
+      "translit": {
+        "ar": "إيمان"
+      },
+      "meaning": {
+        "ar": "إيمان"
+      },
+      "kind": "drill",
+      "teaches": [
+        "iota",
+        "mi",
+        "alpha",
+        "ni"
+      ],
+      "group": 2,
       "art": null,
       "audio": null,
       "published": true
@@ -55,11 +207,845 @@
       "id": "zaki",
       "coptic": "ⲍⲁⲕⲓ",
       "athanasiusKey": "zaki",
-      "translit": { "ar": "زكي", "en": "zaki" },
-      "meaning": { "ar": "اسم عَلَم — تمرين قراءة", "en": "A modern name, used for reading practice" },
+      "translit": {
+        "ar": "زكي"
+      },
+      "meaning": {
+        "ar": "زكي"
+      },
       "kind": "drill",
-      "teaches": ["zeta", "alpha", "kappa", "iota"],
-      "group": 1,
+      "teaches": [
+        "zeta",
+        "alpha",
+        "kappa",
+        "iota"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "zaki-nem-iman",
+      "coptic": "ⲍⲁⲕⲓ ⲛⲉⲙ ⲓⲙⲁⲛ",
+      "athanasiusKey": "zaki nem iman",
+      "translit": {
+        "ar": "زكي نيم إيمان"
+      },
+      "meaning": {
+        "ar": "زكي وإيمان"
+      },
+      "kind": "drill",
+      "teaches": [
+        "zeta",
+        "alpha",
+        "kappa",
+        "iota",
+        "ni",
+        "ei",
+        "mi"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mona",
+      "coptic": "ⲙⲟⲛⲁ",
+      "athanasiusKey": "mona",
+      "translit": {
+        "ar": "مونا"
+      },
+      "meaning": {
+        "ar": "منى"
+      },
+      "kind": "drill",
+      "teaches": [
+        "mi",
+        "o",
+        "ni",
+        "alpha"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ma",
+      "coptic": "ⲙⲁ",
+      "athanasiusKey": "ma",
+      "translit": {
+        "ar": "ما"
+      },
+      "meaning": {
+        "ar": "مكان"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "alpha"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mai",
+      "coptic": "ⲙⲁⲓ",
+      "athanasiusKey": "mai",
+      "translit": {
+        "ar": "ماي"
+      },
+      "meaning": {
+        "ar": "محب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "alpha",
+        "iota"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "nim",
+      "coptic": "ⲛⲓⲙ",
+      "athanasiusKey": "nim",
+      "translit": {
+        "ar": "نيم"
+      },
+      "meaning": {
+        "ar": "من"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ni",
+        "iota",
+        "mi"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkmmon",
+      "coptic": "ⲙ̀ⲙⲟⲛ",
+      "athanasiusKey": "`mmon",
+      "translit": {
+        "ar": "اممون"
+      },
+      "meaning": {
+        "ar": "لا"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "o",
+        "ni"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ce",
+      "coptic": "ⲥⲉ",
+      "athanasiusKey": "ce",
+      "translit": {
+        "ar": "سي"
+      },
+      "meaning": {
+        "ar": "نعم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "ei"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kemkem",
+      "coptic": "ⲕⲉⲙⲕⲉⲙ",
+      "athanasiusKey": "kemkem",
+      "translit": {
+        "ar": "كيم كيم"
+      },
+      "meaning": {
+        "ar": "دف"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "kappa",
+        "ei",
+        "mi"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "anok",
+      "coptic": "ⲁⲛⲟⲕ",
+      "athanasiusKey": "anok",
+      "translit": {
+        "ar": "أنوك"
+      },
+      "meaning": {
+        "ar": "أنا"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "ni",
+        "o",
+        "kappa"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "anon",
+      "coptic": "ⲁⲛⲟⲛ",
+      "athanasiusKey": "anon",
+      "translit": {
+        "ar": "أنون"
+      },
+      "meaning": {
+        "ar": "نحن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "ni",
+        "o"
+      ],
+      "group": 2,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "rw",
+      "coptic": "ⲣⲱ",
+      "athanasiusKey": "rw",
+      "translit": {
+        "ar": "رو"
+      },
+      "meaning": {
+        "ar": "فم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "oou"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "rh",
+      "coptic": "ⲣⲏ",
+      "athanasiusKey": "rh",
+      "translit": {
+        "ar": "ري"
+      },
+      "meaning": {
+        "ar": "شمس"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "eta"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mht",
+      "coptic": "ⲙⲏⲧ",
+      "athanasiusKey": "mht",
+      "translit": {
+        "ar": "ميت"
+      },
+      "meaning": {
+        "ar": "عشرة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "eta",
+        "tav"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "cwma",
+      "coptic": "ⲥⲱⲙⲁ",
+      "athanasiusKey": "cwma",
+      "translit": {
+        "ar": "سوما"
+      },
+      "meaning": {
+        "ar": "جسد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "oou",
+        "mi",
+        "alpha"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "rimi",
+      "coptic": "ⲣⲓⲙⲓ",
+      "athanasiusKey": "rimi",
+      "translit": {
+        "ar": "ريمي"
+      },
+      "meaning": {
+        "ar": "يبكي"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "iota",
+        "mi"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkamin",
+      "coptic": "ⲁ̀ⲙⲓⲛ",
+      "athanasiusKey": "`amin",
+      "translit": {
+        "ar": "أمين"
+      },
+      "meaning": {
+        "ar": "أمين"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "mi",
+        "iota",
+        "ni"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "antwn",
+      "coptic": "ⲁⲛⲧⲱⲛ",
+      "athanasiusKey": "antwn",
+      "translit": {
+        "ar": "أنطون"
+      },
+      "meaning": {
+        "ar": "أنطون"
+      },
+      "kind": "name",
+      "teaches": [
+        "alpha",
+        "ni",
+        "tav",
+        "oou"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ri",
+      "coptic": "ⲣⲓ",
+      "athanasiusKey": "ri",
+      "translit": {
+        "ar": "ري"
+      },
+      "meaning": {
+        "ar": "حجرة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "iota"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ca",
+      "coptic": "ⲥⲁ",
+      "athanasiusKey": "ca",
+      "translit": {
+        "ar": "صا"
+      },
+      "meaning": {
+        "ar": "جهة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "alpha"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ran",
+      "coptic": "ⲣⲁⲛ",
+      "athanasiusKey": "ran",
+      "translit": {
+        "ar": "ران"
+      },
+      "meaning": {
+        "ar": "اسم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "alpha",
+        "ni"
+      ],
+      "group": 3,
+      "art": {
+        "src": "/images/words/ran.webp",
+        "width": 800,
+        "height": 800,
+        "alt": {
+          "ar": "لوحة اسم مكتوب عليها بالقبطي",
+          "en": "A name plate written in Coptic"
+        },
+        "style": "illustration",
+        "license": "commissioned",
+        "credit": {
+          "name": "—"
+        }
+      },
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mici",
+      "coptic": "ⲙⲓⲥⲓ",
+      "athanasiusKey": "mici",
+      "translit": {
+        "ar": "ميسي"
+      },
+      "meaning": {
+        "ar": "تلد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "iota",
+        "sima"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kerat",
+      "coptic": "ⲕⲉⲣⲁⲧ",
+      "athanasiusKey": "kerat",
+      "translit": {
+        "ar": "قيراط"
+      },
+      "meaning": {
+        "ar": "قيراط"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "kappa",
+        "ei",
+        "ro",
+        "alpha",
+        "tav"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mhna",
+      "coptic": "ⲙⲏⲛⲁ",
+      "athanasiusKey": "mhna",
+      "translit": {
+        "ar": "مينا"
+      },
+      "meaning": {
+        "ar": "مينا"
+      },
+      "kind": "name",
+      "teaches": [
+        "mi",
+        "eta",
+        "ni",
+        "alpha"
+      ],
+      "group": 3,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "lac",
+      "coptic": "ⲗⲁⲥ",
+      "athanasiusKey": "lac",
+      "translit": {
+        "ar": "لاس"
+      },
+      "meaning": {
+        "ar": "لسان"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "lola",
+        "alpha",
+        "sima"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "laxlax",
+      "coptic": "ⲗⲁⲭⲗⲁⲭ",
+      "athanasiusKey": "laxlax",
+      "translit": {
+        "ar": "لاك لاك"
+      },
+      "meaning": {
+        "ar": "سلطة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "lola",
+        "alpha",
+        "khi"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "lom",
+      "coptic": "ⲗⲟⲙ",
+      "athanasiusKey": "lom",
+      "translit": {
+        "ar": "لوم"
+      },
+      "meaning": {
+        "ar": "لقمة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "lola",
+        "o",
+        "mi"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "papa",
+      "coptic": "ⲡⲁⲡⲁ",
+      "athanasiusKey": "papa",
+      "translit": {
+        "ar": "بابا"
+      },
+      "meaning": {
+        "ar": "البابا"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "pi",
+        "alpha"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "apakir",
+      "coptic": "ⲁⲡⲁⲕⲓⲣ",
+      "athanasiusKey": "apakir",
+      "translit": {
+        "ar": "أباكير"
+      },
+      "meaning": {
+        "ar": "أباكير"
+      },
+      "kind": "name",
+      "teaches": [
+        "alpha",
+        "pi",
+        "kappa",
+        "iota",
+        "ro"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "perci",
+      "coptic": "ⲡⲉⲣⲥⲓ",
+      "athanasiusKey": "perci",
+      "translit": {
+        "ar": "برسي"
+      },
+      "meaning": {
+        "ar": "خوخ"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "pi",
+        "ei",
+        "ro",
+        "sima",
+        "iota"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "vel",
+      "coptic": "ⲫⲉⲗ",
+      "athanasiusKey": "vel",
+      "translit": {
+        "ar": "فيل"
+      },
+      "meaning": {
+        "ar": "فول"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "fi",
+        "ei",
+        "lola"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "valavel",
+      "coptic": "ⲫⲁⲗⲁⲫⲉⲗ",
+      "athanasiusKey": "valavel",
+      "translit": {
+        "ar": "فلافيل"
+      },
+      "meaning": {
+        "ar": "فلافل"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "fi",
+        "alpha",
+        "lola",
+        "ei"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "vin",
+      "coptic": "ⲫⲓⲛ",
+      "athanasiusKey": "vin",
+      "translit": {
+        "ar": "فين"
+      },
+      "meaning": {
+        "ar": "فار"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "fi",
+        "iota",
+        "ni"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "shaiai",
+      "coptic": "ϣⲁⲓ",
+      "athanasiusKey": "]ai",
+      "translit": {
+        "ar": "شاي"
+      },
+      "meaning": {
+        "ar": "عيد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "shai",
+        "alpha",
+        "iota"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "shaielet",
+      "coptic": "ϣⲉⲗⲉⲧ",
+      "athanasiusKey": "]elet",
+      "translit": {
+        "ar": "شيليت"
+      },
+      "meaning": {
+        "ar": "عروس"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "shai",
+        "ei",
+        "lola",
+        "tav"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "pashaionc",
+      "coptic": "ⲡⲁϣⲟⲛⲥ",
+      "athanasiusKey": "pa]onc",
+      "translit": {
+        "ar": "باشونس"
+      },
+      "meaning": {
+        "ar": "بشنس"
+      },
+      "kind": "name",
+      "teaches": [
+        "pi",
+        "alpha",
+        "shai",
+        "o",
+        "ni",
+        "sima"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "af",
+      "coptic": "ⲁϥ",
+      "athanasiusKey": "af",
+      "translit": {
+        "ar": "أف"
+      },
+      "meaning": {
+        "ar": "لحمة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "fai"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "fai",
+      "coptic": "ϥⲁⲓ",
+      "athanasiusKey": "fai",
+      "translit": {
+        "ar": "فاي"
+      },
+      "meaning": {
+        "ar": "يرفع"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "fai",
+        "alpha",
+        "iota"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "fent",
+      "coptic": "ϥⲉⲛⲧ",
+      "athanasiusKey": "fent",
+      "translit": {
+        "ar": "فنت"
+      },
+      "meaning": {
+        "ar": "دودة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "fai",
+        "ei",
+        "ni",
+        "tav"
+      ],
+      "group": 4,
       "art": null,
       "audio": null,
       "published": true
@@ -67,52 +1053,2173 @@
     {
       "id": "khen",
       "coptic": "ϧⲉⲛ",
-      "athanasiusKey": "qen",
-      "translit": { "ar": "خين", "en": "khen" },
-      "meaning": { "ar": "في / باسم", "en": "in" },
+      "athanasiusKey": "'en",
+      "translit": {
+        "ar": "خين"
+      },
+      "meaning": {
+        "ar": "في / بـ"
+      },
       "kind": "lexicon",
-      "teaches": ["khai", "ei", "ni"],
+      "teaches": [
+        "khai",
+        "ei",
+        "ni"
+      ],
       "group": 4,
-      "partOfSpeech": "preposition",
-      "art": null, "audio": null, "published": true
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khaielshaiiri",
+      "coptic": "ϧⲉⲗϣⲓⲣⲓ",
+      "athanasiusKey": "'el]iri",
+      "translit": {
+        "ar": "خيلشيري"
+      },
+      "meaning": {
+        "ar": "شاب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khai",
+        "ei",
+        "lola",
+        "shai",
+        "iota",
+        "ro"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkkhaioun",
+      "coptic": "ϧ̀ⲟⲩⲛ",
+      "athanasiusKey": "`'oun",
+      "translit": {
+        "ar": "إيخون"
+      },
+      "meaning": {
+        "ar": "إلى داخل"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khai",
+        "o",
+        "epsilon",
+        "ni"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khaiamne",
+      "coptic": "ϧⲁⲙⲛⲉ",
+      "athanasiusKey": "'amne",
+      "translit": {
+        "ar": "خامني"
+      },
+      "meaning": {
+        "ar": "80"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khai",
+        "alpha",
+        "mi",
+        "ni",
+        "ei"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "wnkhai",
+      "coptic": "ⲱⲛϧ",
+      "athanasiusKey": "wn'",
+      "translit": {
+        "ar": "أونخ"
+      },
+      "meaning": {
+        "ar": "حياة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "oou",
+        "ni",
+        "khai"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khaiolkhaiel",
+      "coptic": "ϧⲟⲗϧⲉⲗ",
+      "athanasiusKey": "'ol'el",
+      "translit": {
+        "ar": "خلخيل"
+      },
+      "meaning": {
+        "ar": "يذبح"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khai",
+        "o",
+        "lola",
+        "ei"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "horiai",
+      "coptic": "ϩⲁⲓ",
+      "athanasiusKey": "\\ai",
+      "translit": {
+        "ar": "هاي"
+      },
+      "meaning": {
+        "ar": "زوج"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "hori",
+        "alpha",
+        "iota"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "horiwc",
+      "coptic": "ϩⲱⲥ",
+      "athanasiusKey": "\\wc",
+      "translit": {
+        "ar": "هوس"
+      },
+      "meaning": {
+        "ar": "يسبح"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "hori",
+        "oou",
+        "sima"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "horiap",
+      "coptic": "ϩⲁⲡ",
+      "athanasiusKey": "\\ap",
+      "translit": {
+        "ar": "هاب"
+      },
+      "meaning": {
+        "ar": "يحكم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "hori",
+        "alpha",
+        "pi"
+      ],
+      "group": 4,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "bal",
+      "coptic": "ⲃⲁⲗ",
+      "athanasiusKey": "bal",
+      "translit": {
+        "ar": "ڤال"
+      },
+      "meaning": {
+        "ar": "عين"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "vida",
+        "alpha",
+        "lola"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "bwk",
+      "coptic": "ⲃⲱⲕ",
+      "athanasiusKey": "bwk",
+      "translit": {
+        "ar": "ڤوك"
+      },
+      "meaning": {
+        "ar": "عبد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "vida",
+        "oou",
+        "kappa"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "nobi",
+      "coptic": "ⲛⲟⲃⲓ",
+      "athanasiusKey": "nobi",
+      "translit": {
+        "ar": "نوڤي"
+      },
+      "meaning": {
+        "ar": "خطية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ni",
+        "o",
+        "vida",
+        "iota"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "lwbshai",
+      "coptic": "ⲗⲱⲃϣ",
+      "athanasiusKey": "lwb]",
+      "translit": {
+        "ar": "لوبش"
+      },
+      "meaning": {
+        "ar": "تفسير"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "lola",
+        "oou",
+        "vida",
+        "shai"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "nhb",
+      "coptic": "ⲛⲏⲃ",
+      "athanasiusKey": "nhb",
+      "translit": {
+        "ar": "نيب"
+      },
+      "meaning": {
+        "ar": "سيد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ni",
+        "eta",
+        "vida"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "bhb",
+      "coptic": "ⲃⲏⲃ",
+      "athanasiusKey": "bhb",
+      "translit": {
+        "ar": "ڤيب"
+      },
+      "meaning": {
+        "ar": "مغارة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "vida",
+        "eta"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "adam",
+      "coptic": "ⲁⲇⲁⲙ",
+      "athanasiusKey": "adam",
+      "translit": {
+        "ar": "آدم"
+      },
+      "meaning": {
+        "ar": "آدم"
+      },
+      "kind": "name",
+      "teaches": [
+        "alpha",
+        "dalda",
+        "mi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "dina",
+      "coptic": "ⲇⲓⲛⲁ",
+      "athanasiusKey": "dina",
+      "translit": {
+        "ar": "دينا"
+      },
+      "meaning": {
+        "ar": "دينا"
+      },
+      "kind": "drill",
+      "teaches": [
+        "dalda",
+        "iota",
+        "ni",
+        "alpha"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "rashaihd",
+      "coptic": "ⲣⲁϣⲏⲇ",
+      "athanasiusKey": "ra]hd",
+      "translit": {
+        "ar": "رشيد"
+      },
+      "meaning": {
+        "ar": "رشيد"
+      },
+      "kind": "name",
+      "teaches": [
+        "ro",
+        "alpha",
+        "shai",
+        "eta",
+        "dalda"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "diakwn",
+      "coptic": "ⲇⲓⲁⲕⲱⲛ",
+      "athanasiusKey": "diakwn",
+      "translit": {
+        "ar": "ذياكون"
+      },
+      "meaning": {
+        "ar": "شماس"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "dalda",
+        "iota",
+        "alpha",
+        "kappa",
+        "oou",
+        "ni"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "dwron",
+      "coptic": "ⲇⲱⲣⲟⲛ",
+      "athanasiusKey": "dwron",
+      "translit": {
+        "ar": "ذورون"
+      },
+      "meaning": {
+        "ar": "هدية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "dalda",
+        "oou",
+        "ro",
+        "o",
+        "ni"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "qwk",
+      "coptic": "ⲑⲱⲕ",
+      "athanasiusKey": "qwk",
+      "translit": {
+        "ar": "ثوك"
+      },
+      "meaning": {
+        "ar": "لك"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "theta",
+        "oou",
+        "kappa"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "aqanacioc",
+      "coptic": "Ⲁⲑⲁⲛⲁⲥⲓⲟⲥ",
+      "athanasiusKey": "Aqanacioc",
+      "translit": {
+        "ar": "أثناسيوس"
+      },
+      "meaning": {
+        "ar": "أثناسيوس"
+      },
+      "kind": "name",
+      "teaches": [
+        "alpha",
+        "theta",
+        "ni",
+        "sima",
+        "iota",
+        "o"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "eqbe",
+      "coptic": "ⲉⲑⲃⲉ",
+      "athanasiusKey": "eqbe",
+      "translit": {
+        "ar": "أثفي"
+      },
+      "meaning": {
+        "ar": "لأجل"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ei",
+        "theta",
+        "vida"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkcqoi",
+      "coptic": "ⲥ̀ⲑⲟⲓ",
+      "athanasiusKey": "`cqoi",
+      "translit": {
+        "ar": "استوي"
+      },
+      "meaning": {
+        "ar": "رائحة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "theta",
+        "o",
+        "iota"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkshaiqam",
+      "coptic": "ϣ̀ⲑⲁⲙ",
+      "athanasiusKey": "`]qam",
+      "translit": {
+        "ar": "أشتام"
+      },
+      "meaning": {
+        "ar": "يغلق"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "shai",
+        "theta",
+        "alpha",
+        "mi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "matqeoc",
+      "coptic": "Ⲙⲁⲧⲑⲉⲟⲥ",
+      "athanasiusKey": "Matqeoc",
+      "translit": {
+        "ar": "ماتثيئوس"
+      },
+      "meaning": {
+        "ar": "متى"
+      },
+      "kind": "name",
+      "teaches": [
+        "mi",
+        "alpha",
+        "tav",
+        "theta",
+        "ei",
+        "o",
+        "sima"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "je",
+      "coptic": "ϫⲉ",
+      "athanasiusKey": "je",
+      "translit": {
+        "ar": "چي"
+      },
+      "meaning": {
+        "ar": "لأن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "ei"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jimi",
+      "coptic": "ϫⲓⲙⲓ",
+      "athanasiusKey": "jimi",
+      "translit": {
+        "ar": "چيمي"
+      },
+      "meaning": {
+        "ar": "يجد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "iota",
+        "mi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jhr",
+      "coptic": "ϫⲏⲣ",
+      "athanasiusKey": "jhr",
+      "translit": {
+        "ar": "چير"
+      },
+      "meaning": {
+        "ar": "عمود"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "eta",
+        "ro"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jinjin",
+      "coptic": "ϫⲓⲛϫⲓⲛ",
+      "athanasiusKey": "jinjin",
+      "translit": {
+        "ar": "چين چين"
+      },
+      "meaning": {
+        "ar": "جرجير"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "iota",
+        "ni"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ajp",
+      "coptic": "ⲁϫⲡ",
+      "athanasiusKey": "ajp",
+      "translit": {
+        "ar": "أجب"
+      },
+      "meaning": {
+        "ar": "ساعة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "janja",
+        "pi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jom",
+      "coptic": "ϫⲟⲙ",
+      "athanasiusKey": "jom",
+      "translit": {
+        "ar": "جوم"
+      },
+      "meaning": {
+        "ar": "قوة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "o",
+        "mi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jwm",
+      "coptic": "ϫⲱⲙ",
+      "athanasiusKey": "jwm",
+      "translit": {
+        "ar": "جووم"
+      },
+      "meaning": {
+        "ar": "كتاب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "oou",
+        "mi"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jw",
+      "coptic": "ϫⲱ",
+      "athanasiusKey": "jw",
+      "translit": {
+        "ar": "جو"
+      },
+      "meaning": {
+        "ar": "يقول"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "oou"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ajpia",
+      "coptic": "ⲁϫⲡⲓⲁ",
+      "athanasiusKey": "ajpia",
+      "translit": {
+        "ar": "أجبية"
+      },
+      "meaning": {
+        "ar": "أجبية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "janja",
+        "pi",
+        "iota"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jij",
+      "coptic": "ϫⲓϫ",
+      "athanasiusKey": "jij",
+      "translit": {
+        "ar": "چيج"
+      },
+      "meaning": {
+        "ar": "يد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "janja",
+        "iota"
+      ],
+      "group": 5,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "lieksi",
+      "coptic": "ⲗⲓⲝ",
+      "athanasiusKey": "li[",
+      "translit": {
+        "ar": "ليكس"
+      },
+      "meaning": {
+        "ar": "ستارة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "lola",
+        "iota",
+        "eksi"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "doeksia",
+      "coptic": "ⲇⲟⲝⲁ",
+      "athanasiusKey": "do[a",
+      "translit": {
+        "ar": "ذوكصا"
+      },
+      "meaning": {
+        "ar": "مجد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "dalda",
+        "o",
+        "eksi",
+        "alpha"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "eksiomi",
+      "coptic": "ⲝⲟⲙⲓ",
+      "athanasiusKey": "[omi",
+      "translit": {
+        "ar": "اكسومي"
+      },
+      "meaning": {
+        "ar": "مسطرة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "eksi",
+        "o",
+        "mi",
+        "iota"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "maeksiimoc",
+      "coptic": "Ⲙⲁⲝⲓⲙⲟⲥ",
+      "athanasiusKey": "Ma[imoc",
+      "translit": {
+        "ar": "مكسيموس"
+      },
+      "meaning": {
+        "ar": "مكسيموس"
+      },
+      "kind": "name",
+      "teaches": [
+        "mi",
+        "alpha",
+        "eksi",
+        "iota",
+        "o",
+        "sima"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "yaria",
+      "coptic": "ⲯⲁⲣⲓⲁ",
+      "athanasiusKey": "yaria",
+      "translit": {
+        "ar": "بساريا"
+      },
+      "meaning": {
+        "ar": "بساريا"
+      },
+      "kind": "name",
+      "teaches": [
+        "epsi",
+        "alpha",
+        "ro",
+        "iota"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "yalmoc",
+      "coptic": "ⲯⲁⲗⲙⲟⲥ",
+      "athanasiusKey": "yalmoc",
+      "translit": {
+        "ar": "بسلموس"
+      },
+      "meaning": {
+        "ar": "مزمور"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "epsi",
+        "alpha",
+        "lola",
+        "mi",
+        "o",
+        "sima"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "yit",
+      "coptic": "ⲯⲓⲧ",
+      "athanasiusKey": "yit",
+      "translit": {
+        "ar": "بسيت"
+      },
+      "meaning": {
+        "ar": "9"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "epsi",
+        "iota",
+        "tav"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "yalmodia",
+      "coptic": "ⲯⲁⲗⲙⲟⲇⲓⲁ",
+      "athanasiusKey": "yalmodia",
+      "translit": {
+        "ar": "بصلمودية"
+      },
+      "meaning": {
+        "ar": "بصلمودية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "epsi",
+        "alpha",
+        "lola",
+        "mi",
+        "o",
+        "dalda",
+        "iota"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "sad",
+      "coptic": "ϭⲁⲇ",
+      "athanasiusKey": "sad",
+      "translit": {
+        "ar": "تشاج"
+      },
+      "meaning": {
+        "ar": "عصفور"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "alpha",
+        "dalda"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "swm",
+      "coptic": "ϭⲱⲙ",
+      "athanasiusKey": "swm",
+      "translit": {
+        "ar": "تشوم"
+      },
+      "meaning": {
+        "ar": "حديقة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "oou",
+        "mi"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "srompi",
+      "coptic": "ϭⲣⲟⲙⲡⲓ",
+      "athanasiusKey": "srompi",
+      "translit": {
+        "ar": "تشرومبي"
+      },
+      "meaning": {
+        "ar": "حمامة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "ro",
+        "o",
+        "mi",
+        "pi",
+        "iota"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "soic",
+      "coptic": "ϭⲟⲓⲥ",
+      "athanasiusKey": "soic",
+      "translit": {
+        "ar": "تشويس"
+      },
+      "meaning": {
+        "ar": "رب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "o",
+        "iota",
+        "sima"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "si",
+      "coptic": "ϭⲓ",
+      "athanasiusKey": "si",
+      "translit": {
+        "ar": "تشي"
+      },
+      "meaning": {
+        "ar": "يأخذ"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "iota"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "sici",
+      "coptic": "ϭⲓⲥⲓ",
+      "athanasiusKey": "sici",
+      "translit": {
+        "ar": "تشيسي"
+      },
+      "meaning": {
+        "ar": "يرفع"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "iota",
+        "sima"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "slh",
+      "coptic": "ϭⲗⲏ",
+      "athanasiusKey": "slh",
+      "translit": {
+        "ar": "تشيلي"
+      },
+      "meaning": {
+        "ar": "عقرب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "cheema",
+        "lola",
+        "eta"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "titi",
+      "coptic": "ϯϯ",
+      "athanasiusKey": ";;",
+      "translit": {
+        "ar": "تي تي"
+      },
+      "meaning": {
+        "ar": "عطية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ti"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "erwti",
+      "coptic": "ⲉⲣⲱϯ",
+      "athanasiusKey": "erw;",
+      "translit": {
+        "ar": "ايروتي"
+      },
+      "meaning": {
+        "ar": "لبن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ei",
+        "ro",
+        "oou",
+        "ti"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "racti",
+      "coptic": "ⲣⲁⲥϯ",
+      "athanasiusKey": "rac;",
+      "translit": {
+        "ar": "راستي"
+      },
+      "meaning": {
+        "ar": "غداً"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ro",
+        "alpha",
+        "sima",
+        "ti"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "citi",
+      "coptic": "ⲥⲓϯ",
+      "athanasiusKey": "ci;",
+      "translit": {
+        "ar": "سيتي"
+      },
+      "meaning": {
+        "ar": "يزرع"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "iota",
+        "ti"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "nahoriti",
+      "coptic": "ⲛⲁϩϯ",
+      "athanasiusKey": "na\\;",
+      "translit": {
+        "ar": "ناهتي"
+      },
+      "meaning": {
+        "ar": "يؤمن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ni",
+        "alpha",
+        "hori",
+        "ti"
+      ],
+      "group": 6,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "shaiouri",
+      "coptic": "ϣⲟⲩⲣⲓ",
+      "athanasiusKey": "]ouri",
+      "translit": {
+        "ar": "شوري"
+      },
+      "meaning": {
+        "ar": "شورية"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "shai",
+        "o",
+        "epsilon",
+        "ro",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mou",
+      "coptic": "ⲙⲟⲩ",
+      "athanasiusKey": "mou",
+      "translit": {
+        "ar": "مو"
+      },
+      "meaning": {
+        "ar": "موت"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "o",
+        "epsilon"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "poun",
+      "coptic": "ⲡⲟⲩⲛ",
+      "athanasiusKey": "poun",
+      "translit": {
+        "ar": "بون"
+      },
+      "meaning": {
+        "ar": "بن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "pi",
+        "o",
+        "epsilon",
+        "ni"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "oujai",
+      "coptic": "ⲟⲩϫⲁⲓ",
+      "athanasiusKey": "oujai",
+      "translit": {
+        "ar": "أوجاي"
+      },
+      "meaning": {
+        "ar": "معافى"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "o",
+        "epsilon",
+        "janja",
+        "alpha",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "mau",
+      "coptic": "ⲙⲁⲩ",
+      "athanasiusKey": "mau",
+      "translit": {
+        "ar": "ماڤ"
+      },
+      "meaning": {
+        "ar": "أم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "alpha",
+        "epsilon"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "eua",
+      "coptic": "ⲉⲩⲁ",
+      "athanasiusKey": "eua",
+      "translit": {
+        "ar": "ايڤا"
+      },
+      "meaning": {
+        "ar": "حواء"
+      },
+      "kind": "name",
+      "teaches": [
+        "ei",
+        "epsilon",
+        "alpha"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "dauid",
+      "coptic": "ⲇⲁⲩⲓⲇ",
+      "athanasiusKey": "dauid",
+      "translit": {
+        "ar": "داڤيد"
+      },
+      "meaning": {
+        "ar": "داود"
+      },
+      "kind": "name",
+      "teaches": [
+        "dalda",
+        "alpha",
+        "epsilon",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "meujnki",
+      "coptic": "ⲙⲉⲩⲓ̀",
+      "athanasiusKey": "meu`i",
+      "translit": {
+        "ar": "ميڤئي"
+      },
+      "meaning": {
+        "ar": "يفكر"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "mi",
+        "ei",
+        "epsilon",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kutoc",
+      "coptic": "ⲕⲩⲧⲟⲥ",
+      "athanasiusKey": "kutoc",
+      "translit": {
+        "ar": "كيتوس"
+      },
+      "meaning": {
+        "ar": "حوت"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "kappa",
+        "epsilon",
+        "tav",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "ludia",
+      "coptic": "ⲗⲩⲇⲓⲁ",
+      "athanasiusKey": "ludia",
+      "translit": {
+        "ar": "ليديا"
+      },
+      "meaning": {
+        "ar": "ليديا"
+      },
+      "kind": "name",
+      "teaches": [
+        "lola",
+        "epsilon",
+        "dalda",
+        "iota",
+        "alpha"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkuioc",
+      "coptic": "ⲩ̀ⲓⲟⲥ",
+      "athanasiusKey": "`uioc",
+      "translit": {
+        "ar": "ايوس"
+      },
+      "meaning": {
+        "ar": "ابن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "epsilon",
+        "iota",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kurioc",
+      "coptic": "ⲕⲩⲣⲓⲟⲥ",
+      "athanasiusKey": "kurioc",
+      "translit": {
+        "ar": "كيريوس"
+      },
+      "meaning": {
+        "ar": "رب-سيد"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "kappa",
+        "epsilon",
+        "ro",
+        "iota",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "kurilloc",
+      "coptic": "ⲕⲩⲣⲓⲗⲗⲟⲥ",
+      "athanasiusKey": "kurilloc",
+      "translit": {
+        "ar": "كيريلوس"
+      },
+      "meaning": {
+        "ar": "كيرلس"
+      },
+      "kind": "name",
+      "teaches": [
+        "kappa",
+        "epsilon",
+        "ro",
+        "iota",
+        "lola",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "gar",
+      "coptic": "ⲅⲁⲣ",
+      "athanasiusKey": "gar",
+      "translit": {
+        "ar": "غار"
+      },
+      "meaning": {
+        "ar": "لأن"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "gamma",
+        "alpha",
+        "ro"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "golgoqa",
+      "coptic": "ⲅⲟⲗⲅⲟⲑⲁ",
+      "athanasiusKey": "golgoqa",
+      "translit": {
+        "ar": "غولغوثا"
+      },
+      "meaning": {
+        "ar": "جلجثة"
+      },
+      "kind": "name",
+      "teaches": [
+        "gamma",
+        "o",
+        "lola",
+        "theta",
+        "alpha"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkgravh",
+      "coptic": "ⲅ̀ⲣⲁⲫⲏ",
+      "athanasiusKey": "`gravh",
+      "translit": {
+        "ar": "أغرافي"
+      },
+      "meaning": {
+        "ar": "كتاب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "gamma",
+        "ro",
+        "alpha",
+        "fi",
+        "eta"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "agora",
+      "coptic": "ⲁⲅⲟⲣⲁ",
+      "athanasiusKey": "agora",
+      "translit": {
+        "ar": "أغورا"
+      },
+      "meaning": {
+        "ar": "سوق"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "gamma",
+        "o",
+        "ro"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "agwn",
+      "coptic": "ⲁⲅⲱⲛ",
+      "athanasiusKey": "agwn",
+      "translit": {
+        "ar": "أغون"
+      },
+      "meaning": {
+        "ar": "حرب"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "gamma",
+        "oou",
+        "ni"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "genoc",
+      "coptic": "ⲅⲉⲛⲟⲥ",
+      "athanasiusKey": "genoc",
+      "translit": {
+        "ar": "جينوس"
+      },
+      "meaning": {
+        "ar": "جنس"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "gamma",
+        "ei",
+        "ni",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "agioc",
+      "coptic": "ⲁⲅⲓⲟⲥ",
+      "athanasiusKey": "agioc",
+      "translit": {
+        "ar": "أجيوس"
+      },
+      "meaning": {
+        "ar": "قدوس-قديس"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "gamma",
+        "iota",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "gh",
+      "coptic": "ⲅⲏ",
+      "athanasiusKey": "gh",
+      "translit": {
+        "ar": "جي"
+      },
+      "meaning": {
+        "ar": "أرض"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "gamma",
+        "eta"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "gumnacia",
+      "coptic": "ⲅⲩⲙⲛⲁⲥⲓⲁ",
+      "athanasiusKey": "gumnacia",
+      "translit": {
+        "ar": "جيمناسيا"
+      },
+      "meaning": {
+        "ar": "رياضة-تمرين"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "gamma",
+        "epsilon",
+        "mi",
+        "ni",
+        "alpha",
+        "sima",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "aggeloc",
+      "coptic": "ⲁⲅⲅⲉⲗⲟⲥ",
+      "athanasiusKey": "aggeloc",
+      "translit": {
+        "ar": "انجيلوس"
+      },
+      "meaning": {
+        "ar": "ملاك-رسول"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "gamma",
+        "ei",
+        "lola",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "egxoc",
+      "coptic": "ⲉⲅⲭⲟⲥ",
+      "athanasiusKey": "egxoc",
+      "translit": {
+        "ar": "انخوس"
+      },
+      "meaning": {
+        "ar": "حربة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ei",
+        "gamma",
+        "khi",
+        "o",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "anagh",
+      "coptic": "ⲁⲛⲁⲅⲏ",
+      "athanasiusKey": "anagh",
+      "translit": {
+        "ar": "انانكي"
+      },
+      "meaning": {
+        "ar": "ضرورة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "alpha",
+        "ni",
+        "gamma",
+        "eta"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "cvigeksi",
+      "coptic": "ⲥⲫⲓⲅⲝ",
+      "athanasiusKey": "cvig[",
+      "translit": {
+        "ar": "سفنكس"
+      },
+      "meaning": {
+        "ar": "أبو الهول"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "sima",
+        "fi",
+        "iota",
+        "gamma",
+        "eksi"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "khimi",
+      "coptic": "ⲭⲏⲙⲓ",
+      "athanasiusKey": "xhmi",
+      "translit": {
+        "ar": "كيمي"
+      },
+      "meaning": {
+        "ar": "مصر"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "eta",
+        "mi",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xjnkrwm",
+      "coptic": "ⲭⲣ̀ⲱⲙ",
+      "athanasiusKey": "x`rwm",
+      "translit": {
+        "ar": "اكروم"
+      },
+      "meaning": {
+        "ar": "نار"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "ro",
+        "oou",
+        "mi"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xw",
+      "coptic": "ⲭⲱ",
+      "athanasiusKey": "xw",
+      "translit": {
+        "ar": "كو"
+      },
+      "meaning": {
+        "ar": "يترك"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "oou"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "jnkxrour",
+      "coptic": "ⲭ̀ⲣⲟⲩⲣ",
+      "athanasiusKey": "`xrour",
+      "translit": {
+        "ar": "اكرور"
+      },
+      "meaning": {
+        "ar": "ضفدعة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "ro",
+        "o",
+        "epsilon"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xere",
+      "coptic": "ⲭⲉⲣⲉ",
+      "athanasiusKey": "xere",
+      "translit": {
+        "ar": "شيري"
+      },
+      "meaning": {
+        "ar": "سلام"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "ei",
+        "ro"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xhra",
+      "coptic": "ⲭⲏⲣⲁ",
+      "athanasiusKey": "xhra",
+      "translit": {
+        "ar": "شيرا"
+      },
+      "meaning": {
+        "ar": "أرملة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "eta",
+        "ro",
+        "alpha"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xiwn",
+      "coptic": "ⲭⲓⲱⲛ",
+      "athanasiusKey": "xiwn",
+      "translit": {
+        "ar": "شيون"
+      },
+      "meaning": {
+        "ar": "ثلج"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "iota",
+        "oou",
+        "ni"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "icxuroc",
+      "coptic": "ⲓⲥⲭⲩⲣⲟⲥ",
+      "athanasiusKey": "icxuroc",
+      "translit": {
+        "ar": "يسشيروس"
+      },
+      "meaning": {
+        "ar": "قوي"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "iota",
+        "sima",
+        "khi",
+        "epsilon",
+        "ro",
+        "o"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xaric",
+      "coptic": "ⲭⲁⲣⲓⲥ",
+      "athanasiusKey": "xaric",
+      "translit": {
+        "ar": "خاريس"
+      },
+      "meaning": {
+        "ar": "نعمة"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "alpha",
+        "ro",
+        "iota",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xoroc",
+      "coptic": "ⲭⲟⲣⲟⲥ",
+      "athanasiusKey": "xoroc",
+      "translit": {
+        "ar": "خوروس"
+      },
+      "meaning": {
+        "ar": "صف"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "o",
+        "ro",
+        "sima"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xwra",
+      "coptic": "ⲭⲱⲣⲁ",
+      "athanasiusKey": "xwra",
+      "translit": {
+        "ar": "خورا"
+      },
+      "meaning": {
+        "ar": "إقليم"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "oou",
+        "ro",
+        "alpha"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "euxarictia",
+      "coptic": "ⲉⲩⲭⲁⲣⲓⲥⲧⲓⲁ",
+      "athanasiusKey": "euxarictia",
+      "translit": {
+        "ar": "إفخاريستيا"
+      },
+      "meaning": {
+        "ar": "إفخاريستيا"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "ei",
+        "epsilon",
+        "khi",
+        "alpha",
+        "ro",
+        "iota",
+        "sima",
+        "tav"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "pixrictoc",
+      "coptic": "ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+      "athanasiusKey": "pixrictoc",
+      "translit": {
+        "ar": "بي اخريستوس"
+      },
+      "meaning": {
+        "ar": "المسيح"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "pi",
+        "iota",
+        "khi",
+        "ro",
+        "sima",
+        "tav",
+        "o"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
+    },
+    {
+      "id": "xere-tixwra-jnknxhmi",
+      "coptic": "ⲭⲉⲣⲉ ϯⲭⲱⲣⲁ ⲛ̀ⲭⲏⲙⲓ",
+      "athanasiusKey": "xere ;xwra `nxhmi",
+      "translit": {
+        "ar": "شيري تي خورا إن كيمي"
+      },
+      "meaning": {
+        "ar": "السلام لأرض مصر"
+      },
+      "kind": "lexicon",
+      "teaches": [
+        "khi",
+        "ei",
+        "ro",
+        "ti",
+        "oou",
+        "alpha",
+        "ni",
+        "eta",
+        "mi",
+        "iota"
+      ],
+      "group": 7,
+      "art": null,
+      "audio": null,
+      "published": true
     },
     {
       "id": "efran",
       "coptic": "ⲫⲣⲁⲛ",
       "athanasiusKey": "vran",
-      "translit": { "ar": "إفران", "en": "efran" },
-      "meaning": { "ar": "الاسم", "en": "the name" },
+      "translit": {
+        "ar": "إفران",
+        "en": "efran"
+      },
+      "meaning": {
+        "ar": "الاسم"
+      },
       "kind": "lexicon",
-      "teaches": ["fi", "ro", "alpha", "ni"],
+      "teaches": [
+        "fi",
+        "ro",
+        "alpha",
+        "ni"
+      ],
       "group": 4,
       "partOfSpeech": "noun",
-      "art": null, "audio": null, "published": true
+      "art": null,
+      "audio": null,
+      "published": true
     },
     {
       "id": "efiot",
       "coptic": "ⲫⲓⲱⲧ",
       "athanasiusKey": "viwt",
-      "translit": { "ar": "إفيوت", "en": "efiot" },
-      "meaning": { "ar": "الآب", "en": "the Father" },
+      "translit": {
+        "ar": "إفيوت",
+        "en": "efiot"
+      },
+      "meaning": {
+        "ar": "الآب"
+      },
       "kind": "lexicon",
-      "teaches": ["fi", "iota", "oou", "tav"],
+      "teaches": [
+        "fi",
+        "iota",
+        "oou",
+        "tav"
+      ],
       "group": 4,
       "partOfSpeech": "noun",
-      "art": null, "audio": null, "published": true
-    },
-    {
-      "id": "tonk",
-      "coptic": "ⲧⲱⲛⲕ",
-      "athanasiusKey": "twnk",
-      "translit": { "ar": "تونك", "en": "tonk" },
-      "meaning": { "ar": "قُمْ", "en": "arise" },
-      "kind": "lexicon",
-      "teaches": ["tav", "oou", "ni", "kappa"],
-      "group": 3,
-      "partOfSpeech": "verb",
       "art": null,
       "audio": null,
-      "published": false
+      "published": true
     }
   ]
 }

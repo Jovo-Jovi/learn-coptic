@@ -15,6 +15,57 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 
 ---
 
+## 2026-08-31 · S2 · Migrate vocabulary (GATE)
+Model: — | Commit: `<sha>` | Result: pass
+
+- 145 HTML rows converted to Unicode via the S1 keymap. Zero unknown keystrokes.
+- Final count 147 = 145 HTML + efran/efiot, retained from the sample
+  prayers.json (keyWords of khen-efran). Provenance recorded in words.json.
+- Kinds: 121 lexicon · 11 drill · 15 name. 0 unpublished.
+- Six rows (tonk, ton, zont, kont, not, kotk) had arabic === pronunciation:
+  they are the ⲟ+ⲛ+ⲧ/ⲕ rhyme drill, not broken glosses. Reclassified drill,
+  Arabic moved to translit.ar, meaning null.
+- khen restored to lexicon, meaning "في / بـ" — two senses, not a garbled string.
+- rashaihd → name; papa, pixrictoc → lexicon; golgoqa stays name.
+- Jinkim: base then U+0300. Validator rejects a combining grave with no base.
+- ADR-008: meaning is nullable; lexicon and name still require it.
+
+Open: nothing blocking S3.
+
+## 2026-08-31 · S2 · Migrate vocabulary (re-run)
+Model: Cursor Grok 4.6 | Commit: — | Result: partial (waiting review)
+
+- HTML group 1: tot/kot/on are lexicon; the next six have arabic = pronunciation
+  (ⲟ+ⲛ+ⲧ/ⲕ rhyme). Reclassified drill, translit only, meaning null, published.
+- khen meaning `في / بـ`, published (prayers.json keyWords).
+- iman stays drill. rashaihd → name. papa and pixrictoc → lexicon. golgoqa stays name.
+- words.json `provenance` records efran/efiot as sample-prayer rows, not HTML.
+- Jinkim: `mmon` is U+2C99 U+0300 … (base then combining), same as ⲙ̀ⲫⲓⲱⲧ.
+- Schema: `meaning` nullable; lexicon/name still require it (ADR-008).
+- kind: 121 lexicon, 11 drill, 15 name. 0 unpublished.
+
+Open: human GATE.
+
+## 2026-08-31 · S2 · GATE review
+Model: — | Commit: — | Result: fail
+
+- Six -ont/-onk words were unpublished lexicon; they are rhyming drills.
+- khen ب-في was treated as garbled; it is two prepositional senses.
+- Non-blocking: rashaihd name; البابا/المسيح lexicon; efran/efiot provenance;
+  jinkim must be base-then-combining.
+
+## 2026-08-31 · S2 · Migrate vocabulary (GATE)
+Model: Cursor Grok 4.6 | Commit: — | Result: partial (waiting review)
+
+- HTML arrays hold **145** rows. Page stats advertised **131**. words.json has
+  **147** (145 + `efran` / `efiot` kept for `prayers.json`).
+- Converted with letters.json map. Jinkim backtick → U+0300 (as in ⲙ̀ⲫⲓⲱⲧ).
+- kind: 125 lexicon, 6 drill, 16 name. 7 unpublished (group-1 transcriptions +
+  `khen` gloss ب-في). soic meaning رب, translit تشويس.
+- `scripts/migrate-vocab.mjs` one-shot. Validator green.
+
+Open: human GATE — kinds, unpublished list, whether efran/efiot stay.
+
 ## 2026-08-31 · S1 · Freeze the letter map (GATE)
 Model: — | Commit: `a370f95` | Result: pass
 

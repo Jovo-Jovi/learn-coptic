@@ -46,7 +46,18 @@ dupKeys.forEach((ids, k) => {
 
 // ---- 3. Cross-references --------------------------------------------
 L.forEach((l) => l.exampleWords.forEach((w) => { if (!wordIds.has(w)) fail(`letter ${l.id} → unknown word ${w}`); }));
-W.forEach((w) => w.teaches.forEach((t) => { if (!letterIds.has(t)) fail(`word ${w.id} → unknown letter ${t}`); }));
+W.forEach((w) => {
+  w.teaches.forEach((t) => { if (!letterIds.has(t)) fail(`word ${w.id} → unknown letter ${t}`); });
+  if ((w.kind === "lexicon" || w.kind === "name") && w.meaning == null) {
+    fail(`${w.kind} ${w.id} must have a meaning`);
+  }
+  const cps = [...w.coptic];
+  for (let i = 0; i < cps.length; i++) {
+    if (cps[i] === "\u0300" && (i === 0 || cps[i - 1] === " " || cps[i - 1] === "\u0300")) {
+      fail(`word ${w.id} jinkim is not after a base letter`);
+    }
+  }
+});
 P.forEach((p) => {
   p.keyWords.forEach((w) => { if (!wordIds.has(w)) fail(`prayer ${p.id} → unknown word ${w}`); });
   p.lines.forEach((ln) => ln.tokens.forEach((t) => {

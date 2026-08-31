@@ -17,6 +17,7 @@ still wrong.
 
 - [ ] Does the Arabic read like speech or like a translation?
 - [ ] Is a `drill` word presented anywhere as dictionary vocabulary?
+- [ ] Does a drill with `meaning: null` get a fake gloss in the UI?
 - [ ] Does any image lack a `license`?
 - [ ] Does any prayer line lack a source?
 

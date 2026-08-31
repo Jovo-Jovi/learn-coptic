@@ -37,3 +37,18 @@ map (vocabulary corroborates it). Hori is the one split: words are typed
 with `\`, the explorer card shows `|` — primary key is `\`, alias `|`.
 **Cost:** anyone typing from the markdown table will hit the wrong glyphs.
 Do not "reconcile" the two maps.
+
+Do not add a generic Coptic font converter as a dependency. This keymap is
+font-specific: hori `\`, cheema `S`, shai `}`, eksi `{` do not match any
+standard legacy map (CS, New Athanasius, Avva Shenouda, …). A generic
+converter would silently mangle those four. The extractor's 32/32 map is
+authoritative. For later cross-checking of prayer texts typed in a *standard*
+legacy font, [StMarkus/coptic-font-unicode-converter](https://github.com/StMarkus/coptic-font-unicode-converter)
+is a reference only — not a dependency, and not for this site's keystrokes.
+
+## ADR-008 — Reading drills may have `meaning: null`
+The group-1 ⲟ+ⲛ+ⲧ/ⲕ set (تونك، تون، زونت، كونت، نوت، كوتك) is pronunciation
+sitting in the HTML `arabic` field, not unfinished lexicon. Those rows are
+`kind: "drill"`, Arabic in `translit.ar`, `meaning: null`, `published: true`.
+Lexicon and name rows still require a meaning. **Cost:** every UI that shows
+a word must not assume `meaning.ar` exists.

@@ -15,7 +15,8 @@ Machine-readable versions live in `.cursor/rules/`. This is the human copy.
 ## Done means
 
 `npm run validate` ✓ · `npm run build` ✓ · no TS errors · no new `any` ·
-checked at 375px · `session-context.md` and `journal.md` updated.
+checked at 375px · `IMPLEMENTATION_PLAN.md` checkboxes ticked for the step ·
+`session-context.md` and `journal.md` updated · other stale docs updated.
 
 ## Branching
 
