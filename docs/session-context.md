@@ -41,8 +41,9 @@ Update it in the same commit as the work it describes.
   derived from `words.teaches`, not `letters.exampleWords`.
 - Letter rules are always-on cards; Coptic in the condition is LTR chips.
 - PWA: `/manifest.webmanifest`, `/icons/icon-{192,512}.png`, SW `/sw.js` (prod).
-- README hero snap: `docs/readme-hero.png` (landing glyph set, not a live screenshot).
+- README hero snap: `docs/readme-hero.png` (glass tiles of the landing glyph set).
 - Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
+- GitHub description + topics set 2026-08-31. Landing glyphs use `.glyph-glass` hover.
 
 ## Notes
 

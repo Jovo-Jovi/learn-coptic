@@ -1,15 +1,23 @@
 <div align="center">
 
+<a href="https://learn-coptic.vercel.app">
+  <img src="docs/readme-hero.png" alt="الحروف اللي بتطفو في الصفحة الرئيسية: ⲁ ϣ ⲛ ⲅ ϯ ⲑ" width="1200" />
+</a>
+
 # تعلّم القبطي البحيري
 
-**Learn the Coptic of the Church — in Arabic, on your phone.**
+**الحروف اللي بتسمعها في القداس — مكتوبة يونيكود، بالعربي، على موبايلك.**
 
-<img src="docs/readme-hero.png" alt="الحروف اللي بتطفو في الصفحة الرئيسية: ⲁ ϣ ⲛ ⲅ ϯ ⲑ" width="1200" />
+<a href="https://learn-coptic.vercel.app"><img src="https://img.shields.io/badge/افتح_الموقع-learn--coptic.vercel.app-667eea?style=for-the-badge" alt="افتح الموقع" /></a>
+<img src="https://img.shields.io/badge/Bohairic-البحيري-43e97b?style=for-the-badge" alt="Bohairic" />
+<img src="https://img.shields.io/badge/٣٢_حرف-f093fb?style=for-the-badge" alt="32 letters" />
+<img src="https://img.shields.io/badge/١٤٧_كلمة-f6d365?style=for-the-badge" alt="147 words" />
+<img src="https://img.shields.io/badge/Unicode-Coptic-4facfe?style=for-the-badge" alt="Unicode Coptic" />
+<img src="https://img.shields.io/badge/free-no_account-fda085?style=for-the-badge" alt="Free, no account" />
 
-مجاناً. من غير حساب. من غير تحميل.
+مجاناً · من غير حساب · من غير تحميل · تقدّمك على الموبايل
 
-الحروف اللي بتسمعها في القداس، مكتوبة يونيكود —
-تنسخها وتحطها في واتساب، في درس، في أي حتة.
+افتح [الموقع](https://learn-coptic.vercel.app) — الحروف بتطفو في زجاج، وبتضيء لما تمرّ عليها.
 
 </div>
 
@@ -19,29 +27,24 @@ Most Coptic apps teach **Sahidic**, or they teach in English. This one is
 **Bohairic** — the dialect of the Coptic Orthodox Church today — and it
 starts in Arabic, the way a Sunday-school teacher talks.
 
-No login. No backend. Your progress stays on the phone.
+تنسخ الحرف وتحطه في واتساب، في درس، في أي حتة. اللي بتشوفه Ⲁ، مش
+حرف لاتيني لابس فونت.
 
-**Live:** [learn-coptic.vercel.app](https://learn-coptic.vercel.app)
+## ليه هنا
 
-## What’s live
+| | إيه اللي موجود |
+|---|---|
+| **٣٢ حرف** | سبع مجموعات بالألوان، من الحروف اللي شبه الإنجليزي للحروف اللي لأ |
+| **قواعد النطق** | على الحروف اللي محتاجاها — قبل Ⲉ Ⲓ Ⲏ، مش جدار نحو |
+| **١٤٧ كلمة** | قاموس، أسماء، وتمارين قراءة. التمرين عمره ما يتلبس بدلة قاموس |
+| **يونيكود** | تنسخه. وضع المخطوطات (أثناسيوس) اختياري — الافتراضي يونيكود |
 
-- **٣٢ حرف** in seven colour-coded groups, from the letters that look like
-  English to the ones that don’t
-- **قواعد النطق** on the letters that need them — قبل Ⲉ Ⲓ Ⲏ, not a wall of
-  grammar
-- **١٤٧ كلمة**: real vocabulary, names, and reading drills (a drill is never
-  dressed up as a dictionary entry)
-- **Unicode Coptic** you can copy. What you see is Ⲁ, not a Latin `A` in a
-  costume font
-- A **manuscript face** (Athanasius) if you want the old look — default is
-  still Unicode
+Phone-first. Dark by default. يشتغل في المتصفح اللي عندك.
 
-Phone-first. Dark by default. Works in the browser you already have.
+## لمين
 
-## Who it’s for
-
-A deacon learning the letters. A teacher sending a link in the parish group.
-Someone who grew up hearing Bohairic and wants to read it.
+شماس بيتعلّم الحروف. مدرّس باعت لينك في جروب الكنيسة. حد كبر وهو
+بيسمع بحيري وعايز يقرأ.
 
 English is a supporting line, not a second site.
 

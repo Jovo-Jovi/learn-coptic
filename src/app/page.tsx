@@ -61,7 +61,7 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <div className="relative h-28" aria-hidden="true" />
+        <div className="relative h-36" aria-hidden="true" />
       </section>
 
       <section className="relative z-10">
