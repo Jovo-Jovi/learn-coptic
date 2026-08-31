@@ -16,7 +16,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ---
 
 ## 2026-08-31 · S2 · Migrate vocabulary (GATE)
-Model: — | Commit: `<sha>` | Result: pass
+Model: — | Commit: `2f0a0b2` | Result: pass
 
 - 145 HTML rows converted to Unicode via the S1 keymap. Zero unknown keystrokes.
 - Final count 147 = 145 HTML + efran/efiot, retained from the sample
