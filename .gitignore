@@ -44,3 +44,8 @@ next-env.d.ts
 /legacy/
 /.extract/
 /.tmp/
+
+# Dictionary source copies (xlsx / mapped notepad). Harvest from output JSON.
+# Originals: https://archive.org/details/CopticArabicDictionary
+/docs/dictionary/coptic_arabic_dictionary.json
+/docs/dictionary/coptic_arabic_dictionary_dataset/source/

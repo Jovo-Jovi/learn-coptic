@@ -35,7 +35,7 @@ starts in Arabic, the way a Sunday-school teacher talks.
 | | |
 |---|---|
 | **[الحروف](https://learn-coptic.vercel.app/alphabet)** | ٣٢ حرف في سبع مجموعات بالألوان. اسمع اسم الحرف. قواعد النطق على الصفحة — بيتا ڤ/ب، غما غ/ج/ن، وحالات خاصة لسيما وتاف من غير ما يتغيّر تصنيفهم |
-| **[الكلمات](https://learn-coptic.vercel.app/vocabulary)** | ١٤٧ كلمة منهج (قاموس، أسماء، تمارين قراءة). التمرين عمره ما يتلبس بدلة قاموس. فوقهم قاموس أندرياس المقاري (~١٠٠٠٠ معنى عربي) |
+| **[الكلمات](https://learn-coptic.vercel.app/vocabulary)** | ١٤٧ كلمة منهج (قاموس، أسماء، تمارين قراءة). التمرين عمره ما يتلبس بدلة قاموس. فوقهم قاموس أندرياس المقاري وأسامة ثابت (~١١٨٠٠ معنى عربي) |
 | **[بحث](https://learn-coptic.vercel.app/search)** | دور بالعربي أو بالقبطي. المعنى ظاهر مع الحرف |
 | **[التدريب والكويز](https://learn-coptic.vercel.app/practice)** | تمرين قراءة، وكويز حرف↔صوت وكلمة↔معنى. الصناديق على الموبايل، من غير حساب |
 | **[الصلوات](https://learn-coptic.vercel.app/prayers)** | خين إفران، الربانية، الشكر، المزمور الخمسون. دوس على الكلمة القبطي يتعلّم المعنى في السطر العربي |
@@ -69,7 +69,7 @@ by Zod before the site builds:
 | File | What it holds |
 |---|---|
 | `src/data/json/letters.json` | 32 letters, groups, pronunciation rules, letter audio |
-| `src/data/json/words.json` | lexicon / drill / name (teaching set + Andreas harvest) |
+| `src/data/json/words.json` | lexicon / drill / name (teaching set + Andreas + unique Thabet harvest) |
 | `src/data/json/prayers.json` | four prayers, line tokens for tap-highlight |
 | `src/data/json/curriculum.json` | levels → lessons |
 | `src/data/json/pronunciation.json` | church-modern vs old Bohairic notes |

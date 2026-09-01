@@ -297,4 +297,17 @@ not a new invented gloss and not in the quiz. `wordId` stays teaching-set.
 **Cost:** most liturgical tokens still have no highlight. Filling every
 prayer word or every harvest row is a later human pass, not this slice.
 
+## ADR-023 — Thabet unique lemmas only; never overwrite
+The `docs/dictionary/` dump is Osama Thabet’s northern-dialect spreadsheet
+on Internet Archive (`CopticArabicDictionary`), labelled **Public Domain
+Mark 1.0** by the uploader. Unique Unicode lemmas may enter `words.json`.
+Skip exact Coptic, combining-stripped `normalized`, and case-folded
+normalized keys already in the file. Do not change an existing gloss.
+`translit.ar` stays empty (not a quiz word). ASCII backtick jinkim in the
+spreadsheet becomes combining grave, the same encoding as Andreas rows.
+The Greek-mapped notepad file and the Andreas grammar PDFs on that Archive
+item stay out. PDM is a mark, not a new licence grant for Dawoud.
+**Cost:** harvest Arabic is still unverified; two Coptic–Arabic dumps now
+sit in one lexicon.
+
 

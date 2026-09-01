@@ -1,3 +1,16 @@
+## 2026-09-02 · S18 · Thabet unique lemmas
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass (unique only)
+- `docs/dictionary/` Osama Thabet northern-dialect dump (IA PDM 1.0).
+  12333 headwords. Harvested 1534 new rows; skipped 10102 duplicates
+  (8533 exact Coptic, 1408 normalized, 161 case-folded) plus regex /
+  short / affix / unmapped. Existing glosses untouched. Teaching set 147.
+- Words 10324 → 11858. `npm run validate` ✓. Prayer captions 353 → 355
+  (129 blank / 117 unique).
+- Not ingested: mapped notepad, Andreas PDFs on the same Archive item,
+  Dawoud, KELLIA.
+
+Open: human S17 **PASS**. Prayer token blanks. S13c. S15.
+
 ## 2026-09-01 · research · Naqlun + Dawoud + Archive
 Model: Cursor Grok 4.6 | Commit: uncommitted | Result: checked, not ingested
 - مصباح النقلون: church app (`com.naqlun.coptdict`), 50k+ defs, online

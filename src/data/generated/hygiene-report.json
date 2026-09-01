@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-01",
   "teachingSet": 147,
-  "harvest": 10177,
-  "lemmaNull": 309,
+  "harvest": 11711,
+  "lemmaNull": 375,
   "lemmaNullIds": [
     "jnkmmon",
     "pixrictoc",
@@ -312,7 +312,73 @@
     "proceuxh-2",
     "procvora-2",
     "cqoinoufi-2",
-    "shaioushaiwoushaii-2"
+    "shaioushaiwoushaii-2",
+    "thabet-jnkpjnkehorioou",
+    "thabet-jnkmpare",
+    "thabet-jnkmpate",
+    "thabet-jnkmpe",
+    "thabet-jnkmmauat",
+    "thabet-jnkmmahori",
+    "thabet-jnkmmo",
+    "thabet-jnkmmom",
+    "thabet-jnkmmonte",
+    "thabet-jnkmmonta",
+    "thabet-jnkmmonjnkhorili",
+    "thabet-horianmo",
+    "thabet-jnkmpa",
+    "thabet-jnkmpenjnkqre",
+    "thabet-jnkmper",
+    "thabet-jnkmpinau",
+    "thabet-nibi",
+    "thabet-nishaikwt",
+    "thabet-jnknne",
+    "thabet-jnkncw",
+    "thabet-jnkntejnkshaitem",
+    "thabet-jnknkhaiht",
+    "thabet-jnktriac",
+    "thabet-jnktcabe",
+    "thabet-jnktcane",
+    "thabet-jnktce",
+    "thabet-jnktchout",
+    "thabet-jnktcie",
+    "thabet-jnktverie",
+    "thabet-vo",
+    "thabet-jnktve",
+    "thabet-jnktshaiouie",
+    "thabet-jnkthoriemke",
+    "thabet-jnkthoriemce",
+    "thabet-jnktjnkhorive",
+    "thabet-jnktse",
+    "thabet-jnkpcepi",
+    "thabet-jnkpcolcel",
+    "thabet-jnkpcwthr",
+    "thabet-jnkpcw",
+    "thabet-jnknjnkshaitop",
+    "thabet-horiananshaie",
+    "thabet-horiananshaio",
+    "thabet-hi",
+    "thabet-erat-2",
+    "thabet-qwlem",
+    "thabet-jnknoukour",
+    "thabet-majnknhoriht",
+    "thabet-jnkmp",
+    "thabet-nakhaii",
+    "thabet-jnknqw",
+    "thabet-jnknrw",
+    "thabet-jnkntot",
+    "thabet-jnknjnkhoriqh",
+    "thabet-oubh-2",
+    "thabet-ouwmjnknjnkhoriqh-2",
+    "thabet-ren-2",
+    "thabet-rw",
+    "thabet-coshi",
+    "thabet-tot",
+    "thabet-jnkxalom",
+    "thabet-jnkhoriqh",
+    "thabet-horiiwt-2",
+    "thabet-jnkhorira-2",
+    "thabet-jafhorint",
+    "thabet-jw"
   ],
   "homographs": [
     {
@@ -487,6 +553,16 @@
         "id": "nifi",
         "coptic": "ⲛⲓϥⲓ",
         "meaningAr": "هب (للريح)، تنفس (للانسان)؛"
+      },
+      {
+        "id": "thabet-nibi",
+        "coptic": "ⲛⲓⲃⲓ",
+        "meaningAr": "يسبح"
+      },
+      {
+        "id": "thabet-nishaikwt",
+        "coptic": "ⲛⲓϣⲕⲱⲧ",
+        "meaningAr": "ناطحة سحاب"
       }
     ],
     "ⲟⲩ": [
@@ -1464,6 +1540,226 @@
         "id": "ouwmnhoriqhf",
         "coptic": "ⲟⲩⲱⲙⲛϩⲑⲏϥ",
         "meaningAr": "ندم، اسف، حسرة، توبة"
+      },
+      {
+        "id": "thabet-ouathorii",
+        "coptic": "ⲟⲩⲁⲧϩⲓ",
+        "meaningAr": "لحمة ، في الثوب"
+      },
+      {
+        "id": "thabet-ouam",
+        "coptic": "ⲟⲩⲁⲙ",
+        "meaningAr": "يأكل"
+      },
+      {
+        "id": "thabet-ouac",
+        "coptic": "ⲟⲩⲁⲥ",
+        "meaningAr": "ينشر بمنشار"
+      },
+      {
+        "id": "thabet-ouat",
+        "coptic": "ⲟⲩⲁⲧ",
+        "meaningAr": "بمفردة"
+      },
+      {
+        "id": "thabet-ouateb",
+        "coptic": "ⲟⲩⲁⲧⲉⲃ",
+        "meaningAr": "ينقل"
+      },
+      {
+        "id": "thabet-ouashai",
+        "coptic": "ⲟⲩⲁϣ",
+        "meaningAr": "يريد"
+      },
+      {
+        "id": "thabet-ouahorim",
+        "coptic": "ⲟⲩⲁϩⲙ",
+        "meaningAr": "يجيب ؛ يكرر ؛ يرد"
+      },
+      {
+        "id": "thabet-ouahoritot",
+        "coptic": "ⲟⲩⲁϩⲧⲟⲧ",
+        "meaningAr": "يكرر"
+      },
+      {
+        "id": "thabet-ouahorijw",
+        "coptic": "ⲟⲩⲁϩϫⲱ",
+        "meaningAr": "يسند رأسه"
+      },
+      {
+        "id": "thabet-oubh",
+        "coptic": "ⲟⲩⲃⲏ",
+        "meaningAr": "ضد"
+      },
+      {
+        "id": "thabet-ouin",
+        "coptic": "ⲟⲩⲓⲛ",
+        "meaningAr": "قناة مائية"
+      },
+      {
+        "id": "thabet-ouelle",
+        "coptic": "ⲟⲩⲉⲗⲗⲉ",
+        "meaningAr": "لحن موسيقي"
+      },
+      {
+        "id": "thabet-ouelli",
+        "coptic": "ⲟⲩⲉⲗⲗⲓ",
+        "meaningAr": "لحن موسيقي"
+      },
+      {
+        "id": "thabet-ouem",
+        "coptic": "ⲟⲩⲉⲙ",
+        "meaningAr": "يأكل"
+      },
+      {
+        "id": "thabet-ouemjnkhoriqh",
+        "coptic": "ⲟⲩⲉⲙϩ̀ⲑⲏ",
+        "meaningAr": "يندم"
+      },
+      {
+        "id": "thabet-ouen",
+        "coptic": "ⲟⲩⲉⲛ",
+        "meaningAr": "يفتح ؛ جزء في الكسور ؛ جزء"
+      },
+      {
+        "id": "thabet-ouenhori",
+        "coptic": "ⲟⲩⲉⲛϩ",
+        "meaningAr": "يظهر ؛ (لازم)"
+      },
+      {
+        "id": "thabet-ouerp",
+        "coptic": "ⲟⲩⲉⲣⲡ",
+        "meaningAr": "يرسل"
+      },
+      {
+        "id": "thabet-ouecqen",
+        "coptic": "ⲟⲩⲉⲥⲑⲉⲛ",
+        "meaningAr": "يوسع"
+      },
+      {
+        "id": "thabet-oueteb",
+        "coptic": "ⲟⲩⲉⲧⲉⲃ",
+        "meaningAr": "يزيح ؛ ينتقل"
+      },
+      {
+        "id": "thabet-oueten",
+        "coptic": "ⲟⲩⲉⲧⲉⲛ",
+        "meaningAr": "يصب"
+      },
+      {
+        "id": "thabet-ouethori",
+        "coptic": "ⲟⲩⲉⲧϩ",
+        "meaningAr": "يسبك ؛ (لازم)"
+      },
+      {
+        "id": "thabet-oueshaiem",
+        "coptic": "ⲟⲩⲉϣⲉⲙ",
+        "meaningAr": "يعجن"
+      },
+      {
+        "id": "thabet-ouhshaic",
+        "coptic": "ⲟⲩⲏϣⲥ",
+        "meaningAr": "يتسع"
+      },
+      {
+        "id": "thabet-oueshaif",
+        "coptic": "ⲟⲩⲉϣϥ",
+        "meaningAr": "يسحق ؛ ينسحق"
+      },
+      {
+        "id": "thabet-ouehoriem",
+        "coptic": "ⲟⲩⲉϩⲉⲙ",
+        "meaningAr": "يجيب ؛ يكرر ؛ يرد"
+      },
+      {
+        "id": "thabet-ouej",
+        "coptic": "ⲟⲩⲉϫ",
+        "meaningAr": "يقطع ؛ دهليز"
+      },
+      {
+        "id": "thabet-ouejp",
+        "coptic": "ⲟⲩⲉϫⲡ",
+        "meaningAr": "يحطم ؛ (لازم)"
+      },
+      {
+        "id": "thabet-ouoqb",
+        "coptic": "ⲟⲩⲟⲑⲃ",
+        "meaningAr": "ينقل ؛ ينتقل"
+      },
+      {
+        "id": "thabet-ouoqn",
+        "coptic": "ⲟⲩⲟⲑⲛ",
+        "meaningAr": "يسكب"
+      },
+      {
+        "id": "thabet-ouom",
+        "coptic": "ⲟⲩⲟⲙ",
+        "meaningAr": "يأكل"
+      },
+      {
+        "id": "thabet-ouont",
+        "coptic": "ⲟⲩⲟⲛⲧ",
+        "meaningAr": "عند"
+      },
+      {
+        "id": "thabet-ouonta",
+        "coptic": "ⲟⲩⲟⲛⲧⲁ",
+        "meaningAr": "يوجد عند"
+      },
+      {
+        "id": "thabet-ouorp",
+        "coptic": "ⲟⲩⲟⲣⲡ",
+        "meaningAr": "يرسل"
+      },
+      {
+        "id": "thabet-ouocqwn",
+        "coptic": "ⲟⲩⲟⲥⲑⲱⲛ",
+        "meaningAr": "يوسع"
+      },
+      {
+        "id": "thabet-ouotn",
+        "coptic": "ⲟⲩⲟⲧⲛ",
+        "meaningAr": "يسكب"
+      },
+      {
+        "id": "thabet-ouoshaim",
+        "coptic": "ⲟⲩⲟϣⲙ",
+        "meaningAr": "يعجن"
+      },
+      {
+        "id": "thabet-ouoshaiouw",
+        "coptic": "ⲟⲩⲟϣⲟⲩⲱ",
+        "meaningAr": "يخبط"
+      },
+      {
+        "id": "thabet-ouohorim",
+        "coptic": "ⲟⲩⲟϩⲙ",
+        "meaningAr": "يفسر"
+      },
+      {
+        "id": "thabet-outw",
+        "coptic": "ⲟⲩⲧⲱ",
+        "meaningAr": "وسط"
+      },
+      {
+        "id": "thabet-ouwmjnkhoriqh",
+        "coptic": "ⲟⲩⲱⲙϩ̀ⲑⲏ",
+        "meaningAr": "يندم"
+      },
+      {
+        "id": "thabet-ouwmjnknjnkhoriqh",
+        "coptic": "ⲟⲩⲱⲙⲛ̀ϩ̀ⲑⲏ",
+        "meaningAr": "يندم"
+      },
+      {
+        "id": "thabet-ouetewn",
+        "coptic": "ⲟⲩⲉⲧⲉⲱⲛ",
+        "meaningAr": "يسكب"
+      },
+      {
+        "id": "thabet-oueshaic",
+        "coptic": "ⲟⲩⲉϣⲥ",
+        "meaningAr": "يتسع"
       }
     ],
     "ⲡⲓ": [
@@ -1613,6 +1909,26 @@
         "id": "horianatooui",
         "coptic": "ϩⲁⲛⲁⲧⲟⲟⲩⲓ",
         "meaningAr": "بداية الصباح، فجر، سحر، شفق"
+      },
+      {
+        "id": "thabet-horianmo",
+        "coptic": "ϩⲁⲛⲙⲟϯ",
+        "meaningAr": "عروق"
+      },
+      {
+        "id": "thabet-horiana",
+        "coptic": "ϩⲁⲛⲁ",
+        "meaningAr": "بداية"
+      },
+      {
+        "id": "thabet-horiananshaie",
+        "coptic": "ϩⲁⲛⲁⲛϣⲉ",
+        "meaningAr": "رئيس مائة"
+      },
+      {
+        "id": "thabet-horiananshaio",
+        "coptic": "ϩⲁⲛⲁⲛϣⲟ",
+        "meaningAr": "رئيس ألف"
       }
     ],
     "ϯ": [
@@ -2955,6 +3271,324 @@
         "id": "shaioushaiwoushaii-2",
         "coptic": "ϯϣⲟⲩϣⲱⲟⲩϣⲓ",
         "meaningAr": "قدم تقدمة، قدم ذبيحة"
+      },
+      {
+        "id": "thabet-vo",
+        "coptic": "ϯⲫⲟ",
+        "meaningAr": "يشيع"
+      },
+      {
+        "id": "thabet-hi",
+        "coptic": "ϯⲏⲓ",
+        "meaningAr": "يعطي"
+      },
+      {
+        "id": "thabet-erat-2",
+        "coptic": "ϯⲉⲣⲁⲧ",
+        "meaningAr": "يلبس في قدميه"
+      },
+      {
+        "id": "thabet-qwlem",
+        "coptic": "ϯⲑⲱⲗⲉⲙ",
+        "meaningAr": "ينجس"
+      },
+      {
+        "id": "thabet-jnknoukour",
+        "coptic": "ϯⲛ̀ⲟⲩⲕⲟⲩⲣ",
+        "meaningAr": "يلطم"
+      },
+      {
+        "id": "thabet-majnknhoriht",
+        "coptic": "ϯⲙⲁϯⲛ̀ϩⲏⲧ",
+        "meaningAr": "متعة"
+      },
+      {
+        "id": "thabet-jnkmp",
+        "coptic": "ϯⲙ̀ⲡ",
+        "meaningAr": "يتقدم"
+      },
+      {
+        "id": "thabet-nakhaii",
+        "coptic": "ϯⲛⲁϧⲓ",
+        "meaningAr": "تتمخض"
+      },
+      {
+        "id": "thabet-jnknqw",
+        "coptic": "ϯⲛ̀ⲑⲱ",
+        "meaningAr": "يتزوج"
+      },
+      {
+        "id": "thabet-jnknrw",
+        "coptic": "ϯⲛ̀ⲣⲱ",
+        "meaningAr": "يقول"
+      },
+      {
+        "id": "thabet-jnkntot",
+        "coptic": "ϯⲛ̀ⲧⲟⲧ",
+        "meaningAr": "يساعد"
+      },
+      {
+        "id": "thabet-jnknjnkhoriqh",
+        "coptic": "ϯⲛ̀ϩ̀ⲑⲏ",
+        "meaningAr": "ينتبه"
+      },
+      {
+        "id": "thabet-oubh-2",
+        "coptic": "ϯⲟⲩⲃⲏ",
+        "meaningAr": "يقاوم"
+      },
+      {
+        "id": "thabet-ouwmjnknjnkhoriqh-2",
+        "coptic": "ϯⲟⲩⲱⲙⲛ̀ϩ̀ⲑⲏ",
+        "meaningAr": "متأسف على"
+      },
+      {
+        "id": "thabet-ren-2",
+        "coptic": "ϯⲣⲉⲛ",
+        "meaningAr": "يلقب"
+      },
+      {
+        "id": "thabet-rw",
+        "coptic": "ϯⲣⲱ",
+        "meaningAr": "يقص"
+      },
+      {
+        "id": "thabet-coshi",
+        "coptic": "ϯⲥⲟϭⲏⲓ",
+        "meaningAr": "يوجه"
+      },
+      {
+        "id": "thabet-tot",
+        "coptic": "ϯⲧⲟⲧ",
+        "meaningAr": "يزق"
+      },
+      {
+        "id": "thabet-jnkxalom",
+        "coptic": "ϯⲭ̀ⲁⲗⲟⲙ",
+        "meaningAr": "يكلل"
+      },
+      {
+        "id": "thabet-jnkhoriqh",
+        "coptic": "ϯϩ̀ⲑⲏ",
+        "meaningAr": "يلاحظ"
+      },
+      {
+        "id": "thabet-horiiwt-2",
+        "coptic": "ϯϩⲓⲱⲧ",
+        "meaningAr": "يتسربل"
+      },
+      {
+        "id": "thabet-jnkhorira-2",
+        "coptic": "ϯϩ̀ⲣⲁ",
+        "meaningAr": "ولي وجهه"
+      },
+      {
+        "id": "thabet-jafhorint",
+        "coptic": "ϯϫⲁϥϩⲛⲧ",
+        "meaningAr": "يهيج"
+      },
+      {
+        "id": "thabet-jw",
+        "coptic": "ϯϫⲱ",
+        "meaningAr": "يستسلم"
+      }
+    ],
+    "ⲡ̀": [
+      {
+        "id": "thabet-jnkpjnkehorioou",
+        "coptic": "ⲡ̀ⲉ̀ϩⲟⲟⲩ",
+        "meaningAr": "يوم الأثنين"
+      },
+      {
+        "id": "thabet-jnkpcepi",
+        "coptic": "ⲡ̀ⲥⲉⲡⲓ",
+        "meaningAr": "بقية"
+      },
+      {
+        "id": "thabet-jnkpcolcel",
+        "coptic": "ⲡ̀ⲥⲟⲗⲥⲉⲗ",
+        "meaningAr": "تعزية"
+      },
+      {
+        "id": "thabet-jnkpcwthr",
+        "coptic": "ⲡ̀ⲥⲱⲧⲏⲣ",
+        "meaningAr": "المخلص"
+      },
+      {
+        "id": "thabet-jnkpcw",
+        "coptic": "ⲡ̀ⲥⲱϯ",
+        "meaningAr": "الخلاص"
+      }
+    ],
+    "ⲙ̀": [
+      {
+        "id": "thabet-jnkmpare",
+        "coptic": "ⲙ̀ⲡⲁⲣⲉ",
+        "meaningAr": "علامة نفي زمن المضارع الدال على التكرار ؛ لا"
+      },
+      {
+        "id": "thabet-jnkmpate",
+        "coptic": "ⲙ̀ⲡⲁⲧⲉ",
+        "meaningAr": "قبل أن"
+      },
+      {
+        "id": "thabet-jnkmpe",
+        "coptic": "ⲙ̀ⲡⲉ",
+        "meaningAr": "علامة نفي الماضي التام ؛ لم"
+      },
+      {
+        "id": "thabet-jnkmmauat",
+        "coptic": "ⲙ̀ⲙⲁⲩⲁⲧ",
+        "meaningAr": "وحيد ؛ بمفرده"
+      },
+      {
+        "id": "thabet-jnkmmahori",
+        "coptic": "ⲙ̀ⲙⲁϩ",
+        "meaningAr": "أداة تسبق العدد للدلالة على الترتيب العددي"
+      },
+      {
+        "id": "thabet-jnkmmo",
+        "coptic": "ⲙ̀ⲙⲟ",
+        "meaningAr": "ضمير شخصي منفصل يتصل بالضمائر"
+      },
+      {
+        "id": "thabet-jnkmmom",
+        "coptic": "ⲙ̀ⲙⲟⲙ",
+        "meaningAr": "لا ؛ وإلا"
+      },
+      {
+        "id": "thabet-jnkmmonte",
+        "coptic": "ⲙ̀ⲙⲟⲛⲧⲉ",
+        "meaningAr": "ليس عند"
+      },
+      {
+        "id": "thabet-jnkmmonta",
+        "coptic": "ⲙ̀ⲙⲟⲛⲧⲁ",
+        "meaningAr": "ليس عند"
+      },
+      {
+        "id": "thabet-jnkmmonjnkhorili",
+        "coptic": "ⲙ̀ⲙⲟⲛϩ̀ⲗⲓ",
+        "meaningAr": "لا أحد"
+      },
+      {
+        "id": "thabet-jnkmpa",
+        "coptic": "ⲙ̀ⲡⲁ",
+        "meaningAr": "لا"
+      },
+      {
+        "id": "thabet-jnkmpenjnkqre",
+        "coptic": "ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉ",
+        "meaningAr": "لا تجعل ، لا الناهية المتعدية"
+      },
+      {
+        "id": "thabet-jnkmper",
+        "coptic": "ⲙ̀ⲡⲉⲣ",
+        "meaningAr": "لا الناهية ، تتصل بالفعل مباشرة"
+      },
+      {
+        "id": "thabet-jnkmpinau",
+        "coptic": "ⲙ̀ⲡⲓⲛⲁⲩ",
+        "meaningAr": "لما"
+      }
+    ],
+    "ⲛ̀": [
+      {
+        "id": "thabet-jnknne",
+        "coptic": "ⲛ̀ⲛⲉ",
+        "meaningAr": "لا"
+      },
+      {
+        "id": "thabet-jnkncw",
+        "coptic": "ⲛ̀ⲥⲱ",
+        "meaningAr": "خلف ؛ حرف جر يتبع بعض الافعال لتكسبها معنى التبعية ؛ جهة"
+      },
+      {
+        "id": "thabet-jnknt",
+        "coptic": "ⲛ̀ⲧ",
+        "meaningAr": "تتصل بالضمائر للتعبير عن الملكية"
+      },
+      {
+        "id": "thabet-jnkntejnkshaitem",
+        "coptic": "ⲛ̀ⲧⲉϣ̀ⲧⲉⲙ",
+        "meaningAr": "لكي لا"
+      },
+      {
+        "id": "thabet-jnknkhaiht",
+        "coptic": "ⲛ̀ϧⲏⲧ",
+        "meaningAr": "في"
+      },
+      {
+        "id": "thabet-jnknjnkshaitop",
+        "coptic": "ⲛ̀ϣ̀ⲧⲟⲡ",
+        "meaningAr": "بغتة"
+      }
+    ],
+    "ⲧ̀": [
+      {
+        "id": "thabet-jnktriac",
+        "coptic": "ⲧ̀ⲣⲓⲁⲥ",
+        "meaningAr": "ثالوث"
+      },
+      {
+        "id": "thabet-jnktcabe",
+        "coptic": "ⲧ̀ⲥⲁⲃⲉ",
+        "meaningAr": "يعلم"
+      },
+      {
+        "id": "thabet-jnktcane",
+        "coptic": "ⲧ̀ⲥⲁⲛⲉ",
+        "meaningAr": "يزين"
+      },
+      {
+        "id": "thabet-jnktce",
+        "coptic": "ⲧ̀ⲥⲉ",
+        "meaningAr": "يسقي"
+      },
+      {
+        "id": "thabet-jnktchout",
+        "coptic": "ⲧ̀ⲥⲏⲟⲩⲧ",
+        "meaningAr": "شبعان"
+      },
+      {
+        "id": "thabet-jnktcie",
+        "coptic": "ⲧ̀ⲥⲓⲉ",
+        "meaningAr": "يشبع"
+      },
+      {
+        "id": "thabet-jnktverie",
+        "coptic": "ⲧ̀ⲫⲉⲣⲓⲉ",
+        "meaningAr": "يستأصل"
+      },
+      {
+        "id": "thabet-jnktve",
+        "coptic": "ⲧ̀ⲫⲉ",
+        "meaningAr": "يشيع"
+      },
+      {
+        "id": "thabet-jnktshaiouie",
+        "coptic": "ⲧ̀ϣⲟⲩⲓⲉ",
+        "meaningAr": "يجف"
+      },
+      {
+        "id": "thabet-jnkthoriemke",
+        "coptic": "ⲧ̀ϩⲉⲙⲕⲉ",
+        "meaningAr": "يعذب"
+      },
+      {
+        "id": "thabet-jnkthoriemce",
+        "coptic": "ⲧ̀ϩⲉⲙⲥⲉ",
+        "meaningAr": "يجلس"
+      },
+      {
+        "id": "thabet-jnktjnkhorive",
+        "coptic": "ⲧ̀ϩ̀ⲫⲉ",
+        "meaningAr": "يشيع"
+      },
+      {
+        "id": "thabet-jnktse",
+        "coptic": "ⲧ̀ϭⲉ",
+        "meaningAr": "يغرس"
       }
     ]
   }

@@ -108,8 +108,10 @@ Part of speech, when present: اسم، فعل، ضمير، صفة، حرف جر�
 Example words on `/letter/[id]` are derived from `words.teaches`, lexicon
 first, capped at 6. `letters.json` `exampleWords[]` stays empty.
 
-Harvested Andreas rows keep the dictionary Arabic. They are not reading
-drills. Credit remnqymi / St Macarius on `/about`.
+Harvested Andreas and Thabet rows keep the dictionary Arabic. They are not
+reading drills. Credit remnqymi / St Macarius and Osama Thabet on `/about`.
+Thabet ids are `thabet-*`. Do not overwrite a stored row when the new dump
+repeats the same Coptic.
 
 Word art (S14) is teaching-set concrete nouns only, one prompt template
 and one palette, themed batches. A page with two pictures and twenty

@@ -10,14 +10,15 @@ blank in the UI until a human sources Arabic or approves a parse peel.
 
 ## GitHub dictionaries — merge or not
 
-The only dumpable Coptic–Arabic lexicon is remnqymi Andreas (**CC BY-SA 4.0**).
-Learner length 2–8 was harvested first; 9–17 leftovers were harvested 2026-09-01
-(`node scripts/harvest-andreas.mjs --leftovers`). There is still **no second**
-Arabic dump.
+Dumpable Coptic–Arabic lexicons in `words.json`: remnqymi Andreas
+(**CC BY-SA 4.0**) and unique Osama Thabet northern-dialect lemmas
+(Internet Archive **Public Domain Mark 1.0**). Do not merge KELLIA English
+into `meaning.ar`.
 
 | Repo / file | Arabic? | Licence | Merge? |
 |---|---|---|---|
 | [pishoyg/coptic](https://github.com/pishoyg/coptic) `dictionary/stmacariusmonastery_org/data/output/andreas.json` | Yes | **CC BY-SA 4.0** | **In** `words.json` (2–8 then 9–17 letters). Remaining skips: affix hyphen, no Arabic, regex, letter names, unmapped glyphs. |
+| [IA CopticArabicDictionary](https://archive.org/details/CopticArabicDictionary) Osama Thabet xlsx | Yes | **PDM 1.0** (uploader mark) | **In** unique lemmas only (`node scripts/harvest-thabet.mjs`). Exact / normalized / case-folded duplicates skipped. Notepad Greek-mapped file and bundled Andreas PDFs not ingested. |
 | [KELLIA/dictionary](https://github.com/KELLIA/dictionary) (CDO / Comprehensive Coptic Lexicon TEI) | No (EN / FR / DE) | CC BY-SA 4.0 | **No** into `meaning.ar`. Do not machine-translate. Optional later: store English as `meaning.en` only if a human asks. |
 | [louiseyousre2020/coptic-words](https://github.com/louiseyousre2020/coptic-words) | No | Derived from KELLIA | **No** — Bohairic wordlist, not Arabic glosses. |
 | [KyroHub/CopticCompass](https://github.com/KyroHub/CopticCompass) | No (EN / NL / Greek) | Code MIT; **content rights reserved** | **No** Arabic merge. |
@@ -39,10 +40,10 @@ not missing headwords. Long leftovers filled a few exact liturgical lemmas
 | Measure | Count |
 |---|---|
 | Prayer tokens | 484 |
-| Tokens with a stored / parse caption | 353 |
-| Tokens with **no** caption (occurrences) | 131 |
-| Unique unmarked Coptic forms | 119 |
-| Published words | 10324 |
+| Tokens with a stored / parse caption | 355 |
+| Tokens with **no** caption (occurrences) | 129 |
+| Unique unmarked Coptic forms | 117 |
+| Published words | 11858 |
 | Teaching set | 147 |
 | Published rows with `meaning.ar` null | 6 (all 6 drills; other: none) |
 | Grammar affixes `parseReady` | 13 |
@@ -53,12 +54,13 @@ not missing headwords. Long leftovers filled a few exact liturgical lemmas
 ## Later actions
 
 1. **Andreas leftovers (9–17)** — done 2026-09-01. Same CC BY-SA dump.
-2. **Do not** merge KELLIA / Compass / coptic-words / copticlingo / copticmt
+2. **Thabet unique lemmas** — done 2026-09-02. Duplicates skipped.
+3. **Do not** merge KELLIA / Compass / coptic-words / copticlingo / copticmt
    into `meaning.ar`.
-3. **Prayer tokens below** — human `gloss` / `arHighlight` on the line,
+4. **Prayer tokens below** — human `gloss` / `arHighlight` on the line,
    or more `parseReady` affixes after S17 GATE **PASS** (optative ⲙⲁⲣⲉ-,
    past ⲁ- + subject, ⲛ̀ϫⲉ, object ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ / ⲉϫⲱ-). Never invent Arabic.
-4. **Grant track** — Dawoud, Naqlun, or copticsite.json only if the owner
+5. **Grant track** — Dawoud, Naqlun, or copticsite.json only if the owner
    names the source in writing.
 
 ---
@@ -85,7 +87,6 @@ Count is how often the form appears across the four prayers.
 | 1 | psalm-50 | ⲁⲓⲁⲓϥ |
 | 1 | thanksgiving | ⲁⲕⲉⲛⲧⲉⲛ |
 | 1 | thanksgiving | ⲁⲕⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ |
-| 1 | psalm-50 | ⲁⲕⲙⲉⲛⲣⲉ |
 | 1 | psalm-50 | ⲁⲕⲧⲁⲙⲟⲓ |
 | 1 | thanksgiving | ⲁⲕϣⲟⲡⲧⲉⲛ |
 | 1 | thanksgiving | ⲁⲕϯⲧⲟⲧⲉⲛ |
@@ -112,7 +113,6 @@ Count is how often the form appears across the four prayers.
 | 1 | psalm-50 | ⲉⲕⲉ̀ⲧⲟⲩⲃⲟⲓ |
 | 1 | psalm-50 | ⲉⲕⲉ̀ϯⲙⲁϯ |
 | 1 | psalm-50 | ⲉⲕⲛⲁϭⲓϩⲁⲡ |
-| 1 | thanksgiving | ⲉⲛⲉⲣⲅⲓⲁ |
 | 1 | psalm-50 | ⲉ̀ⲟⲩⲑⲉⲗⲏⲗ |
 | 1 | psalm-50 | ⲉ̀ⲡ̀ⲱϣⲓ |
 | 1 | psalm-50 | ⲉ̀ⲣⲉⲣⲱⲓ |

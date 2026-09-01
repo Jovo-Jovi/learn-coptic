@@ -4,8 +4,9 @@ Search index for later harvest. **Do not copy a site into `src/data/json/`
 from this file.** Unicode Coptic only. Bohairic first. Never invent a gloss.
 A request is not a grant (same rule as ADR-013 / St-Takla).
 
-This site today: **10324** published words (147 teaching set + Andreas
-harvest including 9–17 letter leftovers), **4** prayers. Letter audio is S10 (done). Word audio is S10b
+This site today: **11858** published words (147 teaching set + Andreas
+harvest including 9–17 letter leftovers + 1534 unique Thabet lemmas), **4**
+prayers. Letter audio is S10 (done). Word audio is S10b
 optional, teaching set only. Prayer *text* is S13a; synced audio is S13c.
 
 ---
@@ -48,11 +49,12 @@ For **this** site, the useful order is: church prayers (Reader / Tasbeha / St-Ta
 | Work | URL | Notes |
 |---|---|---|
 | معوض داود عبد النور، *قاموس اللغة القبطية* (بحيري + صعيدي) | Coptic Treasures (2nd ed., 1057 pp, 197MB PDF): https://coptic-treasures.com/book/coptic-dictionary-moawad-abd-al-nour/ · remnqymi page scan (not JSON): https://remnqymi.com/dawoud/?page=1 · IA community scans, **no `licenseurl`**: [20221116_20221116_1358](https://archive.org/details/20221116_20221116_1358), [coptic-dictionary_-M.-Abdalnour_1998](https://archive.org/details/coptic-dictionary_-M.-Abdalnour_1998), [AAlexandrina-408096](https://archive.org/details/AAlexandrina-408096). Skip z-lib id `by-z-lib.org-compressed-compressed`. | Largest Coptic–Arabic **book**. Author died 2000; 2013 reprint (Cultural Centre) still sold. IA OCR is Tesseract Arabic/Persian — Coptic glyphs are garbage. Being on Archive is not a data grant. Do not paste pages or OCR into `words.json`. Background: https://copticliterature.wordpress.com/2016/12/10/bohairicsahidic-coptic-arabic-dictionary-by-muawad-dauod-abdal-nour/ |
-| الراهب أندرياس المقاري، *قاموس قبطي عربي* (بحيري + يوناني كنسي) | Book: https://shop.stmacariusmonastery.org/?product=%D9%82%D8%A7%D9%85%D9%88%D8%B3-%D9%82%D8%A8%D8%B7%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A · dump: [andreas.json](https://github.com/pishoyg/coptic/blob/master/dictionary/stmacariusmonastery_org/data/output/andreas.json) (~6.6 MB, remnqymi **CC BY-SA 4.0**) | Only dumpable Coptic–Arabic lexicon. In `words.json`: 8488 rows of 2–8 letters, then 1689 leftovers of 9–17 letters (2026-09-01). Re-run leftovers: `node scripts/harvest-andreas.mjs --leftovers`. |
+| الراهب أندرياس المقاري، *قاموس قبطي عربي* (بحيري + يوناني كنسي) | Book: https://shop.stmacariusmonastery.org/?product=%D9%82%D8%A7%D9%85%D9%88%D8%B3-%D9%82%D8%A8%D8%B7%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A · dump: [andreas.json](https://github.com/pishoyg/coptic/blob/master/dictionary/stmacariusmonastery_org/data/output/andreas.json) (~6.6 MB, remnqymi **CC BY-SA 4.0**) | First dumpable Coptic–Arabic lexicon. In `words.json`: 8488 rows of 2–8 letters, then 1689 leftovers of 9–17 letters (2026-09-01). Re-run leftovers: `node scripts/harvest-andreas.mjs --leftovers`. |
+| أسامة ثابت، قاموس قبطي عربي (اللهجة الشمالية) | [IA CopticArabicDictionary](https://archive.org/details/CopticArabicDictionary) Unicode xlsx + JSON in `docs/dictionary/` | Uploader labelled **PDM 1.0**. Unique lemmas harvested 2026-09-02 (`node scripts/harvest-thabet.mjs`): 1534 new, 10102 skipped as duplicates. Notepad mapped-Greek file and bundled Andreas PDFs not ingested. |
 | Adeeb B. Makar, *Abbreviated Coptic–English Dictionary* (2001) | St Antonius / St Mina; overview https://www.orthodoxbookstore.org/products/coptic-english-dictionary | Greco-Bohairic pronunciation; English only |
 | مصباح النقلون / Naqlun CopDic (دير الملاك غبريال، جبل النقلون؛ الراهب أرساني النقلوني، إشراف الأنبا أبرآم) | [Play](https://play.google.com/store/apps/details?id=com.naqlun.coptdict) · [App Store](https://apps.apple.com/us/app/naqlun-coptic-dictionary/id1525120781) · [Facebook](https://www.facebook.com/NaqlunCopticDictionary) · naqluncopdic@gmail.com | Church **app**, not a dump. 50,000+ definitions, Bohairic + Fayyumic, Coptic↔Arabic; cites Crum / Černý / Labib. Search is **online**. APK ~20 MB is the client. **No JSON/API.** Do not scrape. Grant: that Gmail. |
 
-There is **no larger legal Coptic–Arabic JSON/XML dump** than Andreas. Dawoud is scans/PDF (searchable at remnqymi `/dawoud`), not structured data. CDO/KELLIA is English/French/German. [Coptic Compass](https://www.copticcompass.com/en/developers) has a public dictionary API, but glosses are Coptic / English / Dutch / Greek — **not Arabic**. [UBC-NLP/copticmt](https://github.com/UBC-NLP/copticmt) is parallel *sentences* for MT, not a lemma dictionary. Machine-translating those into `meaning.ar` is forbidden. Remaining unmarked prayer tokens are mostly **inflected forms** (ⲙⲁⲣⲉ-, ⲁϥ-, …), not missing lemmas. Inventory: `docs/gaps.md`.
+Dumpable Coptic–Arabic structured data in this repo: Andreas (CC BY-SA 4.0) and unique Thabet lemmas (IA PDM 1.0). Dawoud is scans/PDF (searchable at remnqymi `/dawoud`), not a grant. CDO/KELLIA is English/French/German. [Coptic Compass](https://www.copticcompass.com/en/developers) has a public dictionary API, but glosses are Coptic / English / Dutch / Greek — **not Arabic**. [UBC-NLP/copticmt](https://github.com/UBC-NLP/copticmt) is parallel *sentences* for MT, not a lemma dictionary. Machine-translating those into `meaning.ar` is forbidden. Remaining unmarked prayer tokens are mostly **inflected forms** (ⲙⲁⲣⲉ-, ⲁϥ-, …), not missing lemmas. Inventory: `docs/gaps.md`.
 
 ### Learnability portals (indexes, not new lemmas)
 
@@ -62,10 +64,12 @@ There is **no larger legal Coptic–Arabic JSON/XML dump** than Andreas. Dawoud 
 
 ### Our data
 
-- `src/data/json/words.json` — 10324 published (teaching 147 + Andreas harvest).
-  HTML set plus Andreas (St Macarius) via remnqymi, CC BY-SA 4.0.
-  S16: every row has `normalized` (combining marks stripped) and `lemma`
-  (headword or null). Hygiene report: `src/data/generated/hygiene-report.json`.
+- `src/data/json/words.json` — 11858 published (teaching 147 + Andreas harvest
+  + 1534 unique Thabet lemmas). HTML set plus Andreas (St Macarius) via
+  remnqymi, CC BY-SA 4.0, plus Osama Thabet northern-dialect unique rows
+  (IA PDM 1.0). S16: every row has `normalized` (combining marks stripped)
+  and `lemma` (headword or null). Hygiene report:
+  `src/data/generated/hygiene-report.json`.
   CDO/KELLIA store lemmas not inflected forms ([W18-4502](https://aclanthology.org/W18-4502.pdf));
   Bohairic jinkim is combining grave U+0300 (Unicode N2636). Do not NFKC-fold ϣ.
 

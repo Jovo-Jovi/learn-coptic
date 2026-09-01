@@ -17,7 +17,7 @@ export function HarvestLetterLinks({ group }: { group: GroupId }) {
     <section className="mt-2 pb-8">
       <h2 className="mb-2 text-lg text-text">باقي القاموس</h2>
       <p className="mb-6 text-sm text-text-dim">
-        {easternDigits(total)} كلمة من قاموس أندرياس — من غير نطق عربي لسه.
+        {easternDigits(total)} كلمة من القاموس — من غير نطق عربي لسه.
         افتح الحرف.
       </p>
       <ul className="flex flex-wrap gap-2">

@@ -35,9 +35,13 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
   concrete nouns only. Generated art uses `ai-generated` plus `provenance`
   (model, prompt, date) — ADR-019.
 - **Dictionary harvest.** Andreas lemmas via remnqymi are **CC BY-SA 4.0**
-  (same family as site content). Do not dump Dawoud scans (including
+  (same family as site content). Unique Osama Thabet northern-dialect
+  lemmas (Internet Archive `CopticArabicDictionary`, **Public Domain Mark
+  1.0** as labelled by the uploader) are in `words.json` only when they
+  are not already stored (ADR-023). Do not dump Dawoud scans (including
   Internet Archive OCR), Naqlun CopDic, Coptic Reader, Tasbeha, or St-Takla
-  into `words.json` without a grant.
+  into `words.json` without a grant. Do not ingest the mapped notepad file
+  or the Andreas PDFs bundled on the same Archive item.
 - **Recordings.** Letter-name clips in `public/audio/letters/` come from
   Coptic Literacy MP4s. Owner authorized church reuse on 2026-09-01
   (ADR-016). Credit on `/about`. Word and prayer reciters still need

@@ -1,0 +1,205 @@
+{
+  "json_parse_ok": true,
+  "entry_count_declared": 12333,
+  "entry_count_actual": 12333,
+  "sense_count_declared": 14879,
+  "sense_count_actual": 14879,
+  "duplicate_sense_tuples": 0,
+  "issues": [],
+  "coptic_script_entries": 12324,
+  "arabic_script_senses": 14879,
+  "samples": [
+    {
+      "id": "186ec48294c6",
+      "headword": "ⲁ , ⲁ (ⲁⲗⲫⲁ)",
+      "variants": [
+        {
+          "greek": "α , α (αλφα)"
+        },
+        {
+          "pronunciation": "ɑ , ɑ (ɑlpʰɑ)"
+        },
+        {
+          "latin": "a , a (alpha)"
+        },
+        {
+          "phonetic": "a , a (alpha)"
+        },
+        {
+          "part_of_speech": "حرف"
+        }
+      ],
+      "senses": [
+        {
+          "arabic": "الحرف الأول من الأبجدية القبطية",
+          "part_of_speech": "حرف",
+          "source_row": 2
+        }
+      ]
+    },
+    {
+      "id": "3bf7a8ef8dd3",
+      "headword": "ⲟⲩⲁⲓ",
+      "variants": [
+        {
+          "greek": "ουαι"
+        },
+        {
+          "pronunciation": "owɑi"
+        },
+        {
+          "latin": "ouai"
+        },
+        {
+          "phonetic": "üai"
+        },
+        {
+          "part_of_speech": "رقم"
+        },
+        {
+          "pronunciation": "oːɑi / owɑi"
+        }
+      ],
+      "senses": [
+        {
+          "arabic": "واحد",
+          "part_of_speech": "رقم",
+          "source_row": 3
+        }
+      ]
+    },
+    {
+      "id": "87f75414a673",
+      "headword": "ⲁ",
+      "variants": [
+        {
+          "greek": "α"
+        },
+        {
+          "pronunciation": "ɑ"
+        },
+        {
+          "latin": "a"
+        },
+        {
+          "phonetic": "a"
+        },
+        {
+          "part_of_speech": "رقم"
+        },
+        {
+          "part_of_speech": "prefix بادئة"
+        }
+      ],
+      "senses": [
+        {
+          "arabic": "واحد",
+          "part_of_speech": "رقم",
+          "source_row": 4
+        },
+        {
+          "arabic": "علامة زمن الماضي توضع قبل الضمير أو الاسم",
+          "part_of_speech": "prefix بادئة",
+          "source_row": 5
+        },
+        {
+          "arabic": "بادئة تعطي معنى الأمر",
+          "part_of_speech": "prefix بادئة",
+          "source_row": 6
+        },
+        {
+          "arabic": "بادئة زائدة ببعض الكلمات",
+          "part_of_speech": "prefix بادئة",
+          "source_row": 8
+        },
+        {
+          "arabic": "بادئة تفيد عكس المعنى أو النفي",
+          "part_of_speech": "prefix بادئة",
+          "source_row": 10
+        }
+      ]
+    },
+    {
+      "id": "836f1f5a8af1",
+      "headword": "ⲟⲣⲅⲏ",
+      "variants": [
+        {
+          "greek": "οργη"
+        },
+        {
+          "pronunciation": "orgiː"
+        },
+        {
+          "latin": "orjy"
+        },
+        {
+          "phonetic": "orgï"
+        },
+        {
+          "part_of_speech": "اسم"
+        },
+        {
+          "gender": "مؤنث"
+        },
+        {
+          "etymology": "يوناني"
+        }
+      ],
+      "senses": [
+        {
+          "arabic": "غضب",
+          "part_of_speech": "اسم",
+          "gender": "مؤنث",
+          "etymology": "يوناني",
+          "note": "حنق ؛ غيظ",
+          "source_row": 7427
+        }
+      ]
+    },
+    {
+      "id": "9bd5035d6714",
+      "headword": "ϯϯ",
+      "variants": [
+        {
+          "greek": "ϯϯ"
+        },
+        {
+          "pronunciation": "titi"
+        },
+        {
+          "latin": "titi"
+        },
+        {
+          "phonetic": "titi"
+        },
+        {
+          "part_of_speech": "فعل"
+        },
+        {
+          "gender": "صيغة مصدرية للفعل يأتي بعدها أداة المفعول ثم المفعول"
+        },
+        {
+          "part_of_speech": "اسم"
+        },
+        {
+          "gender": "مذكر"
+        }
+      ],
+      "senses": [
+        {
+          "arabic": "يضرب القماش لتنظيفه",
+          "part_of_speech": "فعل",
+          "gender": "صيغة مصدرية للفعل يأتي بعدها أداة المفعول ثم المفعول",
+          "note": "يقصر القماش",
+          "source_row": 15863
+        },
+        {
+          "arabic": "حجر القصارين",
+          "part_of_speech": "اسم",
+          "gender": "مذكر",
+          "source_row": 15864
+        }
+      ]
+    }
+  ]
+}

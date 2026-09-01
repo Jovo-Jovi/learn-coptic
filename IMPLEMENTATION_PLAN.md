@@ -238,6 +238,10 @@ KELLIA English into `meaning.ar`.
 - [x] Harvest leftover Andreas lemmas from remnqymi `andreas.json`
       (same CC BY-SA file; 9–17 Coptic letters). 1689 rows appended
       2026-09-01 (`node scripts/harvest-andreas.mjs --leftovers`).
+- [x] Harvest unique Osama Thabet northern-dialect lemmas (IA PDM 1.0).
+      1534 rows appended 2026-09-02 (`node scripts/harvest-thabet.mjs`).
+      Exact Coptic, combining-stripped, and case-folded duplicates skipped.
+      Existing rows were not overwritten.
 - [ ] Leave unmarked prayer tokens blank until sourced (see `docs/gaps.md`).
       Options: human `gloss` / `arHighlight`, or more `parseReady` affixes
       (ⲙⲁⲣⲉ-, ⲁ- + subject, ⲛ̀ϫⲉ, ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ)

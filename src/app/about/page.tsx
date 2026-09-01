@@ -185,6 +185,22 @@ export default function AboutPage() {
           . المعنى عربي من المصدر. النطق العربي فاضي لحد ما يتكتب يدوي.
         </li>
         <li>
+          كلمات تانية من قاموس أسامة ثابت (اللهجة الشمالية / البحيري) على{" "}
+          <a
+            href="https://archive.org/details/CopticArabicDictionary"
+            dir="ltr"
+            className="inline-block text-text underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+          >
+            Internet Archive
+          </a>
+          {" — "}
+          علامة ملكية عامة{" "}
+          <span dir="ltr" className="inline-block">
+            1.0
+          </span>
+          . اتضافت اللي مش موجودة في القاموس؛ المتكرر اتشال.
+        </li>
+        <li>
           الكود:{" "}
           <span dir="ltr" className="inline-block">
             MIT
