@@ -3,7 +3,7 @@
  * Never invent glosses — only mark text copied from translation.ar.
  */
 
-const GLOSS_SPLIT = /[\/،,]+/;
+const GLOSS_SPLIT = /[\/،,—–؛;]+/;
 const BOUNDARY = /[\s\u00A0،,.؛;:؟!()[\]{}«»""''\/]/;
 
 export function highlightKey(lineId: string, index: number): string {
@@ -11,10 +11,21 @@ export function highlightKey(lineId: string, index: number): string {
 }
 
 export function glossPieces(ar: string): string[] {
-  return ar
+  const cleaned = ar.replace(/\([^)]*\)/g, "،");
+  const raw = cleaned
     .split(GLOSS_SPLIT)
-    .map((part) => part.trim())
-    .filter((part) => part.length >= 2);
+    .map((part) => part.replace(/[().]/g, "").trim())
+    .map((part) => part.replace(/[\u064B-\u065F\u0670]/g, ""))
+    .filter((part) => part === "و" || part.length >= 2);
+  const extra: string[] = [];
+  for (const part of raw) {
+    if (part.startsWith("ال") && part.length > 2) extra.push(part.slice(2));
+    const beforeColon = part.split(":")[0]?.trim();
+    if (beforeColon && beforeColon !== part && beforeColon.length >= 2) {
+      extra.push(beforeColon);
+    }
+  }
+  return [...raw, ...extra];
 }
 
 function isBoundary(ch: string | undefined): boolean {
@@ -75,16 +86,62 @@ export function uniquePhraseInLine(lineAr: string, phrases: string[]): string | 
 const AR_TOKEN = /[^\s،,.؛;:؟!()[\]{}«»]+/gu;
 
 function stripArPunct(token: string): string {
-  return token.replace(/[،,.؛;:؟!()[\]{}«»""'']/g, "");
+  return token
+    .replace(/[\u064B-\u065F\u0670]/g, "")
+    .replace(/[،,.؛;:؟!()[\]{}«»""'']/g, "");
 }
 
-/** Stem + 1–2 letters (ك، نا، هم…). Rejects أبانا from أب (3 extra). */
+/** Cores after optional و/ف and ال / ب+ال. */
+function coresOfArToken(token: string): string[] {
+  const bare = stripArPunct(token);
+  const cores = new Set<string>([bare]);
+  const queue = [bare];
+  function add(next: string) {
+    if (next && !cores.has(next)) {
+      cores.add(next);
+      queue.push(next);
+    }
+  }
+  for (const s of queue) {
+    if ((s.startsWith("و") || s.startsWith("ف")) && s.length > 1) add(s.slice(1));
+    if (s.startsWith("ال") && s.length > 2) add(s.slice(2));
+    if (
+      (s.startsWith("ب") || s.startsWith("ك") || s.startsWith("ل")) &&
+      s.slice(1).startsWith("ال") &&
+      s.length > 3
+    ) {
+      add(s.slice(1));
+    }
+  }
+  return [...cores];
+}
+
+function foldArabicLetters(s: string): string {
+  return s.replace(/[أإآٱ]/g, "ا").replace(/ة/g, "ه").replace(/ى/g, "ي");
+}
+
+const GOD_STEMS = new Set(["اله", "الله", "الهه"]);
+
+/** Stem, or stem + 1–2 letters (ك، نا)، or the same after و/ال. */
 function arabicTokenHasStem(token: string, stem: string): boolean {
   const bare = stripArPunct(token);
-  if (bare === stem) return true;
-  if (!bare.startsWith(stem)) return false;
-  const extra = bare.length - stem.length;
-  return extra >= 1 && extra <= 2;
+  const cleanStem = stripArPunct(stem);
+  if (cleanStem === "و") {
+    return bare.startsWith("و") && bare.length > 1;
+  }
+  for (const prefix of ["و", "ف", "ب", "ك", "ل"]) {
+    if (bare === prefix + cleanStem) return true;
+  }
+  for (const core of coresOfArToken(token)) {
+    const coreFold = foldArabicLetters(core);
+    const stemFold = foldArabicLetters(cleanStem);
+    if (GOD_STEMS.has(coreFold) && GOD_STEMS.has(stemFold)) return true;
+    if (core === cleanStem || coreFold === stemFold) return true;
+    if (!core.startsWith(cleanStem) && !coreFold.startsWith(stemFold)) continue;
+    const extra = core.length - cleanStem.length;
+    if (extra >= 1 && extra <= 2) return true;
+  }
+  return false;
 }
 
 function uniqueAffixedWord(lineAr: string, phrases: string[]): string | null {

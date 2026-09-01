@@ -77,6 +77,15 @@ painted as Unicode Coptic chips (`ⲁ ⲉ ⲓ …`) via `CopticPaint`. Do not
 set a mapped TTF as a Unicode `font-family`. Latin in parentheses that
 is not a key (`(ڤ)`, `(TCH)`) stays an LTR isolate.
 
+Two pronunciation systems are documented in `pronunciation.json`: church
+modern (عريان / default audio) and old Bohairic (إميل ماهر). Letter
+pages teach the church-modern `rules[]`. Do not swap audio to old
+Bohairic without a human decision.
+
+`arabicHint` is the letter’s class (سيما سين، تاف تاء). Special
+pronunciations stay extra `rules[]` cards. Do not add ص / ز or ط / د
+to `arabicHint`, IPA, quiz hints, or letter cards.
+
 ## Search
 
 `/search` is Arabic-first lookup: type a gloss, see Coptic. Coptic and letter
@@ -113,14 +122,11 @@ isolate) then the Arabic gloss. Empty `translit.ar` is hidden — do not guess
 church pronunciation. English is a small LTR line under the Arabic. Cite the
 source URL on the prayer page. Do not type a prayer line from memory.
 
-Tap-a-word (S13b): tap highlights the Coptic token **and** the matching
-span in the line Arabic, in the same card. No sheet. A token with **no**
-highlight is expected when the stem is not teaching-set, the line Arabic
-does not uniquely contain the gloss, or the affix is not in the current
-stub peel. Do not invent a match. Full prefix/suffix grammar rules will
-be supplied by the owner, stored as data, and used later. Until then,
-`arHighlight` (must occur once in the line) or a unique teaching-set gloss
-after peeling ⲉⲧ/ⲉⲑ, one article, or a possessive, plus a short Arabic
-suffix (اسمك), is all the highlighter may do. The wash is `--highlight`
-(gold on the card), not `surface-2`: UA `<mark>` is black in dark mode.
+Tap-a-word (S13b + S17): dictionary first, then grammar peel. Tap shows
+the stored Arabic meaning under the line, and highlights a unique span in
+the prayer translation when one exists. A token with **no** meaning is
+expected when the surface form is not in the dictionary and peel does not
+leave a unique stem. Do not invent a match. The wash is
+`--highlight` (gold on the card), not `surface-2`: UA `<mark>` is black in
+dark mode.
 

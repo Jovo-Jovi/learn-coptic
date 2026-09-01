@@ -23,9 +23,12 @@ still wrong.
 - [ ] Does tap-a-word highlight Arabic that is not already in that line’s
       `translation.ar`?
 - [ ] Did the agent invent a highlight or harvest gloss for a token that
-      should stay unmarked until stored grammar rules exist?
+      should stay unmarked (not a unique span in that line’s Arabic)?
+- [ ] Did the agent set `parseReady` on colliding short affixes (ⲡⲉ, ϯ, ⲁ-, ⲛ̀)
+      or bulk-fill `words.json`?
 - [ ] Does any prayer line lack a source?
-- [ ] Was a `lemma` filled by stripping an article into a guessed stem?
+- [ ] Did the agent invent Coptic in `grammar-rules.json` that was not in
+      the owner’s notes?
 
 ## Before deploy
 

@@ -167,8 +167,9 @@ Depends on S16. Schema already has `PrayerLine.tokens`.
 - [x] Highlight span is `arHighlight`, or a unique teaching gloss after
       peeling relative ⲉⲧ/ⲉⲑ, one article, or a possessive (ⲡⲉⲕ…), including
       a short Arabic suffix (اسم → اسمك). No invented dictionary gloss.
-      Affix peel is highlight-only — not S13b `wordId`. Full grammar rules
-      to be stored later; unmarked tokens are expected until then.
+      Affix peel is highlight-only — not S13b `wordId`. Grammar notes
+      10/10 are in `grammar-rules.json`; do not parse until a human
+      says so. Unmarked tokens are expected until then.
 - [x] Every line of all four prayers has a human-reviewed `tokens` array
       before publish. Keep `wordId: null` where the dictionary does not
       honestly match. Do not overwrite the reviewed `khen-efran` tokens
@@ -196,16 +197,56 @@ Partial coverage. 8,635 illustrated words is not a goal.
 - [ ] 800×800 WebP, `next/image`, lazy loaded; `alt.ar` on every image
 - [ ] Validator does not require art on harvest rows
 
-### S15 · Grammar levels
-- [ ] MDX pipeline for `kind: "grammar"` lessons
-- [ ] `<LetterChip/>` and `<WordCard/>` usable inline in MDX
+### S15 · Grammar lesson UI
+Owner notes 10/10 are in `grammar-rules.json`. Each point’s sections are
+the lesson steps. Pronunciation extras are in `pronunciation.json` plus
+letter `rules[]`.
+- [ ] Stepped grammar lessons from `grammar-rules.json` (JSON-first; MDX
+      only if a lesson needs prose the JSON cannot hold)
+- [ ] `<LetterChip/>` and `<WordCard/>` usable inline
 - [ ] Level 2 lesson list rendered; prerequisites enforced in the UI
+- [ ] Pronunciation lessons from `pronunciation.json` (two systems,
+      diphthongs, jinkim, pitfalls, drills)
 - [ ] No schema change required — if one seems necessary, stop and ask
 
-Prayer tap-highlight is **not** this step. The owner will supply full
-prefix/suffix grammar rules later; those will be stored as data and used
-to mark more tokens. Do not invent the table. A token with no highlight
-today is expected.
+Do not start this step in the same session as S13c. ParseReady lives
+on S17 (test set only). A token with no highlight is still expected.
+
+### S17 · Composition parse — **GATE**
+Depends on a human saying **parse**. Same grammar table as S15.
+- [x] Human sets or approves `parseReady` on affix rows
+- [x] Analyzer peels composition on a word or prayer token using
+      `grammar-rules.json`
+- [x] Arabic from teaching-set + stored rules — never invent Coptic or
+      glosses. Harvest Arabic may only *search* a sourced prayer line
+      (ADR-022); it is not a new dictionary gloss and not in the quiz
+- [x] Prayer tap-highlight may use parseReady affixes; stub peel stays
+      fallback
+- [x] `npm run validate` and `npm run build`
+
+Do not mark this GATE **PASS** without the human.
+
+Test slice (not the whole dictionary): 13 unambiguous affixes are
+`parseReady`. Eight parse fixtures are checked in the validator.
+Harvest Arabic is only a *search key* into that line’s sourced
+`translation.ar` (ADR-022). Unmarked liturgical tokens remain expected.
+Do not fill `words.json` in bulk.
+
+### S18 · Dictionary leftovers and prayer gaps — **deferred**
+Inventory is `docs/gaps.md`. **Do not start** until S17 GATE is **PASS**
+and a human names which action. Do not invent glosses. Do not merge
+KELLIA English into `meaning.ar`.
+- [ ] Decide whether to harvest leftover Andreas lemmas from remnqymi
+      `andreas.json` (same CC BY-SA file; rows skipped as not 2–8 letters).
+      Report counts; human reviews before any `words.json` append
+- [ ] Leave unmarked prayer tokens blank until sourced: 145 occurrences,
+      132 unique forms (see `docs/gaps.md`). Options: human `gloss` /
+      `arHighlight`, or more `parseReady` affixes (ⲙⲁⲣⲉ-, ⲁ- + subject,
+      ⲛ̀ϫⲉ, ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ)
+- [ ] No merge of KELLIA, Coptic Compass, coptic-words, or copticlingo
+      `copticsite.json` without a written grant
+- [ ] Refresh `docs/gaps.md` with `npx tsx scripts/report-gaps.mts` after
+      any parse or dictionary change
 
 ---
 

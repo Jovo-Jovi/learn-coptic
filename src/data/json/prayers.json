@@ -81,11 +81,13 @@
           "tokens": [
             {
               "coptic": "ⲛⲉⲙ",
-              "wordId": null
+              "wordId": null,
+              "arHighlight": "و"
             },
             {
               "coptic": "ⲡ̀ϣⲏⲣⲓ",
-              "wordId": null
+              "wordId": null,
+              "arHighlight": "الابن"
             }
           ]
         },
@@ -110,11 +112,13 @@
             },
             {
               "coptic": "ⲡⲓⲠ̀ⲛⲉⲩⲙⲁ",
-              "wordId": null
+              "wordId": null,
+              "arHighlight": "الروح"
             },
             {
               "coptic": "ⲉⲑⲟⲩⲁⲃ",
-              "wordId": null
+              "wordId": null,
+              "arHighlight": "القدس"
             }
           ]
         }
@@ -232,7 +236,8 @@
             },
             {
               "coptic": "ⲡⲉⲕⲣⲁⲛ",
-              "wordId": null
+              "wordId": null,
+              "arHighlight": "اسمك"
             }
           ]
         },

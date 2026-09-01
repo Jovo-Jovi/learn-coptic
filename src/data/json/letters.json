@@ -26,9 +26,25 @@
         ],
         "arabicHint": [
           "ا"
-        ]
+        ],
+        "note": {
+          "ar": "فتحة صريحة. اسم الحرف للتهجي؛ صوته في الكلمة حسب ما بعده."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "alpha-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ا) فتحة صريحة"
+          },
+          "examples": [
+            "anok"
+          ]
+        }
+      ],
       "numericValue": 1,
       "audio": {
         "src": "/audio/letters/alpha.mp3",
@@ -36,7 +52,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "anok"
+      ]
     },
     {
       "id": "vida",
@@ -64,7 +82,10 @@
         "arabicHint": [
           "ڤ",
           "ب"
-        ]
+        ],
+        "note": {
+          "ar": "النطق الكنسي: ڤ قبل متحرك، ب في الآخر أو قبل ساكن. اللفظ القديم: ب أو ڤ خفيفة بحسب الموضع."
+        }
       },
       "rules": [
         {
@@ -76,7 +97,9 @@
             "ar": "ينطق (ڤ)"
           },
           "follow": "A - E - I - H - O - W - OU",
-          "examples": []
+          "examples": [
+            "bwk"
+          ]
         },
         {
           "id": "vida-rule-2",
@@ -96,7 +119,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "bwk"
+      ]
     },
     {
       "id": "gamma",
@@ -126,7 +151,10 @@
           "غ",
           "ج",
           "ن"
-        ]
+        ],
+        "note": {
+          "ar": "ثلاثة أصوات: نون قبل حلقي (ⲅ ⲝ ⲭ ⲕ)، جيم معطشة قبل إمالة (ⲉ ⲓ ⲏ ⲩ)، غين فيما عدا ذلك."
+        }
       },
       "rules": [
         {
@@ -138,7 +166,9 @@
             "ar": "ينطق (غ)"
           },
           "follow": "A - O - W",
-          "examples": []
+          "examples": [
+            "agaph"
+          ]
         },
         {
           "id": "gamma-rule-2",
@@ -148,8 +178,10 @@
           "result": {
             "ar": "ينطق (ج)"
           },
-          "follow": "U - E - I - H",
-          "examples": []
+          "follow": "E - I - H - U",
+          "examples": [
+            "agioc"
+          ]
         },
         {
           "id": "gamma-rule-3",
@@ -159,8 +191,10 @@
           "result": {
             "ar": "ينطق (ن)"
           },
-          "follow": "G - K - { - X",
-          "examples": []
+          "follow": "G - { - X - K",
+          "examples": [
+            "aggeloc"
+          ]
         }
       ],
       "numericValue": 3,
@@ -170,7 +204,11 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "aggeloc",
+        "agaph",
+        "agioc"
+      ]
     },
     {
       "id": "dalda",
@@ -198,7 +236,10 @@
         "arabicHint": [
           "ذ",
           "د"
-        ]
+        ],
+        "note": {
+          "ar": "دال في أسماء الأعلام والبلاد، ذال في بقية الكلمات. في اليوناني الحديث ذال، وفي القبطي الأصيل دال."
+        }
       },
       "rules": [
         {
@@ -219,7 +260,9 @@
           "result": {
             "ar": "ينطق (ذ)"
           },
-          "examples": []
+          "examples": [
+            "dwron"
+          ]
         }
       ],
       "numericValue": 4,
@@ -229,7 +272,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "dwron"
+      ]
     },
     {
       "id": "ei",
@@ -255,9 +300,23 @@
         ],
         "arabicHint": [
           "إ"
-        ]
+        ],
+        "note": {
+          "ar": "كسرة خفيفة قصيرة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "ei-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (إي) قصيرة"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": 5,
       "audio": {
         "src": "/audio/letters/ei.mp3",
@@ -290,7 +349,7 @@
           "s"
         ],
         "arabicHint": [
-          "س"
+          "٦"
         ]
       },
       "rules": [
@@ -338,9 +397,25 @@
         ],
         "arabicHint": [
           "ز"
-        ]
+        ],
+        "note": {
+          "ar": "زاي، غالباً في كلمات يونانية."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "zeta-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ز)"
+          },
+          "examples": [
+            "zwh"
+          ]
+        }
+      ],
       "numericValue": 7,
       "audio": {
         "src": "/audio/letters/zeta.mp3",
@@ -348,7 +423,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "zwh"
+      ]
     },
     {
       "id": "eta",
@@ -374,9 +451,25 @@
         ],
         "arabicHint": [
           "إي"
-        ]
+        ],
+        "note": {
+          "ar": "ياء مد طويلة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "eta-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (إي) طويلة"
+          },
+          "examples": [
+            "hi"
+          ]
+        }
+      ],
       "numericValue": 8,
       "audio": {
         "src": "/audio/letters/eta.mp3",
@@ -384,7 +477,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "hi"
+      ]
     },
     {
       "id": "theta",
@@ -412,7 +507,10 @@
         "arabicHint": [
           "ت",
           "ث"
-        ]
+        ],
+        "note": {
+          "ar": "ثاء عموماً. تاء إذا سبقه تاف أو سيما أو شاي. في اللفظ القديم تاء مفخمة."
+        }
       },
       "rules": [
         {
@@ -471,9 +569,25 @@
         ],
         "arabicHint": [
           "ي"
-        ]
+        ],
+        "note": {
+          "ar": "ياء قصيرة أو كسرة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "iota-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ي)"
+          },
+          "examples": [
+            "iwt"
+          ]
+        }
+      ],
       "numericValue": 10,
       "audio": {
         "src": "/audio/letters/iota.mp3",
@@ -481,7 +595,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "iwt"
+      ]
     },
     {
       "id": "kappa",
@@ -507,9 +623,25 @@
         ],
         "arabicHint": [
           "ك"
-        ]
+        ],
+        "note": {
+          "ar": "كاف صريحة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "kappa-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ك)"
+          },
+          "examples": [
+            "kouji"
+          ]
+        }
+      ],
       "numericValue": 20,
       "audio": {
         "src": "/audio/letters/kappa.mp3",
@@ -517,7 +649,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "kouji"
+      ]
     },
     {
       "id": "lola",
@@ -543,9 +677,23 @@
         ],
         "arabicHint": [
           "ل"
-        ]
+        ],
+        "note": {
+          "ar": "لام."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "lola-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ل)"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": 30,
       "audio": {
         "src": "/audio/letters/lola.mp3",
@@ -579,9 +727,25 @@
         ],
         "arabicHint": [
           "م"
-        ]
+        ],
+        "note": {
+          "ar": "ميم."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "mi-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (م)"
+          },
+          "examples": [
+            "mau"
+          ]
+        }
+      ],
       "numericValue": 40,
       "audio": {
         "src": "/audio/letters/mi.mp3",
@@ -589,7 +753,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "mau"
+      ]
     },
     {
       "id": "ni",
@@ -615,9 +781,23 @@
         ],
         "arabicHint": [
           "ن"
-        ]
+        ],
+        "note": {
+          "ar": "نون."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "ni-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ن)"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": 50,
       "audio": {
         "src": "/audio/letters/ni.mp3",
@@ -651,7 +831,10 @@
         ],
         "arabicHint": [
           "كس"
-        ]
+        ],
+        "note": {
+          "ar": "كاف ثم سين."
+        }
       },
       "rules": [
         {
@@ -662,7 +845,9 @@
           "result": {
             "ar": "ينطق وكأنه (KC)"
           },
-          "examples": []
+          "examples": [
+            "eksulon"
+          ]
         }
       ],
       "numericValue": 60,
@@ -672,7 +857,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "eksulon"
+      ]
     },
     {
       "id": "o",
@@ -698,9 +885,25 @@
         ],
         "arabicHint": [
           "أو"
-        ]
+        ],
+        "note": {
+          "ar": "ضمة خفيفة قصيرة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "o-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (أو) قصيرة"
+          },
+          "examples": [
+            "ouro"
+          ]
+        }
+      ],
       "numericValue": 70,
       "audio": {
         "src": "/audio/letters/o.mp3",
@@ -708,7 +911,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "ouro"
+      ]
     },
     {
       "id": "pi",
@@ -734,9 +939,23 @@
         ],
         "arabicHint": [
           "ب"
-        ]
+        ],
+        "note": {
+          "ar": "باء ثقيلة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "pi-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ب) ثقيلة"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": 80,
       "audio": {
         "src": "/audio/letters/pi.mp3",
@@ -770,9 +989,25 @@
         ],
         "arabicHint": [
           "ر"
-        ]
+        ],
+        "note": {
+          "ar": "راء."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "ro-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ر)"
+          },
+          "examples": [
+            "rwmi"
+          ]
+        }
+      ],
       "numericValue": 100,
       "audio": {
         "src": "/audio/letters/ro.mp3",
@@ -780,7 +1015,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "rwmi"
+      ]
     },
     {
       "id": "sima",
@@ -806,9 +1043,51 @@
         ],
         "arabicHint": [
           "س"
-        ]
+        ],
+        "note": {
+          "ar": "سين. حالات خاصة لا تغيّر التصنيف: صاد بعد ⲁ ⲟ ⲱ؛ زاي في اليوناني بعد ⲙ."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "sima-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (س)"
+          },
+          "examples": [
+            "ci"
+          ]
+        },
+        {
+          "id": "sima-sad",
+          "condition": {
+            "ar": "حالة خاصة إذا جاء بعده أي من هذه الحروف"
+          },
+          "result": {
+            "ar": "ينطق (ص)"
+          },
+          "follow": "A - O - W",
+          "examples": [
+            "cwma"
+          ]
+        },
+        {
+          "id": "sima-zay",
+          "condition": {
+            "ar": "حالة خاصة في الكلمات اليونانية إذا جاء بعده"
+          },
+          "result": {
+            "ar": "ينطق (ز)"
+          },
+          "follow": "M",
+          "examples": [
+            "kocmoc"
+          ]
+        }
+      ],
       "numericValue": 200,
       "audio": {
         "src": "/audio/letters/sima.mp3",
@@ -816,7 +1095,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "caji"
+      ]
     },
     {
       "id": "tav",
@@ -842,9 +1123,51 @@
         ],
         "arabicHint": [
           "ت"
-        ]
+        ],
+        "note": {
+          "ar": "تاء. حالات خاصة لا تغيّر التصنيف: طاء بعد ⲁ ⲟ ⲱ؛ دال في اليوناني إذا سبقه ⲛ."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "tav-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ت)"
+          },
+          "examples": [
+            "tebt"
+          ]
+        },
+        {
+          "id": "tav-taa",
+          "condition": {
+            "ar": "حالة خاصة إذا جاء بعده أي من هذه الحروف"
+          },
+          "result": {
+            "ar": "ينطق (ط)"
+          },
+          "follow": "A - O - W",
+          "examples": [
+            "taio"
+          ]
+        },
+        {
+          "id": "tav-dal",
+          "condition": {
+            "ar": "حالة خاصة في الكلمات اليونانية إذا جاء قبله"
+          },
+          "result": {
+            "ar": "ينطق (د)"
+          },
+          "follow": "N",
+          "examples": [
+            "entolh"
+          ]
+        }
+      ],
       "numericValue": 300,
       "audio": {
         "src": "/audio/letters/tav.mp3",
@@ -852,7 +1175,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "tapro"
+      ]
     },
     {
       "id": "epsilon",
@@ -882,7 +1207,10 @@
           "و",
           "ڤ",
           "ي"
-        ]
+        ],
+        "note": {
+          "ar": "ڤ بعد ⲁ أو ⲉ؛ واو مضمومة بعد ⲟ؛ ياء إذا لم يسبقه ⲁ أو ⲉ أو ⲟ، أو إذا جاء بين ساكنين أو عليه جينكم."
+        }
       },
       "rules": [
         {
@@ -893,7 +1221,9 @@
           "result": {
             "ar": "ينطق (واو مضمومة)"
           },
-          "examples": []
+          "examples": [
+            "ouro"
+          ]
         },
         {
           "id": "epsilon-rule-2",
@@ -903,7 +1233,9 @@
           "result": {
             "ar": "ينطق (ڤ)"
           },
-          "examples": []
+          "examples": [
+            "euxarictia"
+          ]
         },
         {
           "id": "epsilon-rule-3",
@@ -913,7 +1245,9 @@
           "result": {
             "ar": "ينطق كسرة طويلة (ي)"
           },
-          "examples": []
+          "examples": [
+            "luxnia"
+          ]
         }
       ],
       "numericValue": 400,
@@ -923,7 +1257,11 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "ouro",
+        "euxarictia",
+        "luxnia"
+      ]
     },
     {
       "id": "fi",
@@ -949,9 +1287,23 @@
         ],
         "arabicHint": [
           "ف"
-        ]
+        ],
+        "note": {
+          "ar": "فاء."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "fi-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ف)"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": 500,
       "audio": {
         "src": "/audio/letters/fi.mp3",
@@ -990,7 +1342,10 @@
           "ك",
           "خ",
           "ش"
-        ]
+        ],
+        "note": {
+          "ar": "في القبطي كاف دائماً. في اليوناني: شين بعد إمالة، خاء فيما عدا ذلك."
+        }
       },
       "rules": [
         {
@@ -1012,7 +1367,9 @@
             "ar": "ينطق (ش)"
           },
           "follow": "E - I - H - U",
-          "examples": []
+          "examples": [
+            "xere"
+          ]
         },
         {
           "id": "khi-rule-3",
@@ -1022,7 +1379,9 @@
           "result": {
             "ar": "ينطق (خ)"
           },
-          "examples": []
+          "examples": [
+            "xwra"
+          ]
         }
       ],
       "numericValue": 600,
@@ -1032,7 +1391,10 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "xere",
+        "xwra"
+      ]
     },
     {
       "id": "epsi",
@@ -1058,7 +1420,10 @@
         ],
         "arabicHint": [
           "بس"
-        ]
+        ],
+        "note": {
+          "ar": "باء ثم سين."
+        }
       },
       "rules": [
         {
@@ -1069,7 +1434,9 @@
           "result": {
             "ar": "ينطق وكأنه (PS)"
           },
-          "examples": []
+          "examples": [
+            "yalmoc"
+          ]
         }
       ],
       "numericValue": 700,
@@ -1079,7 +1446,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "yalmoc"
+      ]
     },
     {
       "id": "oou",
@@ -1105,9 +1474,25 @@
         ],
         "arabicHint": [
           "أو"
-        ]
+        ],
+        "note": {
+          "ar": "واو مد طويلة."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "oou-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (أو) طويلة"
+          },
+          "examples": [
+            "wnkhai"
+          ]
+        }
+      ],
       "numericValue": 800,
       "audio": {
         "src": "/audio/letters/oou.mp3",
@@ -1115,7 +1500,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "wnkhai"
+      ]
     },
     {
       "id": "shai",
@@ -1141,9 +1528,25 @@
         ],
         "arabicHint": [
           "ش"
-        ]
+        ],
+        "note": {
+          "ar": "شين."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "shai-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ش)"
+          },
+          "examples": [
+            "shaihri"
+          ]
+        }
+      ],
       "numericValue": null,
       "audio": {
         "src": "/audio/letters/shai.mp3",
@@ -1151,7 +1554,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "shaihri"
+      ]
     },
     {
       "id": "fai",
@@ -1177,9 +1582,23 @@
         ],
         "arabicHint": [
           "ف"
-        ]
+        ],
+        "note": {
+          "ar": "فاء."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "fai-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ف)"
+          },
+          "examples": []
+        }
+      ],
       "numericValue": null,
       "audio": {
         "src": "/audio/letters/fai.mp3",
@@ -1213,9 +1632,25 @@
         ],
         "arabicHint": [
           "خ"
-        ]
+        ],
+        "note": {
+          "ar": "خاء صريحة دائماً. لا تُنطق شيناً ولا هاءً."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "khai-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (خ) صريحة"
+          },
+          "examples": [
+            "khen"
+          ]
+        }
+      ],
       "numericValue": null,
       "audio": {
         "src": "/audio/letters/khai.mp3",
@@ -1223,7 +1658,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "khen"
+      ]
     },
     {
       "id": "hori",
@@ -1252,9 +1689,25 @@
         ],
         "arabicHint": [
           "ه"
-        ]
+        ],
+        "note": {
+          "ar": "هاء."
+        }
       },
-      "rules": [],
+      "rules": [
+        {
+          "id": "hori-default",
+          "condition": {
+            "ar": "دائماً"
+          },
+          "result": {
+            "ar": "ينطق (ه)"
+          },
+          "examples": [
+            "horiirhnh"
+          ]
+        }
+      ],
       "numericValue": null,
       "audio": {
         "src": "/audio/letters/hori.mp3",
@@ -1262,7 +1715,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "horiirhnh"
+      ]
     },
     {
       "id": "janja",
@@ -1290,7 +1745,10 @@
         "arabicHint": [
           "چ",
           "ج"
-        ]
+        ],
+        "note": {
+          "ar": "جيم معطشة بعد إمالة (ⲉ ⲓ ⲏ ⲩ)؛ جيم مصرية فيما عدا ذلك."
+        }
       },
       "rules": [
         {
@@ -1301,7 +1759,7 @@
           "result": {
             "ar": "ينطق (چ)"
           },
-          "follow": "E - I - H",
+          "follow": "E - I - H - U",
           "examples": []
         },
         {
@@ -1312,8 +1770,10 @@
           "result": {
             "ar": "ينطق (ج)"
           },
-          "follow": "E - I - H",
-          "examples": []
+          "follow": "E - I - H - U",
+          "examples": [
+            "jwm"
+          ]
         }
       ],
       "numericValue": null,
@@ -1323,7 +1783,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "jwm"
+      ]
     },
     {
       "id": "cheema",
@@ -1350,7 +1812,10 @@
         ],
         "arabicHint": [
           "تش"
-        ]
+        ],
+        "note": {
+          "ar": "تاء ثم شين."
+        }
       },
       "rules": [
         {
@@ -1361,7 +1826,9 @@
           "result": {
             "ar": "ينطق وكأنه (TCH)"
           },
-          "examples": []
+          "examples": [
+            "soic"
+          ]
         }
       ],
       "numericValue": null,
@@ -1371,7 +1838,9 @@
         "reciter": "Coptic Literacy",
         "dialect": "bohairic-modern"
       },
-      "exampleWords": []
+      "exampleWords": [
+        "soic"
+      ]
     },
     {
       "id": "ti",
@@ -1397,7 +1866,10 @@
         ],
         "arabicHint": [
           "تي"
-        ]
+        ],
+        "note": {
+          "ar": "تاء ثم ياء."
+        }
       },
       "rules": [
         {

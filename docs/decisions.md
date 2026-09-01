@@ -183,7 +183,13 @@ is ڤ (church), not the HTML’s ف.
 
 **Cost:** this is church-school Greco-Bohairic, not Old Bohairic.
 copticchurch.net’s one-line table is not used where it contradicts the
-lessons.
+lessons. Owner notes 2026-09-01 document both systems in
+`pronunciation.json`; letter `rules[]` keep explorer copy and add notes.
+Audio stays `bohairic-modern`. Where the notes invert دلتا or add ⲩ to
+جنجا, explorer rows stay; the extra is a note or an added rule, not a
+replace. سيما stays سين and تاف stays تاء (`arabicHint` / IPA / quiz).
+Sunday-school extras (صاد/زاي، طاء/دال) are added rules, not a
+reclassification.
 
 ## ADR-018 — Andreas harvest for Arabic glosses
 Learner-length lemmas (2–8 Coptic letters) from Andreas of St Macarius,
@@ -248,8 +254,41 @@ A sourced substring of the line’s `translation.ar` may be stored as
 also mark a unique standalone (or short-suffix) piece of a teaching-set
 gloss after peeling, for highlight only: relative ⲉⲧ/ⲉⲑ, one S13b article,
 or a bound possessive (ⲡⲉⲕ ⲧⲉⲕ ⲡⲉⲛ …). That is a **stub**. Many liturgical
-forms will not highlight. The owner will supply full prefix/suffix grammar
-rules to **store as data** and use later. Do not invent extra peels, do not
-use harvest Arabic, and do not treat a blank highlight as a bug.
+forms will not highlight. Owner grammar notes 10/10 are stored in
+`src/data/json/grammar-rules.json`. Affix `parseReady` stays false until
+a human says parse. Do not invent extra peels, do not use harvest Arabic,
+and do not treat a blank highlight as a bug. S17 test set: see ADR-022.
+
+## ADR-021 — Grammar notes are JSON; parse after a human says so
+Owner Bohairic student notes (10/10) are stored as `grammar-rules.json`,
+not MDX. Two later uses, neither started here:
+
+1. **S15 lessons** — each point’s sections are stepped illustrated lessons.
+2. **Composition analysis** — peel affixes on a word or text to attach an
+   Arabic gloss/meaning from stored rules and teaching-set data. Do not
+   invent Coptic or glosses.
+
+`parseReady` on affix rows is the gate. Coptic in examples is copied from
+the notes.
+
+**Cost:** S15 lesson UI is still not built. Parse is the S17 test set
+(ADR-022), not every affix.
+
+## ADR-022 — Parse test uses prayer Arabic; harvest is a search key only
+S17 starts with a **test set**, not the whole dictionary. Thirteen
+unambiguous affix rows are `parseReady` (ⲡⲓ ⲛⲓ, ⲉⲧ ⲉⲑ, ⲡⲉⲕ ⲧⲉⲕ ⲡⲉⲛ,
+ϧⲉⲛ ⲛⲉⲙ ϩⲓϫⲉⲛ, ϫⲉ ⲟⲩⲟϩ ⲁⲗⲗⲁ). Short colliding forms (ⲡⲉ, ϯ, ⲁ-, ⲛ̀)
+stay false.
+
+The analyzer peels those affixes. Prayer tap still highlights a span
+already in that line’s `translation.ar`. A unique harvest meaning may
+be used only to *find* that span after peel (و/ال clitics allowed).
+The learner sees the prayer’s Arabic highlight when it uniquely matches,
+and also the stored dictionary meaning of that word (teaching first,
+else a unique harvest row) when tap has no unique span. That is still
+not a new invented gloss and not in the quiz. `wordId` stays teaching-set.
+
+**Cost:** most liturgical tokens still have no highlight. Filling every
+prayer word or every harvest row is a later human pass, not this slice.
 
 

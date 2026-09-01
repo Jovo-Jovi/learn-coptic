@@ -17,18 +17,31 @@ function mappedForGlyph(ch: string): string | null {
 function CopticChip({
   ch,
   currentLetterId,
+  variant = "chip",
 }: {
   ch: string;
   currentLetterId?: string;
+  variant?: "chip" | "inline";
 }) {
   const letter = getLetterByGlyph(ch);
   const paint = (
     <CopticPaint
       unicode={ch}
       mapped={mappedForGlyph(ch)}
-      className="text-[1.65rem] leading-none"
+      className={
+        variant === "inline"
+          ? "text-[1.2em] leading-none"
+          : "text-[1.65rem] leading-none"
+      }
     />
   );
+  if (variant === "inline") {
+    return (
+      <span dir="ltr" className="inline-block align-middle">
+        {paint}
+      </span>
+    );
+  }
   const className =
     "inline-flex min-h-11 min-w-11 items-center justify-center rounded-[14px] bg-surface-2 no-underline";
 
@@ -108,7 +121,7 @@ function parenToPiece(inner: string): Piece {
 
 function pieces(text: string): Piece[] {
   const token = new RegExp(
-    `[\\u2C80-\\u2CFF\\u03E2-\\u03EF]|\\(([^)]+)\\)|${KEY_TOKEN}`,
+    `[\\u2C80-\\u2CFF\\u03E2-\\u03EF][\\u0300-\\u036F]*|\\(([^)]+)\\)|${KEY_TOKEN}`,
     "gu",
   );
   const out: Piece[] = [];
@@ -120,7 +133,14 @@ function pieces(text: string): Piece[] {
       out.push({ kind: "text", value: text.slice(last, index) });
     }
     if (value.startsWith("(")) {
-      out.push(parenToPiece(match[1] ?? value.slice(1, -1)));
+      const inner = match[1] ?? value.slice(1, -1);
+      if (/[\u2C80-\u2CFF\u03E2-\u03EF]/u.test(inner)) {
+        out.push({ kind: "text", value: "(" });
+        out.push(...pieces(inner));
+        out.push({ kind: "text", value: ")" });
+      } else {
+        out.push(parenToPiece(inner));
+      }
     } else if (/[\u2C80-\u2CFF\u03E2-\u03EF]/u.test(value)) {
       out.push({ kind: "coptic", value });
     } else {
@@ -134,7 +154,11 @@ function pieces(text: string): Piece[] {
   return out;
 }
 
-function renderPieces(list: Piece[], currentLetterId?: string) {
+function renderPieces(
+  list: Piece[],
+  currentLetterId?: string,
+  variant: "chip" | "inline" = "chip",
+) {
   const nodes: ReactNode[] = [];
   let i = 0;
   while (i < list.length) {
@@ -158,13 +182,18 @@ function renderPieces(list: Piece[], currentLetterId?: string) {
         <span
           key={`run-${nodes.length}`}
           dir="ltr"
-          className="mx-1 inline-flex flex-wrap items-center gap-1 align-middle"
+          className={
+            variant === "inline"
+              ? "mx-0.5 inline-flex flex-wrap items-center gap-0.5 align-middle"
+              : "mx-1 inline-flex flex-wrap items-center gap-1 align-middle"
+          }
         >
           {chips.map((chip, chipIndex) => (
             <CopticChip
               key={`${chip.value}-${chipIndex}`}
               ch={chip.value}
               currentLetterId={currentLetterId}
+              variant={variant}
             />
           ))}
         </span>,
@@ -210,11 +239,13 @@ function renderPieces(list: Piece[], currentLetterId?: string) {
 export function MixedCopticText({
   text,
   currentLetterId,
+  variant = "chip",
 }: {
   text: string;
   currentLetterId?: string;
+  variant?: "chip" | "inline";
 }) {
-  return <>{renderPieces(pieces(text), currentLetterId)}</>;
+  return <>{renderPieces(pieces(text), currentLetterId, variant)}</>;
 }
 
 /** Explorer key row (A - E - I - …) painted as Unicode Coptic. */

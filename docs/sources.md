@@ -48,8 +48,11 @@ For **this** site, the useful order is: church prayers (Reader / Tasbeha / St-Ta
 | Work | URL | Notes |
 |---|---|---|
 | معوض داود عبد النور، *قاموس اللغة القبطية* (بحيري + صعيدي) | https://coptic-treasures.com/book/coptic-dictionary-moawad-abd-al-nour/ · searchable scan https://remnqymi.com/dawoud/?page=1 | Largest Coptic–Arabic book. Background: https://copticliterature.wordpress.com/2016/12/10/bohairicsahidic-coptic-arabic-dictionary-by-muawad-dauod-abdal-nour/ |
-| الراهب أندرياس المقاري، *قاموس قبطي عربي* (بحيري + يوناني كنسي) | https://shop.stmacariusmonastery.org/?product=%D9%82%D8%A7%D9%85%D9%88%D8%B3-%D9%82%D8%A8%D8%B7%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A · https://www.christianlib.com/16353.html | Aimed at prayers and patristic church words |
+| الراهب أندرياس المقاري، *قاموس قبطي عربي* (بحيري + يوناني كنسي) | Book: https://shop.stmacariusmonastery.org/?product=%D9%82%D8%A7%D9%85%D9%88%D8%B3-%D9%82%D8%A8%D8%B7%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A · dump: [andreas.json](https://github.com/pishoyg/coptic/blob/master/dictionary/stmacariusmonastery_org/data/output/andreas.json) (~6.6 MB, remnqymi **CC BY-SA 4.0**) | This is the only dumpable Coptic–Arabic lexicon. Already harvested into `words.json` (8488 learner-length rows, 2–8 Coptic letters). |
 | Adeeb B. Makar, *Abbreviated Coptic–English Dictionary* (2001) | St Antonius / St Mina; overview https://www.orthodoxbookstore.org/products/coptic-english-dictionary | Greco-Bohairic pronunciation; English only |
+| Naqlun CopDic (دير الملاك غبريال، نقلون) | [Play](https://play.google.com/store/apps/details?id=com.naqlun.coptdict) · [App Store](https://apps.apple.com/us/app/naqlun-coptic-dictionary/id1525120781) | Coptic–Arabic app (Bohairic + Fayyumic). **No public dump.** Do not scrape. |
+
+There is **no larger legal Coptic–Arabic JSON/XML dump** than Andreas. Dawoud is scans/PDF (searchable at remnqymi `/dawoud`), not structured data. CDO/KELLIA is English/French/German. [Coptic Compass](https://www.copticcompass.com/en/developers) has a public dictionary API, but glosses are Coptic / English / Dutch / Greek — **not Arabic**. Machine-translating those into `meaning.ar` is forbidden. Remaining unmarked prayer tokens are mostly **inflected forms** (ⲙⲁⲣⲉ-, ⲁϥ-, …), not missing lemmas. Inventory and GitHub merge table: `docs/gaps.md` (S18, deferred).
 
 ### Learnability portals (indexes, not new lemmas)
 
@@ -108,8 +111,11 @@ For **this** site, the useful order is: church prayers (Reader / Tasbeha / St-Ta
   [agpeya.org Prime](https://agpeya.org/prime/). No recordings. S13c is
   one prayer end-to-end with `startSec` / `endSec`. S13b tap-a-word stores
   tokens on every line; `wordId` is teaching-set only (harvest Arabic stays
-  off prayer pages). Many tokens have no Arabic highlight until the owner
-  supplies grammar rules to store and use. Blank is expected.
+  off prayer pages). Grammar notes 10/10 are in `grammar-rules.json`;
+  parse when a human says. Blank highlight is expected until then.
+  Pronunciation: owner 2026-09-01 notes merged into letter `rules[]` /
+  `sound.note` and `pronunciation.json` (church modern vs old Bohairic).
+  Explorer Greco-Bohairic copy stays the rule rows (ADR-017).
 
 ---
 
@@ -146,5 +152,6 @@ SCRIPTORIUM v6.3.0 (2026-07-23): https://blog.copticscriptorium.org/2026/07/23/s
 
 - Hotlinking Coptic Literacy / St-Takla / Reader media (`media-src 'self'`)
 - Pasting Crum, Dawoud, or Makar pages into JSON
+- Scraping Naqlun CopDic, Coptic Reader, Tasbeha, or St-Takla into `words.json`
 - Generic “Coptic font converter” on St-Takla romanization (ADR-007)
 - Sahidic-only learner apps as if they were Bohairic church Coptic

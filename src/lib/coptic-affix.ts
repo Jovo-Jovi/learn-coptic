@@ -1,9 +1,8 @@
 /**
- * Grammatical affixes for prayer *highlight* only (not S13b wordId).
- * Current lists are a stub (relative, one article, bound possessives).
- * The owner will supply full prefix/suffix rules to store as data later.
- * Do not invent stems or extra peels. Harvest Arabic stays unused.
- * A token with no highlight is expected until that table exists.
+ * Grammatical affixes for prayer highlight (not S13b wordId).
+ * Owner notes live in `src/data/json/grammar-rules.json`.
+ * S17 parse uses parseReady rows; this stub peel stays the fallback.
+ * Harvest Arabic is a search key into sourced prayer lines only.
  */
 import {
   copticLetterCount,

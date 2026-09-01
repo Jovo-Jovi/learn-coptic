@@ -239,6 +239,78 @@ export const Level = z.object({
 export type Level = z.infer<typeof Level>;
 
 /* ------------------------------------------------------------------ */
+/* Owner grammar notes — 10/10 stored; parse when a human says so       */
+/* ------------------------------------------------------------------ */
+
+export const GrammarExample = z.object({
+  coptic: copticText,
+  translation: Localized,
+  analysis: z.string().min(1).optional(),
+});
+export type GrammarExample = z.infer<typeof GrammarExample>;
+
+export const GrammarTable = z.object({
+  id: slug,
+  caption: Localized.optional(),
+  headers: z.array(z.string().min(1)).min(1),
+  rows: z.array(z.array(z.string().min(1)).min(1)),
+});
+export type GrammarTable = z.infer<typeof GrammarTable>;
+
+export const GrammarSection = z.object({
+  id: slug,
+  title: Localized,
+  rule: Localized,
+  structure: z.string().min(1).optional(),
+  when: Localized.optional(),
+  examples: z.array(GrammarExample).default([]),
+  notes: z.array(z.string().min(1)).default([]),
+  tables: z.array(GrammarTable).default([]),
+});
+export type GrammarSection = z.infer<typeof GrammarSection>;
+
+export const GrammarPoint = z.object({
+  id: slug,
+  order: z.number().int().min(1).max(10),
+  title: Localized,
+  summary: Localized,
+  sections: z.array(GrammarSection).min(1),
+});
+export type GrammarPoint = z.infer<typeof GrammarPoint>;
+
+export const GrammarAffix = z.object({
+  id: slug,
+  kind: z.enum([
+    "article-definite",
+    "article-indefinite",
+    "possessive-adjective",
+    "possessive-pronoun",
+    "independent-pronoun",
+    "subject-pronoun",
+    "object-pronoun",
+    "copula",
+    "relative",
+    "preposition",
+    "genitive",
+    "tense",
+    "negation",
+    "imperative",
+    "interrogative",
+    "mood",
+    "conjunction",
+    "object-marker",
+    "other",
+  ]),
+  form: copticText,
+  formBeforePronoun: copticText.optional(),
+  gloss: Localized,
+  attach: z.enum(["prefix", "suffix", "clitic", "free"]).default("prefix"),
+  /** True on unambiguous rows after a human said parse (S17). Short colliding forms stay false. */
+  parseReady: z.boolean().default(false),
+});
+export type GrammarAffix = z.infer<typeof GrammarAffix>;
+
+/* ------------------------------------------------------------------ */
 /* File-level schemas                                                  */
 /* ------------------------------------------------------------------ */
 
@@ -253,3 +325,62 @@ export const WordsFile = z.object({
 });
 export const PrayersFile = z.object({ ...fileMeta, prayers: z.array(Prayer) });
 export const CurriculumFile = z.object({ ...fileMeta, levels: z.array(Level).min(1) });
+export const GrammarFile = z.object({
+  ...fileMeta,
+  dialect: z.literal("bohairic"),
+  provenance: z.string().min(1),
+  pointsExpected: z.literal(10),
+  points: z.array(GrammarPoint),
+  affixes: z.array(GrammarAffix).default([]),
+});
+export type GrammarFile = z.infer<typeof GrammarFile>;
+
+/* ------------------------------------------------------------------ */
+/* Pronunciation reference — church modern vs old Bohairic             */
+/* ------------------------------------------------------------------ */
+
+export const PronunciationExample = z.object({
+  coptic: copticText,
+  translit: Localized.optional(),
+  translation: Localized.optional(),
+  wordId: slug.optional(),
+});
+export type PronunciationExample = z.infer<typeof PronunciationExample>;
+
+export const PronunciationFile = z.object({
+  ...fileMeta,
+  dialect: z.literal("bohairic"),
+  provenance: z.string().min(1),
+  systems: z.array(
+    z.object({
+      id: slug,
+      title: Localized,
+      body: Localized,
+    }),
+  ).min(1),
+  diphthongs: z.array(
+    z.object({
+      id: slug,
+      cluster: copticText,
+      result: Localized,
+      examples: z.array(PronunciationExample).default([]),
+    }),
+  ).default([]),
+  pitfalls: z.array(
+    z.object({
+      id: slug,
+      wrong: Localized,
+      right: Localized,
+    }),
+  ).default([]),
+  marks: z.array(
+    z.object({
+      id: slug,
+      title: Localized,
+      body: Localized,
+      examples: z.array(PronunciationExample).default([]),
+    }),
+  ).default([]),
+  drills: z.array(PronunciationExample).default([]),
+});
+export type PronunciationFile = z.infer<typeof PronunciationFile>;

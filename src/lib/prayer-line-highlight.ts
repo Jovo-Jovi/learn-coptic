@@ -1,8 +1,23 @@
 import { highlightFromGloss } from "@/lib/arabic-highlight";
 import { grammarStems } from "@/lib/coptic-affix";
+import {
+  buildGlossMaps,
+  composeParseAr,
+  firstGlossPiece,
+  parseCoptic,
+  type GlossMaps,
+  type ParseResult,
+} from "@/lib/coptic-parse";
 import { normalizeCoptic } from "@/lib/coptic-text";
+import { getGrammarRules } from "@/lib/grammar-rules";
 import { foldCopticLower } from "@/lib/letters";
-import { teachingWords } from "@/lib/words";
+import { getWords, teachingWords } from "@/lib/words";
+
+export type TokenHighlightCtx = {
+  dictionaryAr?: string;
+  teachingGloss: Map<string, string>;
+  maps: GlossMaps;
+};
 
 /** Unique teaching-set gloss keyed by folded / normalized Coptic. Two hits → omit. */
 export function uniqueTeachingGlossByCoptic(): Map<string, string> {
@@ -35,6 +50,37 @@ function teachingArFor(
   return teachingGloss.get(remainder) ?? teachingGloss.get(normalizeCoptic(remainder));
 }
 
+function highlightFromParse(parsed: ParseResult, lineAr: string): string | null {
+  if (parsed.stemAr) {
+    const fromStem = highlightFromGloss(lineAr, parsed.stemAr, {
+      relative: parsed.relative,
+    });
+    if (fromStem) return fromStem;
+  }
+  if (parsed.relative && parsed.pieces.length > 0) {
+    const relShort = firstGlossPiece(parsed.pieces[0]!.glossAr);
+    const next =
+      parsed.stemAr != null
+        ? firstGlossPiece(parsed.stemAr)
+        : parsed.pieces[1]
+          ? firstGlossPiece(parsed.pieces[1].glossAr)
+          : "";
+    if (relShort && next) {
+      const joined = highlightFromGloss(lineAr, `${relShort} ${next}`);
+      if (joined) return joined;
+    }
+  }
+  for (const piece of parsed.pieces) {
+    const fromAffix = highlightFromGloss(lineAr, piece.glossAr);
+    if (fromAffix) return fromAffix;
+  }
+  return null;
+}
+
+export function parsePrayerToken(coptic: string, maps: GlossMaps): ParseResult {
+  return parseCoptic(coptic, maps, getGrammarRules().affixes);
+}
+
 export function lineHighlightForToken(
   token: {
     coptic: string;
@@ -43,7 +89,7 @@ export function lineHighlightForToken(
     arHighlight?: string;
   },
   lineAr: string,
-  ctx: { dictionaryAr?: string; teachingGloss: Map<string, string> },
+  ctx: TokenHighlightCtx,
 ): string | null {
   if (token.arHighlight && lineAr.includes(token.arHighlight)) {
     return token.arHighlight;
@@ -59,6 +105,10 @@ export function lineHighlightForToken(
     if (fromDict) return fromDict;
   }
 
+  const parsed = parseCoptic(token.coptic, ctx.maps);
+  const fromParse = highlightFromParse(parsed, lineAr);
+  if (fromParse) return fromParse;
+
   for (const attempt of grammarStems(token.coptic)) {
     const teachingAr = teachingArFor(attempt.stem, ctx.teachingGloss);
     if (!teachingAr) continue;
@@ -69,4 +119,18 @@ export function lineHighlightForToken(
   }
 
   return null;
+}
+
+export function tokenParseCaption(
+  coptic: string,
+  maps: GlossMaps,
+  extra?: { gloss?: string; dictionaryAr?: string },
+): string | null {
+  if (extra?.gloss) return firstGlossPiece(extra.gloss);
+  if (extra?.dictionaryAr) return firstGlossPiece(extra.dictionaryAr);
+  return composeParseAr(parseCoptic(coptic, maps));
+}
+
+export function prayerGlossMaps(): GlossMaps {
+  return buildGlossMaps(getWords());
 }

@@ -44,9 +44,11 @@ function TranslationAr({
 export function PrayerReader({
   prayer,
   highlights,
+  captions = {},
 }: {
   prayer: Prayer;
   highlights: Record<string, string>;
+  captions?: Record<string, string>;
 }) {
   const [open, setOpen] = useState<{ lineId: string; index: number } | null>(
     null,
@@ -121,6 +123,16 @@ export function PrayerReader({
                   : null
               }
             />
+            {open?.lineId === line.id &&
+            captions[highlightKey(line.id, open.index)] ? (
+              <p className="mt-2 text-base font-semibold text-text">
+                {captions[highlightKey(line.id, open.index)]}
+              </p>
+            ) : open?.lineId === line.id ? (
+              <p className="mt-2 text-sm text-text-dim">
+                مفيش معنى في القاموس للكلمة دي بعد.
+              </p>
+            ) : null}
             {line.translation.en ? (
               <p className="mt-1 text-sm text-text-dim" dir="ltr">
                 {line.translation.en}

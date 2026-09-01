@@ -1,17 +1,136 @@
-# Journal
+## 2026-09-01 · docs · GitHub README features
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Root `README.md` lists what is live: letter audio, search, practice/quiz,
+  four prayers with tap-highlight, Andreas dictionary, PWA. Badges match.
+- Did not advertise S13c audio, S14 art, or S15 grammar UI.
 
-Append only. Newest at the top. One entry per step. Keep entries short — this
-is a record of what happened, not an explanation of why.
+Open: human S17 **PASS**. S18 later. S13c. S15.
 
-Format:
+## 2026-09-01 · letter · سيما / تاف specials
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Kept class س / ت (`arabicHint`, IPA, quiz, cards). Main rule stays
+  دائماً سين / تاء.
+- Added special rule cards only: سيما صاد after `A - O - W`, زاي Greek
+  after `M`; تاف طاء after `A - O - W`, دال Greek if preceded by `N`.
+- Examples from existing ids: `ci`, `cwma`, `kocmoc`, `tebt`, `taio`,
+  `entolh`.
 
-```
-## YYYY-MM-DD · S# · <title>
-Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
-- what changed
-- what was decided
-- what is still open
-```
+Open: human S17 **PASS**. S18 later. S13c. S15.
+
+## 2026-09-01 · letter · غما chip order
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Gamma note + follow rows: حلقية ⲅ ⲝ ⲭ ⲕ, إمالة ⲉ ⲓ ⲏ ⲩ.
+  Follow keys `G - { - X - K` and `E - I - H - U`. Janja note matches
+  the same vowel order (its follow was already `E - I - H - U`).
+- `npm run validate` ✓. `/letter/gamma` note chips: ⲅ ⲝ ⲭ ⲕ then ⲉ…
+
+Open: human S17 **PASS**. S18 later. S13c. S15.
+
+## 2026-09-01 · gaps · GitHub merge inventory
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: recorded, not filled
+- No second Coptic–Arabic GitHub dump to merge. Andreas is already in
+  `words.json`. KELLIA / Compass / coptic-words have no Arabic.
+  copticlingo `copticsite.json` is unlicensed — do not scrape.
+- Left gaps blank. `docs/gaps.md`: 145 unmarked prayer tokens (132 unique).
+  S18 added to the plan, deferred until S17 PASS.
+
+Open: human S17 **PASS**. S18 later. S13c. S15.
+
+## 2026-09-01 · research · full Coptic–Arabic dump
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: no ingest
+- Searched for a downloadable Coptic–Arabic dictionary. The only structured
+  dump is remnqymi `andreas.json` (CC BY-SA 4.0), already in `words.json`
+  (8488 rows). Dawoud is scans, not JSON. CDO and Coptic Compass have no
+  Arabic. Naqlun CopDic is an app with no public dump.
+- Did not download Dawoud, scrape Naqlun, or machine-translate CDO.
+
+Open: human S17 **PASS**. Inflected prayer tokens. S13c. S15.
+
+## 2026-09-01 · S17 · dictionary first, then parse
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: partial
+- Lookup order is now: unique dictionary row on the full word, then grammar
+  peel only if the remainder is still a dictionary stem (or a bound
+  preposition + pronoun).
+- Prayer tap always shows that stored Arabic under the line. Highlight in
+  the prayer translation when the span is unique. ~339/484 tokens have a
+  meaning; the rest are inflected forms not in the dictionary (ⲛ̀ϫⲉ, ⲙⲁⲣⲉ-…).
+- Did not invent glosses or bulk-fill `words.json`.
+
+Open: human **PASS**. Remaining unmarked liturgical verbs. S13c. S15.
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: partial
+- Analyzer `src/lib/coptic-parse.ts`. 13 unambiguous affixes
+  `parseReady`. Eight fixtures in the validator. Stub peel stays fallback.
+- Prayer tap uses parse + teaching gloss + sourced `arHighlight`. Harvest
+  meaning is only a search key into that line (ADR-022).
+- Test tokens: khen-efran l2/l3 spans; ⲡⲉⲕⲣⲁⲛ → اسمك. Did not bulk-fill
+  `words.json`.
+- `npm run validate` and `npm run build` passed.
+
+Open: human **PASS** on S17. More affixes. Rest of prayer tokens. S13c. S15.
+
+## 2026-09-01 · letter · سوو is a numeral, not a sound
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- سوو hint is ٦ not س; dropped the duplicate note. Neighbors render
+  once when the letter has no word list.
+
+Open: S13c. S15. S17 parse.
+
+## 2026-09-01 · letter · Coptic in notes was swallowed by parentheses
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `(ⲅ ⲕ ⲭ ⲝ)` was parsed as Latin so it used the Arabic font. Inner Coptic
+  now paints as the same chips as the rule follow row.
+
+Open: S13c. S15. S17 parse.
+
+## 2026-09-01 · letter · notes use Coptic font, no source labels
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Letter `sound.note` paints Coptic with `font-coptic` (inline, not chips).
+- Dropped learner copy «مرجع 2026-09-01» / «صف المستكشف». جنجا ⲩ folded
+  into follow `E - I - H - U`.
+
+Open: S13c. S15. S17 parse.
+
+## 2026-09-01 · letter · pronunciation notes merged
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Compared owner 32-letter pronunciation notes to `letters.json` (report
+  in chat). Explorer `rules[]` kept (ADR-017). Notes added as
+  `sound.note`; empty letters got a default rule; جنجا gained ⲩ rule.
+  Pinned `exampleWords` only where a dictionary row exists. No invented
+  words (ⲛⲓⲃⲓ، ⲑⲙⲁⲩ، ⲫⲛⲟⲩϯ، … stay out).
+- `pronunciation.json`: two systems, diphthongs, jinkim, pitfalls, drills.
+- Plan: S15 lesson UI; S17 composition parse GATE. Neither started.
+
+Open: human parse (S17). S15 UI. S13c audio.
+
+## 2026-09-01 · grammar · points 7–10 stored (10/10)
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `grammar-rules.json`: owner notes 7–10 (advanced clauses; particles;
+  Bohairic vs Sahidic; exceptions and pitfalls). 10/10 points, 102 affix
+  rows. Kinds added: conjunction, object-marker. `parseReady` still false.
+- Plural ⲛⲓϩⲓⲟⲙⲓ stored from the notes’ analysis; source line had a
+  garbled Latin letter. No highlighter/parser/S15 UI.
+
+Open: human says parse. Then S15 lessons and composition→Arabic gloss.
+S13c.
+
+## 2026-09-01 · grammar · points 4–6 stored
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `grammar-rules.json`: owner notes 4–6 of 10 (verbs/conjugation;
+  tenses/moods guide; negation/questions/imperative). Coptic copied.
+  Affix kinds added: negation, imperative, interrogative, mood.
+  `parseReady` still false. Sections kept as future S15 lesson steps.
+- No highlighter change. Parser waits for points 7–10 (ADR-021).
+
+Open: points 7–10. Then parse. S15 illustrated lessons later. S13c.
+
+## 2026-09-01 · grammar · points 1–3 stored
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `src/data/json/grammar-rules.json`: owner notes 1–3 of 10 (sentence/
+  nouns/articles; pronouns/possession; adjectives/adverbs/prepositions).
+  Coptic copied from the notes. 48 affix rows, `parseReady: false`.
+- No highlighter change. Parser waits for points 4–10 (ADR-021).
+
+Open: points 4–10. Then parse for tap-highlight / read-correct. S13c.
 
 ## 2026-09-01 · S13b · tap highlight not black in dark
 Model: Cursor Grok 4.6 | Commit: 962330e | Result: pass

@@ -45,7 +45,16 @@ that form; **null** if a bound article is glued on (do not invent the
 stem). Prayer tap-a-word uses exact → lemma → strip one article → null
 (ADR-020). Null means no dictionary gloss. Stored `wordId` on prayers is
 teaching-set only until harvest Arabic is checked. Tapping highlights a
-span already in that line’s Arabic when the stub peel plus a teaching-set
-gloss (or `arHighlight`) uniquely matches. No highlight is correct until
-the owner-supplied grammar-rule table is stored and used.
+span already in that line’s Arabic when parse (ADR-022), the stub peel, a
+teaching-set gloss, or `arHighlight` uniquely matches. Most liturgical
+tokens stay unmarked.
+
+**grammar-rules.json** — owner Bohairic notes, **10/10** stored 2026-09-01.
+Each point’s sections are future S15 lesson steps. S17 parse test: 13
+unambiguous affix rows are `parseReady`. Short colliding forms stay false.
+Harvest Arabic may only search a sourced prayer line (ADR-022).
+
+**pronunciation.json** — two Bohairic systems, diphthongs, jinkim,
+pitfalls, reading drills. Letter `rules[]` stay explorer Greco-Bohairic
+(ADR-017); this file does not replace them.
 

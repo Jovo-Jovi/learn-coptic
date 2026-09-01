@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-01",
+  "dialect": "bohairic",
+  "provenance": "Owner Bohairic pronunciation notes 2026-09-01. Coptic copied from those notes. Letter names on the site stay the curriculum forms (ADR-017 explorer). Arabic–sound comparisons in the notes are approximate.",
+  "systems": [
+    {
+      "id": "church-modern",
+      "title": { "ar": "النطق الكنسي الليتورجي التقليدي (الحديث)" },
+      "body": {
+        "ar": "صاغه عريان أفندي مفتاح في عهد البابا كيرلس الرابع (منتصف القرن 19) لتقارب صوتي مع اليوناني البيزنطي المعاصر. هو النطق السائد في الكنائس والخدمات الشماسية اليوم، وهو صوت التسجيلات على هذا الموقع (bohairic-modern)."
+      }
+    },
+    {
+      "id": "old-bohairic",
+      "title": { "ar": "اللفظ البحيري القديم (الأصيل)" },
+      "body": {
+        "ar": "أثبته الدكتور إميل ماهر إسحق (القمص شنودة ماهر) في أطروحته بجامعة أكسفورد (1975م)، وبدعم رعوي من الأنبا ديمتريوس مطران ملوي. نطق تاريخي منسجم مع العامية المصرية والألحان الأصلية. موثَّق هنا للدرس؛ التسجيلات لا تغيّره."
+      }
+    }
+  ],
+  "diphthongs": [
+    {
+      "id": "ou",
+      "cluster": "ⲟⲩ",
+      "result": { "ar": "أوو /oo/ صوت واحد مدمج" },
+      "examples": [
+        { "coptic": "ⲟⲩⲣⲟ", "translit": { "ar": "أورو" }, "translation": { "ar": "ملك" }, "wordId": "ouro" },
+        { "coptic": "ⲟⲩⲱⲛϧ", "translit": { "ar": "أوونخ" }, "translation": { "ar": "حياة" } }
+      ]
+    },
+    {
+      "id": "au",
+      "cluster": "ⲁⲩ",
+      "result": { "ar": "أڤ /av/" },
+      "examples": [
+        { "coptic": "ⲁⲩⲥⲱⲧⲙ", "translit": { "ar": "أڤسوطم" }, "translation": { "ar": "سمعوا" } }
+      ]
+    },
+    {
+      "id": "eu",
+      "cluster": "ⲉⲩ",
+      "result": { "ar": "إيڤ /ev/" },
+      "examples": [
+        { "coptic": "ⲉⲩⲭⲏ", "translit": { "ar": "إيڤخي" }, "translation": { "ar": "صلاة" }, "wordId": "euxh" }
+      ]
+    },
+    {
+      "id": "eu-long",
+      "cluster": "ⲏⲩ",
+      "result": { "ar": "إيڤ طويلة /eev/" },
+      "examples": [
+        { "coptic": "ⲛⲓⲥⲛⲏⲟⲩ", "translit": { "ar": "نيسنيو / نيسنيڤ" }, "translation": { "ar": "الإخوة" } }
+      ]
+    },
+    {
+      "id": "gg",
+      "cluster": "ⲅⲅ",
+      "result": { "ar": "نغ /ng/" },
+      "examples": [
+        { "coptic": "ⲁⲅⲅⲉⲗⲟⲥ", "translit": { "ar": "أنجيلوس" }, "translation": { "ar": "ملاك" }, "wordId": "aggeloc" }
+      ]
+    },
+    {
+      "id": "gk",
+      "cluster": "ⲅⲕ",
+      "result": { "ar": "نك /nk/" },
+      "examples": [
+        { "coptic": "ⲁⲅⲕⲩⲣⲁ", "translit": { "ar": "أنكيرا" }, "translation": { "ar": "مرساة" }, "wordId": "agkura" }
+      ]
+    },
+    {
+      "id": "gkh",
+      "cluster": "ⲅⲭ",
+      "result": { "ar": "نخ /nkh/" },
+      "examples": [
+        { "coptic": "ⲁⲅⲭⲟⲥ", "translit": { "ar": "أنخوس" }, "translation": { "ar": "خنق" } }
+      ]
+    }
+  ],
+  "pitfalls": [
+    {
+      "id": "khai-not-sh-or-h",
+      "wrong": { "ar": "قراءة ϧⲉⲛ هن أو شن" },
+      "right": { "ar": "Ϧ خاء صريحة دائماً: ϧⲉⲛ = خين" }
+    },
+    {
+      "id": "ou-one-sound",
+      "wrong": { "ar": "قراءة ⲟⲩ حرفين (أو - يو)" },
+      "right": { "ar": "ⲟⲩ صوت واحد /oo/ مثل ⲟⲩⲣⲱⲙⲓ = أورومي" }
+    },
+    {
+      "id": "jinkim-n-m",
+      "wrong": { "ar": "قراءة ⲛ̀ⲑⲟⲕ نثوك بلا كسرة" },
+      "right": { "ar": "جينكم قبل الساكن: إنثوك. ⲙ̀- = إم-" }
+    },
+    {
+      "id": "vida-not-always-b",
+      "wrong": { "ar": "قراءة ⲃⲱⲕ بوك" },
+      "right": { "ar": "بعد متحرك ⲱ تُنطق ڤوك" }
+    }
+  ],
+  "marks": [
+    {
+      "id": "jinkim",
+      "title": { "ar": "علامة الجينكم" },
+      "body": {
+        "ar": "فوق الساكن: مقطع مستقل بكسرة خفيفة أو همزة مكسورة قبل الحرف. فوق المتحرك: نبرة مستقلة مشددة."
+      },
+      "examples": [
+        { "coptic": "ⲛ̀", "translit": { "ar": "إن-" }, "translation": { "ar": "مثل ⲛ̀ⲑⲟⲕ إنثوك / أنتَ" } },
+        { "coptic": "ⲙ̀", "translit": { "ar": "إم-" }, "translation": { "ar": "مثل ⲙ̀ⲫⲛⲟⲩϯ إمفنوتي" } },
+        { "coptic": "ⲓ̀", "translit": { "ar": "إي" }, "translation": { "ar": "مستقلة مثل ⲁϥⲓ̀ أفيي / جاءَ" } }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "coptic": "Ⲡⲓⲥⲁϫⲓ",
+      "translit": { "ar": "بي-ساجي" },
+      "translation": { "ar": "الكلمة / الكلام" }
+    },
+    {
+      "coptic": "ⲫⲛⲟⲩϯ ⲉⲑⲟⲩⲁⲃ",
+      "translit": { "ar": "فنو-تي إث-وواب" },
+      "translation": { "ar": "الله القديس / الطاهر" }
+    },
+    {
+      "coptic": "Ⲁϥⲥⲱⲧⲙ ⲉⲡⲓⲥⲁϫⲓ",
+      "translit": { "ar": "أف-سوطم إي-بي-ساجي" },
+      "translation": { "ar": "سَمِعَ الكلمةَ" }
+    },
+    {
+      "coptic": "Ϧⲉⲛ ⲟⲩϩⲓⲣⲏⲛⲏ",
+      "translit": { "ar": "خين أو-هيريني" },
+      "translation": { "ar": "بسلام / في سلام" }
+    },
+    {
+      "coptic": "Ⲡϭⲟⲓⲥ ⲡⲉ ⲡⲁⲛⲟⲩϯ",
+      "translit": { "ar": "إبتشويس بِي بانو-تي" },
+      "translation": { "ar": "الرب هو إلهي" }
+    }
+  ]
+}

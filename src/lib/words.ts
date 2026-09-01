@@ -40,9 +40,16 @@ export function exampleWordsForLetter(
   letterId: string,
   cap = 6,
 ): { shown: Word[]; total: number } {
-  const all = wordsTeaching(letterId)
+  const letter = getLetterById(letterId);
+  const pinned = (letter?.exampleWords ?? [])
+    .map((id) => getWordById(id))
+    .filter((word): word is Word => word != null && word.published);
+  const pinnedIds = new Set(pinned.map((word) => word.id));
+  const rest = wordsTeaching(letterId)
+    .filter((word) => !pinnedIds.has(word.id))
     .slice()
     .sort((a, b) => KIND_RANK[a.kind] - KIND_RANK[b.kind]);
+  const all = [...pinned, ...rest];
   return { shown: all.slice(0, cap), total: all.length };
 }
 

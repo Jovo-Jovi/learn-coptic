@@ -7,6 +7,7 @@ import { LetterBackNav } from "@/components/LetterBackNav";
 import { LetterHero } from "@/components/LetterHero";
 import { LetterNeighbors } from "@/components/LetterNeighbors";
 import { RulesAccordion } from "@/components/RulesAccordion";
+import { MixedCopticText } from "@/components/MixedCopticText";
 import {
   GROUP_DIGIT_AR,
   getLetterById,
@@ -53,6 +54,14 @@ export default async function LetterPage({ params }: PageProps<"/letter/[id]">) 
         <p className="relative z-10 mt-2 text-center text-base text-text-dim">
           {letter.sound.arabicHint.join("، ")}
         </p>
+        {letter.sound.note ? (
+          <p className="relative z-10 mx-auto mt-4 max-w-prose text-center text-sm leading-relaxed text-text-dim">
+            <MixedCopticText
+              text={letter.sound.note.ar}
+              currentLetterId={letter.id}
+            />
+          </p>
+        ) : null}
 
         <p className="relative z-10 mt-8 text-center" data-group={letter.group}>
           <Link
@@ -79,11 +88,13 @@ export default async function LetterPage({ params }: PageProps<"/letter/[id]">) 
 
       <div className="mx-auto w-full max-w-2xl">
         <DeveloperMeta letter={letter} />
-        <LetterNeighbors
-          prev={prev}
-          next={next}
-          ariaLabel="الحرف السابق والتالي — نهاية الصفحة"
-        />
+        {examples.total > 0 ? (
+          <LetterNeighbors
+            prev={prev}
+            next={next}
+            ariaLabel="الحرف السابق والتالي — نهاية الصفحة"
+          />
+        ) : null}
       </div>
     </article>
   );
