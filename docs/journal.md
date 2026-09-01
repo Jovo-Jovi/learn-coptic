@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-09-01 · ship · S16 S13b S11
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+Model: Cursor Grok 4.6 | Commit: ba8e1b6 | Result: pass
 - Pushed remaining local code: word `normalized`/`lemma`, prayer tap
   highlight in place, `/quiz` Leitner. Harvest Arabic still off prayers.
   Unmarked tokens expected until stored grammar rules.
