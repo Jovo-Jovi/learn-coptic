@@ -232,18 +232,16 @@ Harvest Arabic is only a *search key* into that line’s sourced
 `translation.ar` (ADR-022). Unmarked liturgical tokens remain expected.
 Do not fill `words.json` in bulk.
 
-### S18 · Dictionary leftovers and prayer gaps — **deferred**
-Inventory is `docs/gaps.md`. **Do not start** until S17 GATE is **PASS**
-and a human names which action. Do not invent glosses. Do not merge
+### S18 · Dictionary leftovers and prayer gaps
+Inventory is `docs/gaps.md`. Do not invent glosses. Do not merge
 KELLIA English into `meaning.ar`.
-- [ ] Decide whether to harvest leftover Andreas lemmas from remnqymi
-      `andreas.json` (same CC BY-SA file; rows skipped as not 2–8 letters).
-      Report counts; human reviews before any `words.json` append
-- [ ] Leave unmarked prayer tokens blank until sourced: 145 occurrences,
-      132 unique forms (see `docs/gaps.md`). Options: human `gloss` /
-      `arHighlight`, or more `parseReady` affixes (ⲙⲁⲣⲉ-, ⲁ- + subject,
-      ⲛ̀ϫⲉ, ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ)
-- [ ] No merge of KELLIA, Coptic Compass, coptic-words, or copticlingo
+- [x] Harvest leftover Andreas lemmas from remnqymi `andreas.json`
+      (same CC BY-SA file; 9–17 Coptic letters). 1689 rows appended
+      2026-09-01 (`node scripts/harvest-andreas.mjs --leftovers`).
+- [ ] Leave unmarked prayer tokens blank until sourced (see `docs/gaps.md`).
+      Options: human `gloss` / `arHighlight`, or more `parseReady` affixes
+      (ⲙⲁⲣⲉ-, ⲁ- + subject, ⲛ̀ϫⲉ, ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ)
+- [ ] No merge of KELLIA, Coptic Compass, coptic-words, copticmt, or copticlingo
       `copticsite.json` without a written grant
 - [ ] Refresh `docs/gaps.md` with `npx tsx scripts/report-gaps.mts` after
       any parse or dictionary change

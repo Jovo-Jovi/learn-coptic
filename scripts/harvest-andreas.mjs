@@ -5,6 +5,9 @@
  *
  * Input: .tmp/andreas.json (or ./andreas.json).
  * Does not touch letters.json.
+ *
+ * `node scripts/harvest-andreas.mjs --leftovers` appends the 9–17 letter
+ * rows skipped by the first 2–8 harvest. Same filters otherwise.
  */
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -203,6 +206,8 @@ function uniqueId(base) {
   return id;
 }
 
+const leftoverPass = process.argv.includes("--leftovers");
+
 const raw = JSON.parse(readFileSync(andreasPath, "utf8"));
 const rows = raw.data;
 if (!Array.isArray(rows)) throw new Error("andreas.json data is not a list");
@@ -228,13 +233,20 @@ for (const row of rows) {
     continue;
   }
   const n = copticLetterCount(coptic);
-  if (n < 2) {
-    bump("short");
-    continue;
-  }
-  if (n > 8) {
-    bump("long");
-    continue;
+  if (leftoverPass) {
+    if (n < 9 || n > 17) {
+      bump("not-leftover-length");
+      continue;
+    }
+  } else {
+    if (n < 2) {
+      bump("short");
+      continue;
+    }
+    if (n > 8) {
+      bump("long");
+      continue;
+    }
   }
   const meaningAr = arabicClean(plain(row, "BACK"));
   if (!AR_RE.test(meaningAr)) {
@@ -279,10 +291,14 @@ for (const row of rows) {
 
 file.words.push(...added);
 file.updated = "2026-09-01";
-file.provenance =
-  "145 rows from legacy/coptic_vocabulary.html. efran and efiot from prayers.json keyWords. " +
-  `${added.length} lemmas from Andreas (St Macarius) via remnqymi andreas.json, CC BY-SA 4.0. ` +
-  "Arabic gloss copied; translit left empty (source has none).";
+if (leftoverPass) {
+  file.provenance = `${file.provenance} Plus ${added.length} leftover lemmas (9–17 letters) from the same dump.`;
+} else {
+  file.provenance =
+    "145 rows from legacy/coptic_vocabulary.html. efran and efiot from prayers.json keyWords. " +
+    `${added.length} lemmas from Andreas (St Macarius) via remnqymi andreas.json, CC BY-SA 4.0. ` +
+    "Arabic gloss copied; translit left empty (source has none).";
+}
 
 writeFileSync(wordsPath, `${JSON.stringify(file, null, 2)}\n`);
 console.log(`harvested ${added.length} Andreas rows`);

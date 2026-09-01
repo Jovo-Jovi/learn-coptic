@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-01",
   "teachingSet": 147,
-  "harvest": 8488,
-  "lemmaNull": 295,
+  "harvest": 10177,
+  "lemmaNull": 309,
   "lemmaNullIds": [
     "jnkmmon",
     "pixrictoc",
@@ -298,7 +298,21 @@
     "sro-2",
     "srop-2",
     "swr-2",
-    "swrem-2"
+    "swrem-2",
+    "picteuein",
+    "horianarouhorii",
+    "horianatooui",
+    "apologia-2",
+    "metmeqre-2",
+    "metjarhoriht-2",
+    "mkahorinhoriht-2",
+    "nomnhoriht",
+    "nounwoui",
+    "pervmeui",
+    "proceuxh-2",
+    "procvora-2",
+    "cqoinoufi-2",
+    "shaioushaiwoushaii-2"
   ],
   "homographs": [
     {
@@ -1385,6 +1399,71 @@
         "id": "ouhoriwr",
         "coptic": "ⲟⲩϩⲱⲣ",
         "meaningAr": "كلاب"
+      },
+      {
+        "id": "ouamhorirhri",
+        "coptic": "ⲟⲩⲁⲙϩⲣⲏⲣⲓ",
+        "meaningAr": "اكل الزهور (زنبور اسود)"
+      },
+      {
+        "id": "ouahoriemmici",
+        "coptic": "ⲟⲩⲁϩⲉⲙⲙⲓⲥⲓ",
+        "meaningAr": "ولد ثانية"
+      },
+      {
+        "id": "ouahoriemcaji",
+        "coptic": "ⲟⲩⲁϩⲉⲙⲥⲁϫⲓ",
+        "meaningAr": "اعاد الكلام، ازاد في الكلام، عارض"
+      },
+      {
+        "id": "ouahoriemcwnt",
+        "coptic": "ⲟⲩⲁϩⲉⲙⲥⲱⲛⲧ",
+        "meaningAr": "تجديد الخليقة، قيامة، بعث"
+      },
+      {
+        "id": "ouahoriemwnkhai",
+        "coptic": "ⲟⲩⲁϩⲉⲙⲱⲛϧ",
+        "meaningAr": "رجع الى الحياة ثانية، تجددت حياته"
+      },
+      {
+        "id": "ouahoriemhoriiwt",
+        "coptic": "ⲟⲩⲁϩⲉⲙϯϩⲓⲱⲧ",
+        "meaningAr": "لبس فوق، ضاعف الملبوس وثقله"
+      },
+      {
+        "id": "ouahoricahorini",
+        "coptic": "ⲟⲩⲁϩⲥⲁϩⲛⲓ",
+        "meaningAr": "امر، اوصى، اذن"
+      },
+      {
+        "id": "oubemounhoriwou",
+        "coptic": "ⲟⲩⲃⲉⲙⲟⲩⲛϩⲱⲟⲩ",
+        "meaningAr": "مطرية، مانعة المطر"
+      },
+      {
+        "id": "oubeshaiolmec",
+        "coptic": "ⲟⲩⲃⲉϣⲟⲗⲙⲉⲥ",
+        "meaningAr": "ناموسية، مانعة الناموس"
+      },
+      {
+        "id": "oukeeksecti",
+        "coptic": "ⲟⲩⲕⲉⲝⲉⲥⲧⲓ",
+        "meaningAr": "غير قانوني، ممنوع"
+      },
+      {
+        "id": "ouolcnhoriht",
+        "coptic": "ⲟⲩⲟⲗⲥⲛϩⲏⲧ",
+        "meaningAr": "حزن، تكدر، انغم، اكتاب"
+      },
+      {
+        "id": "ouwlcnhoriht",
+        "coptic": "ⲟⲩⲱⲗⲥⲛϩⲏⲧ",
+        "meaningAr": "حزن، تكدر، انغم، اكتاب، تحسر"
+      },
+      {
+        "id": "ouwmnhoriqhf",
+        "coptic": "ⲟⲩⲱⲙⲛϩⲑⲏϥ",
+        "meaningAr": "ندم، اسف، حسرة، توبة"
       }
     ],
     "ⲡⲓ": [
@@ -1467,6 +1546,11 @@
         "id": "pituc",
         "coptic": "ⲡⲓⲧⲩⲥ",
         "meaningAr": "اثل، سرو (نوع شجر)"
+      },
+      {
+        "id": "picteuein",
+        "coptic": "ⲡⲓⲥⲧⲉⲩⲉⲓⲛ",
+        "meaningAr": "امن، صدق، اعتقد، وثق"
       }
     ],
     "ϩⲁⲛ": [
@@ -1519,6 +1603,16 @@
         "id": "horiancop",
         "coptic": "ϩⲁⲛⲥⲟⲡ",
         "meaningAr": "احيانا، مرارا، مرارا وتكرارا، مرات كثيرة"
+      },
+      {
+        "id": "horianarouhorii",
+        "coptic": "ϩⲁⲛⲁⲣⲟⲩϩⲓ",
+        "meaningAr": "غسق، بداية المساء، عشية"
+      },
+      {
+        "id": "horianatooui",
+        "coptic": "ϩⲁⲛⲁⲧⲟⲟⲩⲓ",
+        "meaningAr": "بداية الصباح، فجر، سحر، شفق"
       }
     ],
     "ϯ": [
@@ -2806,6 +2900,61 @@
         "id": "swrem-2",
         "coptic": "ϯϭⲱⲣⲉⲙ",
         "meaningAr": "اعطى اشارة، اشار"
+      },
+      {
+        "id": "apologia-2",
+        "coptic": "ϯⲁⲡⲟⲗⲟⲅⲓⲁ",
+        "meaningAr": "اجاب، رد الجواب، رد على سوال"
+      },
+      {
+        "id": "metmeqre-2",
+        "coptic": "ϯⲙⲉⲧⲙⲉⲑⲣⲉ",
+        "meaningAr": "ادى الشهادة، شهد"
+      },
+      {
+        "id": "metjarhoriht-2",
+        "coptic": "ϯⲙⲉⲧϫⲁⲣϩⲏⲧ",
+        "meaningAr": "جرا، شجع، قوى"
+      },
+      {
+        "id": "mkahorinhoriht-2",
+        "coptic": "ϯⲙⲕⲁϩⲛϩⲏⲧ",
+        "meaningAr": "احزن، الم، كدر، اضجر، اغاظ، اوجع"
+      },
+      {
+        "id": "nomnhoriht",
+        "coptic": "ϯⲛⲟⲙϯⲛϩⲏⲧ",
+        "meaningAr": "عزى، واسى، جبر قلبه"
+      },
+      {
+        "id": "nounwoui",
+        "coptic": "ϯⲛⲟⲩⲛⲱⲟⲩⲓ",
+        "meaningAr": "رتب، نظم، حدد، عين"
+      },
+      {
+        "id": "pervmeui",
+        "coptic": "ϯⲡⲉⲣⲫⲙⲉⲩⲓ",
+        "meaningAr": "ذكر، فكر، جعله يتذكر"
+      },
+      {
+        "id": "proceuxh-2",
+        "coptic": "ϯⲡⲣⲟⲥⲉⲩⲭⲏ",
+        "meaningAr": "صلى، ابتهل، توسل، تضرع"
+      },
+      {
+        "id": "procvora-2",
+        "coptic": "ϯⲡⲣⲟⲥⲫⲟⲣⲁ",
+        "meaningAr": "قدم او قرب ذبيحة، قدم قربانا؛"
+      },
+      {
+        "id": "cqoinoufi-2",
+        "coptic": "ϯⲥⲑⲟⲓⲛⲟⲩϥⲓ",
+        "meaningAr": "عطر، طيب، روح، بخر، رفع بخورا"
+      },
+      {
+        "id": "shaioushaiwoushaii-2",
+        "coptic": "ϯϣⲟⲩϣⲱⲟⲩϣⲓ",
+        "meaningAr": "قدم تقدمة، قدم ذبيحة"
       }
     ]
   }

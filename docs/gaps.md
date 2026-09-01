@@ -1,7 +1,6 @@
 # Gaps — dictionary merge and unmarked prayers
 
-Recorded 2026-09-01. **Do not fill these in this session.** Action is **S18**
-in `IMPLEMENTATION_PLAN.md`. Refresh the tables with
+Recorded 2026-09-01. Refresh the tables with
 `npx tsx scripts/report-gaps.mts` (does not touch `src/data/json/`).
 
 A gap here is a Coptic form the site cannot honestly gloss today. Leave it
@@ -11,24 +10,27 @@ blank in the UI until a human sources Arabic or approves a parse peel.
 
 ## GitHub dictionaries — merge or not
 
-There is **no second Coptic–Arabic dump** on GitHub that we can merge into
-`words.json` today.
+The only dumpable Coptic–Arabic lexicon is remnqymi Andreas (**CC BY-SA 4.0**).
+Learner length 2–8 was harvested first; 9–17 leftovers were harvested 2026-09-01
+(`node scripts/harvest-andreas.mjs --leftovers`). There is still **no second**
+Arabic dump.
 
 | Repo / file | Arabic? | Licence | Merge? |
 |---|---|---|---|
-| [pishoyg/coptic](https://github.com/pishoyg/coptic) `dictionary/stmacariusmonastery_org/data/output/andreas.json` | Yes | **CC BY-SA 4.0** (remnqymi lexicon data) | **Already in** `words.json` (8488 rows, learner length 2–8 Coptic letters). Later: consider leftover Andreas rows skipped as too long / too short / affix / no Arabic. Same file, same licence. |
+| [pishoyg/coptic](https://github.com/pishoyg/coptic) `dictionary/stmacariusmonastery_org/data/output/andreas.json` | Yes | **CC BY-SA 4.0** | **In** `words.json` (2–8 then 9–17 letters). Remaining skips: affix hyphen, no Arabic, regex, letter names, unmapped glyphs. |
 | [KELLIA/dictionary](https://github.com/KELLIA/dictionary) (CDO / Comprehensive Coptic Lexicon TEI) | No (EN / FR / DE) | CC BY-SA 4.0 | **No** into `meaning.ar`. Do not machine-translate. Optional later: store English as `meaning.en` only if a human asks. |
 | [louiseyousre2020/coptic-words](https://github.com/louiseyousre2020/coptic-words) | No | Derived from KELLIA | **No** — Bohairic wordlist, not Arabic glosses. |
 | [KyroHub/CopticCompass](https://github.com/KyroHub/CopticCompass) | No (EN / NL / Greek) | Code MIT; **content rights reserved** | **No** Arabic merge. |
+| [UBC-NLP/copticmt](https://github.com/UBC-NLP/copticmt) CoPARA | Parallel sentences, not lemmas | Research corpus | **No** as a dictionary. Do not split sentences into invented headwords. |
 | [CopticScriptorium/corpora](https://github.com/CopticScriptorium/corpora) | Running text | Mostly CC-BY / CC-BY-SA | **No** as a dictionary. Useful later for example lines, not glosses. |
 | [iDevMartin/copticlingo](https://github.com/iDevMartin/copticlingo) `copticsite.json` (mentioned in their notes) | Coptic–Arabic claimed | **Unlicensed** README; likely a scrape of a church site | **No** without a named grant. Treat like Tasbeha / Reader. |
 
-Not on GitHub as structured data: Dawoud (scans), Naqlun CopDic (app). See
-`docs/sources.md`.
+Not on GitHub as structured data: Dawoud (scans / 197MB PDF), Claudius Labib (scans), Naqlun CopDic (app). See `docs/sources.md`.
 
-**Why merging another lemma dump would not close the prayer table below:**
+**Why another lemma dump still would not close most of the prayer table:**
 those forms are mostly conjugated / optative / fused (ⲙⲁⲣⲉ-, ⲁϥ-, ⲉⲕⲉ̀-),
-not missing headwords.
+not missing headwords. Long leftovers filled a few exact liturgical lemmas
+(e.g. ϣⲟⲩϣⲱⲟⲩϣⲓ) only.
 
 ---
 
@@ -37,27 +39,22 @@ not missing headwords.
 | Measure | Count |
 |---|---|
 | Prayer tokens | 484 |
-| Tokens with a stored / parse caption | 339 |
-| Tokens with **no** caption (occurrences) | 145 |
-| Unique unmarked Coptic forms | 132 |
-| Published words | 8635 |
+| Tokens with a stored / parse caption | 353 |
+| Tokens with **no** caption (occurrences) | 131 |
+| Unique unmarked Coptic forms | 119 |
+| Published words | 10324 |
 | Teaching set | 147 |
 | Published rows with `meaning.ar` null | 6 (all 6 drills; other: none) |
 | Grammar affixes `parseReady` | 13 |
 | Grammar affixes still blocked | 89 |
 
-`khen-efran` has no unmarked tokens in this snapshot. Gaps are in
-`lords-prayer`, `thanksgiving`, and `psalm-50`.
-
 ---
 
-## Later actions (S18 — do not start until a human says so)
+## Later actions
 
-1. **Andreas leftovers** — re-run harvest from remnqymi `andreas.json`
-   without the 2–8 letter cap, report new row counts, human reviews before
-   append. Same CC BY-SA source. Still will not gloss ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ.
-2. **Do not** merge KELLIA / Compass / coptic-words / copticlingo into
-   `meaning.ar`.
+1. **Andreas leftovers (9–17)** — done 2026-09-01. Same CC BY-SA dump.
+2. **Do not** merge KELLIA / Compass / coptic-words / copticlingo / copticmt
+   into `meaning.ar`.
 3. **Prayer tokens below** — human `gloss` / `arHighlight` on the line,
    or more `parseReady` affixes after S17 GATE **PASS** (optative ⲙⲁⲣⲉ-,
    past ⲁ- + subject, ⲛ̀ϫⲉ, object ⲙ̀ⲙⲟ-, ⲉϫⲉⲛ / ⲉϫⲱ-). Never invent Arabic.
@@ -83,7 +80,6 @@ Count is how often the form appears across the four prayers.
 | 2 | lords-prayer, thanksgiving | ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ |
 | 2 | lords-prayer, thanksgiving | ⲛⲁϩⲙⲉⲛ |
 | 2 | psalm-50, thanksgiving | ⲛⲏⲉⲧϩⲏⲡ |
-| 2 | thanksgiving | ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ |
 | 2 | psalm-50 | ⲡϭⲟⲓⲥ |
 | 1 | psalm-50 | ⲁ̀ |
 | 1 | psalm-50 | ⲁⲓⲁⲓϥ |
@@ -150,10 +146,8 @@ Count is how often the form appears across the four prayers.
 | 1 | psalm-50 | ⲙ̀ⲙⲟⲥ |
 | 1 | thanksgiving | ⲙ̀ⲡⲁⲓⲕⲉⲉϩⲟⲟⲩ |
 | 1 | psalm-50 | ⲙ̀ⲡⲁⲙ̀ⲑⲟ |
-| 1 | psalm-50 | ⲙ̀ⲡⲉⲕϣⲉⲛϩⲩⲥⲱⲡⲟⲛ |
 | 1 | psalm-50 | ⲙⲡⲉⲣⲃⲉⲣⲃⲱⲣⲧ |
 | 1 | psalm-50 | ⲙ̀ⲡⲉⲣⲟⲗϥ |
-| 1 | thanksgiving | ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲡⲉⲑⲛⲁⲛⲉϥ |
 | 1 | psalm-50 | ⲛⲁⲁ̀ⲛⲟⲙⲓⲁ̀ |
 | 1 | psalm-50 | ⲛⲁⲓⲛⲁϯ |
 | 1 | psalm-50 | ⲛⲁϩⲙⲉⲧ |
@@ -162,15 +156,12 @@ Count is how often the form appears across the four prayers.
 | 1 | thanksgiving | ⲛⲏⲉⲑⲟⲩⲱⲛϩ |
 | 1 | thanksgiving | ⲛⲏⲉⲧⲉⲣⲛⲟϥⲣⲓ |
 | 1 | lords-prayer | ⲛⲏⲉⲧⲉⲣⲟⲛ |
-| 1 | thanksgiving | ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ |
 | 1 | psalm-50 | ⲛ̀ⲛⲁⲛⲟⲃⲓ |
 | 1 | psalm-50 | ⲛ̀ⲛⲁⲥ̀ⲫⲟⲧⲟⲩ |
 | 1 | lords-prayer | ⲛ̀ⲛⲏⲉⲧⲉ |
-| 1 | thanksgiving | ⲛ̀ⲟⲙⲟⲟⲩⲥⲓⲟⲥ |
 | 1 | psalm-50 | ⲛ̀ⲥⲉⲟⲩⲱⲛϩ |
 | 1 | psalm-50 | ⲛ̀ⲧⲁⲁ̀ⲙⲟⲛⲓⲁ̀ |
 | 1 | psalm-50 | ⲛ̀ⲧⲉⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ |
-| 1 | thanksgiving | ⲛ̀ⲧⲉⲕⲙⲉⲧⲁⲅⲁⲑⲟⲥ |
 | 1 | psalm-50 | ⲛ̀ⲧⲉⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ |
 | 1 | lords-prayer | ⲛ̀ⲧⲉⲛⲭⲱ |
 | 1 | psalm-50 | ⲛ̀ⲧⲉⲡⲉⲕⲟⲩϫⲁⲓ |
@@ -178,22 +169,17 @@ Count is how often the form appears across the four prayers.
 | 1 | psalm-50 | ⲛ̀ⲧⲉⲧⲉⲕⲥⲟⲫⲓⲁ |
 | 1 | psalm-50 | ⲛ̀ⲧⲉⲫⲛⲟⲩϯ |
 | 1 | thanksgiving | ⲛ̀ⲧⲉϥⲁⲣⲉϩ |
-| 1 | psalm-50 | ⲛ̀ϩⲏⲅⲉⲙⲱⲛⲓⲕⲟⲛ |
 | 1 | psalm-50 | ⲛ̀ϫⲉⲛⲓⲕⲁⲥ |
 | 1 | psalm-50 | ⲛ̀ϫⲉⲡⲁⲗⲁⲥ |
 | 1 | thanksgiving | ⲡⲁⲓⲉϩⲟⲟⲩ |
 | 1 | psalm-50 | ⲡⲁⲛⲟⲃⲓ |
-| 1 | thanksgiving | ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ |
 | 1 | lords-prayer | ⲡⲉⲧⲉϩⲛⲁⲕ |
-| 1 | psalm-50 | ⲡⲓϣⲟⲩϣⲱⲟⲩϣⲓ |
 | 1 | psalm-50 | ⲧⲁⲙⲁⲩ |
 | 1 | thanksgiving | ⲧⲉⲛⲧⲱⲃϩ |
 | 1 | thanksgiving | ⲧⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ |
 | 1 | thanksgiving | ⲧⲉⲛϯϩⲟ |
-| 1 | psalm-50 | ϣⲟⲩϣⲱⲟⲩϣⲓ |
 | 1 | psalm-50 | ϧⲉⲛⲛⲉⲕⲥⲁϫⲓ |
 | 1 | psalm-50 | ϧⲉⲛⲛⲏⲉⲧⲥⲁϧⲟⲩⲛ |
-| 1 | psalm-50 | ϧⲉⲛⲧⲉⲕⲇⲓⲕⲉⲟⲥⲩⲛⲏ |
 | 1 | psalm-50 | ϩⲁⲡⲁⲛⲟⲃⲓ |
 | 1 | psalm-50 | ϩⲁⲡⲉⲕϩⲟ |
 | 1 | psalm-50 | ϩⲁⲣⲟⲓ |
@@ -203,8 +189,6 @@ Count is how often the form appears across the four prayers.
 | 1 | psalm-50 | ϩⲓⲛⲉⲕⲙⲱⲓⲧ |
 | 1 | psalm-50 | ϫⲉⲉ̀ⲛⲉ |
 | 1 | psalm-50 | ϫⲉⲧⲁⲁ̀ⲛⲟⲙⲓⲁ̀ |
-| 1 | thanksgiving | ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ |
-| 1 | thanksgiving | ϯⲡⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ |
 
 ---
 

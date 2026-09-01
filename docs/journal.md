@@ -1,3 +1,24 @@
+## 2026-09-01 · research · Naqlun + Dawoud + Archive
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: checked, not ingested
+- مصباح النقلون: church app (`com.naqlun.coptdict`), 50k+ defs, online
+  search only. Contact naqluncopdic@gmail.com. No dump.
+- داود: Coptic Treasures 197MB PDF + remnqymi page scan. Author died 2000;
+  still in copyright. IA scans exist with **no licenseurl**; OCR is Arabic
+  Tesseract, unusable Coptic. Did not download into `words.json`.
+- Skip Archive z-lib copy of the same book.
+
+Open: human S17 **PASS**. Grant if owner wants Dawoud/Naqlun. S13c. S15.
+
+## 2026-09-01 · S18 · Andreas leftovers 9–17
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass (leftovers only)
+- Deeper search: still no second dumpable Coptic–Arabic lexicon. KELLIA /
+  Compass / copticmt / Dawoud PDF / Naqlun / copticsite.json not merged.
+- Downloaded remnqymi `andreas.json` (CC BY-SA 4.0). Harvested 1689 leftover
+  lemmas (9–17 letters). Words 8635 → 10324. `npm run validate` ✓.
+- Prayer captions 339 → 353 (131 blank / 119 unique). Conjugations remain.
+
+Open: human S17 **PASS**. Prayer token blanks. S13c. S15.
+
 ## 2026-09-01 · docs · GitHub README features
 Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
 - Root `README.md` lists what is live: letter audio, search, practice/quiz,

@@ -198,6 +198,12 @@ via remnqymi `andreas.json` (**CC BY-SA 4.0**), were appended to
 empty — the source has no church pronunciation line, and guessing from
 spelling is forbidden. UI hides an empty translit.
 
+A second pass (2026-09-01) appended leftover **9–17 letter** lemmas from
+the same dump (`node scripts/harvest-andreas.mjs --leftovers`). Same
+filters: Arabic required, no hyphen affixes, mapped glyphs only. That
+fills long liturgical headwords the first cap skipped (e.g. ϣⲟⲩϣⲱⲟⲩϣⲓ,
+ⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ). It does not gloss conjugated prayer tokens.
+
 `group` is the highest letter-group in the word (the lesson that can
 read it). `teaches` is only letters in that home group so letter pages
 stay a lesson, not the whole dictionary.
