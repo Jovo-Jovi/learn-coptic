@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { WordsFile, type GroupId, type Word } from "@/data/schema";
 import raw from "@/data/json/words.json";
+import { isTeachingSet } from "@/lib/coptic-text";
 import { getLetterById } from "@/lib/letters";
 
 export const getWords = cache((): Word[] => WordsFile.parse(raw).words);
@@ -14,9 +15,15 @@ export function wordsInGroup(group: GroupId): Word[] {
 }
 
 export function teachingWordsInGroup(group: GroupId): Word[] {
-  return wordsInGroup(group).filter(
-    (word) => word.kind === "drill" || word.translit.ar.length > 0,
-  );
+  return wordsInGroup(group).filter(isTeachingSet);
+}
+
+export function teachingWords(): Word[] {
+  return publishedWords().filter(isTeachingSet);
+}
+
+export function getWordById(id: string): Word | undefined {
+  return getWords().find((word) => word.id === id);
 }
 
 export function wordsTeaching(letterId: string): Word[] {

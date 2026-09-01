@@ -122,6 +122,10 @@ export type Letter = z.infer<typeof Letter>;
 export const Word = z.object({
   id: slug,
   coptic: copticText,
+  /** Coptic with U+0300–U+036F stripped. Validator checks against normalizeCoptic. */
+  normalized: copticText,
+  /** Dictionary headword when known. Null rather than a guessed stem. */
+  lemma: copticText.nullable(),
   /** Explorer keymap for optional manuscript paint. Null → Unicode fallback. */
   athanasiusKey: z.string().nullable(),
   translit: z.object({ ar: z.string(), en: z.string().optional() }),
@@ -171,6 +175,9 @@ export const PrayerLine = z.object({
     coptic: copticText,
     wordId: slug.nullable().default(null),
     gloss: z.string().optional(),
+    /** Span copied from this line's translation.ar — not a new dictionary gloss.
+     *  Validator requires it to occur exactly once in the line. */
+    arHighlight: z.string().min(1).optional(),
     startSec: z.number().nonnegative().optional(),
   })).default([]),
 });

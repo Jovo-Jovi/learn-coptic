@@ -49,8 +49,16 @@ export default function PracticePage() {
         </ul>
       </section>
 
-      <p className="mt-10 text-sm text-text-dim">
-        الكويز اللي بيفتكرك لسه جاي. دلوقتي المعنى من غير حفظ على الجهاز.
+      <p className="mt-10">
+        <Link
+          href="/quiz"
+          className="inline-flex min-h-11 items-center rounded-full bg-text px-5 text-sm font-semibold text-bg no-underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+        >
+          الكويز
+        </Link>
+      </p>
+      <p className="mt-4 text-sm text-text-dim">
+        خمسة صناديق. الغلط بيرجّعك للأول. صفّر من صفحة الكويز.
       </p>
     </article>
   );

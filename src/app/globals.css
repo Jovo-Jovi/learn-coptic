@@ -288,6 +288,7 @@ html[data-coptic-font="sans"] {
 
 .coptic-key {
   display: none;
+  user-select: none;
   font-family: var(--font-athanasius), var(--font-free-serif), serif;
 }
 
@@ -303,6 +304,7 @@ html[data-coptic-font="athanasius"] .coptic-paint:has(.coptic-key) .coptic-uni {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border-width: 0;
 }
@@ -430,7 +432,11 @@ body::after {
 
 .glyph-fill {
   color: var(--text);
-  background-image: linear-gradient(135deg, var(--g-from), var(--g-to));
+  background-image: linear-gradient(
+    135deg,
+    var(--g-from, var(--text)),
+    var(--g-to, var(--text))
+  );
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {

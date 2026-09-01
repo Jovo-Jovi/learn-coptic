@@ -4,143 +4,582 @@
   "prayers": [
     {
       "id": "khen-efran",
-      "title": { "ar": "باسم الآب والابن والروح القدس", "en": "In the name of the Father" },
+      "title": {
+        "ar": "باسم الآب والابن والروح القدس",
+        "en": "In the name of the Father"
+      },
       "titleCoptic": "Ϧⲉⲛ ⲫⲣⲁⲛ",
-      "occasion": ["daily", "agpeya"],
+      "occasion": [
+        "daily",
+        "agpeya"
+      ],
       "level": 1,
       "audio": {
-        "full": { "src": "/audio/prayers/khen-efran.mp3", "durationSec": 18, "reciter": "—", "dialect": "bohairic-modern" },
-        "slow": { "src": "/audio/prayers/khen-efran-slow.mp3", "durationSec": 31, "reciter": "—", "dialect": "bohairic-modern" }
+        "full": {
+          "src": "/audio/prayers/khen-efran.mp3",
+          "durationSec": 18,
+          "reciter": "—",
+          "dialect": "bohairic-modern"
+        },
+        "slow": {
+          "src": "/audio/prayers/khen-efran-slow.mp3",
+          "durationSec": 31,
+          "reciter": "—",
+          "dialect": "bohairic-modern"
+        }
       },
       "lines": [
         {
-          "id": "l1", "role": "none",
+          "id": "l1",
+          "role": "none",
           "coptic": "Ϧⲉⲛ ⲫⲣⲁⲛ ⲙ̀ⲫⲓⲱⲧ",
-          "translit": { "ar": "خين إفران إم إفيوت", "en": "khen efran em-efiot" },
-          "translation": { "ar": "باسم الآب", "en": "In the name of the Father" },
-          "startSec": 0, "endSec": 4.2,
+          "translit": {
+            "ar": "خين إفران إم إفيوت",
+            "en": "khen efran em-efiot"
+          },
+          "translation": {
+            "ar": "باسم الآب",
+            "en": "In the name of the Father"
+          },
+          "startSec": 0,
+          "endSec": 4.2,
           "tokens": [
-            { "coptic": "Ϧⲉⲛ", "wordId": "khen", "gloss": "باسم / في", "startSec": 0 },
-            { "coptic": "ⲫⲣⲁⲛ", "wordId": "efran", "gloss": "الاسم", "startSec": 1.4 },
-            { "coptic": "ⲙ̀ⲫⲓⲱⲧ", "wordId": "efiot", "gloss": "الآب", "startSec": 2.8 }
+            {
+              "coptic": "Ϧⲉⲛ",
+              "wordId": "khen",
+              "gloss": "باسم / في",
+              "startSec": 0
+            },
+            {
+              "coptic": "ⲫⲣⲁⲛ",
+              "wordId": "efran",
+              "gloss": "الاسم",
+              "startSec": 1.4
+            },
+            {
+              "coptic": "ⲙ̀ⲫⲓⲱⲧ",
+              "wordId": "efiot",
+              "gloss": "الآب",
+              "startSec": 2.8
+            }
           ]
         },
         {
-          "id": "l2", "role": "none",
+          "id": "l2",
+          "role": "none",
           "coptic": "ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ",
-          "translit": { "ar": "نيم إبشيري", "en": "nem ep-sheeri" },
-          "translation": { "ar": "والابن", "en": "and the Son" },
-          "startSec": 4.2, "endSec": 7.5,
-          "tokens": []
+          "translit": {
+            "ar": "نيم إبشيري",
+            "en": "nem ep-sheeri"
+          },
+          "translation": {
+            "ar": "والابن",
+            "en": "and the Son"
+          },
+          "startSec": 4.2,
+          "endSec": 7.5,
+          "tokens": [
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡ̀ϣⲏⲣⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l3", "role": "none",
+          "id": "l3",
+          "role": "none",
           "coptic": "ⲛⲉⲙ ⲡⲓⲠ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ",
-          "translit": { "ar": "نيم بي إبنِفما إثؤواب", "en": "nem pi-Epnevma ethowab" },
-          "translation": { "ar": "والروح القدس", "en": "and the Holy Spirit" },
-          "startSec": 7.5, "endSec": 13.0,
-          "tokens": []
+          "translit": {
+            "ar": "نيم بي إبنِفما إثؤواب",
+            "en": "nem pi-Epnevma ethowab"
+          },
+          "translation": {
+            "ar": "والروح القدس",
+            "en": "and the Holy Spirit"
+          },
+          "startSec": 7.5,
+          "endSec": 13,
+          "tokens": [
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲠ̀ⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲟⲩⲁⲃ",
+              "wordId": null
+            }
+          ]
         }
       ],
-      "keyWords": ["khen", "efran", "efiot"],
-      "source": { "name": "الأجبية — صلاة بدء كل ساعة" }
+      "keyWords": [
+        "khen",
+        "efran",
+        "efiot"
+      ],
+      "source": {
+        "name": "الأجبية — صلاة بدء كل ساعة"
+      }
     },
     {
       "id": "lords-prayer",
-      "title": { "ar": "الصلاة الربانية", "en": "The Lord's Prayer" },
+      "title": {
+        "ar": "الصلاة الربانية",
+        "en": "The Lord's Prayer"
+      },
       "titleCoptic": "Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ",
-      "occasion": ["daily", "agpeya", "liturgy"],
+      "occasion": [
+        "daily",
+        "agpeya",
+        "liturgy"
+      ],
       "level": 1,
       "audio": null,
       "lines": [
         {
-          "id": "l1", "role": "congregation",
+          "id": "l1",
+          "role": "congregation",
           "coptic": "Ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲙ̀ⲡ̀ϣⲁ ⲛ̀ϫⲟⲥ ϧⲉⲛ ⲟⲩϣⲉⲡϩ̀ⲙⲟⲧ ϫⲉ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "اجعلنا مستحقين أن نقول بشكر:", "en": "Make us worthy to say thankfully:" },
-          "tokens": []
-        },
-        {
-          "id": "l2", "role": "congregation",
-          "coptic": "Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "أبانا الذي في السموات", "en": "Our Father who is in heaven" },
-          "tokens": []
-        },
-        {
-          "id": "l3", "role": "congregation",
-          "coptic": "ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "ليتقدس اسمك", "en": "hallowed be Your name" },
-          "tokens": []
-        },
-        {
-          "id": "l4", "role": "congregation",
-          "coptic": "ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "ليأتِ ملكوتك", "en": "Your kingdom come" },
-          "tokens": []
-        },
-        {
-          "id": "l5", "role": "congregation",
-          "coptic": "ⲡⲉⲧⲉϩⲛⲁⲕ ⲙⲁⲣⲉϥϣⲱⲡⲓ ⲙ̀ⲫ̀ⲣⲏϯ ϧⲉⲛ ⲧ̀ⲫⲉ ⲛⲉⲙ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "لتكن مشيئتك كما في السماء كذلك على الأرض", "en": "Your will be done on earth as it is in heaven" },
-          "tokens": []
-        },
-        {
-          "id": "l6", "role": "congregation",
-          "coptic": "ⲡⲉⲛⲱⲓⲕ ⲛ̀ⲧⲉ ⲣⲁⲥϯ ⲙⲏⲓϥ ⲛⲁⲛ ⲙ̀ⲫⲟⲟⲩ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "خبزنا الذي للغد اعطنا اليوم", "en": "Give us this day our bread of tomorrow" },
-          "tokens": []
-        },
-        {
-          "id": "l7", "role": "congregation",
-          "coptic": "ⲟⲩⲟϩ ⲭⲁ ⲛⲏⲉⲧⲉⲣⲟⲛ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ ⲙ̀ⲫ̀ⲣⲏϯ ϩⲱⲛ ⲛ̀ⲧⲉⲛⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲛⲏⲉⲧⲉ ⲟⲩⲟⲛ ⲛ̀ⲧⲁⲛ ⲉ̀ⲣⲱⲟⲩ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "واغفر لنا ذنوبنا كما نغفر نحن أيضًا للمذنبين إلينا", "en": "And forgive us our debts, as we forgive our debtors" },
-          "tokens": []
-        },
-        {
-          "id": "l8", "role": "congregation",
-          "coptic": "ⲟⲩⲟϩ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "ولا تدخلنا في تجربة", "en": "And do not lead us into temptation" },
-          "tokens": []
-        },
-        {
-          "id": "l9", "role": "congregation",
-          "coptic": "ⲁⲗⲗⲁ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "لكن نجنا من الشرير", "en": "but deliver us from the evil one" },
-          "tokens": []
-        },
-        {
-          "id": "l10", "role": "congregation",
-          "coptic": "ϧⲉⲛ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ ⲡⲉⲛϭⲟⲓⲥ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "بالمسيح يسوع ربنا", "en": "Through Christ Jesus our Lord" },
-          "tokens": []
-        },
-        {
-          "id": "l11", "role": "congregation",
-          "coptic": "ϫⲉ ⲑⲱⲕ ⲧⲉ ϯⲙⲉⲧⲟⲩⲣⲟ ⲛⲉⲙ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲓⲱⲟⲩ ϣⲁ ⲉⲛⲉϩ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "لأن لك المُلك والقوة والمجد إلى الأبد", "en": "For Yours is the kingdom and the power and the glory forever" },
-          "tokens": []
-        },
-        {
-          "id": "l12", "role": "congregation",
-          "coptic": "ⲁⲙⲏⲛ",
-          "translit": { "ar": "" },
-          "translation": { "ar": "آمين", "en": "Amen" },
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "اجعلنا مستحقين أن نقول بشكر:",
+            "en": "Make us worthy to say thankfully:"
+          },
           "tokens": [
-            { "coptic": "ⲁⲙⲏⲛ", "wordId": "amhn", "gloss": "آمين" }
+            {
+              "coptic": "Ⲁⲣⲓⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲙ̀ⲡ̀ϣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ⲟⲩϣⲉⲡϩ̀ⲙⲟⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϫⲉ",
+              "wordId": "je"
+            }
+          ]
+        },
+        {
+          "id": "l2",
+          "role": "congregation",
+          "coptic": "Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "أبانا الذي في السموات",
+            "en": "Our Father who is in heaven"
+          },
+          "tokens": [
+            {
+              "coptic": "Ⲡⲉⲛⲓⲱⲧ",
+              "wordId": null,
+              "arHighlight": "أبانا"
+            },
+            {
+              "coptic": "ⲉⲧϧⲉⲛ",
+              "wordId": null,
+              "arHighlight": "الذي في"
+            },
+            {
+              "coptic": "ⲛⲓⲫⲏⲟⲩⲓ",
+              "wordId": null,
+              "arHighlight": "السموات"
+            }
+          ]
+        },
+        {
+          "id": "l3",
+          "role": "congregation",
+          "coptic": "ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "ليتقدس اسمك",
+            "en": "hallowed be Your name"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲕⲣⲁⲛ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l4",
+          "role": "congregation",
+          "coptic": "ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "ليأتِ ملكوتك",
+            "en": "Your kingdom come"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲙⲁⲣⲉⲥⲓ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l5",
+          "role": "congregation",
+          "coptic": "ⲡⲉⲧⲉϩⲛⲁⲕ ⲙⲁⲣⲉϥϣⲱⲡⲓ ⲙ̀ⲫ̀ⲣⲏϯ ϧⲉⲛ ⲧ̀ⲫⲉ ⲛⲉⲙ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "لتكن مشيئتك كما في السماء كذلك على الأرض",
+            "en": "Your will be done on earth as it is in heaven"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲡⲉⲧⲉϩⲛⲁⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙⲁⲣⲉϥϣⲱⲡⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲫ̀ⲣⲏϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ⲧ̀ⲫⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲓϫⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲕⲁϩⲓ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l6",
+          "role": "congregation",
+          "coptic": "ⲡⲉⲛⲱⲓⲕ ⲛ̀ⲧⲉ ⲣⲁⲥϯ ⲙⲏⲓϥ ⲛⲁⲛ ⲙ̀ⲫⲟⲟⲩ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "خبزنا الذي للغد اعطنا اليوم",
+            "en": "Give us this day our bread of tomorrow"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲡⲉⲛⲱⲓⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲣⲁⲥϯ",
+              "wordId": "racti"
+            },
+            {
+              "coptic": "ⲙⲏⲓϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲫⲟⲟⲩ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l7",
+          "role": "congregation",
+          "coptic": "ⲟⲩⲟϩ ⲭⲁ ⲛⲏⲉⲧⲉⲣⲟⲛ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ ⲙ̀ⲫ̀ⲣⲏϯ ϩⲱⲛ ⲛ̀ⲧⲉⲛⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲛⲏⲉⲧⲉ ⲟⲩⲟⲛ ⲛ̀ⲧⲁⲛ ⲉ̀ⲣⲱⲟⲩ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "واغفر لنا ذنوبنا كما نغفر نحن أيضًا للمذنبين إلينا",
+            "en": "And forgive us our debts, as we forgive our debtors"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲭⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲉⲧⲉⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲫ̀ⲣⲏϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲛⲭⲱ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲏⲉⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲱⲟⲩ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l8",
+          "role": "congregation",
+          "coptic": "ⲟⲩⲟϩ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "ولا تدخلنا في تجربة",
+            "en": "And do not lead us into temptation"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϧⲟⲩⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l9",
+          "role": "congregation",
+          "coptic": "ⲁⲗⲗⲁ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "لكن نجنا من الشرير",
+            "en": "but deliver us from the evil one"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲁⲗⲗⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁϩⲙⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗϩⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l10",
+          "role": "congregation",
+          "coptic": "ϧⲉⲛ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ ⲡⲉⲛϭⲟⲓⲥ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "بالمسيح يسوع ربنا",
+            "en": "Through Christ Jesus our Lord"
+          },
+          "tokens": [
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+              "wordId": "pixrictoc"
+            },
+            {
+              "coptic": "Ⲓⲏⲥⲟⲩⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛϭⲟⲓⲥ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l11",
+          "role": "congregation",
+          "coptic": "ϫⲉ ⲑⲱⲕ ⲧⲉ ϯⲙⲉⲧⲟⲩⲣⲟ ⲛⲉⲙ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲓⲱⲟⲩ ϣⲁ ⲉⲛⲉϩ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "لأن لك المُلك والقوة والمجد إلى الأبد",
+            "en": "For Yours is the kingdom and the power and the glory forever"
+          },
+          "tokens": [
+            {
+              "coptic": "ϫⲉ",
+              "wordId": "je"
+            },
+            {
+              "coptic": "ⲑⲱⲕ",
+              "wordId": "qwk"
+            },
+            {
+              "coptic": "ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯⲙⲉⲧⲟⲩⲣⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯϫⲟⲙ",
+              "wordId": "jom"
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲛⲉϩ",
+              "wordId": null
+            }
+          ]
+        },
+        {
+          "id": "l12",
+          "role": "congregation",
+          "coptic": "ⲁⲙⲏⲛ",
+          "translit": {
+            "ar": ""
+          },
+          "translation": {
+            "ar": "آمين",
+            "en": "Amen"
+          },
+          "tokens": [
+            {
+              "coptic": "ⲁⲙⲏⲛ",
+              "wordId": "amhn",
+              "gloss": "آمين"
+            }
           ]
         }
       ],
-      "keyWords": ["amhn", "khen"],
+      "keyWords": [
+        "amhn",
+        "khen"
+      ],
       "source": {
         "name": "Coptic for All — الصلاة الربانية (قبطي وعربي من نفس الصفحة)",
         "url": "https://copticforall.com/hymn-library/lords-prayer/"
@@ -148,84 +587,1037 @@
     },
     {
       "id": "thanksgiving",
-      "title": { "ar": "صلاة الشكر", "en": "Prayer of Thanksgiving" },
+      "title": {
+        "ar": "صلاة الشكر",
+        "en": "Prayer of Thanksgiving"
+      },
       "titleCoptic": "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ",
-      "occasion": ["daily", "agpeya", "liturgy"],
+      "occasion": [
+        "daily",
+        "agpeya",
+        "liturgy"
+      ],
       "level": 1,
       "audio": null,
       "lines": [
         {
-          "id": "l1", "role": "priest",
+          "id": "l1",
+          "role": "priest",
           "coptic": "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧϥ ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲡⲉⲑⲛⲁⲛⲉϥ ⲟⲩⲟϩ ⲛ̀ⲛⲁⲏⲧ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲙ̀ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "فلنشكر صانع الخيرات الرحوم الله، أبا ربنا وإلهنا ومخلصنا يسوع المسيح.",
             "en": "Let us give thanks to the gracious and merciful God, the Father of our Lord, God and Saviour Jesus Christ."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲟⲧϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲡⲉⲑⲛⲁⲛⲉϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲁⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲫ̀ⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲫ̀ⲓⲱⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲛϭⲟⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲥⲱⲧⲏⲣ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲓⲏⲥⲟⲩⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+              "wordId": "pixrictoc"
+            }
+          ]
         },
         {
-          "id": "l2", "role": "priest",
+          "id": "l2",
+          "role": "priest",
           "coptic": "ϫⲉ ⲁϥⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ ⲁϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ ⲁϥⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ⲁϥϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟϥ ⲁϥϯⲁⲥⲟ ⲉ̀ⲣⲟⲛ ⲁϥϯⲧⲟⲧⲉⲛ ⲁϥⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لأنه سترنا وأعاننا وحفظنا وقبلنا إليه، وأشفق علينا وعضدنا وأتى بنا إلى هذه الساعة.",
             "en": "For He has protected, assisted, preserved and accepted us, had compassion upon us, supported us and brought us till this hour."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϫⲉ",
+              "wordId": "je"
+            },
+            {
+              "coptic": "ⲁϥⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥⲉⲣⲃⲟⲏⲑⲓⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥⲁⲣⲉϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥϣⲟⲡⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥϯⲁⲥⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥϯⲧⲟⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁϥⲉⲛⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϩ̀ⲣⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲑⲁⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l3", "role": "priest",
+          "id": "l3",
+          "role": "priest",
           "coptic": "ⲛ̀ⲑⲟϥ ⲟⲛ ⲙⲁⲣⲉⲛϯϩⲟ ⲉ̀ⲣⲟϥ ϩⲟⲡⲱⲥ ⲛ̀ⲧⲉϥⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ϧⲉⲛ ⲡⲁⲓⲉϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ ⲛⲉⲙ ⲛⲓⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ ⲛ̀ϫⲉ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ Ⲡ̀ϭⲟⲓⲥ ⲡⲉⲛⲛⲟⲩϯ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "هو أيضًا فلنسأله أن يحفظنا في هذا اليوم المقدس وكل أيام حياتنا بكل سلام، الضابط الكل الرب إلهنا.",
             "en": "Let us also ask Him the Almighty God, to keep us in peace this blessed day, and all the days of our life."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲛ̀ⲑⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲛ",
+              "wordId": "on"
+            },
+            {
+              "coptic": "ⲙⲁⲣⲉⲛϯϩⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲟⲡⲱⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉϥⲁⲣⲉϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ⲡⲁⲓⲉϩⲟⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲟⲩⲁⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲉϩⲟⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲏⲣⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲱⲛϧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ϩⲓⲣⲏⲛⲏ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡ̀ϭⲟⲓⲥ",
+              "wordId": "soic"
+            },
+            {
+              "coptic": "ⲡⲉⲛⲛⲟⲩϯ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l4", "role": "priest",
+          "id": "l4",
+          "role": "priest",
           "coptic": "Ⲫ̀ⲛⲏⲃ Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ Ⲫ̀ⲓⲱⲧ ⲙ̀ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲧⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧⲕ ⲕⲁⲧⲁ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲉⲑⲃⲉ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϧⲉⲛ ϩⲱⲃ ⲛⲓⲃⲉⲛ ϫⲉ ⲁⲕⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ ⲁⲕⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ ⲁⲕⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ⲁⲕϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟⲕ ⲁⲕϯⲁⲥⲟ ⲉ̀ⲣⲟⲛ ⲁⲕϯⲧⲟⲧⲉⲛ ⲁⲕⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "أيها السيد الرب الإله ضابط الكل أبو ربنا وإلهنا ومخلصنا يسوع المسيح، نشكرك على كل حال ومن أجل كل حال وفى كل حال لأنك سترتنا وأعنتنا وحفظتنا وقبلتنا إليك وأشفقت علينا وعضدتنا وأتيت بنا إلى هذه الساعة.",
             "en": "O Lord, Master and Almighty God, the Father of our Lord, God and Saviour Jesus Christ, we thank You on every occasion, in every condition and for all things, for You have protected, assisted, preserved, accepted us, had compassion upon us, supported us and brought us till this hour."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "Ⲫ̀ⲛⲏⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡ̀ϭⲟⲓⲥ",
+              "wordId": "soic"
+            },
+            {
+              "coptic": "Ⲫ̀ⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲫ̀ⲓⲱⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲛϭⲟⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲥⲱⲧⲏⲣ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲓⲏⲥⲟⲩⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+              "wordId": "pixrictoc"
+            },
+            {
+              "coptic": "ⲧⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲟⲧⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲕⲁⲧⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲱⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲃⲉ",
+              "wordId": "eqbe"
+            },
+            {
+              "coptic": "ϩⲱⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ϩⲱⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϫⲉ",
+              "wordId": "je"
+            },
+            {
+              "coptic": "ⲁⲕⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕⲉⲣⲃⲟⲏⲑⲓⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕⲁⲣⲉϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕϣⲟⲡⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕϯⲁⲥⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕϯⲧⲟⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕⲉⲛⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϩ̀ⲣⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲑⲁⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l5", "role": "priest",
+          "id": "l5",
+          "role": "priest",
           "coptic": "ⲉⲑⲃⲉ ⲫⲁⲓ ⲧⲉⲛϯϩⲟ ⲟⲩⲟϩ ⲧⲉⲛⲧⲱⲃϩ ⲛ̀ⲧⲉⲕⲙⲉⲧⲁⲅⲁⲑⲟⲥ ⲡⲓⲙⲁⲓⲣⲱⲙⲓ ⲙⲏⲓⲥ ⲛⲁⲛ ⲉⲑⲣⲉⲛϫⲱⲕ ⲉ̀ⲃⲟⲗ ⲙ̀ⲡⲁⲓⲕⲉⲉϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ ⲛⲉⲙ ⲛⲓⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲧⲉⲕϩⲟϯ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "من أجل هذا نسأل ونطلب من صلاحك يا محب البشر امنحنا أن نكمل هذا اليوم المقدس وكل أيام حياتنا بكل سلام مع خوفك.",
             "en": "Therefore, we ask and appeal to Your goodness, O Lover-of-mankind that You grant us to conclude this blessed day and all the days of our life in peace and in Your fear."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲉⲑⲃⲉ",
+              "wordId": "eqbe"
+            },
+            {
+              "coptic": "ⲫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲉⲛϯϩⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲉⲛⲧⲱⲃϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲕⲙⲉⲧⲁⲅⲁⲑⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲙⲁⲓⲣⲱⲙⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙⲏⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲣⲉⲛϫⲱⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲁⲓⲕⲉⲉϩⲟⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲟⲩⲁⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲉϩⲟⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲏⲣⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲱⲛϧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ϩⲓⲣⲏⲛⲏ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲉⲕϩⲟϯ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l6", "role": "priest",
+          "id": "l6",
+          "role": "priest",
           "coptic": "ⲫⲑⲟⲛⲟⲥ ⲛⲓⲃⲉⲛ ⲡⲓⲣⲁⲥⲙⲟⲥ ⲛⲓⲃⲉⲛ ⲉⲛⲉⲣⲅⲓⲁ ⲛⲓⲃⲉⲛ ⲛ̀ⲧⲉ ⲡ̀ⲥⲁⲧⲁⲛⲁⲥ ⲡ̀ⲥⲟϭⲛⲓ ⲛ̀ⲧⲉ ϩⲁⲛⲣⲱⲙⲓ ⲉⲩϩⲱⲟⲩ ⲛⲉⲙ ⲡ̀ⲧⲱⲛϥ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ϩⲁⲛϫⲁϫⲓ ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙ ⲛⲏⲉⲑⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ ⲁⲗⲓⲧⲟⲩ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲛ ⲛⲉⲙ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲉⲕⲗⲁⲟⲥ ⲧⲏⲣϥ ⲛⲏ ⲇⲉ ⲉⲑⲛⲁⲛⲉⲩ ⲛⲉⲙ ⲛⲏⲉⲧⲉⲣⲛⲟϥⲣⲓ ⲥⲁϩⲛⲓ ⲙ̀ⲙⲱⲟⲩ ⲛⲁⲛ ϫⲉ ⲛ̀ⲑⲟⲕ ⲡⲉ ⲉⲧⲁⲕϯ ⲙ̀ⲡⲓⲉⲣϣⲓϣⲓ ⲛⲁⲛ ⲉ̀ϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲛⲓϩⲟϥ ⲛⲉⲙ ⲛⲓϭⲗⲏ ⲛⲉⲙ ⲉ̀ϫⲉⲛ ϯϫⲟⲙ ⲧⲏⲣⲥ ⲛ̀ⲧⲉ ⲡⲓϫⲁϫⲓ ⲟⲩⲟϩ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ ⲁⲗⲗⲁ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "كل حسد وكل تجربة وكل فعل الشيطان ومؤامرة الناس الأشرار وقيام الأعداء الخفيين والظاهرين انزعها عنا وعن سائر شعبك وعن موضعك المقدس هذا أما الصالحات والنافعات فارزقنا إياها لأنك أنت الذي أعطيتنا السلطان أن ندوس الحيات والعقارب وكل قوة العدو ولا تدخلنا في تجربة لكن نجنا من الشرير.",
             "en": "All envy, all temptation, all works of Satan, all intrigues of the wicked; rising up of enemies, seen and unseen; do cast away from us and all your people. Grant us the endowments and benefactions, as You have given us the authority to trample on serpents and scorpions, and over all the power of the enemy. Lead us not into temptation, but deliver us from evil."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲫⲑⲟⲛⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲣⲁⲥⲙⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲛⲉⲣⲅⲓⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡ̀ⲥⲁⲧⲁⲛⲁⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡ̀ⲥⲟϭⲛⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲛⲣⲱⲙⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲩϩⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡ̀ⲧⲱⲛϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲡ̀ϣⲱⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲛϫⲁϫⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲉⲧϩⲏⲡ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲉⲑⲟⲩⲱⲛϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲗⲓⲧⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲣⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗϩⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲕⲗⲁⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲏⲣϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲇⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲛⲁⲛⲉⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲉⲧⲉⲣⲛⲟϥⲣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲥⲁϩⲛⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϫⲉ",
+              "wordId": "je"
+            },
+            {
+              "coptic": "ⲛ̀ⲑⲟⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲧⲁⲕϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲓⲉⲣϣⲓϣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϩⲱⲙⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓϩⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓϭⲗⲏ",
+              "wordId": "slh"
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯϫⲟⲙ",
+              "wordId": "jom"
+            },
+            {
+              "coptic": "ⲧⲏⲣⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓϫⲁϫⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϧⲟⲩⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲗⲗⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁϩⲙⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗϩⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "l7", "role": "priest",
+          "id": "l7",
+          "role": "priest",
           "coptic": "ϧⲉⲛ ⲡⲓϩ̀ⲙⲟⲧ ⲛⲉⲙ ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ ⲛⲉⲙ ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀ϣⲏⲣⲓ ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲫⲁⲓ ⲉⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ ⲉⲣⲉ ⲡⲓⲱⲟⲩ ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ ⲛⲉⲙ ⲡⲓⲁⲙⲁϩⲓ ⲛⲉⲙ ϯⲡⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲟⲩⲟϩ ⲛ̀ⲟⲙⲟⲟⲩⲥⲓⲟⲥ ⲛⲉⲙⲁⲕ ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉⲛⲉϩ ⲧⲏⲣⲟⲩ ⲁⲙⲏⲛ",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "بالنعمة والرأفات ومحبة البشر اللواتي لابنك الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح هذا الذي من قبله المجد والإكرام والعزة والسجود تليق بك معه ومع الروح القدس المحيى المساوي لك الآن وكل أوان وإلى دهر الدهور آمين.",
             "en": "Through the grace, mercy and love of mankind of Your only begotten Son, our Lord God and Saviour, Jesus Christ. Glory, honour, dominion and worship are due to You together with Him and the life giving and consubstantial Holy Spirit, now and forever. Amen."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϧⲉⲛ",
+              "wordId": "khen"
+            },
+            {
+              "coptic": "ⲡⲓϩ̀ⲙⲟⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϣⲏⲣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛϭⲟⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲛⲥⲱⲧⲏⲣ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲓⲏⲥⲟⲩⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+              "wordId": "pixrictoc"
+            },
+            {
+              "coptic": "ⲫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲣⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲧⲁⲓⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲁⲙⲁϩⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯⲡⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲣⲡ̀ⲣⲉⲡⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙⲁϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "Ⲡⲓⲡⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲟⲩⲁⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲟⲙⲟⲟⲩⲥⲓⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙⲁⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯⲛⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲥⲏⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲛⲉϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲉⲛⲉϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲏⲣⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲙⲏⲛ",
+              "wordId": null
+            }
+          ]
         }
       ],
-      "keyWords": ["amhn"],
+      "keyWords": [
+        "amhn"
+      ],
       "source": {
         "name": "Coptic for All — صلاة الشكر (قبطي وعربي من نفس الصفحة)",
         "url": "https://copticforall.com/hymn-library/thanks-giving/"
@@ -233,211 +1625,1025 @@
     },
     {
       "id": "psalm-50",
-      "title": { "ar": "المزمور الخمسون", "en": "Psalm 50 (LXX) / 51" },
+      "title": {
+        "ar": "المزمور الخمسون",
+        "en": "Psalm 50 (LXX) / 51"
+      },
       "titleCoptic": "ⲛⲁⲓ ⲛⲏⲓ ⲫⲛⲟⲩϯ",
-      "occasion": ["daily", "agpeya"],
+      "occasion": [
+        "daily",
+        "agpeya"
+      ],
       "level": 1,
       "audio": null,
       "lines": [
         {
-          "id": "verse-1", "role": "none",
+          "id": "verse-1",
+          "role": "none",
           "coptic": "ⲛⲁⲓ ⲛⲏⲓ ⲫⲛⲟⲩϯ ⲕⲁⲧⲁⲡⲉⲕⲛⲓϣϯ ⲛ̀ⲛⲁⲓ: ⲛⲉⲙⲕⲁⲧⲁⲡ̀ⲁ̀ϣⲁⲓ ⲛ̀ⲧⲉⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ ⲉⲕⲉ̀ⲥⲱⲗϫ ⲛ̀ⲧⲁⲁ̀ⲙⲟⲛⲓⲁ̀: ⲉⲕⲉ̀ⲣⲁϧⲧ ⲛ̀ϩⲟⲩⲟ̀ ⲉ̀ⲃⲟⲗ ϩⲁⲧⲁⲁ̀ⲛⲟⲙⲓⲁ ⲟⲩⲟϩ ⲉⲕⲉ̀ⲧⲟⲩⲃⲟⲓ ⲉ̀ⲃⲟⲗ ϩⲁⲡⲁⲛⲟⲃⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "ارحمني يا الله كعظيم رحمتك، ومثل كثرة رأفتك تمحو إثمي. اغسلني كثيرا من إثمي ومن خطيتي طهرني.",
             "en": "Have mercy upon me, O God, according to Your great mercy; and according to the multitude of Your compassions blot out my iniquity. Wash me thoroughly from my iniquity, and cleanse me from my sin."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲛⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲕⲁⲧⲁⲡⲉⲕⲛⲓϣϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙⲕⲁⲧⲁⲡ̀ⲁ̀ϣⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲥⲱⲗϫ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲁⲁ̀ⲙⲟⲛⲓⲁ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲣⲁϧⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϩⲟⲩⲟ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲧⲁⲁ̀ⲛⲟⲙⲓⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲧⲟⲩⲃⲟⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲡⲁⲛⲟⲃⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-2", "role": "none",
+          "id": "verse-2",
+          "role": "none",
           "coptic": "ϫⲉⲧⲁⲁ̀ⲛⲟⲙⲓⲁ̀ ⲁ̀ⲛⲟⲕ ϯⲥⲱⲟⲩⲛ ⲙ̀ⲙⲟⲥ: ⲟⲩⲟϩ ⲡⲁⲛⲟⲃⲓ ⲙ̀ⲡⲁⲙ̀ⲑⲟ ⲉ̀ⲃⲟⲗ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لأني أنا عارف بإثمي وخطيتي أمامي في كل حين.",
             "en": "For I am conscious of my iniquity; and my sin is at all times before me."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϫⲉⲧⲁⲁ̀ⲛⲟⲙⲓⲁ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁ̀ⲛⲟⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϯⲥⲱⲟⲩⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲁⲛⲟⲃⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲁⲙ̀ⲑⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲥⲏⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲃⲉⲛ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-3", "role": "none",
+          "id": "verse-3",
+          "role": "none",
           "coptic": "ⲛⲑⲟⲕ ⲙ̀ⲙⲁⲩⲁⲧⲕ ⲁⲓⲉⲣⲛⲟⲃⲓ ⲉ̀ⲣⲟⲕ: ⲟⲩⲟϩ ⲡⲓⲡⲉⲧϩⲱⲟⲩ ⲁⲓⲁⲓϥ ⲙ̀ⲡⲉⲕⲙ̀ⲑⲟ ⲉ̀ⲃⲟⲗ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لك وحدك أخطأت، والشر قدامك صنعت.",
             "en": "Against You only I have sinned, and done evil before You."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲛⲑⲟⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲁⲩⲁⲧⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲓⲉⲣⲛⲟⲃⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲟⲕ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲓⲁⲓϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲕⲙ̀ⲑⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-4", "role": "none",
+          "id": "verse-4",
+          "role": "none",
           "coptic": "ϩⲟⲡⲱⲥ ⲛ̀ⲧⲉⲕⲙⲁⲓ ϧⲉⲛⲛⲉⲕⲥⲁϫⲓ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲕϭ̀ⲣⲟ ⲉⲕⲛⲁϭⲓϩⲁⲡ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لكي تتبرر في أقوالك. وتغلب إذا حوكمتُ.",
             "en": "That You might be just in Your sayings, and might overcome when You are judged."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϩⲟⲡⲱⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲕⲙⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛⲛⲉⲕⲥⲁϫⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲕϭ̀ⲣⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲛⲁϭⲓϩⲁⲡ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-5", "role": "none",
+          "id": "verse-5",
+          "role": "none",
           "coptic": "ϩⲏⲡⲡⲉ ⲅⲁⲣ ϧⲉⲛϩⲁⲛⲁ̀ⲛⲟⲙⲓⲁ̀ ⲁⲩⲉⲣⲃⲟⲕⲓ ⲙ̀ⲙⲟⲓ: ⲟⲩⲟϩ ϧⲉⲛϩⲁⲛⲛⲟⲃⲓ ⲁ̀ ⲧⲁⲙⲁⲩ ϭⲓϣϣⲱⲟⲩ ⲙ̀ⲙⲟⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لأني هاأنذا بالإثم حبل بي، وبالخطايا ولدتني أمي.",
             "en": "For, behold, I was conceived in iniquities, and in sins my mother conceived me."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϩⲏⲡⲡⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲅⲁⲣ",
+              "wordId": "gar"
+            },
+            {
+              "coptic": "ϧⲉⲛϩⲁⲛⲁ̀ⲛⲟⲙⲓⲁ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲩⲉⲣⲃⲟⲕⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲟⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛϩⲁⲛⲛⲟⲃⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲁⲙⲁⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϭⲓϣϣⲱⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲟⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-6", "role": "none",
+          "id": "verse-6",
+          "role": "none",
           "coptic": "ϩⲏⲡⲡⲉ ⲅⲁⲣ ⲁⲕⲙⲉⲛⲣⲉ ⲑ̀ⲙⲏⲓ: ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙⲛⲏⲉⲧⲉ ⲛ̀ⲥⲉⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ ⲁⲛ ⲛ̀ⲧⲉⲧⲉⲕⲥⲟⲫⲓⲁ ⲁⲕⲧⲁⲙⲟⲓ ⲉ̀ⲣⲱⲟⲩ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لأنك هكذا قد أحببت الحق، إذ أوضحت لي غوامض حكمتك ومستوراتها.",
             "en": "For, behold, You have loved the truth: You have manifested to me the hidden and unrevealed things of Your wisdom."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϩⲏⲡⲡⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲅⲁⲣ",
+              "wordId": "gar"
+            },
+            {
+              "coptic": "ⲁⲕⲙⲉⲛⲣⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲑ̀ⲙⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲉⲧϩⲏⲡ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙⲛⲏⲉⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲥⲉⲟⲩⲱⲛϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲧⲉⲕⲥⲟⲫⲓⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕⲧⲁⲙⲟⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲱⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-7", "role": "none",
+          "id": "verse-7",
+          "role": "none",
           "coptic": "ⲉⲕⲉ̀ⲛⲟⲩϫϧ ⲉ̀ϫⲱⲓ ⲙ̀ⲡⲉⲕϣⲉⲛϩⲩⲥⲱⲡⲟⲛ: ⲉⲓⲉ̀ⲧⲟⲩⲃⲟ ⲉⲕⲉ̀ⲣⲁϧⲧ ⲉⲓⲉ̀ⲟⲩⲃⲁϣ ⲉ̀ϩⲟⲧⲉ ⲟⲩⲭⲓⲱⲛ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "تنضح على بزوفاك فأطهر، تغسلني فأبيض أكثر من الثلج.",
             "en": "You shall sprinkle me with Your hyssop, and I shall be purified: You shall wash me, and I shall be made whiter than snow."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲉⲕⲉ̀ⲛⲟⲩϫϧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲱⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲕϣⲉⲛϩⲩⲥⲱⲡⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲓⲉ̀ⲧⲟⲩⲃⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲣⲁϧⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲓⲉ̀ⲟⲩⲃⲁϣ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϩⲟⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲭⲓⲱⲛ",
+              "wordId": "xiwn"
+            }
+          ]
         },
         {
-          "id": "verse-8", "role": "none",
+          "id": "verse-8",
+          "role": "none",
           "coptic": "ⲉⲕⲉⲑ̀ⲣⲓⲥⲱⲧⲉⲙ ⲉ̀ⲟⲩⲑⲉⲗⲏⲗ ⲛⲉⲙⲟⲩⲟⲩⲛⲟϥ: ⲉⲩⲉ̀ⲑⲉⲗⲏⲗ ⲛ̀ϫⲉⲛⲓⲕⲁⲥ ⲉⲧⲑⲉⲃⲓⲏⲟⲩⲧ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "تسمعني سرورا وفرحا، فتبتهج عظامي المنسحقة.",
             "en": "You shall make me to hear gladness and joy: the humbled bones shall rejoice."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲉⲕⲉⲑ̀ⲣⲓⲥⲱⲧⲉⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲟⲩⲑⲉⲗⲏⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙⲟⲩⲟⲩⲛⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲩⲉ̀ⲑⲉⲗⲏⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲉⲛⲓⲕⲁⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲧⲑⲉⲃⲓⲏⲟⲩⲧ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-9", "role": "none",
+          "id": "verse-9",
+          "role": "none",
           "coptic": "ⲙⲁⲧⲁⲥⲑⲟ ⲙ̀ⲡⲉⲕϩⲟ ⲥⲁⲃⲟⲗ ⲛ̀ⲛⲁⲛⲟⲃⲓ: ⲟⲩⲟϩ ⲛⲁⲁ̀ⲛⲟⲙⲓⲁ̀ ⲧⲏⲣⲟⲩ ⲉⲕⲉ̀ⲥⲟⲗϫⲟⲩ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "اصرف وجهك عن خطاياي، وامح كل آثامي.",
             "en": "Turn away Your face from my sins, and blot out all my iniquities."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲙⲁⲧⲁⲥⲑⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲕϩⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲥⲁⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲁⲛⲟⲃⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲁ̀ⲛⲟⲙⲓⲁ̀",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲧⲏⲣⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲥⲟⲗϫⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-10", "role": "none",
+          "id": "verse-10",
+          "role": "none",
           "coptic": "ⲟⲩϩⲏⲧ ⲉϥⲟⲩⲁⲃ ⲉⲕⲉ̀ⲥⲟⲛⲧϥ ⲛ̀ϧⲏⲧ ⲫⲛⲟⲩϯ: ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲉϥⲥⲟⲩⲧⲱⲛ ⲁ̀ⲣⲓⲧϥ ⲙ̀ⲃⲉⲣⲓ ϧⲉⲛⲛⲏⲉⲧⲥⲁϧⲟⲩⲛ ⲙ̀ⲙⲟⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "قلبا نقيا اخلق في يا الله، وروحا مستقيما جدده في أحشائي.",
             "en": "Create in me a clean heart, O God; and renew a right spirit in my inward parts."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲟⲩϩⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲟⲩⲁⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲥⲟⲛⲧϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϧⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲥⲟⲩⲧⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁ̀ⲣⲓⲧϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲃⲉⲣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛⲛⲏⲉⲧⲥⲁϧⲟⲩⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲟⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-11", "role": "none",
+          "id": "verse-11",
+          "role": "none",
           "coptic": "ⲙⲡⲉⲣⲃⲉⲣⲃⲱⲣⲧ ⲉ̀ⲃⲟⲗ ϩⲁⲡⲉⲕϩⲟ: ⲟⲩⲟϩ ⲡⲉⲕⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲙ̀ⲡⲉⲣⲟⲗϥ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لا تطرحني من قدام وجهك وروحك القدوس لا تنزعه منى.",
             "en": "Do not cast me away from Your face; and do not remove Your Holy Spirit from me."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲙⲡⲉⲣⲃⲉⲣⲃⲱⲣⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲡⲉⲕϩⲟ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉⲕⲡ̀ⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲑⲟⲩⲁⲃ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲣⲟⲗϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲣⲟⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-12", "role": "none",
+          "id": "verse-12",
+          "role": "none",
           "coptic": "ⲙⲟⲓ ⲛⲏⲓ ⲙ̀ⲡ̀ⲑⲉⲗⲏⲗ ⲛ̀ⲧⲉⲡⲉⲕⲟⲩϫⲁⲓ: ⲟⲩⲟϩ ⲛ̀ϩ̀ⲣⲏⲓ ϧⲉⲛⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲛ̀ϩⲏⲅⲉⲙⲱⲛⲓⲕⲟⲛ ⲙⲁⲧⲁϫⲣⲟⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "امنحني بهجة خلاصك، وبروح رئاسي عضدني.",
             "en": "Give me the joy of Your salvation: and uphold me with a directing spirit."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲙⲟⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡ̀ⲑⲉⲗⲏⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲡⲉⲕⲟⲩϫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϩ̀ⲣⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛⲟⲩⲡ̀ⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϩⲏⲅⲉⲙⲱⲛⲓⲕⲟⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙⲁⲧⲁϫⲣⲟⲓ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-13", "role": "none",
+          "id": "verse-13",
+          "role": "none",
           "coptic": "ⲉⲓⲉ̀ⲧ̀ⲥⲁⲃⲉ ⲛⲓⲁⲛⲟⲙⲟⲥ ϩⲓⲛⲉⲕⲙⲱⲓⲧ: ⲟⲩⲟϩ ⲛⲓⲁⲥⲉⲃⲏⲥ ⲉⲩⲉ̀ⲕⲟⲧⲟⲩ ϩⲁⲣⲟⲕ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "فأعلم الأثمة طرقك والمنافقون إليك يرجعون.",
             "en": "Then I shall teach the transgressors Your ways; and the ungodly men shall turn to You."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲉⲓⲉ̀ⲧ̀ⲥⲁⲃⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲁⲛⲟⲙⲟⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲓⲛⲉⲕⲙⲱⲓⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲁⲥⲉⲃⲏⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲩⲉ̀ⲕⲟⲧⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲣⲟⲕ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-14", "role": "none",
+          "id": "verse-14",
+          "role": "none",
           "coptic": "ⲛⲁϩⲙⲉⲧ ⲉ̀ⲃⲟⲗ ϧⲉⲛϩⲁⲛⲥ̀ⲛⲟϥ ⲫⲛⲟⲩϯ: ⲫⲛⲟⲩϯ ⲛ̀ⲧⲉⲧⲁⲥⲱⲧⲏⲣⲓⲁ: ⲉϥⲉ̀ⲑⲉⲗⲏⲗ ⲛ̀ϫⲉⲡⲁⲗⲁⲥ ϧⲉⲛⲧⲉⲕⲇⲓⲕⲉⲟⲥⲩⲛⲏ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "نجني من الدماء يا الله إله خلاصي، فيبتهج لساني بعدلك.",
             "en": "Deliver me from blood, O God, the God of my salvation: and my tongue shall rejoice in Your righteousness."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲛⲁϩⲙⲉⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲃⲟⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛϩⲁⲛⲥ̀ⲛⲟϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲧⲁⲥⲱⲧⲏⲣⲓⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲉ̀ⲑⲉⲗⲏⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲉⲡⲁⲗⲁⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛⲧⲉⲕⲇⲓⲕⲉⲟⲥⲩⲛⲏ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-15", "role": "none",
+          "id": "verse-15",
+          "role": "none",
           "coptic": "ⲡϭⲟⲓⲥ ⲉⲕⲉ̀ⲟⲩⲱⲛ ⲛ̀ⲛⲁⲥ̀ⲫⲟⲧⲟⲩ ⲟⲩⲟϩ ⲉ̀ⲣⲉⲣⲱⲓ ϫⲱ ⲙ̀ⲡⲉⲕⲥ̀ⲙⲟⲩ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "يا رب افتح شفتي، فيخبر فمي بتسبيحك.",
             "en": "O Lord, You shall open my lips; and my mouth shall declare Your praise."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲡϭⲟⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ⲟⲩⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲁⲥ̀ⲫⲟⲧⲟⲩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲣⲉⲣⲱⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϫⲱ",
+              "wordId": "jw"
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲕⲥ̀ⲙⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-16", "role": "none",
+          "id": "verse-16",
+          "role": "none",
           "coptic": "ϫⲉⲉ̀ⲛⲉ ⲁⲕⲟⲩⲱϣ ϣⲟⲩϣⲱⲟⲩϣⲓ: ⲛⲁⲓⲛⲁϯ ⲟⲛ ⲡⲉ: ϩⲁⲛϭⲗⲓⲗ ⲛ̀ϫⲟϥϫⲉϥ ⲙ̀ⲡⲉⲕϯⲙⲁϯ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲟⲩ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "لأنك لو آثرت الذبيحة لكنت الآن أعطي، ولكنك لا تسر بالمحرقات.",
             "en": "For if You desired sacrifice, I would have given it: You do not take pleasure in burnt offerings."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ϫⲉⲉ̀ⲛⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲁⲕⲟⲩⲱϣ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲟⲩϣⲱⲟⲩϣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲁⲓⲛⲁϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲛ",
+              "wordId": "on"
+            },
+            {
+              "coptic": "ⲡⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϩⲁⲛϭⲗⲓⲗ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϫⲟϥϫⲉϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲡⲉⲕϯⲙⲁϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϩ̀ⲣⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲱⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-17", "role": "none",
+          "id": "verse-17",
+          "role": "none",
           "coptic": "ⲡⲓϣⲟⲩϣⲱⲟⲩϣⲓ ⲛ̀ⲧⲉⲫⲛⲟⲩϯ ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ ⲡⲉ: ⲟⲩϩⲏⲧ ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ ⲟⲩⲟϩ ⲉϥⲉ̀ⲑⲉⲃⲓⲏⲟⲩⲧ ⲫⲁⲓ ⲛ̀ⲛⲉ ⲫⲛⲟⲩϯ ϣⲟϣϥ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "فالذبيحة لله روح منسحق. القلب المنكسر والمتواضع لا يرذله الله.",
             "en": "The sacrifice of God is a broken spirit: a broken and humbled heart God shall not despise."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲡⲓϣⲟⲩϣⲱⲟⲩϣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩϩⲏⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉϥⲉ̀ⲑⲉⲃⲓⲏⲟⲩⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲁⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲛⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲫⲛⲟⲩϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϣⲟϣϥ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-18", "role": "none",
+          "id": "verse-18",
+          "role": "none",
           "coptic": "ⲁⲣⲓⲡⲉⲑⲛⲁⲛⲉϥ ⲡϭⲟⲓⲥ ϧⲉⲛⲡⲉⲕϯⲙⲁϯ ⲉ̀ⲥⲓⲱⲛ: ⲟⲩⲟϩ ⲛⲓⲥⲟⲃⲧ ⲛ̀ⲧⲉⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ ⲙⲁⲣⲟⲩⲕⲟⲧⲟⲩ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "أنعم يا رب بمسرتك على صهيون، ولتبن أسوار أورشليم.",
             "en": "Do good, O Lord, in Your good pleasure to Zion; and let the walls of Jerusalem be built."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲁⲣⲓⲡⲉⲑⲛⲁⲛⲉϥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲡϭⲟⲓⲥ",
+              "wordId": null
+            },
+            {
+              "coptic": "ϧⲉⲛⲡⲉⲕϯⲙⲁϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲥⲓⲱⲛ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲟϩ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲓⲥⲟⲃⲧ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ⲧⲉⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙⲁⲣⲟⲩⲕⲟⲧⲟⲩ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-19", "role": "none",
+          "id": "verse-19",
+          "role": "none",
           "coptic": "ⲧⲟⲧⲉ ⲉⲕⲉ̀ϯⲙⲁϯ ⲉ̀ϫⲉⲛϩⲁⲛϣⲟⲩϣⲱⲟⲩϣⲓ ⲙ̀ⲙⲉⲑⲙⲏⲓ: ⲟⲩⲁⲛⲁⲫⲟⲣⲁ ⲛⲉⲙϩⲁⲛϭⲗⲓⲗ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "حينئذ تسر بذبائح البر قربانا ومحرقات.",
             "en": "Then You shall be pleased with sacrifices of righteousness, offering, and burnt sacrifices."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲧⲟⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲕⲉ̀ϯⲙⲁϯ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲉⲛϩⲁⲛϣⲟⲩϣⲱⲟⲩϣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲙ̀ⲙⲉⲑⲙⲏⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲟⲩⲁⲛⲁⲫⲟⲣⲁ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛⲉⲙϩⲁⲛϭⲗⲓⲗ",
+              "wordId": null
+            }
+          ]
         },
         {
-          "id": "verse-20", "role": "none",
+          "id": "verse-20",
+          "role": "none",
           "coptic": "ⲧⲟⲧⲉ ⲉⲩⲉ̀ⲓ̀ⲛⲓ ⲛ̀ϩⲁⲛⲙⲁⲥⲓ ⲉ̀ⲡ̀ⲱϣⲓ ⲉ̀ϫⲉⲛⲡⲉⲕⲙⲁⲛ̀ⲉⲣϣⲱⲟⲩϣⲓ.",
-          "translit": { "ar": "" },
+          "translit": {
+            "ar": ""
+          },
           "translation": {
             "ar": "ويقربون على مذابحك العجول.",
             "en": "Then they shall offer calves upon Your altar."
           },
-          "tokens": []
+          "tokens": [
+            {
+              "coptic": "ⲧⲟⲧⲉ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉⲩⲉ̀ⲓ̀ⲛⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲛ̀ϩⲁⲛⲙⲁⲥⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ⲡ̀ⲱϣⲓ",
+              "wordId": null
+            },
+            {
+              "coptic": "ⲉ̀ϫⲉⲛⲡⲉⲕⲙⲁⲛ̀ⲉⲣϣⲱⲟⲩϣⲓ",
+              "wordId": null
+            }
+          ]
         }
       ],
       "keyWords": [],

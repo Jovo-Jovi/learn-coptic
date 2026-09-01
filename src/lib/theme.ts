@@ -2,6 +2,7 @@
 export const STORAGE_PREFIX = "learn-coptic:";
 export const THEME_KEY = `${STORAGE_PREFIX}theme`;
 export const COPTIC_FONT_KEY = `${STORAGE_PREFIX}coptic-font`;
+export const LEITNER_KEY = `${STORAGE_PREFIX}leitner`;
 
 export const COPTIC_FACES = ["serif", "sans", "athanasius"] as const;
 export type CopticFace = (typeof COPTIC_FACES)[number];

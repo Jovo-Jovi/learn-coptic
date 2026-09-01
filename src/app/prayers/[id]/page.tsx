@@ -50,6 +50,9 @@ export default async function PrayerPage({
       <p className="mt-4 text-sm text-text-dim">
         {prayer.occasion.map((item) => OCCASION_AR[item]).join(" · ")}
       </p>
+      <p className="mt-4 text-sm text-text-dim">
+        اضغط على الكلمة القبطي. اللي تقابلها في العربي تتعلم في نفس السطر.
+      </p>
       <PrayerLines prayer={prayer} />
       {prayer.source ? (
         <p className="mt-10 text-sm text-text-dim">

@@ -31,6 +31,41 @@ const COPTIC_RE =
   /^[\u2C80-\u2CFF\u03E2-\u03EF\u0300-\u036F.,:;·\u0374\u00B7?!]+$/u;
 const AR_RE = /[\u0600-\u06FF]/;
 const JINKIM = "\u0300";
+const COMBINING = /[\u0300-\u036F]/gu;
+const BOUND_FOR_LEMMA = new Set(["ϩⲁⲛ", "ⲡⲓ", "ⲛⲓ", "ϯ", "ⲡ̀", "ⲧ̀", "ⲛ̀", "ⲙ̀"]);
+const ARTICLE_PREFIXES = ["ϩⲁⲛ", "ⲡⲓ", "ⲛⲓ", "ⲟⲩ", "ϯ", "ⲡ̀", "ⲧ̀", "ⲛ̀", "ⲙ̀"];
+
+/** Keep in sync with src/lib/coptic-text.ts */
+function normalizeCoptic(text) {
+  return text.replace(COMBINING, "");
+}
+function leadingArticle(coptic) {
+  const chars = [...coptic];
+  if (
+    chars.length >= 3 &&
+    chars[1] === JINKIM &&
+    (chars[0] === "ⲡ" || chars[0] === "ⲧ" || chars[0] === "ⲛ" || chars[0] === "ⲙ")
+  ) {
+    return `${chars[0]}${JINKIM}`;
+  }
+  for (const prefix of ARTICLE_PREFIXES) {
+    if (coptic.startsWith(prefix) && coptic.length > prefix.length) {
+      return prefix;
+    }
+  }
+  return null;
+}
+function lemmaForStoredCoptic(coptic) {
+  const article = leadingArticle(coptic);
+  if (!article || !BOUND_FOR_LEMMA.has(article)) return coptic;
+  const rest = coptic.slice(article.length);
+  const letters = [...rest].filter((ch) => {
+    const cp = ch.codePointAt(0);
+    return cp < 0x0300 || cp > 0x036f;
+  }).length;
+  if (letters < 2) return coptic;
+  return null;
+}
 
 const letters = JSON.parse(readFileSync(lettersPath, "utf8")).letters;
 const file = JSON.parse(readFileSync(wordsPath, "utf8"));
@@ -226,6 +261,8 @@ for (const row of rows) {
   const rec = {
     id: uniqueId(slugFromKey(mapped.key)),
     coptic,
+    normalized: normalizeCoptic(coptic),
+    lemma: lemmaForStoredCoptic(coptic),
     athanasiusKey: mapped.key,
     translit: { ar: "" },
     meaning: { ar: meaningAr },

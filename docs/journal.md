@@ -13,6 +13,14 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · ship · S16 S13b S11
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Pushed remaining local code: word `normalized`/`lemma`, prayer tap
+  highlight in place, `/quiz` Leitner. Harvest Arabic still off prayers.
+  Unmarked tokens expected until stored grammar rules.
+
+Open: owner grammar table. S13c audio. S14 art. S15 MDX.
+
 ## 2026-09-01 · S13b · grammar table later; unmarked tokens expected
 Model: Cursor Grok 4.6 | Commit: ca7cc5f | Result: pass
 - Documented that many prayer tokens correctly have no Arabic highlight.

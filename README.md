@@ -70,8 +70,8 @@ by Zod before the site builds:
 
 ## Next
 
-Audio for every letter. A small quiz that remembers you. Then prayers with
-the line highlighted as it’s sung.
+S13b tap-a-word and S11 letter/word quiz are in. Word pictures for the
+teaching-set nouns, not the whole dictionary. Grammar levels later.
 
 ## Stack
 

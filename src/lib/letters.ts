@@ -46,6 +46,16 @@ export function getLetterByGlyph(ch: string): Letter | undefined {
   );
 }
 
+/** Lowercase Coptic letters; combining marks and punctuation stay. */
+export function foldCopticLower(text: string): string {
+  return [...text]
+    .map((ch) => {
+      const letter = getLetterByGlyph(ch);
+      return letter ? letter.unicode.lower : ch;
+    })
+    .join("");
+}
+
 /** Match a letter by this project's explorer Athanasius key (upper or lower). */
 export function getLetterByAthanasiusKey(key: string): Letter | undefined {
   return getLetters().find(

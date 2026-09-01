@@ -1,0 +1,2812 @@
+{
+  "generated": "2026-09-01",
+  "teachingSet": 147,
+  "harvest": 8488,
+  "lemmaNull": 295,
+  "lemmaNullIds": [
+    "jnkmmon",
+    "pixrictoc",
+    "niat",
+    "niben",
+    "nikhthc",
+    "nikoc",
+    "niri",
+    "nictram",
+    "nishaiiwt",
+    "nishaimaih",
+    "nishaimau",
+    "nishai",
+    "nifi",
+    "pike",
+    "pilw",
+    "pimhn",
+    "pinakic",
+    "pinaeks",
+    "piouai",
+    "pira",
+    "piracmoc",
+    "pictau",
+    "picth",
+    "pictikh",
+    "pictikoc",
+    "pictic",
+    "pictoc",
+    "pitote",
+    "pituc",
+    "horianal",
+    "horianameri",
+    "horianamht",
+    "horianashaie",
+    "horianashaio",
+    "horianqba",
+    "horianmeri",
+    "horiannoub",
+    "horianouon",
+    "horiancop",
+    "aiai-2",
+    "amahorii-2",
+    "anashai-2",
+    "anoxh-2",
+    "aouw-2",
+    "aplwc-2",
+    "arhb-2",
+    "aciai-2",
+    "aco-2",
+    "ahorino",
+    "bai-2",
+    "benipi-2",
+    "bexe-2",
+    "deeksia",
+    "ebshaii-2",
+    "eqmhci-2",
+    "emi-2",
+    "emkahori-2",
+    "emton-2",
+    "entolh-2",
+    "enshaiot-2",
+    "epaiai",
+    "epanai",
+    "epecht-2",
+    "epkashai",
+    "epoushaiap",
+    "epshaiwi-2",
+    "ermh-2",
+    "erouot-2",
+    "erw",
+    "ershaiishaii-2",
+    "erkhaiot-2",
+    "ethorih-2",
+    "euxh-2",
+    "evahoriou-2",
+    "evmou",
+    "ekhaioun-2",
+    "ekhairhi-2",
+    "ehoriqh",
+    "ehorirhi-2",
+    "ehorioun",
+    "ejen",
+    "ejij",
+    "qonten-2",
+    "qoshai-2",
+    "qroshaireshai-2",
+    "qwleb-2",
+    "qwrp-2",
+    "qwshai-2",
+    "qwkhai-2",
+    "ift-2",
+    "kalla",
+    "kapnoc-2",
+    "karpoc-2",
+    "kac-2",
+    "kahori",
+    "ka-2",
+    "keni-2",
+    "keshairwmi-2",
+    "kehori-2",
+    "kifi-2",
+    "ki-2",
+    "klhroc-2",
+    "kotc-2",
+    "kour-2",
+    "kwt-2",
+    "lakci-2",
+    "lalhorio-2",
+    "leklwk-2",
+    "lhk-2",
+    "logoc-2",
+    "loklek-2",
+    "loulai-2",
+    "lwiji-2",
+    "ma-3",
+    "mahoriro-2",
+    "ma-4",
+    "mahoriht",
+    "mbon-2",
+    "mbrehorii-2",
+    "meqnaht-2",
+    "mei-2",
+    "metnishai-2",
+    "meui-2",
+    "mhini-2",
+    "mi",
+    "minhoriwr",
+    "mkahori-2",
+    "moue-2",
+    "mouc",
+    "mpouoi",
+    "mton-2",
+    "mvmeui",
+    "mvremht",
+    "mvrh-2",
+    "mwit-2",
+    "mwou-2",
+    "nakhorii-2",
+    "nei-2",
+    "nem-2",
+    "nehori-2",
+    "niat-2",
+    "nifi-2",
+    "nom-3",
+    "nou-3",
+    "nouft-2",
+    "nro",
+    "nca-2",
+    "nten-2",
+    "nshaiot-2",
+    "nhoriht",
+    "nhorimot",
+    "oci-2",
+    "oubashai-2",
+    "oube-2",
+    "ouhout-2",
+    "oui-2",
+    "ounou-2",
+    "ounof-2",
+    "ouoi-2",
+    "ourot-2",
+    "outahori-2",
+    "ouw-3",
+    "ouwi-2",
+    "ouwini-2",
+    "ouwm-2",
+    "pi-2",
+    "pkec",
+    "plhgh-2",
+    "pshaitwri",
+    "phorio",
+    "ran-2",
+    "rekriki-2",
+    "remht-2",
+    "rht-2",
+    "rwoushai-2",
+    "cai-2",
+    "cak-2",
+    "caxol-2",
+    "cbw-2",
+    "cen-2",
+    "cqhm-2",
+    "cqoi-2",
+    "cla-2",
+    "cmh-2",
+    "cmot-2",
+    "cmou-2",
+    "cnof-2",
+    "co-2",
+    "cosni-2",
+    "cumbolh-2",
+    "cwit-2",
+    "cwoun-2",
+    "cw-3",
+    "taio-2",
+    "tajro-2",
+    "temhorio-2",
+    "tenshaii-2",
+    "tkac-2",
+    "totf",
+    "twic-2",
+    "twn",
+    "thoriemmo-2",
+    "vashai-2",
+    "vakhairi-2",
+    "vi-3",
+    "voi-2",
+    "vrw-2",
+    "xaki-2",
+    "xaric-2",
+    "xbob-2",
+    "xlom-2",
+    "xohori-2",
+    "xroshai-2",
+    "xrwm-2",
+    "xrwshai-2",
+    "yuvicma",
+    "yuxh-2",
+    "wmc-2",
+    "wnkhai-2",
+    "wou-2",
+    "woumbal-2",
+    "wou-3",
+    "wp-2",
+    "wrk-2",
+    "wshai-3",
+    "shaiap-2",
+    "shaiarba-2",
+    "shaiaro",
+    "shaiarou",
+    "shaiashai-2",
+    "shaiahori-2",
+    "shaiebiw-2",
+    "shaienkehori-2",
+    "shaienvat-2",
+    "shaieptwri-2",
+    "shaiqorter-2",
+    "shaiqouit-2",
+    "shaii-3",
+    "shaiih-2",
+    "shaiipi-2",
+    "shaioushaiou-2",
+    "shaiouhorihne-2",
+    "shaioshait-2",
+    "shaitwri-2",
+    "shaivit-2",
+    "shaiwlhori-2",
+    "shaiwshai-2",
+    "shaisnhn-2",
+    "shaisor-2",
+    "fw-2",
+    "khaiemi-2",
+    "khaiici-2",
+    "khaimom-2",
+    "khaire-2",
+    "khairwou-2",
+    "horiap-2",
+    "horiat-2",
+    "horiebcw-2",
+    "horieli-2",
+    "horihmi-2",
+    "horihou-2",
+    "horiht-2",
+    "horiqhf-2",
+    "horiko-2",
+    "horiloj-2",
+    "horimot-2",
+    "horimou-2",
+    "horio-3",
+    "horiomt-2",
+    "horio-4",
+    "horirok-2",
+    "horiwb-2",
+    "horiwimi-2",
+    "horiwoushai-2",
+    "horiw-3",
+    "jafhoriht-2",
+    "jij-2",
+    "jom-2",
+    "jroj-2",
+    "jwkem-2",
+    "jwnt-2",
+    "jwjeb-2",
+    "sabwt-2",
+    "sarwp-2",
+    "si-3",
+    "sla-2",
+    "slak-2",
+    "slahori-2",
+    "snon-2",
+    "solkc-2",
+    "sontc-2",
+    "sro-2",
+    "srop-2",
+    "swr-2",
+    "swrem-2"
+  ],
+  "homographs": [
+    {
+      "normalized": "ⲙⲙⲟⲛ",
+      "ids": [
+        "jnkmmon",
+        "mmon"
+      ],
+      "meanings": [
+        "لا",
+        "لا، ليس، كلا (للاجابة بالنفي)"
+      ]
+    },
+    {
+      "normalized": "ⲁⲙⲓⲛ",
+      "ids": [
+        "jnkamin",
+        "amin"
+      ],
+      "meanings": [
+        "أمين",
+        "برام، وعاء فخارى للطهى"
+      ]
+    },
+    {
+      "normalized": "ϧⲟⲩⲛ",
+      "ids": [
+        "jnkkhaioun",
+        "khaioun"
+      ],
+      "meanings": [
+        "إلى داخل",
+        "داخل، الجزء الباطني الداخلي"
+      ]
+    },
+    {
+      "normalized": "ⲥⲑⲟⲓ",
+      "ids": [
+        "jnkcqoi",
+        "cqoi"
+      ],
+      "meanings": [
+        "رائحة",
+        "رايحة، نكهة؛ ريحان، عتر (نبات زكي الرايحة)"
+      ]
+    },
+    {
+      "normalized": "ϣⲑⲁⲙ",
+      "ids": [
+        "jnkshaiqam",
+        "shaiqam"
+      ],
+      "meanings": [
+        "يغلق",
+        "لازم: انغلق، انقفل، انسد؛"
+      ]
+    },
+    {
+      "normalized": "ⲙⲉⲩⲓ",
+      "ids": [
+        "meujnki",
+        "meui"
+      ],
+      "meanings": [
+        "يفكر",
+        "فكر، ظن، تصور، وهم، اعتقاد، بال؛"
+      ]
+    },
+    {
+      "normalized": "ⲩⲓⲟⲥ",
+      "ids": [
+        "jnkuioc",
+        "uioc"
+      ],
+      "meanings": [
+        "ابن",
+        "ابن، من نسل، ابن (روحيا)"
+      ]
+    },
+    {
+      "normalized": "ⲅⲣⲁⲫⲏ",
+      "ids": [
+        "jnkgravh",
+        "gravh"
+      ],
+      "meanings": [
+        "كتاب",
+        "كتابة، كتاب، سفر، مولف"
+      ]
+    },
+    {
+      "normalized": "ⲭⲣⲱⲙ",
+      "ids": [
+        "xjnkrwm",
+        "xrwm"
+      ],
+      "meanings": [
+        "نار",
+        "نار، سعير، حرارة؛ ناري"
+      ]
+    },
+    {
+      "normalized": "ⲭⲣⲟⲩⲣ",
+      "ids": [
+        "jnkxrour",
+        "xrour"
+      ],
+      "meanings": [
+        "ضفدعة",
+        "ضفدعة، عقرق، قرقر"
+      ]
+    }
+  ],
+  "harvestLeadingArticle": {
+    "ⲛⲓ": [
+      {
+        "id": "niat",
+        "coptic": "ⲛⲓⲁⲧ",
+        "meaningAr": "نظرة، لمحة، التفاتة"
+      },
+      {
+        "id": "niben",
+        "coptic": "ⲛⲓⲃⲉⲛ",
+        "meaningAr": "كل (تاتي بعد الاسماء دايما)"
+      },
+      {
+        "id": "nikhthc",
+        "coptic": "ⲛⲓⲕⲏⲧⲏⲥ",
+        "meaningAr": "منتصر، غالب"
+      },
+      {
+        "id": "nikoc",
+        "coptic": "ⲛⲓⲕⲟⲥ",
+        "meaningAr": "نصر، غلبة"
+      },
+      {
+        "id": "niri",
+        "coptic": "ⲛⲓⲣⲓ",
+        "meaningAr": "نيري، اسم جبل في برية القديس مقاريوس"
+      },
+      {
+        "id": "nictram",
+        "coptic": "ⲛⲓⲥⲧⲣⲁⲙ",
+        "meaningAr": "مصر، القطر المصري، بلاد مصرايم"
+      },
+      {
+        "id": "nishaiiwt",
+        "coptic": "ⲛⲓϣⲓⲱⲧ",
+        "meaningAr": "جد، اب الاب او الام"
+      },
+      {
+        "id": "nishaimaih",
+        "coptic": "ⲛⲓϣⲙⲁⲓⲏ",
+        "meaningAr": "طويل"
+      },
+      {
+        "id": "nishaimau",
+        "coptic": "ⲛⲓϣⲙⲁⲩ",
+        "meaningAr": "جدة، ام الاب او الام"
+      },
+      {
+        "id": "nishai",
+        "coptic": "ⲛⲓϣϯ",
+        "meaningAr": "عظيم، كبير، فخم؛ طويل (للزمن)"
+      },
+      {
+        "id": "nif",
+        "coptic": "ⲛⲓϥ",
+        "meaningAr": "نفس، هبة ريح؛ غيم، ضباب، شبورة"
+      },
+      {
+        "id": "nifi",
+        "coptic": "ⲛⲓϥⲓ",
+        "meaningAr": "هب (للريح)، تنفس (للانسان)؛"
+      }
+    ],
+    "ⲟⲩ": [
+      {
+        "id": "oua",
+        "coptic": "ⲟⲩⲁ",
+        "meaningAr": "تجديف، سب، لعن، لعنة"
+      },
+      {
+        "id": "ouab",
+        "coptic": "ⲟⲩⲁⲃ",
+        "meaningAr": "مقدس، قدوس، طاهر، نقي، بريء، تقي"
+      },
+      {
+        "id": "ouaqi",
+        "coptic": "ⲟⲩⲁⲑⲓ",
+        "meaningAr": "لحمة (في الثوب)"
+      },
+      {
+        "id": "ouaqni",
+        "coptic": "ⲟⲩⲁⲑⲛⲓ",
+        "meaningAr": "ثقب، خرم، فتحة، شق"
+      },
+      {
+        "id": "ouai",
+        "coptic": "ⲟⲩⲁⲓ",
+        "meaningAr": "واحد، احد، مفرد"
+      },
+      {
+        "id": "ouamaf",
+        "coptic": "ⲟⲩⲁⲙⲁϥ",
+        "meaningAr": "اكل لحوم"
+      },
+      {
+        "id": "ouame",
+        "coptic": "ⲟⲩⲁⲙⲉϯ",
+        "meaningAr": "اكلة، غرغرينة، سرطان"
+      },
+      {
+        "id": "ouamomi",
+        "coptic": "ⲟⲩⲁⲙⲟⲙⲓ",
+        "meaningAr": "اكل الطين (نوع حشرة، نوع مرض)"
+      },
+      {
+        "id": "ouamshaiar",
+        "coptic": "ⲟⲩⲁⲙϣⲁⲣ",
+        "meaningAr": "اكل الجلد (مرض، قرحة)"
+      },
+      {
+        "id": "ouan",
+        "coptic": "ⲟⲩⲁⲛ",
+        "meaningAr": "تراب، كوم تراب؛ جسر من التراب"
+      },
+      {
+        "id": "ouacf",
+        "coptic": "ⲟⲩⲁⲥϥ",
+        "meaningAr": "عاطل"
+      },
+      {
+        "id": "ouashaif",
+        "coptic": "ⲟⲩⲁϣϥ",
+        "meaningAr": "شوق"
+      },
+      {
+        "id": "ouahori",
+        "coptic": "ⲟⲩⲁϩ",
+        "meaningAr": "واحة، روضة، غوطة، دغلة في برية"
+      },
+      {
+        "id": "ouahoribef",
+        "coptic": "ⲟⲩⲁϩⲃⲉϥ",
+        "meaningAr": "عوى، نبح (للذيب او الكلب)"
+      },
+      {
+        "id": "ouahorie",
+        "coptic": "ⲟⲩⲁϩⲉ",
+        "meaningAr": "واحة"
+      },
+      {
+        "id": "ouahoriem",
+        "coptic": "ⲟⲩⲁϩⲉⲙ",
+        "meaningAr": "مكرر، مضاف"
+      },
+      {
+        "id": "ouahorimef",
+        "coptic": "ⲟⲩⲁϩⲙⲉϥ",
+        "meaningAr": "مجيب، متكلم عن؛ مفسر، مترجم"
+      },
+      {
+        "id": "ouahorimi",
+        "coptic": "ⲟⲩⲁϩⲙⲓ",
+        "meaningAr": "علية، طابق، غرفة علوية، شقة"
+      },
+      {
+        "id": "ouahorio",
+        "coptic": "ⲟⲩⲁϩⲟ",
+        "meaningAr": "دار، منزل، مسكن"
+      },
+      {
+        "id": "ouahoricoi",
+        "coptic": "ⲟⲩⲁϩⲥⲟⲓ",
+        "meaningAr": "سقف، تسقيفة؛ كنف، حماية"
+      },
+      {
+        "id": "ouahoriten",
+        "coptic": "ⲟⲩⲁϩⲧⲉⲛ",
+        "meaningAr": "كرر، عمل ثانية، عاد فعمل"
+      },
+      {
+        "id": "ouahorif",
+        "coptic": "ⲟⲩⲁϩϥ",
+        "meaningAr": "عوى، نبح (للذيب او الكلب)"
+      },
+      {
+        "id": "ouahorikhaiici",
+        "coptic": "ⲟⲩⲁϩϧⲓⲥⲓ",
+        "meaningAr": "اتعب، تكبد تعبا، ضايق، ثقل على، ارهق"
+      },
+      {
+        "id": "ouahorikhaire",
+        "coptic": "ⲟⲩⲁϩϧⲣⲉ",
+        "meaningAr": "حامل الطعام"
+      },
+      {
+        "id": "oubashai",
+        "coptic": "ⲟⲩⲃⲁϣ",
+        "meaningAr": "ابيض، صار ابيض"
+      },
+      {
+        "id": "oube",
+        "coptic": "ⲟⲩⲃⲉ",
+        "meaningAr": "ضد، تجاه، مقابل، امام، قدام، بعكس"
+      },
+      {
+        "id": "ouberh",
+        "coptic": "ⲟⲩⲃⲉⲣⲏ",
+        "meaningAr": "شمسية، ضد او مانعة الشمس"
+      },
+      {
+        "id": "ouggia",
+        "coptic": "ⲟⲩⲅⲅⲓⲁ",
+        "meaningAr": "اوقية، وحدة وزن"
+      },
+      {
+        "id": "oude",
+        "coptic": "ⲟⲩⲇⲉ",
+        "meaningAr": "ولا (حرف عطف يوناني للجمل المنفية)"
+      },
+      {
+        "id": "ouei",
+        "coptic": "ⲟⲩⲉⲓ",
+        "meaningAr": "بعد، ابتعد، ناى؛ جفا، مج"
+      },
+      {
+        "id": "ouein",
+        "coptic": "ⲟⲩⲉⲓⲛ",
+        "meaningAr": "قناة (مايية)، مجرى (مايي)"
+      },
+      {
+        "id": "oueinin",
+        "coptic": "ⲟⲩⲉⲓⲛⲓⲛ",
+        "meaningAr": "يوناني، منسوب لليونان"
+      },
+      {
+        "id": "ouella",
+        "coptic": "ⲟⲩⲉⲗⲗⲁ",
+        "meaningAr": "لحن"
+      },
+      {
+        "id": "ouellw",
+        "coptic": "ⲟⲩⲉⲗⲗⲱ",
+        "meaningAr": "كرداش، مشط الصوف"
+      },
+      {
+        "id": "ouemkhaire",
+        "coptic": "ⲟⲩⲉⲙϧⲣⲉ",
+        "meaningAr": "اكل، تغذى"
+      },
+      {
+        "id": "ouemhoriht",
+        "coptic": "ⲟⲩⲉⲙϩⲏⲧ",
+        "meaningAr": "ندم، اسف"
+      },
+      {
+        "id": "ouemsi",
+        "coptic": "ⲟⲩⲉⲙϭⲓ",
+        "meaningAr": "رضع"
+      },
+      {
+        "id": "ouent",
+        "coptic": "ⲟⲩⲉⲛⲧ",
+        "meaningAr": "مكان ذو عمق، خن، جوف السفينة"
+      },
+      {
+        "id": "ouenshaiomt",
+        "coptic": "ⲟⲩⲉⲛϣⲟⲙⲧ",
+        "meaningAr": "ثلث، (3/1)"
+      },
+      {
+        "id": "ouert",
+        "coptic": "ⲟⲩⲉⲣⲧ",
+        "meaningAr": "وردة، ورد"
+      },
+      {
+        "id": "ouershaii",
+        "coptic": "ⲟⲩⲉⲣϣⲓ",
+        "meaningAr": "هزيع، هجعة، نوبة حراسة، مدة زمنية"
+      },
+      {
+        "id": "ouecqwn",
+        "coptic": "ⲟⲩⲉⲥⲑⲱⲛ",
+        "meaningAr": "واسع، عريض"
+      },
+      {
+        "id": "ouet",
+        "coptic": "ⲟⲩⲉⲧ",
+        "meaningAr": "الامر يختلف، مختلف"
+      },
+      {
+        "id": "ouetouwt",
+        "coptic": "ⲟⲩⲉⲧⲟⲩⲱⲧ",
+        "meaningAr": "اخضر؛ اخضر مصفر، شاحب"
+      },
+      {
+        "id": "oueshai",
+        "coptic": "ⲟⲩⲉϣ",
+        "meaningAr": "بدون، بلا، بغير، مجرد عن"
+      },
+      {
+        "id": "oueshaien",
+        "coptic": "ⲟⲩⲉϣⲉⲛ",
+        "meaningAr": "بدون، بلا، بغير، مجرد من"
+      },
+      {
+        "id": "oueshaiouwshai",
+        "coptic": "ⲟⲩⲉϣⲟⲩⲱϣ",
+        "meaningAr": "متالم، معذب، مهشم، مدغدغ"
+      },
+      {
+        "id": "oueshaici",
+        "coptic": "ⲟⲩⲉϣⲥⲓ",
+        "meaningAr": "اتساع، سعة"
+      },
+      {
+        "id": "ouehori",
+        "coptic": "ⲟⲩⲉϩ",
+        "meaningAr": "موجود، موضوع، مستقر"
+      },
+      {
+        "id": "ouehoriwik",
+        "coptic": "ⲟⲩⲉϩⲱⲓⲕ",
+        "meaningAr": "خزن الخبز"
+      },
+      {
+        "id": "ouehorifwi",
+        "coptic": "ⲟⲩⲉϩϥⲱⲓ",
+        "meaningAr": "ارخى شعره"
+      },
+      {
+        "id": "ouehorijwm",
+        "coptic": "ⲟⲩⲉϩϫⲱⲙ",
+        "meaningAr": "قراية، منجلية؛ درج الكتب"
+      },
+      {
+        "id": "ouejouwj",
+        "coptic": "ⲟⲩⲉϫⲟⲩⲱϫ",
+        "meaningAr": "ممضوغ"
+      },
+      {
+        "id": "ouejro",
+        "coptic": "ⲟⲩⲉϫⲣⲟ",
+        "meaningAr": "قايمة او عتبة الباب، عامود، عمود"
+      },
+      {
+        "id": "ouejrwou",
+        "coptic": "ⲟⲩⲉϫⲣⲱⲟⲩ",
+        "meaningAr": "قوايم، اعتاب، اعمدة"
+      },
+      {
+        "id": "ouhb",
+        "coptic": "ⲟⲩⲏⲃ",
+        "meaningAr": "كاهن، قس"
+      },
+      {
+        "id": "ouhi",
+        "coptic": "ⲟⲩⲏⲓ",
+        "meaningAr": "حقا، لان حقا؛ حتى"
+      },
+      {
+        "id": "ouhicmh",
+        "coptic": "ⲟⲩⲏⲓⲥⲙⲏ",
+        "meaningAr": "تليفون، هاتف، صوت من بعيد"
+      },
+      {
+        "id": "ouhickhaiai",
+        "coptic": "ⲟⲩⲏⲓⲥϧⲁⲓ",
+        "meaningAr": "تلغراف، برقية، كتابة من بعيد"
+      },
+      {
+        "id": "ouhn",
+        "coptic": "ⲟⲩⲏⲛ",
+        "meaningAr": "مفتوح؛ عريض"
+      },
+      {
+        "id": "ouhou",
+        "coptic": "ⲟⲩⲏⲟⲩ",
+        "meaningAr": "بعيد، ناء، قصي، مبتعد"
+      },
+      {
+        "id": "ouhout",
+        "coptic": "ⲟⲩⲏⲟⲩⲧ",
+        "meaningAr": "منته (منتهي)"
+      },
+      {
+        "id": "ouhr",
+        "coptic": "ⲟⲩⲏⲣ",
+        "meaningAr": "كم؟ (للسوال عن العدد)"
+      },
+      {
+        "id": "ouhshaici",
+        "coptic": "ⲟⲩⲏϣⲥⲓ",
+        "meaningAr": "اتساع، وسع، عرض"
+      },
+      {
+        "id": "ouhhori",
+        "coptic": "ⲟⲩⲏϩ",
+        "meaningAr": "مضاف"
+      },
+      {
+        "id": "ouqo",
+        "coptic": "ⲟⲩⲑⲟ",
+        "meaningAr": "مختلف، متنوع، متباين"
+      },
+      {
+        "id": "oui",
+        "coptic": "ⲟⲩⲓ",
+        "meaningAr": "واحدة، مفردة، احدى"
+      },
+      {
+        "id": "ouih",
+        "coptic": "ⲟⲩⲓⲏ",
+        "meaningAr": "فلاحون، كرامون"
+      },
+      {
+        "id": "ouinam",
+        "coptic": "ⲟⲩⲓⲛⲁⲙ",
+        "meaningAr": "يمين، يمنى، ايمن"
+      },
+      {
+        "id": "ouici",
+        "coptic": "ⲟⲩⲓⲥⲓ",
+        "meaningAr": "نشر (بمنشار)"
+      },
+      {
+        "id": "ouk",
+        "coptic": "ⲟⲩⲕ",
+        "meaningAr": "لا، ليس (للنفي)"
+      },
+      {
+        "id": "ouketi",
+        "coptic": "ⲟⲩⲕⲉⲧⲓ",
+        "meaningAr": "ليس اكثر، ليس بعد"
+      },
+      {
+        "id": "oukoun",
+        "coptic": "ⲟⲩⲕⲟⲩⲛ",
+        "meaningAr": "ليس فقط، اذا ليس"
+      },
+      {
+        "id": "oulai",
+        "coptic": "ⲟⲩⲗⲁⲓ",
+        "meaningAr": "جعدة رومية، بذر خلة (نوع من النبات)"
+      },
+      {
+        "id": "oulh",
+        "coptic": "ⲟⲩⲗⲏ",
+        "meaningAr": "ندبة، نتوء، اثر جرح، بقايا"
+      },
+      {
+        "id": "oumame",
+        "coptic": "ⲟⲩⲙⲁⲙⲉϯ",
+        "meaningAr": "اكلة، ناسور، سرطان، قرح"
+      },
+      {
+        "id": "oumh",
+        "coptic": "ⲟⲩⲙⲏ",
+        "meaningAr": "نفي موكد، نفي مشدد"
+      },
+      {
+        "id": "oumonon",
+        "coptic": "ⲟⲩⲙⲟⲛⲟⲛ",
+        "meaningAr": "ليس فقط"
+      },
+      {
+        "id": "oumoc",
+        "coptic": "ⲟⲩⲙⲟⲥ",
+        "meaningAr": "مساو، مثيل، نظير، قرين، شبيه"
+      },
+      {
+        "id": "oumot",
+        "coptic": "ⲟⲩⲙⲟⲧ",
+        "meaningAr": "غلظ، سمن، تضخم، تورم؛ تقسى، جمد"
+      },
+      {
+        "id": "oun",
+        "coptic": "ⲟⲩⲛ",
+        "meaningAr": "لذلك، اذا، من ثم، بناء عليه، وبالتالي"
+      },
+      {
+        "id": "ounarion",
+        "coptic": "ⲟⲩⲛⲁⲣⲓⲟⲛ",
+        "meaningAr": "زنار، رباط، حزام"
+      },
+      {
+        "id": "ounou",
+        "coptic": "ⲟⲩⲛⲟⲩ",
+        "meaningAr": "ساعة زمنية (= 60 دقيقة)"
+      },
+      {
+        "id": "ounof",
+        "coptic": "ⲟⲩⲛⲟϥ",
+        "meaningAr": "فرح، ابتهج، تهلل، سر؛"
+      },
+      {
+        "id": "ounte",
+        "coptic": "ⲟⲩⲛⲧⲉ",
+        "meaningAr": "عند، لدى"
+      },
+      {
+        "id": "ounwoui",
+        "coptic": "ⲟⲩⲛⲱⲟⲩⲓ",
+        "meaningAr": "ساعات، ازمنة، اوقات"
+      },
+      {
+        "id": "ounwou",
+        "coptic": "ⲟⲩⲛⲱⲟⲩϯ",
+        "meaningAr": "قماط، لفة"
+      },
+      {
+        "id": "ouobshai",
+        "coptic": "ⲟⲩⲟⲃϣ",
+        "meaningAr": "ابيض؛ لامع، ساطع"
+      },
+      {
+        "id": "ouobshaii",
+        "coptic": "ⲟⲩⲟⲃϣⲓ",
+        "meaningAr": "بيضاء"
+      },
+      {
+        "id": "ouoi",
+        "coptic": "ⲟⲩⲟⲓ",
+        "meaningAr": "وثبة، قفزة، نطة، اندفاع؛ اقتحام، اقدام"
+      },
+      {
+        "id": "ouoki",
+        "coptic": "ⲟⲩⲟⲕⲓ",
+        "meaningAr": "طحينة (من السمسم)"
+      },
+      {
+        "id": "ouomcir",
+        "coptic": "ⲟⲩⲟⲙⲥⲓⲣ",
+        "meaningAr": "اكلة، ناسور، قرح، خراج"
+      },
+      {
+        "id": "ouomt",
+        "coptic": "ⲟⲩⲟⲙⲧ",
+        "meaningAr": "سميك، غليظ، كثيف"
+      },
+      {
+        "id": "ouom",
+        "coptic": "ⲟⲩⲟⲙϯ",
+        "meaningAr": "برج حمام، برج، طابية، قلعة، حصن"
+      },
+      {
+        "id": "ouon",
+        "coptic": "ⲟⲩⲟⲛ",
+        "meaningAr": "يوجد (فعل لا شخصي)"
+      },
+      {
+        "id": "ouonte",
+        "coptic": "ⲟⲩⲟⲛⲧⲉ",
+        "meaningAr": "يوجد عند او لدى"
+      },
+      {
+        "id": "ouonshaijom",
+        "coptic": "ⲟⲩⲟⲛϣϫⲟⲙ",
+        "meaningAr": "امكن، استطاع"
+      },
+      {
+        "id": "ouonhori",
+        "coptic": "ⲟⲩⲟⲛϩ",
+        "meaningAr": "ظاهر، مكشوف، واضح"
+      },
+      {
+        "id": "ouonhorif",
+        "coptic": "ⲟⲩⲟⲛϩϥ",
+        "meaningAr": "مذود، معلف؛ اسطبل، زريبة"
+      },
+      {
+        "id": "ouonjf",
+        "coptic": "ⲟⲩⲟⲛϫϥ",
+        "meaningAr": "فك، لحي، خد، وجنة"
+      },
+      {
+        "id": "ouorshaif",
+        "coptic": "ⲟⲩⲟⲣϣϥ",
+        "meaningAr": "رصيف، مدق"
+      },
+      {
+        "id": "ouocer",
+        "coptic": "ⲟⲩⲟⲥⲉⲣ",
+        "meaningAr": "مجداف المركب"
+      },
+      {
+        "id": "ouocqen",
+        "coptic": "ⲟⲩⲟⲥⲑⲉⲛ",
+        "meaningAr": "وسع"
+      },
+      {
+        "id": "ouot",
+        "coptic": "ⲟⲩⲟⲧ",
+        "meaningAr": "متباين، متميز، متفوق"
+      },
+      {
+        "id": "ouoteb",
+        "coptic": "ⲟⲩⲟⲧⲉⲃ",
+        "meaningAr": "متفوق، فايق، منقول"
+      },
+      {
+        "id": "ouoten",
+        "coptic": "ⲟⲩⲟⲧⲉⲛ",
+        "meaningAr": "مسكوب، مصبوب؛"
+      },
+      {
+        "id": "ouotouet",
+        "coptic": "ⲟⲩⲟⲧⲟⲩⲉⲧ",
+        "meaningAr": "اخضر؛ شحب، امتقع، (اصفر وجهه)"
+      },
+      {
+        "id": "ouothori",
+        "coptic": "ⲟⲩⲟⲧϩ",
+        "meaningAr": "مسبوك، منصهر"
+      },
+      {
+        "id": "ouothorie",
+        "coptic": "ⲟⲩⲟⲧϩⲉ",
+        "meaningAr": "طلمبة، مضخة"
+      },
+      {
+        "id": "ouoshaiem",
+        "coptic": "ⲟⲩⲟϣⲉⲙ",
+        "meaningAr": "معجون، ملتوت، مهروس، منغمس"
+      },
+      {
+        "id": "ouoshaioueshai",
+        "coptic": "ⲟⲩⲟϣⲟⲩⲉϣ",
+        "meaningAr": "خبط، ضرب، هشم، دغدغ؛ درس (القمح)"
+      },
+      {
+        "id": "ouoshaic",
+        "coptic": "ⲟⲩⲟϣⲥ",
+        "meaningAr": "واسع، متسع؛"
+      },
+      {
+        "id": "ouoshaif",
+        "coptic": "ⲟⲩⲟϣϥ",
+        "meaningAr": "منهك، منسحق، هالك"
+      },
+      {
+        "id": "ouohori",
+        "coptic": "ⲟⲩⲟϩ",
+        "meaningAr": "و (حرف عطف للافعال والجمل)، ثم، فـ"
+      },
+      {
+        "id": "ouohoriem",
+        "coptic": "ⲟⲩⲟϩⲉⲙ",
+        "meaningAr": "كرر، اضاف"
+      },
+      {
+        "id": "ouohorii",
+        "coptic": "ⲟⲩⲟϩⲓ",
+        "meaningAr": "صياد (سمك)"
+      },
+      {
+        "id": "ouoj",
+        "coptic": "ⲟⲩⲟϫ",
+        "meaningAr": "مقطوع، مكسور، مبتور"
+      },
+      {
+        "id": "ouoji",
+        "coptic": "ⲟⲩⲟϫⲓ",
+        "meaningAr": "خد، وجنة؛ فك؛ عاضدة (واجهة) الباب"
+      },
+      {
+        "id": "ouojouej",
+        "coptic": "ⲟⲩⲟϫⲟⲩⲉϫ",
+        "meaningAr": "مضغ؛ عض؛ سحق، هرس، انهرس، ترضض"
+      },
+      {
+        "id": "ouojp",
+        "coptic": "ⲟⲩⲟϫⲡ",
+        "meaningAr": "مهدوم، متهدم"
+      },
+      {
+        "id": "ouo",
+        "coptic": "ⲟⲩⲟϯ",
+        "meaningAr": "بقل، خضار، خضرة"
+      },
+      {
+        "id": "ouranioc",
+        "coptic": "ⲟⲩⲣⲁⲛⲓⲟⲥ",
+        "meaningAr": "سماوي"
+      },
+      {
+        "id": "ouranoc",
+        "coptic": "ⲟⲩⲣⲁⲛⲟⲥ",
+        "meaningAr": "سماء، فلك، جلد؛"
+      },
+      {
+        "id": "ourarion",
+        "coptic": "ⲟⲩⲣⲁⲣⲓⲟⲛ",
+        "meaningAr": "زنار، منطقة، حزام"
+      },
+      {
+        "id": "ourac",
+        "coptic": "ⲟⲩⲣⲁⲥ",
+        "meaningAr": "تاج الملك، اكليل، طاقية ملوكية"
+      },
+      {
+        "id": "oura",
+        "coptic": "ⲟⲩⲣⲁϯ",
+        "meaningAr": "خفراء، حراس"
+      },
+      {
+        "id": "oureb",
+        "coptic": "ⲟⲩⲣⲉⲃ",
+        "meaningAr": "مقرف"
+      },
+      {
+        "id": "ouric",
+        "coptic": "ⲟⲩⲣⲓⲥ",
+        "meaningAr": "مر، صمغ المر (نبات طبي)"
+      },
+      {
+        "id": "ourit",
+        "coptic": "ⲟⲩⲣⲓⲧ",
+        "meaningAr": "خفير، غفير، حارس"
+      },
+      {
+        "id": "ouro",
+        "coptic": "ⲟⲩⲣⲟ",
+        "meaningAr": "ملك، سلطان"
+      },
+      {
+        "id": "ourot",
+        "coptic": "ⲟⲩⲣⲟⲧ",
+        "meaningAr": "نشط"
+      },
+      {
+        "id": "ourw",
+        "coptic": "ⲟⲩⲣⲱ",
+        "meaningAr": "ملكة"
+      },
+      {
+        "id": "ourwou",
+        "coptic": "ⲟⲩⲣⲱⲟⲩ",
+        "meaningAr": "ملوك"
+      },
+      {
+        "id": "ouca",
+        "coptic": "ⲟⲩⲥⲁ",
+        "meaningAr": "كفة (الميزان)"
+      },
+      {
+        "id": "oucabin",
+        "coptic": "ⲟⲩⲥⲁⲃⲓⲛ",
+        "meaningAr": "بقدونس، شمار؛ حشيش، برسيم، دريس"
+      },
+      {
+        "id": "oucia",
+        "coptic": "ⲟⲩⲥⲓⲁ",
+        "meaningAr": "جوهر، كنه، ذات الشيء، وجود؛"
+      },
+      {
+        "id": "ouck",
+        "coptic": "ⲟⲩⲥⲕ",
+        "meaningAr": "جلا"
+      },
+      {
+        "id": "outauhori",
+        "coptic": "ⲟⲩⲧⲁⲩϩ",
+        "meaningAr": "ثمار، فواكه"
+      },
+      {
+        "id": "outahori",
+        "coptic": "ⲟⲩⲧⲁϩ",
+        "meaningAr": "ثمرة، فاكهة"
+      },
+      {
+        "id": "oute",
+        "coptic": "ⲟⲩⲧⲉ",
+        "meaningAr": "لا، ليس، ما، ولا واحد من"
+      },
+      {
+        "id": "ouvaji",
+        "coptic": "ⲟⲩⲫⲁϫⲓ",
+        "meaningAr": "كبد"
+      },
+      {
+        "id": "ouxi",
+        "coptic": "ⲟⲩⲭⲓ",
+        "meaningAr": "لا، ليس، ما، اليس (اداة نفي قوية)"
+      },
+      {
+        "id": "ouw",
+        "coptic": "ⲟⲩⲱ",
+        "meaningAr": "متعدي: انهى، اكمل، انجز، (خلص)؛"
+      },
+      {
+        "id": "ouwbshai",
+        "coptic": "ⲟⲩⲱⲃϣ",
+        "meaningAr": "ابيض؛ بياض"
+      },
+      {
+        "id": "ouwi",
+        "coptic": "ⲟⲩⲱⲓ",
+        "meaningAr": "فلاح، مزارع، عامل زراعة"
+      },
+      {
+        "id": "ouwini",
+        "coptic": "ⲟⲩⲱⲓⲛⲓ",
+        "meaningAr": "نور، ضوء، ضياء، لمعان؛ فجر؛"
+      },
+      {
+        "id": "ouwipi",
+        "coptic": "ⲟⲩⲱⲓⲡⲓ",
+        "meaningAr": "ويبة (كيلتان)، ايفة، مكيال"
+      },
+      {
+        "id": "ouwishai",
+        "coptic": "ⲟⲩⲱⲓϣ",
+        "meaningAr": "زمن، عصر، وقت، ان، تاريخ، حين"
+      },
+      {
+        "id": "ouwlc",
+        "coptic": "ⲟⲩⲱⲗⲥ",
+        "meaningAr": "عطف، امال، حنى، استعطف، اسند، مال، ركع"
+      },
+      {
+        "id": "ouwm",
+        "coptic": "ⲟⲩⲱⲙ",
+        "meaningAr": "اكل، اقتات، تغذى"
+      },
+      {
+        "id": "ouwmnhoriht",
+        "coptic": "ⲟⲩⲱⲙⲛϩⲏⲧ",
+        "meaningAr": "ندم، تاسف، تاب، تحسر"
+      },
+      {
+        "id": "ouwmhoriqhf",
+        "coptic": "ⲟⲩⲱⲙϩⲑⲏϥ",
+        "meaningAr": "توبة، ندامة"
+      },
+      {
+        "id": "ouwmt",
+        "coptic": "ⲟⲩⲱⲙⲧ",
+        "meaningAr": "انتفخ، ورم؛ سود، اسود، سمر، صار اسمر"
+      },
+      {
+        "id": "ouwn",
+        "coptic": "ⲟⲩⲱⲛ",
+        "meaningAr": "فتح، انفتح"
+      },
+      {
+        "id": "ouwncaji",
+        "coptic": "ⲟⲩⲱⲛⲥⲁϫⲓ",
+        "meaningAr": "فاتحة الكلام، مقدمة، ديباجة"
+      },
+      {
+        "id": "ouwnshai",
+        "coptic": "ⲟⲩⲱⲛϣ",
+        "meaningAr": "ذيب، ابن اوي"
+      },
+      {
+        "id": "ouwnhori",
+        "coptic": "ⲟⲩⲱⲛϩ",
+        "meaningAr": "لازم: ظهر، بان"
+      },
+      {
+        "id": "ouwrp",
+        "coptic": "ⲟⲩⲱⲣⲡ",
+        "meaningAr": "ارسل، بعث، اوفد"
+      },
+      {
+        "id": "ouwt",
+        "coptic": "ⲟⲩⲱⲧ",
+        "meaningAr": "واحد، وحيد، فريد، فرد مفرد"
+      },
+      {
+        "id": "ouwteb",
+        "coptic": "ⲟⲩⲱⲧⲉⲃ",
+        "meaningAr": "انتقل، ارتحل؛"
+      },
+      {
+        "id": "ouwten",
+        "coptic": "ⲟⲩⲱⲧⲉⲛ",
+        "meaningAr": "سكب، صب؛ قرب (ذبيحة)"
+      },
+      {
+        "id": "ouwtc",
+        "coptic": "ⲟⲩⲱⲧⲥ",
+        "meaningAr": "حرب (وطيس القتال)"
+      },
+      {
+        "id": "ouwthori",
+        "coptic": "ⲟⲩⲱⲧϩ",
+        "meaningAr": "لازم: سال"
+      },
+      {
+        "id": "ouwshai",
+        "coptic": "ⲟⲩⲱϣ",
+        "meaningAr": "ثقب، خرم، نقب، شق، فلق، خلل"
+      },
+      {
+        "id": "ouwshaiem",
+        "coptic": "ⲟⲩⲱϣⲉⲙ",
+        "meaningAr": "عجن، لت"
+      },
+      {
+        "id": "ouwshainhoriht",
+        "coptic": "ⲟⲩⲱϣⲛϩⲏⲧ",
+        "meaningAr": "اشتياق، رغبة قوية، رغبة ملحة"
+      },
+      {
+        "id": "ouwshaic",
+        "coptic": "ⲟⲩⲱϣⲥ",
+        "meaningAr": "اتسع، عرض؛"
+      },
+      {
+        "id": "ouwshait",
+        "coptic": "ⲟⲩⲱϣⲧ",
+        "meaningAr": "سجد، عبد، خر، جثا؛ حيا، بجل، اكرم، وقر"
+      },
+      {
+        "id": "ouwshaif",
+        "coptic": "ⲟⲩⲱϣϥ",
+        "meaningAr": "انسحق، انكسر، تحطم، هلك، خرب، رضض؛ خار"
+      },
+      {
+        "id": "ouwshaij",
+        "coptic": "ⲟⲩⲱϣϫ",
+        "meaningAr": "طلى، دهن"
+      },
+      {
+        "id": "ouwhori",
+        "coptic": "ⲟⲩⲱϩ",
+        "meaningAr": "اضاف، ضم، جمع، وحد"
+      },
+      {
+        "id": "ouwhoriem",
+        "coptic": "ⲟⲩⲱϩⲉⲙ",
+        "meaningAr": "رد، اجاب"
+      },
+      {
+        "id": "ouwhorin",
+        "coptic": "ⲟⲩⲱϩⲛ",
+        "meaningAr": "تعريشة، تسقيفة، خيمة، غطاء للسقف"
+      },
+      {
+        "id": "ouwj",
+        "coptic": "ⲟⲩⲱϫ",
+        "meaningAr": "قطع، كسر، بتر؛"
+      },
+      {
+        "id": "ouwjp",
+        "coptic": "ⲟⲩⲱϫⲡ",
+        "meaningAr": "لازم): انهدم"
+      },
+      {
+        "id": "ouw-2",
+        "coptic": "ⲟⲩⲱϯ",
+        "meaningAr": "فصل، افرز"
+      },
+      {
+        "id": "oushaiap",
+        "coptic": "ⲟⲩϣⲁⲡ",
+        "meaningAr": "اقرض، اعار، سلف، استلف"
+      },
+      {
+        "id": "oushaie",
+        "coptic": "ⲟⲩϣⲉ",
+        "meaningAr": "طاسة، زبدية، صحفة، طبق، صحن"
+      },
+      {
+        "id": "oushaiemwni",
+        "coptic": "ⲟⲩϣⲉⲙⲱⲛⲓ",
+        "meaningAr": "طباشير"
+      },
+      {
+        "id": "oukhaie",
+        "coptic": "ⲟⲩϧⲉ",
+        "meaningAr": "سقط (جنين غير كامل النمو)"
+      },
+      {
+        "id": "ouhorior",
+        "coptic": "ⲟⲩϩⲟⲣ",
+        "meaningAr": "كلب، نوع حيوان منزلي"
+      },
+      {
+        "id": "ouhoriwr",
+        "coptic": "ⲟⲩϩⲱⲣ",
+        "meaningAr": "كلاب"
+      }
+    ],
+    "ⲡⲓ": [
+      {
+        "id": "pike",
+        "coptic": "ⲡⲓⲕⲉ",
+        "meaningAr": "الاخر، (الباقي)"
+      },
+      {
+        "id": "pilw",
+        "coptic": "ⲡⲓⲗⲱϯ",
+        "meaningAr": "حندقوق مصري (نبات)"
+      },
+      {
+        "id": "pimhn",
+        "coptic": "ⲡⲓⲙⲏⲛ",
+        "meaningAr": "راعي، متعهد قطيع، معتني ب"
+      },
+      {
+        "id": "pinakic",
+        "coptic": "ⲡⲓⲛⲁⲕⲓⲥ",
+        "meaningAr": "لوح (خشبي)"
+      },
+      {
+        "id": "pinaeks",
+        "coptic": "ⲡⲓⲛⲁⲝ",
+        "meaningAr": "طبق كبير، صحن، صحفة؛"
+      },
+      {
+        "id": "piouai",
+        "coptic": "ⲡⲓⲟⲩⲁⲓ",
+        "meaningAr": "اليوم الاول، يوم الاحد"
+      },
+      {
+        "id": "pira",
+        "coptic": "ⲡⲓⲣⲁ",
+        "meaningAr": "تجربة، اختبار، محنة، محاولة"
+      },
+      {
+        "id": "piracmoc",
+        "coptic": "ⲡⲓⲣⲁⲥⲙⲟⲥ",
+        "meaningAr": "تجربة، اختبار، امتحان"
+      },
+      {
+        "id": "pictau",
+        "coptic": "ⲡⲓⲥⲧⲁⲩ",
+        "meaningAr": "تسعون، 90"
+      },
+      {
+        "id": "picth",
+        "coptic": "ⲡⲓⲥⲧⲏ",
+        "meaningAr": "مومنة، مصدقة، امينة، مخلصة"
+      },
+      {
+        "id": "pictikh",
+        "coptic": "ⲡⲓⲥⲧⲓⲕⲏ",
+        "meaningAr": "مومنة، نقية، خالصة"
+      },
+      {
+        "id": "pictikoc",
+        "coptic": "ⲡⲓⲥⲧⲓⲕⲟⲥ",
+        "meaningAr": "مومن، نقي، خالص"
+      },
+      {
+        "id": "pictic",
+        "coptic": "ⲡⲓⲥⲧⲓⲥ",
+        "meaningAr": "ايمان، اعتقاد، ثقة، امانة"
+      },
+      {
+        "id": "pictoc",
+        "coptic": "ⲡⲓⲥⲧⲟⲥ",
+        "meaningAr": "مومن، مصدق، امين، مخلص"
+      },
+      {
+        "id": "pitote",
+        "coptic": "ⲡⲓⲧⲟⲧⲉ",
+        "meaningAr": "كرسي الكاس"
+      },
+      {
+        "id": "pituc",
+        "coptic": "ⲡⲓⲧⲩⲥ",
+        "meaningAr": "اثل، سرو (نوع شجر)"
+      }
+    ],
+    "ϩⲁⲛ": [
+      {
+        "id": "horianal",
+        "coptic": "ϩⲁⲛⲁⲗ",
+        "meaningAr": "دمامل"
+      },
+      {
+        "id": "horianameri",
+        "coptic": "ϩⲁⲛⲁⲙⲉⲣⲓ",
+        "meaningAr": "ظهيرة، بداية الظهر، منتصف النهار"
+      },
+      {
+        "id": "horianamht",
+        "coptic": "ϩⲁⲛⲁⲙⲏⲧ",
+        "meaningAr": "رييس عشرة، قايد عشرة"
+      },
+      {
+        "id": "horianashaie",
+        "coptic": "ϩⲁⲛⲁϣⲉ",
+        "meaningAr": "رييس ماية، قايد ماية"
+      },
+      {
+        "id": "horianashaio",
+        "coptic": "ϩⲁⲛⲁϣⲟ",
+        "meaningAr": "رييس الف، قايد الف"
+      },
+      {
+        "id": "horianqba",
+        "coptic": "ϩⲁⲛⲑⲃⲁ",
+        "meaningAr": "ربوات، جملة عشرات الوف"
+      },
+      {
+        "id": "horianmeri",
+        "coptic": "ϩⲁⲛⲙⲉⲣⲓ",
+        "meaningAr": "ظهر"
+      },
+      {
+        "id": "horiannoub",
+        "coptic": "ϩⲁⲛⲛⲟⲩⲃ",
+        "meaningAr": "صايغ، جواهرجي، عامل بالذهب"
+      },
+      {
+        "id": "horianouon",
+        "coptic": "ϩⲁⲛⲟⲩⲟⲛ",
+        "meaningAr": "بعض، بضعة، بعضا من"
+      },
+      {
+        "id": "horiancop",
+        "coptic": "ϩⲁⲛⲥⲟⲡ",
+        "meaningAr": "احيانا، مرارا، مرارا وتكرارا، مرات كثيرة"
+      }
+    ],
+    "ϯ": [
+      {
+        "id": "aiai-2",
+        "coptic": "ϯⲁⲓⲁⲓ",
+        "meaningAr": "انمى، كبر، طور، زود حجمه؛ تقدم"
+      },
+      {
+        "id": "amahorii-2",
+        "coptic": "ϯⲁⲙⲁϩⲓ",
+        "meaningAr": "اعز، قوى، سند، عضد، سلط، وهب سلطة"
+      },
+      {
+        "id": "anashai-2",
+        "coptic": "ϯⲁⲛⲁϣ",
+        "meaningAr": "حلف، اقسم، اعطى قسما، ادى اليمين"
+      },
+      {
+        "id": "anoxh-2",
+        "coptic": "ϯⲁⲛⲟⲭⲏ",
+        "meaningAr": "منع، حجز، كبح، عطل، عوق"
+      },
+      {
+        "id": "aouw-2",
+        "coptic": "ϯⲁⲟⲩⲱ",
+        "meaningAr": "رهن، استرهن، امن، اعطى او اودع تامينا"
+      },
+      {
+        "id": "aplwc-2",
+        "coptic": "ϯⲁⲡⲗⲱⲥ",
+        "meaningAr": "سخا، اجزل العطاء، اعطى بغير حساب"
+      },
+      {
+        "id": "arhb-2",
+        "coptic": "ϯⲁⲣⲏⲃ",
+        "meaningAr": "رهن، استرهن، وعد، تعهد ب، قطع عهدا"
+      },
+      {
+        "id": "aciai-2",
+        "coptic": "ϯⲁⲥⲓⲁⲓ",
+        "meaningAr": "خفف، هون، رفع المعاناة، قلل العبء"
+      },
+      {
+        "id": "aco-2",
+        "coptic": "ϯⲁⲥⲟ",
+        "meaningAr": "اشفق، ترفق، تعاطف، رق، تحنن، تراءف؛"
+      },
+      {
+        "id": "ahorino",
+        "coptic": "ϯⲁϩⲛⲟ",
+        "meaningAr": "منع، صد، عاق، حجز، عرقل"
+      },
+      {
+        "id": "bai-2",
+        "coptic": "ϯⲃⲁⲓ",
+        "meaningAr": "قاس بالقصبة"
+      },
+      {
+        "id": "benipi-2",
+        "coptic": "ϯⲃⲉⲛⲓⲡⲓ",
+        "meaningAr": "ختم، بصم، وسم، وضع عليه الختم؛"
+      },
+      {
+        "id": "bexe-2",
+        "coptic": "ϯⲃⲉⲭⲉ",
+        "meaningAr": "دفع اجرة، كافا، جازى، قبض، صرف الاجر"
+      },
+      {
+        "id": "deeksia",
+        "coptic": "ϯⲇⲉⲝⲓⲁ",
+        "meaningAr": "صاحب، زامل، رافق، اعطى يمين الشركة"
+      },
+      {
+        "id": "e",
+        "coptic": "ϯⲉ",
+        "meaningAr": "خمس (للعدد المونث)"
+      },
+      {
+        "id": "ebshaii-2",
+        "coptic": "ϯⲉⲃϣⲓ",
+        "meaningAr": "نسي، غفل عن، اغفل، تغاضى عن"
+      },
+      {
+        "id": "eqmhci-2",
+        "coptic": "ϯⲉⲑⲙⲏⲥⲓ",
+        "meaningAr": "يقرض، يسلف، يعطي بالربا"
+      },
+      {
+        "id": "emi-2",
+        "coptic": "ϯⲉⲙⲓ",
+        "meaningAr": "اعلم، اخبر، احاطه علما"
+      },
+      {
+        "id": "emkahori-2",
+        "coptic": "ϯⲉⲙⲕⲁϩ",
+        "meaningAr": "اوجع، الم، احزن، اغضب، اذى، اضر"
+      },
+      {
+        "id": "emton-2",
+        "coptic": "ϯⲉⲙⲧⲟⲛ",
+        "meaningAr": "اراح، ريح، نيح، خفف العبء، هون"
+      },
+      {
+        "id": "entolh-2",
+        "coptic": "ϯⲉⲛⲧⲟⲗⲏ",
+        "meaningAr": "اوصى، نصح، امر، اصدر تعليمات"
+      },
+      {
+        "id": "enshaiot-2",
+        "coptic": "ϯⲉⲛϣⲟⲧ",
+        "meaningAr": "قسى، صعب، تعسر، تشبث برايه، تعجرف"
+      },
+      {
+        "id": "epaiai",
+        "coptic": "ϯⲉⲡⲁⲓⲁⲓ",
+        "meaningAr": "انمى، تقدم"
+      },
+      {
+        "id": "epanai",
+        "coptic": "ϯⲉⲡⲁⲛⲁⲓ",
+        "meaningAr": "جمل، زين، زخرف، زوق، حسن منظره؛"
+      },
+      {
+        "id": "epecht-2",
+        "coptic": "ϯⲉⲡⲉⲥⲏⲧ",
+        "meaningAr": "القى، طرح، رمى، اسقط، احدر، انزل"
+      },
+      {
+        "id": "epkashai",
+        "coptic": "ϯⲉⲡⲕⲁϣ",
+        "meaningAr": "سيج، سور، احاط، طوق، حاصر"
+      },
+      {
+        "id": "epoushaiap",
+        "coptic": "ϯⲉⲡⲟⲩϣⲁⲡ",
+        "meaningAr": "اعار، اقرض، سلف"
+      },
+      {
+        "id": "epshaiwi-2",
+        "coptic": "ϯⲉⲡϣⲱⲓ",
+        "meaningAr": "رفع، على، رقى، انهض، اقام، رفع قيمة؛"
+      },
+      {
+        "id": "ermh-2",
+        "coptic": "ϯⲉⲣⲙⲏ",
+        "meaningAr": "دمع، بكى، ادمع، ذرف الدمع، ناح، نحب"
+      },
+      {
+        "id": "erouot-2",
+        "coptic": "ϯⲉⲣⲟⲩⲟⲧ",
+        "meaningAr": "فرح، ابهج، سر، حض، وعظ، نصح"
+      },
+      {
+        "id": "erw",
+        "coptic": "ϯⲉⲣⲱϯ",
+        "meaningAr": "ارضعت، رضعت، غذت بالرضاعة"
+      },
+      {
+        "id": "ershaiishaii-2",
+        "coptic": "ϯⲉⲣϣⲓϣⲓ",
+        "meaningAr": "سلط، اعطى سلطانا، فوض، خول سلطة؛"
+      },
+      {
+        "id": "erkhaiot-2",
+        "coptic": "ϯⲉⲣϧⲟⲧ",
+        "meaningAr": "ضرب، جرح، عور، كلم؛ خبط، طرق"
+      },
+      {
+        "id": "ethorih-2",
+        "coptic": "ϯⲉⲧϩⲏ",
+        "meaningAr": "نما، ازداد، تقدم في السير، ترقى، نجح"
+      },
+      {
+        "id": "euxh-2",
+        "coptic": "ϯⲉⲩⲭⲏ",
+        "meaningAr": "نذر، اعطى نذرا، تعهد، اعطى عهدا"
+      },
+      {
+        "id": "evahoriou-2",
+        "coptic": "ϯⲉⲫⲁϩⲟⲩ",
+        "meaningAr": "سحب، تراجع، استرد، ارتد، رجع"
+      },
+      {
+        "id": "evmou",
+        "coptic": "ϯⲉⲫⲙⲟⲩ",
+        "meaningAr": "قتل، اهلك، امات، سبب الموت، اسلم للموت"
+      },
+      {
+        "id": "ekhaioun-2",
+        "coptic": "ϯⲉϧⲟⲩⲛ",
+        "meaningAr": "سلم الى، ناول، اعطاه في يده"
+      },
+      {
+        "id": "ekhairhi-2",
+        "coptic": "ϯⲉϧⲣⲏⲓ",
+        "meaningAr": "باع، راج"
+      },
+      {
+        "id": "ehoriqh",
+        "coptic": "ϯⲉϩⲑⲏ",
+        "meaningAr": "راقب، لاحظ"
+      },
+      {
+        "id": "ehorirhi-2",
+        "coptic": "ϯⲉϩⲣⲏⲓ",
+        "meaningAr": "رفع، على، انهض، اقام، حمى، وقى"
+      },
+      {
+        "id": "ehorioun",
+        "coptic": "ϯⲉϩⲟⲩⲛ",
+        "meaningAr": "عارض، قاوم"
+      },
+      {
+        "id": "ejen",
+        "coptic": "ϯⲉϫⲉⲛ",
+        "meaningAr": "وضع على، حط؛ اضاف الى، ضم، زاد على؛"
+      },
+      {
+        "id": "ejij",
+        "coptic": "ϯⲉϫⲓϫ",
+        "meaningAr": "سلم ليد، دفع الى يد، اوصل الى يد"
+      },
+      {
+        "id": "qonten-2",
+        "coptic": "ϯⲑⲟⲛⲧⲉⲛ",
+        "meaningAr": "خمن، انبا، تنبا"
+      },
+      {
+        "id": "qoshai-2",
+        "coptic": "ϯⲑⲟϣ",
+        "meaningAr": "وضع حدا ل، اقام حدودا؛ حدد، عين، قرر"
+      },
+      {
+        "id": "qroshaireshai-2",
+        "coptic": "ϯⲑⲣⲟϣⲣⲉϣ",
+        "meaningAr": "حمر، لون باللون الاحمر، احمر"
+      },
+      {
+        "id": "qwleb-2",
+        "coptic": "ϯⲑⲱⲗⲉⲃ",
+        "meaningAr": "نجس، فضح، لطخ، شان"
+      },
+      {
+        "id": "qwrp-2",
+        "coptic": "ϯⲑⲱⲣⲡ",
+        "meaningAr": "كوشتوان (كسبتان الخياط)"
+      },
+      {
+        "id": "qwshai-2",
+        "coptic": "ϯⲑⲱϣ",
+        "meaningAr": "اقام حدا، حدد"
+      },
+      {
+        "id": "qwkhai-2",
+        "coptic": "ϯⲑⲱϧ",
+        "meaningAr": "ازعج، اقلق، شوشر، اثار اضطرابا، شوش"
+      },
+      {
+        "id": "ift-2",
+        "coptic": "ϯⲓϥⲧ",
+        "meaningAr": "سمر، ثبت بالمسامير"
+      },
+      {
+        "id": "kalla",
+        "coptic": "ϯⲕⲁⲗⲗⲁ",
+        "meaningAr": "تابط"
+      },
+      {
+        "id": "kapnoc-2",
+        "coptic": "ϯⲕⲁⲡⲛⲟⲥ",
+        "meaningAr": "اطلق دخانا، دخن، غبش، قتم"
+      },
+      {
+        "id": "karpoc-2",
+        "coptic": "ϯⲕⲁⲣⲡⲟⲥ",
+        "meaningAr": "اثمر، انتج، اعطى ثمرا"
+      },
+      {
+        "id": "kac-2",
+        "coptic": "ϯⲕⲁⲥ",
+        "meaningAr": "الم، اوجع، اتعب"
+      },
+      {
+        "id": "kahori",
+        "coptic": "ϯⲕⲁϩ",
+        "meaningAr": "لكم، لطم، ضرب بالبونية او بالكف"
+      },
+      {
+        "id": "ka-2",
+        "coptic": "ϯⲕⲁϯ",
+        "meaningAr": "فهم، علم، بصر، عقل، فطن، عرف، اعلم، الهم"
+      },
+      {
+        "id": "keni-2",
+        "coptic": "ϯⲕⲉⲛⲓ",
+        "meaningAr": "سمن، غلظ، تخن، دهن، طيب، مسح بالزيت"
+      },
+      {
+        "id": "keshairwmi-2",
+        "coptic": "ϯⲕⲉϣⲣⲱⲙⲓ",
+        "meaningAr": "القاهرة (عاصمة جمهورية مصر)"
+      },
+      {
+        "id": "kehori-2",
+        "coptic": "ϯⲕⲉϩ",
+        "meaningAr": "لكم، لطم، ضرب بالبونية او بالكف"
+      },
+      {
+        "id": "kifi-2",
+        "coptic": "ϯⲕⲓϥⲓ",
+        "meaningAr": "ارضع، اعطى من الثدي"
+      },
+      {
+        "id": "ki-2",
+        "coptic": "ϯⲕⲓϯ",
+        "meaningAr": "اعطى جزية او اتاوة، دفع ضريبة"
+      },
+      {
+        "id": "klhroc-2",
+        "coptic": "ϯⲕⲗⲏⲣⲟⲥ",
+        "meaningAr": "اقترع، القى قرعة، عمل يانصيب؛"
+      },
+      {
+        "id": "kotc-2",
+        "coptic": "ϯⲕⲟⲧⲥ",
+        "meaningAr": "طاف، تجول، جال، دار حول، احاط، حوط؛"
+      },
+      {
+        "id": "kour-2",
+        "coptic": "ϯⲕⲟⲩⲣ",
+        "meaningAr": "لطم، صفع، ضرب بالكف"
+      },
+      {
+        "id": "kwt-2",
+        "coptic": "ϯⲕⲱⲧ",
+        "meaningAr": "ارشد، قاد، دبر، بنى (روحيا)"
+      },
+      {
+        "id": "lakci-2",
+        "coptic": "ϯⲗⲁⲕⲥⲓ",
+        "meaningAr": "رفس، ركل"
+      },
+      {
+        "id": "lalhorio-2",
+        "coptic": "ϯⲗⲁⲗϩⲟ",
+        "meaningAr": "غش، خدع، اضل"
+      },
+      {
+        "id": "leklwk-2",
+        "coptic": "ϯⲗⲉⲕⲗⲱⲕ",
+        "meaningAr": "رطب، بل، بلل"
+      },
+      {
+        "id": "lhk-2",
+        "coptic": "ϯⲗⲏⲕ",
+        "meaningAr": "طرى، دلك"
+      },
+      {
+        "id": "logoc-2",
+        "coptic": "ϯⲗⲟⲅⲟⲥ",
+        "meaningAr": "نطق، لفظ؛ اجاب، جاوب، لبى، رد على"
+      },
+      {
+        "id": "loklek-2",
+        "coptic": "ϯⲗⲟⲕⲗⲉⲕ",
+        "meaningAr": "طرى، رطب، لين، نعم"
+      },
+      {
+        "id": "loulai-2",
+        "coptic": "ϯⲗⲟⲩⲗⲁⲓ",
+        "meaningAr": "رن، طن، طنطن؛"
+      },
+      {
+        "id": "lwiji-2",
+        "coptic": "ϯⲗⲱⲓϫⲓ",
+        "meaningAr": "قدم عذرا، اعطى فرصة، اتاح مهلة؛"
+      },
+      {
+        "id": "ma-3",
+        "coptic": "ϯⲙⲁ",
+        "meaningAr": "اعطى مكانا، اعطى مجالا، احل محل؛"
+      },
+      {
+        "id": "mahoriro-2",
+        "coptic": "ϯⲙⲁϩⲣⲟ",
+        "meaningAr": "سمد، سبخ، زبل، وضع سمادا"
+      },
+      {
+        "id": "ma-4",
+        "coptic": "ϯⲙⲁϯ",
+        "meaningAr": "سر، ابتهج، فرح، تهلل، ارتضى"
+      },
+      {
+        "id": "mahoriht",
+        "coptic": "ϯⲙⲁϯϩⲏⲧ",
+        "meaningAr": "تمتع، استلذ، تنعم"
+      },
+      {
+        "id": "mbon-2",
+        "coptic": "ϯⲙⲃⲟⲛ",
+        "meaningAr": "اغاظ، اغضب، اسخط، احزن، هيج"
+      },
+      {
+        "id": "mbrehorii-2",
+        "coptic": "ϯⲙⲃⲣⲉϩⲓ",
+        "meaningAr": "طلى بالقار او الزفت، سفلت"
+      },
+      {
+        "id": "meqnaht-2",
+        "coptic": "ϯⲙⲉⲑⲛⲁⲏⲧ",
+        "meaningAr": "اعطى صدقة، قدم حسنة"
+      },
+      {
+        "id": "mei-2",
+        "coptic": "ϯⲙⲉⲓ",
+        "meaningAr": "احب، عشق، هوى، ود، رغب، صنع حبا"
+      },
+      {
+        "id": "metnishai-2",
+        "coptic": "ϯⲙⲉⲧⲛⲓϣϯ",
+        "meaningAr": "عظم، اعطى تعظيما"
+      },
+      {
+        "id": "meui-2",
+        "coptic": "ϯⲙⲉⲩⲓ",
+        "meaningAr": "ذكر، تذكر، فكر، فطن، اقترح، اعطى فكرة"
+      },
+      {
+        "id": "mhini-2",
+        "coptic": "ϯⲙⲏⲓⲛⲓ",
+        "meaningAr": "دل، اشار، اوما، بين، اخبر، اعطى علامة"
+      },
+      {
+        "id": "mi",
+        "coptic": "ϯⲙⲓ",
+        "meaningAr": "قرية، بلد صغير، ضيعة"
+      },
+      {
+        "id": "minhoriwr",
+        "coptic": "ϯⲙⲓⲛϩⲱⲣ",
+        "meaningAr": "دمنهور، اسم مدينة"
+      },
+      {
+        "id": "mkahori-2",
+        "coptic": "ϯⲙⲕⲁϩ",
+        "meaningAr": "الم، اوجع، احزن، كدر، عذب، ازعج"
+      },
+      {
+        "id": "moue-2",
+        "coptic": "ϯⲙⲟⲩⲉ",
+        "meaningAr": "لمع، اضاء، اشع ضوءا، توهج، برق، سطع"
+      },
+      {
+        "id": "mouc",
+        "coptic": "ϯⲙⲟⲩⲥ",
+        "meaningAr": "شفاف، صاف، رايق"
+      },
+      {
+        "id": "mpouoi",
+        "coptic": "ϯⲙⲡⲟⲩⲟⲓ",
+        "meaningAr": "تقدم، نجح، توجه"
+      },
+      {
+        "id": "mton-2",
+        "coptic": "ϯⲙⲧⲟⲛ",
+        "meaningAr": "اراح، هدا، سكن، نيح"
+      },
+      {
+        "id": "mvmeui",
+        "coptic": "ϯⲙⲫⲙⲉⲩⲓ",
+        "meaningAr": "ذكر، فكر، جعله يتذكر"
+      },
+      {
+        "id": "mvremht",
+        "coptic": "ϯⲙⲫⲣⲉⲙⲏⲧ",
+        "meaningAr": "عشر، اعطى العشور"
+      },
+      {
+        "id": "mvrh-2",
+        "coptic": "ϯⲙⲫⲣⲏϯ",
+        "meaningAr": "علم، لقن، اعطى وسيلة او طريقة"
+      },
+      {
+        "id": "mwit-2",
+        "coptic": "ϯⲙⲱⲓⲧ",
+        "meaningAr": "اعطى او اوجد فرصة، اتاح فرصة"
+      },
+      {
+        "id": "mwou-2",
+        "coptic": "ϯⲙⲱⲟⲩ",
+        "meaningAr": "زود بالماء، روى، سقى، اعطى ماء"
+      },
+      {
+        "id": "nakhorii-2",
+        "coptic": "ϯⲛⲁⲕϩⲓ",
+        "meaningAr": "تمخض، توجع؛ تتمخض، تتالم (للولادة)"
+      },
+      {
+        "id": "nei-2",
+        "coptic": "ϯⲛⲉⲓ",
+        "meaningAr": "عين وقتا، حدد ميعادا، امهل؛ عين، حدد"
+      },
+      {
+        "id": "nem-2",
+        "coptic": "ϯⲛⲉⲙ",
+        "meaningAr": "قاتل، حارب، قاوم، عارض، صد، خالف، ناوا"
+      },
+      {
+        "id": "nehori-2",
+        "coptic": "ϯⲛⲉϩ",
+        "meaningAr": "زيت، دهن بالزيت، عمر بالزيت، صب زيتا"
+      },
+      {
+        "id": "niat-2",
+        "coptic": "ϯⲛⲓⲁⲧ",
+        "meaningAr": "لاحظ، تامل، شاهد، راقب"
+      },
+      {
+        "id": "nifi-2",
+        "coptic": "ϯⲛⲓϥⲓ",
+        "meaningAr": "وهب نسمة الحياة، اخذ نفسه، تمالك نفسه"
+      },
+      {
+        "id": "nom-3",
+        "coptic": "ϯⲛⲟⲙϯ",
+        "meaningAr": "عزى، سلى، طيب خاطر"
+      },
+      {
+        "id": "nou-3",
+        "coptic": "ϯⲛⲟⲩ",
+        "meaningAr": "الان، حالا، توا، فورا، حاليا، هذه اللحظة"
+      },
+      {
+        "id": "nouft-2",
+        "coptic": "ϯⲛⲟⲩϥⲧ",
+        "meaningAr": "دفع الاجرة، كافا، اعطى راتبا"
+      },
+      {
+        "id": "nro",
+        "coptic": "ϯⲛⲣⲟ",
+        "meaningAr": "قال، نطق، لفظ"
+      },
+      {
+        "id": "nca-2",
+        "coptic": "ϯⲛⲥⲁ",
+        "meaningAr": "صب، سكب، انهمر، هطل؛ زود، امد، مون"
+      },
+      {
+        "id": "nten-2",
+        "coptic": "ϯⲛⲧⲉⲛ",
+        "meaningAr": "ساعد، اعان، اغاث، عضد"
+      },
+      {
+        "id": "nshaiot-2",
+        "coptic": "ϯⲛϣⲟⲧ",
+        "meaningAr": "قسى، صعب؛ شدد، شجع، جرا"
+      },
+      {
+        "id": "nhoriht",
+        "coptic": "ϯⲛϩⲏⲧ",
+        "meaningAr": "تامل، تانى، تمهل"
+      },
+      {
+        "id": "nhorimot",
+        "coptic": "ϯⲛϩⲙⲟⲧ",
+        "meaningAr": "وهب، انعم على، اهدى، منح"
+      },
+      {
+        "id": "oci-2",
+        "coptic": "ϯⲟⲥⲓ",
+        "meaningAr": "خسر، فقد، اصيب بخسارة، اضير؛"
+      },
+      {
+        "id": "oubashai-2",
+        "coptic": "ϯⲟⲩⲃⲁϣ",
+        "meaningAr": "بيض، لمع، جعله يبرق؛ قصر (الاقمشة)"
+      },
+      {
+        "id": "oube-2",
+        "coptic": "ϯⲟⲩⲃⲉ",
+        "meaningAr": "قاوم، ضاد، عاكس، خاصم"
+      },
+      {
+        "id": "ouhout-2",
+        "coptic": "ϯⲟⲩⲏⲟⲩⲧ",
+        "meaningAr": "منتهي"
+      },
+      {
+        "id": "oui-2",
+        "coptic": "ϯⲟⲩⲓ",
+        "meaningAr": "ربى، عال، قات، امد بالطعام، ادب، هذب"
+      },
+      {
+        "id": "ounou-2",
+        "coptic": "ϯⲟⲩⲛⲟⲩ",
+        "meaningAr": "في الحال، حالا، توا، فورا، بسرعة"
+      },
+      {
+        "id": "ounof-2",
+        "coptic": "ϯⲟⲩⲛⲟϥ",
+        "meaningAr": "ابهج، افرح، اسعد، اسر"
+      },
+      {
+        "id": "ouoi-2",
+        "coptic": "ϯⲟⲩⲟⲓ",
+        "meaningAr": "طاف، جال، حام، دار، تجول؛ بحث عن"
+      },
+      {
+        "id": "ourot-2",
+        "coptic": "ϯⲟⲩⲣⲟⲧ",
+        "meaningAr": "سر، فرح، ابهج؛ شجع، جرا، نشط، حرض"
+      },
+      {
+        "id": "outahori-2",
+        "coptic": "ϯⲟⲩⲧⲁϩ",
+        "meaningAr": "اعطى ثمرا، اثمر، انتج"
+      },
+      {
+        "id": "ouw-3",
+        "coptic": "ϯⲟⲩⲱ",
+        "meaningAr": "حل، فك؛ انهى، فض؛ ارتخى، غشي عليه"
+      },
+      {
+        "id": "ouwi-2",
+        "coptic": "ϯⲟⲩⲱⲓ",
+        "meaningAr": "غراب اسود، غراب الليل، طاير ليلي"
+      },
+      {
+        "id": "ouwini-2",
+        "coptic": "ϯⲟⲩⲱⲓⲛⲓ",
+        "meaningAr": "اعطى ضياء، انار، اضاء"
+      },
+      {
+        "id": "ouwm-2",
+        "coptic": "ϯⲟⲩⲱⲙ",
+        "meaningAr": "اطعم، غذى، اكل، قات، علف"
+      },
+      {
+        "id": "pi-2",
+        "coptic": "ϯⲡⲓ",
+        "meaningAr": "طعم، مذاق، تذوق، نكهة، حاسة الذوق"
+      },
+      {
+        "id": "pkec",
+        "coptic": "ϯⲡⲕⲉⲥ",
+        "meaningAr": "مرض، ضعف، سقم، علة، داء"
+      },
+      {
+        "id": "plhgh-2",
+        "coptic": "ϯⲡⲗⲏⲅⲏ",
+        "meaningAr": "جرح، اصاب"
+      },
+      {
+        "id": "pshaitwri",
+        "coptic": "ϯⲡϣⲧⲱⲣⲓ",
+        "meaningAr": "التزم، اخذ على عاتقه"
+      },
+      {
+        "id": "phorio",
+        "coptic": "ϯⲡϩⲟ",
+        "meaningAr": "وجه، التفت نحو، واجه، حول وجهه"
+      },
+      {
+        "id": "ran-2",
+        "coptic": "ϯⲣⲁⲛ",
+        "meaningAr": "سمى، اطلق اسما، دعا، لقب، نادى"
+      },
+      {
+        "id": "rekriki-2",
+        "coptic": "ϯⲣⲉⲕⲣⲓⲕⲓ",
+        "meaningAr": "نوم، اعطى نعاسا"
+      },
+      {
+        "id": "remht-2",
+        "coptic": "ϯⲣⲉⲙⲏⲧ",
+        "meaningAr": "عشر، اعطى عشر ماله، قدم العشور"
+      },
+      {
+        "id": "rht-2",
+        "coptic": "ϯⲣⲏⲧ",
+        "meaningAr": "وعد، نذر"
+      },
+      {
+        "id": "rwoushai-2",
+        "coptic": "ϯⲣⲱⲟⲩϣ",
+        "meaningAr": "هم، اهم، خصه الامر، اعطى له اهمية"
+      },
+      {
+        "id": "cai-2",
+        "coptic": "ϯⲥⲁⲓ",
+        "meaningAr": "جمل، حسن، اضفى جمالا؛ ابرع جمالا؛"
+      },
+      {
+        "id": "cak-2",
+        "coptic": "ϯⲥⲁⲕ",
+        "meaningAr": "اعطى شكلا او هيية او مظهر، اظهر بمظهر؛"
+      },
+      {
+        "id": "caxol-2",
+        "coptic": "ϯⲥⲁⲭⲟⲗ",
+        "meaningAr": "كمم، سد"
+      },
+      {
+        "id": "cbw-2",
+        "coptic": "ϯⲥⲃⲱ",
+        "meaningAr": "علم، ثقف، ادب، هذب، ارشد، نصح، لقن"
+      },
+      {
+        "id": "cen-2",
+        "coptic": "ϯⲥⲉⲛϯ",
+        "meaningAr": "اسس، وضع اساسا، انشا"
+      },
+      {
+        "id": "cqhm-2",
+        "coptic": "ϯⲥⲑⲏⲙ",
+        "meaningAr": "كحل"
+      },
+      {
+        "id": "cqoi-2",
+        "coptic": "ϯⲥⲑⲟⲓ",
+        "meaningAr": "عبق، اعطى رايحة"
+      },
+      {
+        "id": "cla-2",
+        "coptic": "ϯⲥⲗⲁϯ",
+        "meaningAr": "زحلق، سبب سقوط، اعثر، عرقل، كعبل"
+      },
+      {
+        "id": "cmh-2",
+        "coptic": "ϯⲥⲙⲏ",
+        "meaningAr": "اعطى صوتا، رفع صوته، صوت، صاح"
+      },
+      {
+        "id": "cmot-2",
+        "coptic": "ϯⲥⲙⲟⲧ",
+        "meaningAr": "صور، قلد، وسم، اعطى معنى، عبر، بين"
+      },
+      {
+        "id": "cmou-2",
+        "coptic": "ϯⲥⲙⲟⲩ",
+        "meaningAr": "اعطى بركة، ناول (من الاسرار)"
+      },
+      {
+        "id": "cnof-2",
+        "coptic": "ϯⲥⲛⲟϥ",
+        "meaningAr": "ادمى، نزف"
+      },
+      {
+        "id": "co-2",
+        "coptic": "ϯⲥⲟ",
+        "meaningAr": "سقى، روى، اروى"
+      },
+      {
+        "id": "cosni-2",
+        "coptic": "ϯⲥⲟϭⲛⲓ",
+        "meaningAr": "اعطى رايا، اشار، نصح، ارشد، وجه"
+      },
+      {
+        "id": "cumbolh-2",
+        "coptic": "ϯⲥⲩⲙⲃⲟⲗⲏ",
+        "meaningAr": "ارشد، نصح، اشار على؛"
+      },
+      {
+        "id": "cwit-2",
+        "coptic": "ϯⲥⲱⲓⲧ",
+        "meaningAr": "اشهر، اعلن، اذاع، اشاع، عمل دعاية؛"
+      },
+      {
+        "id": "cwoun-2",
+        "coptic": "ϯⲥⲱⲟⲩⲛ",
+        "meaningAr": "عرف، اعلم، احاط علما، درى، ميز"
+      },
+      {
+        "id": "cw-3",
+        "coptic": "ϯⲥⲱϯ",
+        "meaningAr": "فدى، خلص، اعتق، كفر عن، بذل من اجل"
+      },
+      {
+        "id": "taio-2",
+        "coptic": "ϯⲧⲁⲓⲟ",
+        "meaningAr": "وهب، اعطى هبة، شرف، كرم، عظم"
+      },
+      {
+        "id": "tajro-2",
+        "coptic": "ϯⲧⲁϫⲣⲟ",
+        "meaningAr": "قوى، شدد، ثبت، ايد، ساند، وطد"
+      },
+      {
+        "id": "temhorio-2",
+        "coptic": "ϯⲧⲉⲙϩⲟ",
+        "meaningAr": "هيج، اثار"
+      },
+      {
+        "id": "tenshaii-2",
+        "coptic": "ϯⲧⲉⲛϣⲓ",
+        "meaningAr": "زجر، هدد، توعد، انتهر؛ لكم، لطم، خبط"
+      },
+      {
+        "id": "tkac-2",
+        "coptic": "ϯⲧⲕⲁⲥ",
+        "meaningAr": "الم، اوجع؛ تالم، عانى"
+      },
+      {
+        "id": "totf",
+        "coptic": "ϯⲧⲟⲧϥ",
+        "meaningAr": "مساعدة، موازرة، عون، غوث، اغاثة"
+      },
+      {
+        "id": "twic-2",
+        "coptic": "ϯⲧⲱⲓⲥ",
+        "meaningAr": "رقع"
+      },
+      {
+        "id": "twn",
+        "coptic": "ϯⲧⲱⲛ",
+        "meaningAr": "نازع، تشاجر، خاصم، عارك، جادل، حاور"
+      },
+      {
+        "id": "thoriemmo-2",
+        "coptic": "ϯⲧϩⲉⲙⲙⲟ",
+        "meaningAr": "اجج، اضرم"
+      },
+      {
+        "id": "vashai-2",
+        "coptic": "ϯⲫⲁϣ",
+        "meaningAr": "قرص، لسع، لدغ"
+      },
+      {
+        "id": "vakhairi-2",
+        "coptic": "ϯⲫⲁϧⲣⲓ",
+        "meaningAr": "شفى، ابرا، داوى، عالج؛ التام، اندمل؛"
+      },
+      {
+        "id": "vi-3",
+        "coptic": "ϯⲫⲓ",
+        "meaningAr": "قبل، اعطى قبلة، لثم، عانق"
+      },
+      {
+        "id": "voi-2",
+        "coptic": "ϯⲫⲟⲓ",
+        "meaningAr": "سبق، تقدم"
+      },
+      {
+        "id": "vrw-2",
+        "coptic": "ϯⲫⲣⲱ",
+        "meaningAr": "شتى، قضى مدة او فترة الشتاء"
+      },
+      {
+        "id": "xaki-2",
+        "coptic": "ϯⲭⲁⲕⲓ",
+        "meaningAr": "عتم، اخفض النور، سود، عمق، كلح"
+      },
+      {
+        "id": "xaric-2",
+        "coptic": "ϯⲭⲁⲣⲓⲥ",
+        "meaningAr": "انعم، وهب، منح، تفضل على"
+      },
+      {
+        "id": "xbob-2",
+        "coptic": "ϯⲭⲃⲟⲃ",
+        "meaningAr": "انعش، برد، رطب؛ هدا، سكن، خفف الالم"
+      },
+      {
+        "id": "xlom-2",
+        "coptic": "ϯⲭⲗⲟⲙ",
+        "meaningAr": "توج، كلل"
+      },
+      {
+        "id": "xohori-2",
+        "coptic": "ϯⲭⲟϩ",
+        "meaningAr": "اثار الغيرة، اغار، اثار الحماس، شجع، حسد"
+      },
+      {
+        "id": "xroshai-2",
+        "coptic": "ϯⲭⲣⲟϣ",
+        "meaningAr": "لطم، صفع، لطش، لكم"
+      },
+      {
+        "id": "xrwm-2",
+        "coptic": "ϯⲭⲣⲱⲙ",
+        "meaningAr": "اشعل نارا، اوقد، الهب، اضرم؛"
+      },
+      {
+        "id": "xrwshai-2",
+        "coptic": "ϯⲭⲣⲱϣ",
+        "meaningAr": "لطم، صفع، لطش، لكم"
+      },
+      {
+        "id": "yuvicma",
+        "coptic": "ϯⲯⲩⲫⲓⲥⲙⲁ",
+        "meaningAr": "صوت، انتخب، اختار"
+      },
+      {
+        "id": "yuxh-2",
+        "coptic": "ϯⲯⲩⲭⲏ",
+        "meaningAr": "مات من اجل، سلم نفسه الى، كرس حياته"
+      },
+      {
+        "id": "wmc-2",
+        "coptic": "ϯⲱⲙⲥ",
+        "meaningAr": "عمد، اعطى معمودية، غطس"
+      },
+      {
+        "id": "wnkhai-2",
+        "coptic": "ϯⲱⲛϧ",
+        "meaningAr": "اعطى حياة، وهب حياة، منح حياة"
+      },
+      {
+        "id": "wou-2",
+        "coptic": "ϯⲱⲟⲩ",
+        "meaningAr": "مجد، بجل، عظم، اعطى مجدا"
+      },
+      {
+        "id": "woumbal-2",
+        "coptic": "ϯⲱⲟⲩⲙⲃⲁⲗ",
+        "meaningAr": "طوب، غبط، اغبط، ابهج، اطرب، افرح"
+      },
+      {
+        "id": "wou-3",
+        "coptic": "ϯⲱⲟⲩϯ",
+        "meaningAr": "ساق، جزع (شجرة)"
+      },
+      {
+        "id": "wp-2",
+        "coptic": "ϯⲱⲡ",
+        "meaningAr": "ادى حسابا، عد، حسب، احصى، اعتبر"
+      },
+      {
+        "id": "wrk-2",
+        "coptic": "ϯⲱⲣⲕ",
+        "meaningAr": "حلف، استحلف"
+      },
+      {
+        "id": "wshai-3",
+        "coptic": "ϯⲱϣ",
+        "meaningAr": "وعد، تعهد، اعطى عهدا"
+      },
+      {
+        "id": "shaiap-2",
+        "coptic": "ϯϣⲁⲡ",
+        "meaningAr": "اقرض، اعطى قرضا"
+      },
+      {
+        "id": "shaiarba-2",
+        "coptic": "ϯϣⲁⲣⲃⲁ",
+        "meaningAr": "لفح، شعوط"
+      },
+      {
+        "id": "shaiaro",
+        "coptic": "ϯϣⲁⲣⲟ",
+        "meaningAr": "اوصى، امر، نذر، اصدر امرا"
+      },
+      {
+        "id": "shaiarou",
+        "coptic": "ϯϣⲁⲣⲟⲩ",
+        "meaningAr": "اوصى، امر، نذر، اصدر امرا"
+      },
+      {
+        "id": "shaiashai-2",
+        "coptic": "ϯϣⲁϣ",
+        "meaningAr": "ضرب، طعن، جرح، جلد، لكم، دق، طرق"
+      },
+      {
+        "id": "shaiahori-2",
+        "coptic": "ϯϣⲁϩ",
+        "meaningAr": "التهب، تاجج، ولع، اشتعل، اوقد، احرق؛"
+      },
+      {
+        "id": "shaiebiw-2",
+        "coptic": "ϯϣⲉⲃⲓⲱ",
+        "meaningAr": "جازى، كافا، عوض عن، اثاب"
+      },
+      {
+        "id": "shaienkehori-2",
+        "coptic": "ϯϣⲉⲛⲕⲉϩ",
+        "meaningAr": "لكم، لطم، ضرب، صد"
+      },
+      {
+        "id": "shaienvat-2",
+        "coptic": "ϯϣⲉⲛⲫⲁⲧ",
+        "meaningAr": "رفس، ركل، خبط برجله؛ نطح بقرنه"
+      },
+      {
+        "id": "shaieptwri-2",
+        "coptic": "ϯϣⲉⲡⲧⲱⲣⲓ",
+        "meaningAr": "ضمن"
+      },
+      {
+        "id": "shaiqorter-2",
+        "coptic": "ϯϣⲑⲟⲣⲧⲉⲣ",
+        "meaningAr": "هيج، اثار فوضى"
+      },
+      {
+        "id": "shaiqouit-2",
+        "coptic": "ϯϣⲑⲟⲩⲓⲧ",
+        "meaningAr": "اتهم، شكا، اشتكى من، ادعى على، تظلم"
+      },
+      {
+        "id": "shaii-3",
+        "coptic": "ϯϣⲓ",
+        "meaningAr": "قاس، حدد، قيد، حصر، كال، عاير، وزن؛"
+      },
+      {
+        "id": "shaiih-2",
+        "coptic": "ϯϣⲓⲏ",
+        "meaningAr": "طول، اطال، مد، مط"
+      },
+      {
+        "id": "shaiipi-2",
+        "coptic": "ϯϣⲓⲡⲓ",
+        "meaningAr": "اخزى، اخجل، خدش حياء، شان، فضح"
+      },
+      {
+        "id": "shaioushaiou-2",
+        "coptic": "ϯϣⲟⲩϣⲟⲩ",
+        "meaningAr": "مجد، بجل، وقر، عظم"
+      },
+      {
+        "id": "shaiouhorihne-2",
+        "coptic": "ϯϣⲟⲩϩⲏⲛⲉ",
+        "meaningAr": "عطر"
+      },
+      {
+        "id": "shaioshait-2",
+        "coptic": "ϯϣⲟϣⲧ",
+        "meaningAr": "قفل (بالمفتاح)"
+      },
+      {
+        "id": "shaitwri-2",
+        "coptic": "ϯϣⲧⲱⲣⲓ",
+        "meaningAr": "التزم، اخذ على عاتقه، ضمن، تكفل ب"
+      },
+      {
+        "id": "shaivit-2",
+        "coptic": "ϯϣⲫⲓⲧ",
+        "meaningAr": "اخجل، اخزى، سبب عارا، فضح، شان"
+      },
+      {
+        "id": "shaiwlhori-2",
+        "coptic": "ϯϣⲱⲗϩ",
+        "meaningAr": "علم (وضع علامة)، حدد (وضع حدا)؛"
+      },
+      {
+        "id": "shaiwshai-2",
+        "coptic": "ϯϣⲱϣ",
+        "meaningAr": "اهان، وبخ، ازدرى، اذل، احتقر، عير، شتم"
+      },
+      {
+        "id": "shaisnhn-2",
+        "coptic": "ϯϣϭⲛⲏⲛ",
+        "meaningAr": "عاب، ذم، عاير، لام، قبح، عنف"
+      },
+      {
+        "id": "shaisor-2",
+        "coptic": "ϯϣϭⲟⲣ",
+        "meaningAr": "اجر"
+      },
+      {
+        "id": "fw-2",
+        "coptic": "ϯϥⲱϯ",
+        "meaningAr": "افرز عرقا، عرق"
+      },
+      {
+        "id": "khaiemi-2",
+        "coptic": "ϯϧⲉⲙⲓ",
+        "meaningAr": "سخن، الهب، دفا، حمى"
+      },
+      {
+        "id": "khaiici-2",
+        "coptic": "ϯϧⲓⲥⲓ",
+        "meaningAr": "اتعب، ارهق، اكل، اعيا، انهك، ضايق، كدر"
+      },
+      {
+        "id": "khaimom-2",
+        "coptic": "ϯϧⲙⲟⲙ",
+        "meaningAr": "سخن، احمى، اعطى حرارة، اشعل، احرق"
+      },
+      {
+        "id": "khaire-2",
+        "coptic": "ϯϧⲣⲉ",
+        "meaningAr": "اطعم، غذى، قات، اكل، علف، اعطى طعاما"
+      },
+      {
+        "id": "khairwou-2",
+        "coptic": "ϯϧⲣⲱⲟⲩ",
+        "meaningAr": "هتف، صاح، صرخ، زعق"
+      },
+      {
+        "id": "horiap-2",
+        "coptic": "ϯϩⲁⲡ",
+        "meaningAr": "حكم على، ادان، قاضى"
+      },
+      {
+        "id": "horiat-2",
+        "coptic": "ϯϩⲁⲧ",
+        "meaningAr": "اعطى فضة، دفع نقودا، وفى بالثمن"
+      },
+      {
+        "id": "horiebcw-2",
+        "coptic": "ϯϩⲉⲃⲥⲱ",
+        "meaningAr": "البس، لبس، سربل، هندم، كسا"
+      },
+      {
+        "id": "horieli-2",
+        "coptic": "ϯϩⲉⲗⲓ",
+        "meaningAr": "ارعب، ارهب، اخاف، خوف، افزع، هدد"
+      },
+      {
+        "id": "horihmi-2",
+        "coptic": "ϯϩⲏⲙⲓ",
+        "meaningAr": "دفع الاجرة، دفع النولون، دفع اجرة الشحن"
+      },
+      {
+        "id": "horihou-2",
+        "coptic": "ϯϩⲏⲟⲩ",
+        "meaningAr": "افاد، نفع، اكسب"
+      },
+      {
+        "id": "horiht-2",
+        "coptic": "ϯϩⲏⲧ",
+        "meaningAr": "اعطى قلبه، كرس نفسه، خصص، وهب نفسه؛"
+      },
+      {
+        "id": "horiqhf-2",
+        "coptic": "ϯϩⲑⲏϥ",
+        "meaningAr": "انتباه، اكتراث، مبالاة، التفات، اصغاء"
+      },
+      {
+        "id": "horiko-2",
+        "coptic": "ϯϩⲕⲟ",
+        "meaningAr": "جوع، اجاع، اماته جوعا"
+      },
+      {
+        "id": "horiloj-2",
+        "coptic": "ϯϩⲗⲟϫ",
+        "meaningAr": "حلى، سكر، اعطى حلاوة، سر"
+      },
+      {
+        "id": "horimot-2",
+        "coptic": "ϯϩⲙⲟⲧ",
+        "meaningAr": "وهب، انعم، اعطى مجانا، اعطى نعمة"
+      },
+      {
+        "id": "horimou-2",
+        "coptic": "ϯϩⲙⲟⲩ",
+        "meaningAr": "ملح، حدق، وضع او اضاف ملحا"
+      },
+      {
+        "id": "horio-3",
+        "coptic": "ϯϩⲟ",
+        "meaningAr": "تضرع، صلى، سال، توسل، التمس، ترجى، ابتهل"
+      },
+      {
+        "id": "horiomt-2",
+        "coptic": "ϯϩⲟⲙⲧ",
+        "meaningAr": "اعطى نقودا، دفع، رشى"
+      },
+      {
+        "id": "horio-4",
+        "coptic": "ϯϩⲟϯ",
+        "meaningAr": "ارعب، افزع، هال، اخاف، ارهب، بث رعبا في"
+      },
+      {
+        "id": "horirok-2",
+        "coptic": "ϯϩⲣⲟⲕ",
+        "meaningAr": "هدا، هدا"
+      },
+      {
+        "id": "horiwb-2",
+        "coptic": "ϯϩⲱⲃ",
+        "meaningAr": "اعطى عملا، وظف"
+      },
+      {
+        "id": "horiwimi-2",
+        "coptic": "ϯϩⲱⲓⲙⲓ",
+        "meaningAr": "قذف امواجا، اهاج"
+      },
+      {
+        "id": "horiwoushai-2",
+        "coptic": "ϯϩⲱⲟⲩϣ",
+        "meaningAr": "شتم، لعن، سب، عير، فضح، انتهك"
+      },
+      {
+        "id": "horiw-3",
+        "coptic": "ϯϩⲱϯ",
+        "meaningAr": "دفع الجزية، اوفى الضريبة (خراج، جزية)"
+      },
+      {
+        "id": "jafhoriht-2",
+        "coptic": "ϯϫⲁϥϩⲏⲧ",
+        "meaningAr": "حمس، هيج"
+      },
+      {
+        "id": "jij-2",
+        "coptic": "ϯϫⲓϫ",
+        "meaningAr": "وعد"
+      },
+      {
+        "id": "jom-2",
+        "coptic": "ϯϫⲟⲙ",
+        "meaningAr": "قوى، ايد، اعطى قوة، عزز، شدد، حصن؛"
+      },
+      {
+        "id": "jroj-2",
+        "coptic": "ϯϫⲣⲟϫ",
+        "meaningAr": "لقح"
+      },
+      {
+        "id": "jwkem-2",
+        "coptic": "ϯϫⲱⲕⲉⲙ",
+        "meaningAr": "حمى، غسل، غطس، عمد، نصر"
+      },
+      {
+        "id": "jwnt-2",
+        "coptic": "ϯϫⲱⲛⲧ",
+        "meaningAr": "اغضب، اسخط، استفز، اغاظ، هيج، زعل"
+      },
+      {
+        "id": "jwjeb-2",
+        "coptic": "ϯϫⲱϫⲉⲃ",
+        "meaningAr": "احط من شان، استهان، حقر"
+      },
+      {
+        "id": "sabwt-2",
+        "coptic": "ϯϭⲁⲃⲱⲧ",
+        "meaningAr": "نظف، طهر، نقى"
+      },
+      {
+        "id": "sarwp-2",
+        "coptic": "ϯϭⲁⲣⲱⲡ",
+        "meaningAr": "ضرب بالعصا"
+      },
+      {
+        "id": "si-3",
+        "coptic": "ϯϭⲓ",
+        "meaningAr": "ارضع، غذى بالرضاعة، رضعت"
+      },
+      {
+        "id": "sla-2",
+        "coptic": "ϯϭⲗⲁ",
+        "meaningAr": "ترنح، تارجح، تمايل، تطوح، تمرجح، تهادى؛"
+      },
+      {
+        "id": "slak-2",
+        "coptic": "ϯϭⲗⲁⲕ",
+        "meaningAr": "غصب، الزم، عذب، عاقب، ادب، ازعج، الم"
+      },
+      {
+        "id": "slahori-2",
+        "coptic": "ϯϭⲗⲁϩ",
+        "meaningAr": "مال، امال، تمايل؛ هز، ترنح، تارجح؛"
+      },
+      {
+        "id": "snon-2",
+        "coptic": "ϯϭⲛⲟⲛ",
+        "meaningAr": "طرى، لين، دلل، دلع"
+      },
+      {
+        "id": "solkc-2",
+        "coptic": "ϯϭⲟⲗⲕⲥ",
+        "meaningAr": "جاهد، عافر"
+      },
+      {
+        "id": "sontc-2",
+        "coptic": "ϯϭⲟⲛⲧⲥ",
+        "meaningAr": "امتحن، جرب، اختبر"
+      },
+      {
+        "id": "sro-2",
+        "coptic": "ϯϭⲣⲟ",
+        "meaningAr": "شدد، قوى، وهب النصرة"
+      },
+      {
+        "id": "srop-2",
+        "coptic": "ϯϭⲣⲟⲡ",
+        "meaningAr": "اعثر، سبب عثرة، عرقل، شنكل، كعبل"
+      },
+      {
+        "id": "swr-2",
+        "coptic": "ϯϭⲱⲣ",
+        "meaningAr": "دخن، غبش، تبخر، تحول الى بخار"
+      },
+      {
+        "id": "swrem-2",
+        "coptic": "ϯϭⲱⲣⲉⲙ",
+        "meaningAr": "اعطى اشارة، اشار"
+      }
+    ]
+  }
+}

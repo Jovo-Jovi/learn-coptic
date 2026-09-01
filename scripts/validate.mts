@@ -5,6 +5,12 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { LettersFile, WordsFile, PrayersFile, CurriculumFile } from "../src/data/schema/index.js";
+import {
+  isTeachingSet,
+  leadingArticle,
+  normalizeCoptic,
+} from "../src/lib/coptic-text";
+import { substringCount } from "../src/lib/arabic-highlight";
 import { copticToAthanasiusKey } from "../src/lib/letters";
 import { getSearchRecords } from "../src/lib/search";
 
@@ -59,12 +65,21 @@ W.forEach((w) => {
       fail(`word ${w.id} jinkim is not after a base letter`);
     }
   }
+  if (w.normalized !== normalizeCoptic(w.coptic)) {
+    fail(`word ${w.id} normalized is not normalizeCoptic(coptic)`);
+  }
 });
 P.forEach((p) => {
   p.keyWords.forEach((w) => { if (!wordIds.has(w)) fail(`prayer ${p.id} → unknown word ${w}`); });
-  p.lines.forEach((ln) => ln.tokens.forEach((t) => {
+  p.lines.forEach((ln) => ln.tokens.forEach((t, i) => {
     if (t.wordId && !wordIds.has(t.wordId)) fail(`prayer ${p.id}/${ln.id} → unknown word ${t.wordId}`);
+    if (t.arHighlight && substringCount(ln.translation.ar, t.arHighlight) !== 1) {
+      fail(`prayer ${p.id}/${ln.id} token ${i} arHighlight must occur exactly once in translation.ar`);
+    }
   }));
+  p.lines.forEach((ln) => {
+    if (ln.tokens.length === 0) fail(`prayer ${p.id}/${ln.id} has no tokens`);
+  });
   // audio timings must be ordered and inside the recording
   let prev = 0;
   p.lines.forEach((ln) => {
@@ -103,15 +118,53 @@ if (covered.length && new Set(covered).size !== 32) fail(`letter lessons cover $
 // ---- Report ----------------------------------------------------------
 if (errors.length) { errors.forEach((e) => console.error("✗", e)); process.exit(1); }
 
+const teaching = W.filter(isTeachingSet);
+const harvest = W.filter((x) => !isTeachingSet(x));
+const lemmaNull = W.filter((x) => x.lemma == null);
+const homographMap = new Map<string, typeof W>();
+for (const w of W) {
+  const list = homographMap.get(w.normalized) ?? [];
+  list.push(w);
+  homographMap.set(w.normalized, list);
+}
+const homographs = [...homographMap.entries()]
+  .filter(([, rows]) => rows.length > 1)
+  .map(([normalized, rows]) => ({
+    normalized,
+    ids: rows.map((r) => r.id),
+    meanings: rows.map((r) => r.meaning?.ar ?? null),
+  }));
+const harvestByPrefix: Record<string, { id: string; coptic: string; meaningAr: string | null }[]> = {};
+for (const w of harvest) {
+  const prefix = leadingArticle(w.coptic);
+  if (!prefix) continue;
+  harvestByPrefix[prefix] ??= [];
+  harvestByPrefix[prefix].push({
+    id: w.id,
+    coptic: w.coptic,
+    meaningAr: w.meaning?.ar ?? null,
+  });
+}
+const harvestArticleCount = Object.values(harvestByPrefix).reduce((n, rows) => n + rows.length, 0);
+const prefixSummary = Object.entries(harvestByPrefix)
+  .map(([prefix, rows]) => `${prefix} ${rows.length}`)
+  .join(", ");
+
 const todo = [
   `${L.filter((x) => !x.athanasiusKey).length} letters missing legacy key`,
   `${L.filter((x) => !x.audio).length}/32 letters missing audio`,
-  `${W.filter((x) => !x.audio).length}/${W.length} words missing audio`,
-  `${W.filter((x) => !x.art).length}/${W.length} words missing artwork`,
+  `word audio S10b optional — ${teaching.filter((x) => !x.audio).length}/${teaching.length} teaching-set clips (not required)`,
+  `artwork S14 partial — ${W.filter((x) => x.art).length} present (teaching-set nouns, not ${W.length})`,
   `${W.filter((x) => !x.published).length} words unpublished (incomplete gloss)`,
 ];
 console.log(`✓ data valid — ${L.length} letters, ${W.length} words, ${P.length} prayers, ${C.length} levels`);
 todo.forEach((t) => console.log(`  · ${t}`));
+console.log(
+  `  · S16 hygiene — teaching ${teaching.length}, harvest ${harvest.length}, lemma null ${lemmaNull.length}, homograph keys ${homographs.length} (report only)`,
+);
+console.log(
+  `  · S16 harvest leading article ${harvestArticleCount}${prefixSummary ? ` (${prefixSummary})` : ""} — not a build failure`,
+);
 
 const searchRecords = getSearchRecords();
 mkdirSync(new URL("../src/data/generated", import.meta.url), { recursive: true });
@@ -119,4 +172,21 @@ writeFileSync(
   new URL("../src/data/generated/search-records.json", import.meta.url),
   `${JSON.stringify(searchRecords)}\n`,
 );
+writeFileSync(
+  new URL("../src/data/generated/hygiene-report.json", import.meta.url),
+  `${JSON.stringify(
+    {
+      generated: "2026-09-01",
+      teachingSet: teaching.length,
+      harvest: harvest.length,
+      lemmaNull: lemmaNull.length,
+      lemmaNullIds: lemmaNull.map((w) => w.id),
+      homographs,
+      harvestLeadingArticle: harvestByPrefix,
+    },
+    null,
+    2,
+  )}\n`,
+);
 console.log(`  · search index ${searchRecords.length} records`);
+console.log("  · S16 hygiene report src/data/generated/hygiene-report.json");
