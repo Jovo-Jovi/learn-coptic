@@ -2,6 +2,7 @@
 
 Each step is one Cursor session. Do them in order. A step is **not** done until
 its acceptance criteria pass — those criteria are also the review checklist.
+**S16 before S13b.** Do not auto-gloss prayers against the unverified harvest.
 
 Steps marked **GATE** need a human decision or an outside review before the next
 step starts. Do not let the agent proceed past a gate on its own.
@@ -94,40 +95,117 @@ The whole project rests on this being right.
 
 ## Phase 2 — the things competitors already have
 
-### S10 · Audio for letters and words
-- [x] 32 letter clips, 64 kbps mono MP3 (owner waived example-word clips 2026-09-01)
+### S10 · Letter audio
+Permanent. Word clips are not part of this step.
+- [x] 32 letter clips, 64 kbps mono MP3 (Coptic Literacy, owner reuse 2026-09-01)
 - [x] letter `audio` field populated; validator reports 0/32 letters missing
 - [x] Playback works on iOS Safari (autoplay restrictions)
 
+### S10b · Word audio — optional, no date
+Teaching set only (`kind === "drill"` or non-empty `translit.ar` — **147** rows).
+`AudioClip` is already nullable. Do not record Andreas harvest rows.
+Do not fail the build when word audio is missing.
+
 ### S11 · Quiz and progress
-- [ ] Leitner boxes 1–5 in `localStorage`, one namespaced key
-- [ ] Quiz types: glyph→sound, sound→glyph, word→meaning
-- [ ] Progress survives reload; a reset button exists
+- [x] Leitner boxes 1–5 in `localStorage`, one namespaced key
+- [x] Quiz types: glyph→sound, sound→glyph; word→meaning **on the teaching
+      set only** (harvest Arabic is still unverified after S16)
+- [x] Progress survives reload; a reset button exists
+
+Letter sound quizzes are unblocked. Do not quiz Andreas glosses until a
+human has checked them.
 
 ### S12 · Search
+Done out of order, 2026-09-01.
 - [x] Fuse.js over letters + words, Arabic and Coptic queries
 - [x] Index built at build time, not fetched at runtime
+- [x] Prayer titles included in the index
 
 ---
 
-## Phase 3 — the three additions
+## Phase 3 — prayers, art, grammar, dictionary
 
-### S13 · Prayers with synced audio
+**Order that matters:** S16 before S13b. Auto-glossing an unverified
+harvest would print bad Arabic on prayer pages, where it is hard to walk back.
+S11 word→meaning has the same constraint. S14 and S15 do not block S16.
+
+### S13a · Prayer text
+- [x] Four prayers on `/prayers` with sourced Coptic + Arabic
+  (`khen-efran`, `lords-prayer`, `thanksgiving`, `psalm-50`)
+- [x] Empty `translit.ar` left empty — not guessed
+- [x] Text-only lesson works with `audio: null`
+
+**Licence gap (open, not a silent pass):** SCRIPTORIUM Ps 50 Coptic is
+CC BY 4.0. Coptic for All (الربانية، الشكر) and agpeya.org Arabic still
+need a written note on `/about` / `prayers.source` before we treat them
+as cleared. Do not dump Tasbeha / Reader / St-Takla.
+
+### S16 · Dictionary hygiene — **before S13b**
+Retro-gate the 8,488 Andreas import. Do not invent glosses.
+- [x] `Word.normalized`: Coptic with combining marks stripped (U+0300–U+036F).
+      Validator checks stored value equals `normalizeCoptic(coptic)`
+- [x] `Word.lemma`: nullable headword. Harvest rows that already *are* a
+      headword may set `lemma` to `coptic`. Leave null rather than guess
+      an inflected form’s dictionary word
+- [x] Validator **report** (does not fail the build): duplicate `normalized`
+      keys (homographs), harvest rows whose Coptic starts with an article
+      listed in S13b. Human decides what to unpublish
+- [x] Teaching set stays distinct: 147 rows with `translit.ar` or `kind: drill`.
+      After Andreas, **every** word has `group` set — `group != null` is not
+      a teaching-set filter
+- [x] `npm run validate` and `npm run build`
+
+### S13b · Tap-a-word glossing
+Depends on S16. Schema already has `PrayerLine.tokens`.
+- [x] Tokenizer, in this order only: exact `coptic` → `lemma` → strip one
+      leading article/prefix from `{ⲡⲓ, ϯ, ⲛⲓ, ⲡ̀, ⲧ̀, ⲛ̀, ⲙ̀, ⲟⲩ, ϩⲁⲛ}`
+      (after normalize) and retry exact/`lemma` → **null**
+- [x] Two matches at any step → null. Null paints the word with **no** gloss.
+      Never a guess, never a tooltip
+- [x] Tap highlights the Coptic token and the matching sourced span in that
+      line's Arabic **in place**. Tap again to clear. No sheet, no tooltip
+- [x] Highlight span is `arHighlight`, or a unique teaching gloss after
+      peeling relative ⲉⲧ/ⲉⲑ, one article, or a possessive (ⲡⲉⲕ…), including
+      a short Arabic suffix (اسم → اسمك). No invented dictionary gloss.
+      Affix peel is highlight-only — not S13b `wordId`. Full grammar rules
+      to be stored later; unmarked tokens are expected until then.
+- [x] Every line of all four prayers has a human-reviewed `tokens` array
+      before publish. Keep `wordId: null` where the dictionary does not
+      honestly match. Do not overwrite the reviewed `khen-efran` tokens
+      with a bulk script
+- [x] `npm run validate` and `npm run build`; 375px
+
+### S13c · Synced prayer audio
 - [ ] One prayer end to end, full recording + per-line `startSec`/`endSec`
 - [ ] Active line highlights during playback; tapping a line seeks to it
 - [ ] Recordings over ~2 minutes go to object storage, not git
 - [ ] Works with the audio muted — text alone is still a complete lesson
 
-### S14 · Illustrated vocabulary
-- [ ] 800×800 WebP, `next/image`, lazy loaded
-- [ ] `alt` in Arabic on every image; `license` field filled on every image
-- [ ] Filled in themed batches so the site is never half-illustrated
+`khen-efran` still points at missing `/audio/prayers/` files. That is not
+this step done.
+
+### S14 · Teaching-set word art
+Partial coverage. 8,635 illustrated words is not a goal.
+- [ ] Scope: teaching set (147), **concrete nouns** only. Tag
+      `partOfSpeech` on the 121 curriculum lexicon rows first (only 2
+      are tagged today). No particles, no abstract verbs, no drills
+- [ ] Schema: add `"ai-generated"` to `Artwork.license`; optional
+      `provenance: { model, prompt, date }` — record the prompt
+- [ ] One prompt template and one palette for the whole set; fill in
+      themed batches so a half-illustrated letter page never ships
+- [ ] 800×800 WebP, `next/image`, lazy loaded; `alt.ar` on every image
+- [ ] Validator does not require art on harvest rows
 
 ### S15 · Grammar levels
 - [ ] MDX pipeline for `kind: "grammar"` lessons
 - [ ] `<LetterChip/>` and `<WordCard/>` usable inline in MDX
 - [ ] Level 2 lesson list rendered; prerequisites enforced in the UI
 - [ ] No schema change required — if one seems necessary, stop and ask
+
+Prayer tap-highlight is **not** this step. The owner will supply full
+prefix/suffix grammar rules later; those will be stored as data and used
+to mark more tokens. Do not invent the table. A token with no highlight
+today is expected.
 
 ---
 

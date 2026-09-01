@@ -13,6 +13,84 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · S13b · grammar table later; unmarked tokens expected
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Documented that many prayer tokens correctly have no Arabic highlight.
+  Full prefix/suffix grammar rules will be owner-supplied, stored as data,
+  and used later. Stub peel stays; do not invent matches.
+- No highlighter behaviour change this turn.
+
+Open: owner grammar table. S13c audio. S14 art. S15 MDX.
+
+## 2026-09-01 · S13b · tap in place, affix peel
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Removed the bottom sheet. Tap highlights Coptic + sourced Arabic in the
+  same line; tap again to clear.
+- Highlight-only grammar: peel ⲉⲧ/ⲉⲑ, one article, or a possessive
+  (ⲡⲉⲕ / ⲡⲉⲛ / …), then match a teaching-set gloss already in the line,
+  including a short Arabic suffix (اسمك، ربنا). Not used for `wordId`.
+  Harvest stems (ⲱⲓⲕ، ⲫⲉ) still do not highlight.
+
+Open: more `arHighlight` on lines where the stem is harvest-only. S13c.
+
+## 2026-09-01 · S13b · tap highlights line Arabic
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Tapping a prayer token highlights a sourced span in `translation.ar`.
+  `arHighlight` on lords-prayer l2 (أبانا / الذي في / السموات). Runtime
+  also marks a unique teaching gloss, or ⲉⲧ/ⲉⲑ + teaching stem, when that
+  phrase is already in the line. No new dictionary gloss; ⲉⲧ stays off the
+  S13b strip list. Sheet: dictionary if any, else «من سطر الصلاة».
+- Validator: `arHighlight` must occur exactly once in the line Arabic.
+
+Open: other lines still need `arHighlight` where unique match is not enough.
+  S13c audio. S14 art.
+
+## 2026-09-01 · S11 · Leitner quiz
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `/quiz`: glyph→name, sound/hint→glyph (letter clips), word→meaning on
+  teaching-set rows that have Arabic. Boxes 1–5 in `learn-coptic:leitner`.
+  Reset on the quiz page. Harvest glosses are not in the deck.
+- `/practice` links to the quiz. Meaning tap-deck per group is unchanged.
+
+Open: S13c recording. S14 art. Harvest still unverified.
+
+## 2026-09-01 · S13b · tap-a-word
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Tokenizer exact → lemma → strip one article → null. Two hits → null.
+  `wordId` only for unique teaching-set matches. Harvest Arabic stays off
+  prayer pages. khen-efran l1 and lords-prayer amen tokens kept.
+- 484 tokens on 42 lines; 36 teaching `wordId` after review (ⲛ̀ϫⲉ nulled;
+  ⲟⲩ/ϯ strip needs ≥3 letters). Bottom sheet, empty allowed.
+- `npm run validate` / `npm run build` run with S11 in the same session.
+
+Open: most liturgical words unglossed on purpose. S13c audio.
+
+## 2026-09-01 · S16 · dictionary hygiene
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- Added `Word.normalized` and `Word.lemma`. `normalizeCoptic` strips
+  U+0300–U+036F only (not NFKC). Validator fails if stored `normalized`
+  disagrees. Teaching set still 147 (`isTeachingSet` in `coptic-text.ts`).
+- lemma = stored coptic except bound prefixes `{ⲡⲓ, ⲛⲓ, ϩⲁⲛ, ϯ, ⲡ̀, ⲧ̀, ⲛ̀, ⲙ̀}`
+  with ≥2 letters left (so ⲛⲓⲙ / ϯϯ stay lemmas). ⲟⲩ kept. No invented stems.
+  295 lemma-null; teaching null: `jnkmmon`, `pixrictoc`.
+- Report only (build still green): 10 homograph keys; 477 harvest rows
+  starting with an S13b article (ϯ 257, ⲟⲩ 182, ⲡⲓ 16, ⲛⲓ 12, ϩⲁⲛ 10).
+  File: `src/data/generated/hygiene-report.json`.
+- `npm run validate` ✓ · `npm run build` ✓. No UI change.
+
+Open: human unpublish from the report. S13b next session. S11 still
+teaching-set for word→meaning.
+
+## 2026-09-01 · plan · S10–S16 amendments
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (plan only)
+- Replaced S10–S15: letter audio done; word audio S10b optional;
+  S12/S13a done; S13b tap-a-word; S13c synced audio; S14 teaching-set
+  nouns; S16 hygiene before S13b. ADR-019, ADR-020.
+- Teaching set is 147 (`translit.ar` or drill), not `group != null`.
+- Validator TODO no longer nags 8635 missing word clips/art.
+
+Open: S16 next (blocks S13b). S11 letter quiz unblocked.
+
 ## 2026-09-01 · prayers · manuscript keys (jinkim)
 Model: Cursor Grok 4.6 | Commit: 07cbea7 | Result: n/a (bugfix)
 - Prayer Unicode was already the sourced Coptic. Manuscript paint was

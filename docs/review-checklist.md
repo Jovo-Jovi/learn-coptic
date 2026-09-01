@@ -19,7 +19,13 @@ still wrong.
 - [ ] Is a `drill` word presented anywhere as dictionary vocabulary?
 - [ ] Does a drill with `meaning: null` get a fake gloss in the UI?
 - [ ] Does any image lack a `license`?
+- [ ] Does a prayer token show a gloss the dictionary did not honestly match?
+- [ ] Does tap-a-word highlight Arabic that is not already in that line’s
+      `translation.ar`?
+- [ ] Did the agent invent a highlight or harvest gloss for a token that
+      should stay unmarked until stored grammar rules exist?
 - [ ] Does any prayer line lack a source?
+- [ ] Was a `lemma` filled by stripping an article into a guessed stem?
 
 ## Before deploy
 

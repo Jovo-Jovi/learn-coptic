@@ -102,9 +102,24 @@ first, capped at 6. `letters.json` `exampleWords[]` stays empty.
 Harvested Andreas rows keep the dictionary Arabic. They are not reading
 drills. Credit remnqymi / St Macarius on `/about`.
 
+Word art (S14) is teaching-set concrete nouns only, one prompt template
+and one palette, themed batches. A page with two pictures and twenty
+blanks looks broken; a page with none, or a finished theme, looks designed.
+
 ## Prayers
 
 `/prayers` lists every row in `prayers.json`. Each line is Coptic (LTR
 isolate) then the Arabic gloss. Empty `translit.ar` is hidden — do not guess
 church pronunciation. English is a small LTR line under the Arabic. Cite the
 source URL on the prayer page. Do not type a prayer line from memory.
+
+Tap-a-word (S13b): tap highlights the Coptic token **and** the matching
+span in the line Arabic, in the same card. No sheet. A token with **no**
+highlight is expected when the stem is not teaching-set, the line Arabic
+does not uniquely contain the gloss, or the affix is not in the current
+stub peel. Do not invent a match. Full prefix/suffix grammar rules will
+be supplied by the owner, stored as data, and used later. Until then,
+`arHighlight` (must occur once in the line) or a unique teaching-set gloss
+after peeling ⲉⲧ/ⲉⲑ, one article, or a possessive, plus a short Arabic
+suffix (اسمك), is all the highlighter may do.
+

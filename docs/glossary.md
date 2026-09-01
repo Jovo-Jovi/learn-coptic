@@ -31,3 +31,21 @@ how the explorer typed; Unicode Coptic keeps the grave after the letter (ⲛ̀).
 
 **Demotic-derived letters** — ϣ ϥ ϧ ϩ ϫ ϭ ϯ. They live at U+03E2–03EF in the
 Greek block, not the Coptic block. Naive regexes miss them.
+
+**Teaching set** — the original curriculum vocabulary: 147 rows with
+`translit.ar` filled or `kind: drill` (121 lexicon / 11 drill / 15 name).
+The 8,488 Andreas harvest rows have empty translit. After that import
+**every** word has `group` set, so `group != null` does not mean “lesson
+word”. Art, word audio (S10b), and S11 word→meaning use the teaching set.
+
+**normalized / lemma** — `normalized` is the Coptic string with combining
+marks stripped (jinkim U+0300–U+036F). Not Unicode NFKC: ϣ stays at
+U+03E3. `lemma` is the dictionary headword when the stored Coptic *is*
+that form; **null** if a bound article is glued on (do not invent the
+stem). Prayer tap-a-word uses exact → lemma → strip one article → null
+(ADR-020). Null means no dictionary gloss. Stored `wordId` on prayers is
+teaching-set only until harvest Arabic is checked. Tapping highlights a
+span already in that line’s Arabic when the stub peel plus a teaching-set
+gloss (or `arHighlight`) uniquely matches. No highlight is correct until
+the owner-supplied grammar-rule table is stored and used.
+

@@ -31,7 +31,9 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
   - `Coptic1.ttf` from the old explorer — unknown keymap, not shipped
 
 - **Artwork.** Every image needs a `license` value at the moment it is added.
-  Backfilling this later is not realistically possible.
+  Backfilling this later is not realistically possible. S14 is teaching-set
+  concrete nouns only. Generated art uses `ai-generated` plus `provenance`
+  (model, prompt, date) — ADR-019.
 - **Dictionary harvest.** Andreas lemmas via remnqymi are **CC BY-SA 4.0**
   (same family as site content). Do not dump Dawoud scans, Coptic Reader,
   Tasbeha, or St-Takla into `words.json` without a grant.
@@ -49,7 +51,8 @@ reachable — nothing unreleased goes in `public/`.
 
 ## Privacy
 
-`localStorage` only, one namespaced key, no personal data, no login.
+`localStorage` only, namespaced `learn-coptic:*` (theme, Coptic face,
+Leitner `learn-coptic:leitner`). No personal data, no login.
 Analytics must be cookieless and IP-anonymised, or absent. No third-party
 script that can read page content.
 

@@ -4,9 +4,9 @@ Search index for later harvest. **Do not copy a site into `src/data/json/`
 from this file.** Unicode Coptic only. Bohairic first. Never invent a gloss.
 A request is not a grant (same rule as ADR-013 / St-Takla).
 
-This site today: **8635** published words (147 from the HTML + Andreas
-harvest), **1** sample prayer (`khen-efran`). Word audio is out of S10
-(owner waiver 2026-09-01).
+This site today: **8635** published words (147 teaching set + Andreas
+harvest), **4** prayers. Letter audio is S10 (done). Word audio is S10b
+optional, teaching set only. Prayer *text* is S13a; synced audio is S13c.
 
 ---
 
@@ -61,6 +61,10 @@ For **this** site, the useful order is: church prayers (Reader / Tasbeha / St-Ta
 
 - `src/data/json/words.json` — 8635 published (8420 lexicon / 11 drill / 204 name).
   HTML set plus Andreas (St Macarius) via remnqymi, CC BY-SA 4.0.
+  S16: every row has `normalized` (combining marks stripped) and `lemma`
+  (headword or null). Hygiene report: `src/data/generated/hygiene-report.json`.
+  CDO/KELLIA store lemmas not inflected forms ([W18-4502](https://aclanthology.org/W18-4502.pdf));
+  Bohairic jinkim is combining grave U+0300 (Unicode N2636). Do not NFKC-fold ϣ.
 
 ---
 
@@ -101,8 +105,11 @@ For **this** site, the useful order is: church prayers (Reader / Tasbeha / St-Ta
   on the named pages, not a library dump); **المزمور الخمسون** Coptic from
   SCRIPTORIUM Bohairic Psalter `urn:cts:copticLit:ot.pss.bohairic_ed:50`
   (CC BY 4.0, TEI phrases joined), Arabic/English gloss from
-  [agpeya.org Prime](https://agpeya.org/prime/). No recordings. S13 still wants
-  one prayer end-to-end with `startSec` / `endSec`.
+  [agpeya.org Prime](https://agpeya.org/prime/). No recordings. S13c is
+  one prayer end-to-end with `startSec` / `endSec`. S13b tap-a-word stores
+  tokens on every line; `wordId` is teaching-set only (harvest Arabic stays
+  off prayer pages). Many tokens have no Arabic highlight until the owner
+  supplies grammar rules to store and use. Blank is expected.
 
 ---
 

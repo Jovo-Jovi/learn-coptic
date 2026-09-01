@@ -204,3 +204,52 @@ shortest words per group). That is not S11 (no Leitner, no sound quiz).
 already matches the site content licence. Do not harvest Dawoud, Reader,
 or St-Takla without a grant.
 
+## ADR-019 — Word art is the teaching set, not the dictionary
+8,635 illustrated lemmas will never happen. Art is the **147** curriculum
+words (`translit.ar` or `kind: drill`), and only **concrete nouns**.
+`group != null` is not a filter: Andreas harvest filled `group` on every
+row (ADR-018). Tag `partOfSpeech` on the 121 lexicon teaching rows before
+drawing. Drills, particles, and abstract verbs stay unillustrated.
+
+Generated images are allowed when `license` is `ai-generated` and
+`provenance: { model, prompt, date }` is filled. One prompt template and
+one palette; themed batches so a letter page is never half-illustrated.
+**Cost:** most of the site has no pictures. That is the design.
+
+## ADR-020 — Prayer tokens never guess; S16 before S13b
+Tap-a-word resolves a surface form in this order only: exact `coptic` →
+`lemma` → strip one leading article from
+`ⲡⲓ ϯ ⲛⲓ ⲡ̀ ⲧ̀ ⲛ̀ ⲙ̀ ⲟⲩ ϩⲁⲛ` (after `normalized`) → null.
+Two hits at any step are null. Null shows the Coptic with no Arabic.
+Tap highlights the Coptic token and a sourced span in the same line’s
+Arabic. No tooltip, no bottom sheet.
+
+Do **S16** (lemma / `normalized` / harvest report) before filling prayer
+`tokens` from the dictionary. The same rule limits S11 word→meaning to
+the teaching set until S16. ϯ and ⲟⲩ are also verb/stems — stripping is
+best-effort, not a parser; when unsure, leave `wordId` null. Do not add
+ⲉⲧ / ⲉⲑ to the strip list without a new decision.
+
+Stored `lemma` is the row’s own `coptic` when that string is already a
+headword (Andreas / teaching stems). It is **null** when a bound article
+from `{ⲡⲓ, ⲛⲓ, ϩⲁⲛ, ϯ, ⲡ̀, ⲧ̀, ⲛ̀, ⲙ̀}` is glued on **and** at least two
+letters remain (so ⲛⲓⲙ and ϯϯ stay lemmas). We do not invent the stem.
+ⲟⲩ- rows keep `lemma = coptic` (ⲟⲩⲟϩ is a real lemma) and are listed in
+the hygiene report for a human. `normalized` is combining marks
+U+0300–U+036F stripped; not NFKC (ϣ stays U+03E3).
+
+S13b stores `wordId` only on a **unique teaching-set** hit. Harvest-only
+rows are skipped (unverified Arabic). Strip of ⲟⲩ/ϯ needs ≥3 letters
+left (so ⲟⲩⲟⲛ is not “ⲟⲛ / أيضاً”). ⲛ̀ϫⲉ is not article + ϫⲉ.
+**Cost:** many liturgical words stay unglossed. Blank is better than wrong.
+
+A sourced substring of the line’s `translation.ar` may be stored as
+`token.arHighlight` (must occur exactly once in that line). Runtime may
+also mark a unique standalone (or short-suffix) piece of a teaching-set
+gloss after peeling, for highlight only: relative ⲉⲧ/ⲉⲑ, one S13b article,
+or a bound possessive (ⲡⲉⲕ ⲧⲉⲕ ⲡⲉⲛ …). That is a **stub**. Many liturgical
+forms will not highlight. The owner will supply full prefix/suffix grammar
+rules to **store as data** and use later. Do not invent extra peels, do not
+use harvest Arabic, and do not treat a blank highlight as a bug.
+
+

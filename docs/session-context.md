@@ -7,16 +7,18 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `07cbea7` (prayer manuscript jinkim). S9 GATE passed 2026-09-01.
+**Last commit:** `0ade892`. S16 + S13b + S11 uncommitted. S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
-**Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · 0 unpublished · 0/32 letters missing audio · 8635/8635 words missing audio
+**Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · teaching 147 · S16 hygiene report · every prayer line has tokens
 
 ## Current position
 
-**Done:** S0–S10, S12. Andreas harvest. `/search`. `/practice`. Four prayers
-on `/prayers` (text + Arabic gloss, no audio).
-**Next:** S11 quiz and progress — Leitner / sound quiz still not built.
-**Blocked on:** nothing for S10. Other CS/Antinoou files still missing.
+**Done:** S0–S12, S13a, **S16**, **S13b**, **S11**.
+**Next:** S13c (synced prayer audio). S14 teaching-set nouns. S15 grammar.
+**Blocked on:** Coptic for All / agpeya.org grant note. Harvest Arabic unverified.
+  Owner will supply full prefix/suffix grammar rules to store; until then
+  many prayer tokens correctly have no Arabic highlight.
+**Not started:** S10b (optional), S13c, S14, S15.
 
 ## Open decisions
 
@@ -26,49 +28,26 @@ on `/prayers` (text + Arabic gloss, no audio).
   Antinoou / Coptic1 stay out until the file is in `src/app/fonts/`.
 - Coptic face default: GNU FreeSerif. Picker: سيريف / سانس / أثناسيوس.
   Key `learn-coptic:coptic-font`.
+- S16 report: 10 homograph keys; 477 harvest article-shaped rows. Human
+  unpublished list still open.
+- Prayer `wordId` is teaching-set only (ADR-020). Prayer tap-highlight uses
+  a stub affix peel. Full grammar rules are not in the repo yet — owner
+  will supply them to store as data. Blank highlight is expected.
 
 ## Known state of the data
 
 - `letters.json` — 32, keys complete, 12 carry rules, **letter audio filled**
-  (Coptic Literacy, `public/audio/letters/{id}.mp3`), `exampleWords[]` empty
-- `words.json` — 8635 (8420 lexicon / 11 drill / 204 name), Unicode, all teaches[] resolve
-  · HTML 147 + Andreas harvest. Harvested rows have empty translit.
-  · 6 drills have `meaning: null`; 5 drills have a meaning
-- `prayers.json` — 4 prayers (`khen-efran`, `lords-prayer`, `thanksgiving`,
-  `psalm-50`). No real recording. Translit empty on the three new ones.
-  Manuscript keys via `copticToAthanasiusKey` (backtick jinkim, not U+0300).
+- `words.json` — 8635 · teaching 147 + Andreas 8488 · `normalized` + `lemma`
+- `prayers.json` — 4 prayers, tokens on every line. khen-efran l1 reviewed
+  glosses kept. Tap highlights Coptic + sourced Arabic in the same line (no
+  sheet). Many tokens stay unmarked until stored grammar rules exist.
+  `khen-efran` still points at missing `/audio/prayers/` (S13c).
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
-- Group tokens `--group-N-from`/`to`/`glow`; `--group-N` aliases from
-- Shell live. `/` `/about` `/alphabet` `/alphabet/[1-7]` `/group/[1-7]`
-  `/letter/[id]` `/vocabulary` `/vocabulary/group/[1-7]` `/vocabulary/letter/[id]`
-  `/practice` `/practice/group/[1-7]` `/search` `/prayers` `/prayers/[id]`.
-- Cards show lowercase only. Letter page stacks كبير/صغير. Example words
-  derived from `words.teaches`, not `letters.exampleWords`.
-- Letter rules are always-on cards (ADR-017). Follow keys paint as
-  Unicode Coptic chips (`ⲁ - ⲉ - ⲓ …`), not ASCII. Manuscript mode
-  still uses stored athanasiusKey.
-- PWA: `/manifest.webmanifest`, `/icons/icon-{192,512}.png`, SW `/sw.js` (prod).
-- README hero snap: `docs/readme-hero.png` (landing floating glyphs, no glass tiles).
-- Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
-- GitHub description + topics set 2026-08-31.
-- Letter copy uses Clipboard + execCommand fallback. Link preview is `public/og.png`.
-- Harvest refs: `docs/sources.md`. Andreas lemmas in `words.json` (ADR-018).
-  Do not dump Reader / Tasbeha / Dawoud.
+- Routes: previous plus **`/quiz`**. Leitner key `learn-coptic:leitner`.
+- Production: https://learn-coptic.vercel.app.
 
 ## Notes
 
-- Theme key `learn-coptic:theme`. Dark is the primary skin. Prefix `learn-coptic:`.
-- ADR-007 keymap; ADR-008 drills may have `meaning: null`.
-- ADR-009 shadcn extras (lucide, tw-animate-css, CVA/clsx/twMerge).
-- ADR-010 dark-first gradient pairs. Group 1 dark `to` is `#8f6bb3`.
-- ADR-011 unicase cards; group titles from curriculum.json.
-- ADR-012 FreeSerif is the default Unicode Coptic face.
-- ADR-013 subset is GPL; Font-exception-2.0 extended; a request is not a grant.
-- ADR-014 Coptic face picker: سيريف / سانس / أثناسيوس. Key `learn-coptic:coptic-font`.
-- ADR-015 optional mapped Athanasius manuscript mode via `CopticPaint`.
-- ADR-016 church letter clips from Coptic Literacy (owner reuse).
-- ADR-018 Andreas harvest: Arabic glosses CC BY-SA; translit empty.
-- Shell `max-w-6xl`. Phone first, then widen.
-- `arabicHint` belongs on the letter surface.
-- UI group numbers are Eastern digits (١..٧); routes stay ASCII (`/alphabet/4`).
+- Theme `learn-coptic:theme`. Font `learn-coptic:coptic-font`. Quiz `learn-coptic:leitner`.
+- ADR-020: never guess prayer glosses; teaching-set `wordId` only.
 - `legacy/` and `.extract/` are gitignored.
