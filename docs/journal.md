@@ -13,6 +13,60 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · prayers · الربانية، الشكر، المزمور الخمسون
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a numbered plan step)
+- Added three sourced prayers to `prayers.json` plus `/prayers` reader.
+  Lord's Prayer and Thanksgiving: Coptic + Arabic from Coptic for All
+  named pages. Psalm 50 Coptic: SCRIPTORIUM Bohairic CC BY 4.0; Arabic:
+  agpeya.org Prime. Translit empty (not guessed). Audio still null.
+- Search can find prayer titles. S13 karaoke audio not started.
+
+Open: S11 Leitner. S13 needs a real recording.
+
+## 2026-09-01 · S12 · Arabic→Coptic search
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `/search` with Fuse over 8667 records. Arabic gloss first
+  (`يد` → ⲧⲟⲧ). Index JSON written at `validate` to
+  `src/data/generated/search-records.json` (not fetched). Header «بحث».
+
+Open: S11 Leitner still not built.
+
+## 2026-09-01 · vocab · Andreas harvest + practice reading
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a plan step)
+- Harvested 8488 Andreas lemmas into `words.json` (CC BY-SA). Arabic
+  gloss copied; translit empty. Validator 8635 words.
+- `/vocabulary` is a group index. `/practice` shows 11 reading drills
+  plus meaning tap-quiz per group (not S11).
+
+Open: S11 Leitner still next numbered step. Translit on harvested rows
+empty until a human writes church pronunciation.
+
+## 2026-09-01 · sources · Word and prayer resource index
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a plan step)
+- Added `docs/sources.md`: largest lexicons, church prayer libraries, SCRIPTORIUM Bohairic ~750k, CDO ~11k lemmas. No JSON ingest.
+- Pointed `docs/README.md` at it.
+
+Open: harvest still needs a human grant + Arabic glosses. S11 is next (new session).
+
+## 2026-09-01 · S10 · Audio (letters only)
+Model: Cursor Grok 4.6 | Commit: 752d855 | Result: pass (owner waiver)
+- 32 Coptic Literacy letter clips, tap-to-play اسمع. Validator 0/32
+  letters missing audio. Owner waived example-word recordings.
+- All three S10 criteria ticked. Do not start S11 in this session.
+
+Open: S11 is next (new session). Word audio not in S10. GitHub auto-deploy still unhooked.
+
+## 2026-09-01 · S10 · Letter audio accepted; word clips still open
+Model: Cursor Grok 4.6 | Commit: 752d855 (letters) | Result: partial
+- Owner: letter-name clips are fine. 0/32 letters missing audio.
+  Playback is tap-to-play (اسمع). S10 not ticked — still needs one
+  example-word clip per letter that has vocabulary.
+- Word cards now play `audio.src` when set. No word files yet.
+  سوو has no published word (numeral only). 31 letters have a first
+  lexicon/drill example.
+
+Open: 31 word recordings. Do not invent clips. S11 not started.
+
 ## 2026-09-01 · letter · rule keys as Coptic chips
 Model: Cursor Grok 4.6 | Commit: — | Result: pass
 - Follow rows (`A - E - I - …`) paint Unicode Coptic via CopticPaint,

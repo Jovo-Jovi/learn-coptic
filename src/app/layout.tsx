@@ -90,6 +90,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 </Link>
               </p>
               <div className="flex shrink-0 items-center gap-1">
+                <Link
+                  href="/prayers"
+                  className="inline-flex min-h-11 items-center px-2 text-sm text-text no-underline hover:underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                >
+                  صلوات
+                </Link>
+                <Link
+                  href="/search"
+                  className="inline-flex min-h-11 items-center px-2 text-sm text-text no-underline hover:underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                >
+                  بحث
+                </Link>
                 <FontSelect />
                 <ThemeToggle />
               </div>

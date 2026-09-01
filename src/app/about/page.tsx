@@ -127,7 +127,37 @@ export default function AboutPage() {
         </a>
         {" — "}
         أسماء الحروف. صاحب الموقع صرّح باستخدامها كمواد كنسية في ١ سبتمبر
-        ٢٠٢٦. الكلمات لسه من غير تسجيل.
+        ٢٠٢٦. الكلمات من غير تسجيل — مش جزء من المرحلة دي.
+      </p>
+
+      <h2 className="mt-10 text-xl font-semibold text-text">الصلوات</h2>
+      <p className="mt-4 text-base text-text-dim">
+        الربانية وصلاة الشكر من{" "}
+        <a
+          href="https://copticforall.com/hymn-library/"
+          dir="ltr"
+          className="inline-block text-text underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+        >
+          Coptic for All
+        </a>
+        . المزمور الخمسون قبطي من{" "}
+        <span dir="ltr" className="inline-block">
+          Coptic SCRIPTORIUM
+        </span>
+        {" "}
+        (بحيري،{" "}
+        <span dir="ltr" className="inline-block">
+          CC BY 4.0
+        </span>
+        ) والعربي من الأجبية على{" "}
+        <a
+          href="https://agpeya.org/prime/"
+          dir="ltr"
+          className="inline-block text-text underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+        >
+          agpeya.org
+        </a>
+        . النص وحده درس كامل — التسجيل المتزامن لسه مش موجود.
       </p>
 
       <h2 className="mt-10 text-xl font-semibold text-text">المحتوى والكود</h2>
@@ -137,6 +167,22 @@ export default function AboutPage() {
           <span dir="ltr" className="inline-block">
             CC BY-SA 4.0
           </span>
+        </li>
+        <li>
+          كلمات القاموس الزيادة من قاموس أندرياس المقاري (بحيري)، نسخة{" "}
+          <a
+            href="https://github.com/pishoyg/coptic"
+            dir="ltr"
+            className="inline-block text-text underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+          >
+            remnqymi / pishoyg
+          </a>
+          {" "}
+          برخصة{" "}
+          <span dir="ltr" className="inline-block">
+            CC BY-SA 4.0
+          </span>
+          . المعنى عربي من المصدر. النطق العربي فاضي لحد ما يتكتب يدوي.
         </li>
         <li>
           الكود:{" "}

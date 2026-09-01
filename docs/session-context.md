@@ -7,15 +7,16 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `694d7c0` (practice stub + favicon.ico). S9 GATE passed 2026-09-01.
+**Last commit:** `752d855` (pronunciation rules + letter audio). S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
-**Validator:** ✓ 32 letters, 147 words, 1 prayer, 2 levels · 0 unpublished · 0/32 letters missing audio · 147/147 words missing audio
+**Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · 0 unpublished · 0/32 letters missing audio · 8635/8635 words missing audio
 
 ## Current position
 
-**Done:** S0–S9. S10 letter clips live locally (Coptic Literacy → MP3, ADR-016). GATE passed.
-**Next:** 32 example-word recordings, then S10 can tick. Optional: hook Vercel GitHub app.
-**Blocked on:** word audio. Other CS/Antinoou files still missing.
+**Done:** S0–S10, S12. Andreas harvest. `/search`. `/practice`. Four prayers
+on `/prayers` (text + Arabic gloss, no audio).
+**Next:** S11 quiz and progress — Leitner / sound quiz still not built.
+**Blocked on:** nothing for S10. Other CS/Antinoou files still missing.
 
 ## Open decisions
 
@@ -30,14 +31,16 @@ Update it in the same commit as the work it describes.
 
 - `letters.json` — 32, keys complete, 12 carry rules, **letter audio filled**
   (Coptic Literacy, `public/audio/letters/{id}.mp3`), `exampleWords[]` empty
-- `words.json` — 147 (121 lexicon / 11 drill / 15 name), Unicode, all teaches[] resolve
+- `words.json` — 8635 (8420 lexicon / 11 drill / 204 name), Unicode, all teaches[] resolve
+  · HTML 147 + Andreas harvest. Harvested rows have empty translit.
   · 6 drills have `meaning: null`; 5 drills have a meaning
-- `prayers.json` — 1 sample, no real recording
+- `prayers.json` — 4 prayers (`khen-efran`, `lords-prayer`, `thanksgiving`,
+  `psalm-50`). No real recording. Translit empty on the three new ones.
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 - Group tokens `--group-N-from`/`to`/`glow`; `--group-N` aliases from
 - Shell live. `/` `/about` `/alphabet` `/alphabet/[1-7]` `/group/[1-7]`
   `/letter/[id]` `/vocabulary` `/vocabulary/group/[1-7]` `/vocabulary/letter/[id]`
-  `/practice` (coming-soon stub, not the S11 quiz).
+  `/practice` `/practice/group/[1-7]` `/search` `/prayers` `/prayers/[id]`.
 - Cards show lowercase only. Letter page stacks كبير/صغير. Example words
   derived from `words.teaches`, not `letters.exampleWords`.
 - Letter rules are always-on cards (ADR-017). Follow keys paint as
@@ -48,6 +51,8 @@ Update it in the same commit as the work it describes.
 - Production: https://learn-coptic.vercel.app. Lighthouse mobile 97 / a11y 100 (2026-08-31).
 - GitHub description + topics set 2026-08-31.
 - Letter copy uses Clipboard + execCommand fallback. Link preview is `public/og.png`.
+- Harvest refs: `docs/sources.md`. Andreas lemmas in `words.json` (ADR-018).
+  Do not dump Reader / Tasbeha / Dawoud.
 
 ## Notes
 
@@ -61,7 +66,7 @@ Update it in the same commit as the work it describes.
 - ADR-014 Coptic face picker: سيريف / سانس / أثناسيوس. Key `learn-coptic:coptic-font`.
 - ADR-015 optional mapped Athanasius manuscript mode via `CopticPaint`.
 - ADR-016 church letter clips from Coptic Literacy (owner reuse).
-- ADR-017 pronunciation rules copy from the live explorer HTML.
+- ADR-018 Andreas harvest: Arabic glosses CC BY-SA; translit empty.
 - Shell `max-w-6xl`. Phone first, then widen.
 - `arabicHint` belongs on the letter surface.
 - UI group numbers are Eastern digits (١..٧); routes stay ASCII (`/alphabet/4`).

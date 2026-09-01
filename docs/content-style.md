@@ -65,7 +65,10 @@ is not used — the chrome is Arabic.
 
 Clips are 64 kbps mono MP3 in `public/audio/letters/{id}.mp3`, sourced from
 Coptic Literacy letter-name videos with owner church-reuse authorization
-(ADR-016). Word audio is still empty.
+(ADR-016). Owner accepted letter audio 2026-09-01 and waived example-word
+clips for S10. Word `audio` may stay null. If a word later has `audio.src`,
+the card front shows اسمع (tap, no autoplay) — not inside the meaning-toggle
+button.
 
 On `/letter/[id]`, rules are always visible — no accordion. Copy matches
 the live explorer layout: result first (`ينطق (ڤ):`), then the condition,
@@ -74,10 +77,16 @@ painted as Unicode Coptic chips (`ⲁ ⲉ ⲓ …`) via `CopticPaint`. Do not
 set a mapped TTF as a Unicode `font-family`. Latin in parentheses that
 is not a key (`(ڤ)`, `(TCH)`) stays an LTR isolate.
 
-## Vocabulary cards
+## Search
+
+`/search` is Arabic-first lookup: type a gloss, see Coptic. Coptic and letter
+names also work. Results show the glyph and the Arabic together — meaning is
+not hidden. Empty translit stays hidden.
 
 Meaning stays hidden until the learner taps a real `<button>` (`aria-expanded`).
 Not hover. The Coptic word and `translit.ar` stay visible while the back opens.
+If `translit.ar` is empty (Andreas harvest), hide the line — do not guess a
+pronunciation from spelling.
 
 - `lexicon` — ordinary card.
 - `name` — same card plus a small badge: اسم علم.
@@ -89,3 +98,13 @@ Not hover. The Coptic word and `translit.ar` stay visible while the back opens.
 Part of speech, when present: اسم، فعل، ضمير، صفة، حرف جر، أداة، عبارة، أخرى.
 Example words on `/letter/[id]` are derived from `words.teaches`, lexicon
 first, capped at 6. `letters.json` `exampleWords[]` stays empty.
+
+Harvested Andreas rows keep the dictionary Arabic. They are not reading
+drills. Credit remnqymi / St Macarius on `/about`.
+
+## Prayers
+
+`/prayers` lists every row in `prayers.json`. Each line is Coptic (LTR
+isolate) then the Arabic gloss. Empty `translit.ar` is hidden — do not guess
+church pronunciation. English is a small LTR line under the Arabic. Cite the
+source URL on the prayer page. Do not type a prayer line from memory.

@@ -3,8 +3,9 @@
  * Schema errors OR broken cross-references => exit 1 => nothing deploys.
  * This is what permanently ends the "three sources disagree" problem.
  */
-import { readFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { LettersFile, WordsFile, PrayersFile, CurriculumFile } from "../src/data/schema/index.js";
+import { getSearchRecords } from "../src/lib/search";
 
 const read = (f: string) => JSON.parse(readFileSync(new URL(`../src/data/json/${f}`, import.meta.url), "utf8"));
 
@@ -101,3 +102,11 @@ const todo = [
 ];
 console.log(`✓ data valid — ${L.length} letters, ${W.length} words, ${P.length} prayers, ${C.length} levels`);
 todo.forEach((t) => console.log(`  · ${t}`));
+
+const searchRecords = getSearchRecords();
+mkdirSync(new URL("../src/data/generated", import.meta.url), { recursive: true });
+writeFileSync(
+  new URL("../src/data/generated/search-records.json", import.meta.url),
+  `${JSON.stringify(searchRecords)}\n`,
+);
+console.log(`  · search index ${searchRecords.length} records`);

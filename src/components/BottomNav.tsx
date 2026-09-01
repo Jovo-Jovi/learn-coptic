@@ -16,7 +16,7 @@ const ITEMS = [
   {
     href: "/vocabulary",
     label: "الكلمات",
-    active: (p: string) => p.startsWith("/vocabulary"),
+    active: (p: string) => p.startsWith("/vocabulary") || p.startsWith("/search"),
   },
   {
     href: "/practice",

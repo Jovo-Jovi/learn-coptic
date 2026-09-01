@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { HarvestLetterLinks } from "@/components/HarvestLetterLinks";
 import { VocabularyView } from "@/components/VocabularyView";
 import { GROUP_DIGIT_AR, GROUP_IDS, parseGroupId } from "@/lib/letters";
-import { toWordCardModel, wordsInGroup } from "@/lib/words";
+import { teachingWordsInGroup, toWordCardModel } from "@/lib/words";
 
 export const dynamicParams = false;
 
@@ -26,6 +27,11 @@ export default async function VocabularyGroupPage({
   const group = parseGroupId(id);
   if (!group) notFound();
 
-  const words = wordsInGroup(group).map(toWordCardModel);
-  return <VocabularyView words={words} current={group} />;
+  const words = teachingWordsInGroup(group).map(toWordCardModel);
+  return (
+    <>
+      <VocabularyView words={words} current={group} />
+      <HarvestLetterLinks group={group} />
+    </>
+  );
 }

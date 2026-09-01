@@ -5,6 +5,8 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import type { WordCardModel } from "@/lib/words";
 import { CopticPaint } from "@/components/CopticPaint";
+import { AudioButton } from "@/components/AudioButton";
+import { getLetterById } from "@/lib/letters";
 import { SPRING } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -35,8 +37,9 @@ export function WordCard({ word }: { word: WordCardModel }) {
           aria-controls={panelId}
           onClick={() => setOpen((value) => !value)}
           className={cn(
-            "flex w-full min-h-11 min-w-0 flex-col items-center gap-2 px-4 py-5",
-            "text-center focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
+            "flex w-full min-h-11 min-w-0 flex-col items-center gap-2 px-4 text-center",
+            word.audioSrc ? "pt-5 pb-2" : "py-5",
+            "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
           )}
         >
           <span className="sr-only">
@@ -52,13 +55,23 @@ export function WordCard({ word }: { word: WordCardModel }) {
             mapped={word.mapped}
             className="word-coptic glyph-fill text-glyph-word inline-block leading-none sm:text-glyph-word-md"
           />
-          <span className="text-sm text-text-dim">{word.translitAr}</span>
+          {word.translitAr ? (
+            <span className="text-sm text-text-dim">{word.translitAr}</span>
+          ) : null}
           {isDrill ? (
             <span className="text-sm font-medium text-text">
               تمرين قراءة — مش كلمة في القاموس
             </span>
           ) : null}
         </button>
+        {word.audioSrc ? (
+          <div className="flex justify-center pb-4">
+            <AudioButton
+              src={word.audioSrc}
+              ariaLabel={`اسمع ${word.translitAr}`}
+            />
+          </div>
+        ) : null}
 
         <motion.div
           id={panelId}
@@ -75,26 +88,30 @@ export function WordCard({ word }: { word: WordCardModel }) {
             {word.partOfSpeechAr ? (
               <p className="text-sm text-text-dim">{word.partOfSpeechAr}</p>
             ) : null}
-            {word.letters.length > 0 ? (
+            {word.letterIds.length > 0 ? (
               <ul className="flex max-w-full flex-wrap justify-center gap-2">
-                {word.letters.map((letter) => (
-                  <li key={letter.id} data-group={letter.group}>
-                    <Link
-                      href={`/letter/${letter.id}`}
-                      aria-label={letter.nameAr}
-                      className={cn(
-                        "chip-fill inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-base no-underline",
-                        "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
-                      )}
-                    >
-                      <CopticPaint
-                        unicode={letter.glyph}
-                        mapped={letter.mapped}
-                        className="inline-block"
-                      />
-                    </Link>
-                  </li>
-                ))}
+                {word.letterIds.map((id) => {
+                  const letter = getLetterById(id);
+                  if (!letter) return null;
+                  return (
+                    <li key={letter.id} data-group={letter.group}>
+                      <Link
+                        href={`/letter/${letter.id}`}
+                        aria-label={letter.name.ar}
+                        className={cn(
+                          "chip-fill inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-base no-underline",
+                          "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
+                        )}
+                      >
+                        <CopticPaint
+                          unicode={letter.unicode.lower}
+                          mapped={letter.athanasiusKey?.lower ?? null}
+                          className="inline-block"
+                        />
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             ) : null}
           </div>

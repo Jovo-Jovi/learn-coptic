@@ -95,9 +95,9 @@ The whole project rests on this being right.
 ## Phase 2 — the things competitors already have
 
 ### S10 · Audio for letters and words
-- [ ] 32 letter clips + one example word each, 64 kbps mono MP3
-- [ ] `audio` field populated; validator reports 0 missing
-- [ ] Playback works on iOS Safari (autoplay restrictions)
+- [x] 32 letter clips, 64 kbps mono MP3 (owner waived example-word clips 2026-09-01)
+- [x] letter `audio` field populated; validator reports 0/32 letters missing
+- [x] Playback works on iOS Safari (autoplay restrictions)
 
 ### S11 · Quiz and progress
 - [ ] Leitner boxes 1–5 in `localStorage`, one namespaced key
@@ -105,8 +105,8 @@ The whole project rests on this being right.
 - [ ] Progress survives reload; a reset button exists
 
 ### S12 · Search
-- [ ] Fuse.js over letters + words, Arabic and Coptic queries
-- [ ] Index built at build time, not fetched at runtime
+- [x] Fuse.js over letters + words, Arabic and Coptic queries
+- [x] Index built at build time, not fetched at runtime
 
 ---
 

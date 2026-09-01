@@ -1,5 +1,5 @@
+import { FilterableWordGrid } from "@/components/FilterableWordGrid";
 import { VocabularyFilter } from "@/components/VocabularyFilter";
-import { WordGrid } from "@/components/WordGrid";
 import type { GroupId } from "@/data/schema";
 import { GROUP_DIGIT_AR, easternDigits } from "@/lib/letters";
 import type { WordCardModel } from "@/lib/words";
@@ -33,7 +33,7 @@ export function VocabularyView({
       <p className="mb-8 text-sm text-text-dim">{countLine}</p>
       <VocabularyFilter current={current} />
       {words.length > 0 ? (
-        <WordGrid words={words} />
+        <FilterableWordGrid words={words} />
       ) : (
         <p className="text-base text-text-dim">مفيش كلمات في التصفية دي.</p>
       )}

@@ -156,8 +156,8 @@ We download those MP4s, strip video, and ship 64 kbps mono MP3 in
 Do **not** hotlink copticliteracy.org (CSP is `media-src 'self'`; their
 host is not ours). Do **not** put the raw ~2.6 MB videos in git.
 
-Word clips and long prayers are still missing. Clips over ~2 minutes go
-to object storage (Cloudflare R2 is fine), not git.
+Word clips are out of S10 (owner waiver 2026-09-01). Long prayers (S13)
+over ~2 minutes go to object storage (Cloudflare R2 is fine), not git.
 
 **Cost:** a written grant from Coptic Literacy is still not on file; this
 is an owner church-reuse decision, same class as ADR-015. Credit them on
@@ -181,4 +181,23 @@ is ڤ (church), not the HTML’s ف.
 **Cost:** this is church-school Greco-Bohairic, not Old Bohairic.
 copticchurch.net’s one-line table is not used where it contradicts the
 lessons.
+
+## ADR-018 — Andreas harvest for Arabic glosses
+Learner-length lemmas (2–8 Coptic letters) from Andreas of St Macarius,
+via remnqymi `andreas.json` (**CC BY-SA 4.0**), were appended to
+`words.json`. Coptic and `meaning.ar` are copied. `translit.ar` stays
+empty — the source has no church pronunciation line, and guessing from
+spelling is forbidden. UI hides an empty translit.
+
+`group` is the highest letter-group in the word (the lesson that can
+read it). `teaches` is only letters in that home group so letter pages
+stay a lesson, not the whole dictionary.
+
+`/vocabulary` is a group index; cards load 48 at a time. `/practice`
+shows the HTML reading drills plus a tap-to-reveal meaning deck (80
+shortest words per group). That is not S11 (no Leitner, no sound quiz).
+
+**Cost:** ~8.5k extra rows, many without pronunciation. Share-alike
+already matches the site content licence. Do not harvest Dawoud, Reader,
+or St-Takla without a grant.
 

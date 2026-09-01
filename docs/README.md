@@ -11,6 +11,7 @@
 | `decisions.md` | ADRs. One-way doors only. | On decision |
 | `glossary.md` | Coptic + project terms. | As needed |
 | `content-style.md` | Arabic voice, transliteration, naming. | As needed |
+| `sources.md` | External word/prayer corpora. Search first; do not dump. | On harvest |
 | `review-checklist.md` | What the reviewer checks. | Rarely |
 
 Rule: `session-context.md` and `journal.md` are updated in the same commit as

@@ -32,6 +32,9 @@ No backend, no accounts, no user data. Most risk here is licensing, not attack.
 
 - **Artwork.** Every image needs a `license` value at the moment it is added.
   Backfilling this later is not realistically possible.
+- **Dictionary harvest.** Andreas lemmas via remnqymi are **CC BY-SA 4.0**
+  (same family as site content). Do not dump Dawoud scans, Coptic Reader,
+  Tasbeha, or St-Takla into `words.json` without a grant.
 - **Recordings.** Letter-name clips in `public/audio/letters/` come from
   Coptic Literacy MP4s. Owner authorized church reuse on 2026-09-01
   (ADR-016). Credit on `/about`. Word and prayer reciters still need

@@ -72,3 +72,31 @@ export function parseGroupId(rawId: string): GroupId | null {
   if (!/^[1-7]$/.test(rawId)) return null;
   return Number(rawId) as GroupId;
 }
+
+const COPTIC_LETTER = /[\u2C80-\u2CFF\u03E2-\u03EF]/u;
+
+/** Explorer keys for a Unicode Coptic string, for manuscript paint. */
+export function copticToAthanasiusKey(text: string): string | null {
+  let out = "";
+  let mappedAny = false;
+  for (const ch of text) {
+    if (!COPTIC_LETTER.test(ch)) {
+      out += ch;
+      continue;
+    }
+    const letter = getLetterByGlyph(ch);
+    const key =
+      letter?.athanasiusKey == null
+        ? null
+        : ch === letter.unicode.upper
+          ? letter.athanasiusKey.upper
+          : letter.athanasiusKey.lower;
+    if (key) {
+      mappedAny = true;
+      out += key;
+    } else {
+      out += ch;
+    }
+  }
+  return mappedAny ? out : null;
+}

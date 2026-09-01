@@ -13,6 +13,12 @@ export function wordsInGroup(group: GroupId): Word[] {
   return publishedWords().filter((word) => word.group === group);
 }
 
+export function teachingWordsInGroup(group: GroupId): Word[] {
+  return wordsInGroup(group).filter(
+    (word) => word.kind === "drill" || word.translit.ar.length > 0,
+  );
+}
+
 export function wordsTeaching(letterId: string): Word[] {
   return publishedWords().filter((word) => word.teaches.includes(letterId));
 }
@@ -44,14 +50,6 @@ const POS_AR: Record<NonNullable<Word["partOfSpeech"]>, string> = {
   other: "أخرى",
 };
 
-export type TaughtLetterChip = {
-  id: string;
-  glyph: string;
-  mapped: string | null;
-  nameAr: string;
-  group: GroupId;
-};
-
 export type WordCardModel = {
   id: string;
   coptic: string;
@@ -61,22 +59,11 @@ export type WordCardModel = {
   kind: Word["kind"];
   partOfSpeechAr: string | null;
   group: GroupId | null;
-  letters: TaughtLetterChip[];
+  letterIds: string[];
+  audioSrc: string | null;
 };
 
 export function toWordCardModel(word: Word): WordCardModel {
-  const letters: TaughtLetterChip[] = [];
-  for (const id of word.teaches) {
-    const letter = getLetterById(id);
-    if (!letter) continue;
-    letters.push({
-      id: letter.id,
-      glyph: letter.unicode.lower,
-      mapped: letter.athanasiusKey?.lower ?? null,
-      nameAr: letter.name.ar,
-      group: letter.group,
-    });
-  }
   return {
     id: word.id,
     coptic: word.coptic,
@@ -86,7 +73,8 @@ export function toWordCardModel(word: Word): WordCardModel {
     kind: word.kind,
     partOfSpeechAr: word.partOfSpeech ? POS_AR[word.partOfSpeech] : null,
     group: word.group,
-    letters,
+    letterIds: word.teaches.filter((id) => getLetterById(id)),
+    audioSrc: word.audio?.src ?? null,
   };
 }
 
@@ -98,4 +86,37 @@ export function countByKind(
     drill: words.filter((w) => w.kind === "drill").length,
     name: words.filter((w) => w.kind === "name").length,
   };
+}
+
+export function publishedDrills(): Word[] {
+  return publishedWords().filter((word) => word.kind === "drill");
+}
+
+export function lexiconForPractice(group: GroupId, cap = 80): Word[] {
+  return publishedWords()
+    .filter(
+      (word) =>
+        word.group === group &&
+        word.kind !== "drill" &&
+        word.meaning != null,
+    )
+    .slice()
+    .sort((a, b) => a.coptic.length - b.coptic.length)
+    .slice(0, cap);
+}
+
+export function countPublishedByGroup(): Record<GroupId, number> {
+  const counts: Record<GroupId, number> = {
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0,
+    6: 0,
+    7: 0,
+  };
+  for (const word of publishedWords()) {
+    if (word.group) counts[word.group] += 1;
+  }
+  return counts;
 }

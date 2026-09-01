@@ -54,6 +54,22 @@ export default function Home() {
           </p>
           <p className="mt-4">
             <Link
+              href="/search"
+              className="text-sm text-text-dim underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+            >
+              دور على كلمة بالعربي
+            </Link>
+          </p>
+          <p className="mt-4">
+            <Link
+              href="/prayers"
+              className="text-sm text-text-dim underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+            >
+              صلوات: الربانية، الشكر، المزمور الخمسون
+            </Link>
+          </p>
+          <p className="mt-4">
+            <Link
               href="/alphabet"
               className="text-sm text-text-dim underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
             >

@@ -66,7 +66,7 @@ export function LetterHero({ letter }: { letter: Letter }) {
       </p>
       {letter.audio ? (
         <div className="relative z-10 mt-6">
-          <AudioButton src={letter.audio.src} />
+          <AudioButton src={letter.audio.src} ariaLabel="اسمع نطق الحرف" />
         </div>
       ) : null}
     </div>

@@ -6,9 +6,11 @@ import { cn } from "@/lib/utils";
 export function AudioButton({
   src,
   label = "اسمع",
+  ariaLabel,
 }: {
   src: string;
   label?: string;
+  ariaLabel?: string;
 }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
@@ -41,7 +43,7 @@ export function AudioButton({
         type="button"
         onClick={toggle}
         aria-pressed={playing}
-        aria-label={playing ? "وقف النطق" : "اسمع نطق الحرف"}
+        aria-label={playing ? "وقف النطق" : (ariaLabel ?? "اسمع نطق الحرف")}
         className={cn(
           "inline-flex min-h-11 items-center rounded-full border border-hairline bg-surface-2 px-4 text-sm text-text",
           "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",

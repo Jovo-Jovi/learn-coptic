@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "prayers": [
     {
       "id": "khen-efran",
@@ -44,6 +44,407 @@
       ],
       "keyWords": ["khen", "efran", "efiot"],
       "source": { "name": "الأجبية — صلاة بدء كل ساعة" }
+    },
+    {
+      "id": "lords-prayer",
+      "title": { "ar": "الصلاة الربانية", "en": "The Lord's Prayer" },
+      "titleCoptic": "Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ",
+      "occasion": ["daily", "agpeya", "liturgy"],
+      "level": 1,
+      "audio": null,
+      "lines": [
+        {
+          "id": "l1", "role": "congregation",
+          "coptic": "Ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲙ̀ⲡ̀ϣⲁ ⲛ̀ϫⲟⲥ ϧⲉⲛ ⲟⲩϣⲉⲡϩ̀ⲙⲟⲧ ϫⲉ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "اجعلنا مستحقين أن نقول بشكر:", "en": "Make us worthy to say thankfully:" },
+          "tokens": []
+        },
+        {
+          "id": "l2", "role": "congregation",
+          "coptic": "Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "أبانا الذي في السموات", "en": "Our Father who is in heaven" },
+          "tokens": []
+        },
+        {
+          "id": "l3", "role": "congregation",
+          "coptic": "ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "ليتقدس اسمك", "en": "hallowed be Your name" },
+          "tokens": []
+        },
+        {
+          "id": "l4", "role": "congregation",
+          "coptic": "ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "ليأتِ ملكوتك", "en": "Your kingdom come" },
+          "tokens": []
+        },
+        {
+          "id": "l5", "role": "congregation",
+          "coptic": "ⲡⲉⲧⲉϩⲛⲁⲕ ⲙⲁⲣⲉϥϣⲱⲡⲓ ⲙ̀ⲫ̀ⲣⲏϯ ϧⲉⲛ ⲧ̀ⲫⲉ ⲛⲉⲙ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "لتكن مشيئتك كما في السماء كذلك على الأرض", "en": "Your will be done on earth as it is in heaven" },
+          "tokens": []
+        },
+        {
+          "id": "l6", "role": "congregation",
+          "coptic": "ⲡⲉⲛⲱⲓⲕ ⲛ̀ⲧⲉ ⲣⲁⲥϯ ⲙⲏⲓϥ ⲛⲁⲛ ⲙ̀ⲫⲟⲟⲩ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "خبزنا الذي للغد اعطنا اليوم", "en": "Give us this day our bread of tomorrow" },
+          "tokens": []
+        },
+        {
+          "id": "l7", "role": "congregation",
+          "coptic": "ⲟⲩⲟϩ ⲭⲁ ⲛⲏⲉⲧⲉⲣⲟⲛ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ ⲙ̀ⲫ̀ⲣⲏϯ ϩⲱⲛ ⲛ̀ⲧⲉⲛⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲛⲏⲉⲧⲉ ⲟⲩⲟⲛ ⲛ̀ⲧⲁⲛ ⲉ̀ⲣⲱⲟⲩ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "واغفر لنا ذنوبنا كما نغفر نحن أيضًا للمذنبين إلينا", "en": "And forgive us our debts, as we forgive our debtors" },
+          "tokens": []
+        },
+        {
+          "id": "l8", "role": "congregation",
+          "coptic": "ⲟⲩⲟϩ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "ولا تدخلنا في تجربة", "en": "And do not lead us into temptation" },
+          "tokens": []
+        },
+        {
+          "id": "l9", "role": "congregation",
+          "coptic": "ⲁⲗⲗⲁ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "لكن نجنا من الشرير", "en": "but deliver us from the evil one" },
+          "tokens": []
+        },
+        {
+          "id": "l10", "role": "congregation",
+          "coptic": "ϧⲉⲛ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ ⲡⲉⲛϭⲟⲓⲥ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "بالمسيح يسوع ربنا", "en": "Through Christ Jesus our Lord" },
+          "tokens": []
+        },
+        {
+          "id": "l11", "role": "congregation",
+          "coptic": "ϫⲉ ⲑⲱⲕ ⲧⲉ ϯⲙⲉⲧⲟⲩⲣⲟ ⲛⲉⲙ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲓⲱⲟⲩ ϣⲁ ⲉⲛⲉϩ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "لأن لك المُلك والقوة والمجد إلى الأبد", "en": "For Yours is the kingdom and the power and the glory forever" },
+          "tokens": []
+        },
+        {
+          "id": "l12", "role": "congregation",
+          "coptic": "ⲁⲙⲏⲛ",
+          "translit": { "ar": "" },
+          "translation": { "ar": "آمين", "en": "Amen" },
+          "tokens": [
+            { "coptic": "ⲁⲙⲏⲛ", "wordId": "amhn", "gloss": "آمين" }
+          ]
+        }
+      ],
+      "keyWords": ["amhn", "khen"],
+      "source": {
+        "name": "Coptic for All — الصلاة الربانية (قبطي وعربي من نفس الصفحة)",
+        "url": "https://copticforall.com/hymn-library/lords-prayer/"
+      }
+    },
+    {
+      "id": "thanksgiving",
+      "title": { "ar": "صلاة الشكر", "en": "Prayer of Thanksgiving" },
+      "titleCoptic": "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ",
+      "occasion": ["daily", "agpeya", "liturgy"],
+      "level": 1,
+      "audio": null,
+      "lines": [
+        {
+          "id": "l1", "role": "priest",
+          "coptic": "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧϥ ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲡⲉⲑⲛⲁⲛⲉϥ ⲟⲩⲟϩ ⲛ̀ⲛⲁⲏⲧ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲙ̀ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "فلنشكر صانع الخيرات الرحوم الله، أبا ربنا وإلهنا ومخلصنا يسوع المسيح.",
+            "en": "Let us give thanks to the gracious and merciful God, the Father of our Lord, God and Saviour Jesus Christ."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l2", "role": "priest",
+          "coptic": "ϫⲉ ⲁϥⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ ⲁϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ ⲁϥⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ⲁϥϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟϥ ⲁϥϯⲁⲥⲟ ⲉ̀ⲣⲟⲛ ⲁϥϯⲧⲟⲧⲉⲛ ⲁϥⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لأنه سترنا وأعاننا وحفظنا وقبلنا إليه، وأشفق علينا وعضدنا وأتى بنا إلى هذه الساعة.",
+            "en": "For He has protected, assisted, preserved and accepted us, had compassion upon us, supported us and brought us till this hour."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l3", "role": "priest",
+          "coptic": "ⲛ̀ⲑⲟϥ ⲟⲛ ⲙⲁⲣⲉⲛϯϩⲟ ⲉ̀ⲣⲟϥ ϩⲟⲡⲱⲥ ⲛ̀ⲧⲉϥⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ϧⲉⲛ ⲡⲁⲓⲉϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ ⲛⲉⲙ ⲛⲓⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ ⲛ̀ϫⲉ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ Ⲡ̀ϭⲟⲓⲥ ⲡⲉⲛⲛⲟⲩϯ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "هو أيضًا فلنسأله أن يحفظنا في هذا اليوم المقدس وكل أيام حياتنا بكل سلام، الضابط الكل الرب إلهنا.",
+            "en": "Let us also ask Him the Almighty God, to keep us in peace this blessed day, and all the days of our life."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l4", "role": "priest",
+          "coptic": "Ⲫ̀ⲛⲏⲃ Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ Ⲫ̀ⲓⲱⲧ ⲙ̀ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲧⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧⲕ ⲕⲁⲧⲁ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲉⲑⲃⲉ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϧⲉⲛ ϩⲱⲃ ⲛⲓⲃⲉⲛ ϫⲉ ⲁⲕⲉⲣⲥⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ ⲁⲕⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ ⲁⲕⲁⲣⲉϩ ⲉ̀ⲣⲟⲛ ⲁⲕϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟⲕ ⲁⲕϯⲁⲥⲟ ⲉ̀ⲣⲟⲛ ⲁⲕϯⲧⲟⲧⲉⲛ ⲁⲕⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "أيها السيد الرب الإله ضابط الكل أبو ربنا وإلهنا ومخلصنا يسوع المسيح، نشكرك على كل حال ومن أجل كل حال وفى كل حال لأنك سترتنا وأعنتنا وحفظتنا وقبلتنا إليك وأشفقت علينا وعضدتنا وأتيت بنا إلى هذه الساعة.",
+            "en": "O Lord, Master and Almighty God, the Father of our Lord, God and Saviour Jesus Christ, we thank You on every occasion, in every condition and for all things, for You have protected, assisted, preserved, accepted us, had compassion upon us, supported us and brought us till this hour."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l5", "role": "priest",
+          "coptic": "ⲉⲑⲃⲉ ⲫⲁⲓ ⲧⲉⲛϯϩⲟ ⲟⲩⲟϩ ⲧⲉⲛⲧⲱⲃϩ ⲛ̀ⲧⲉⲕⲙⲉⲧⲁⲅⲁⲑⲟⲥ ⲡⲓⲙⲁⲓⲣⲱⲙⲓ ⲙⲏⲓⲥ ⲛⲁⲛ ⲉⲑⲣⲉⲛϫⲱⲕ ⲉ̀ⲃⲟⲗ ⲙ̀ⲡⲁⲓⲕⲉⲉϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ ⲛⲉⲙ ⲛⲓⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲧⲉⲕϩⲟϯ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "من أجل هذا نسأل ونطلب من صلاحك يا محب البشر امنحنا أن نكمل هذا اليوم المقدس وكل أيام حياتنا بكل سلام مع خوفك.",
+            "en": "Therefore, we ask and appeal to Your goodness, O Lover-of-mankind that You grant us to conclude this blessed day and all the days of our life in peace and in Your fear."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l6", "role": "priest",
+          "coptic": "ⲫⲑⲟⲛⲟⲥ ⲛⲓⲃⲉⲛ ⲡⲓⲣⲁⲥⲙⲟⲥ ⲛⲓⲃⲉⲛ ⲉⲛⲉⲣⲅⲓⲁ ⲛⲓⲃⲉⲛ ⲛ̀ⲧⲉ ⲡ̀ⲥⲁⲧⲁⲛⲁⲥ ⲡ̀ⲥⲟϭⲛⲓ ⲛ̀ⲧⲉ ϩⲁⲛⲣⲱⲙⲓ ⲉⲩϩⲱⲟⲩ ⲛⲉⲙ ⲡ̀ⲧⲱⲛϥ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ϩⲁⲛϫⲁϫⲓ ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙ ⲛⲏⲉⲑⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ ⲁⲗⲓⲧⲟⲩ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲛ ⲛⲉⲙ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲉⲕⲗⲁⲟⲥ ⲧⲏⲣϥ ⲛⲏ ⲇⲉ ⲉⲑⲛⲁⲛⲉⲩ ⲛⲉⲙ ⲛⲏⲉⲧⲉⲣⲛⲟϥⲣⲓ ⲥⲁϩⲛⲓ ⲙ̀ⲙⲱⲟⲩ ⲛⲁⲛ ϫⲉ ⲛ̀ⲑⲟⲕ ⲡⲉ ⲉⲧⲁⲕϯ ⲙ̀ⲡⲓⲉⲣϣⲓϣⲓ ⲛⲁⲛ ⲉ̀ϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲛⲓϩⲟϥ ⲛⲉⲙ ⲛⲓϭⲗⲏ ⲛⲉⲙ ⲉ̀ϫⲉⲛ ϯϫⲟⲙ ⲧⲏⲣⲥ ⲛ̀ⲧⲉ ⲡⲓϫⲁϫⲓ ⲟⲩⲟϩ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ ⲁⲗⲗⲁ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲓⲡⲉⲧϩⲱⲟⲩ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "كل حسد وكل تجربة وكل فعل الشيطان ومؤامرة الناس الأشرار وقيام الأعداء الخفيين والظاهرين انزعها عنا وعن سائر شعبك وعن موضعك المقدس هذا أما الصالحات والنافعات فارزقنا إياها لأنك أنت الذي أعطيتنا السلطان أن ندوس الحيات والعقارب وكل قوة العدو ولا تدخلنا في تجربة لكن نجنا من الشرير.",
+            "en": "All envy, all temptation, all works of Satan, all intrigues of the wicked; rising up of enemies, seen and unseen; do cast away from us and all your people. Grant us the endowments and benefactions, as You have given us the authority to trample on serpents and scorpions, and over all the power of the enemy. Lead us not into temptation, but deliver us from evil."
+          },
+          "tokens": []
+        },
+        {
+          "id": "l7", "role": "priest",
+          "coptic": "ϧⲉⲛ ⲡⲓϩ̀ⲙⲟⲧ ⲛⲉⲙ ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ ⲛⲉⲙ ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀ϣⲏⲣⲓ ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲫⲁⲓ ⲉⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ ⲉⲣⲉ ⲡⲓⲱⲟⲩ ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ ⲛⲉⲙ ⲡⲓⲁⲙⲁϩⲓ ⲛⲉⲙ ϯⲡⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲟⲩⲟϩ ⲛ̀ⲟⲙⲟⲟⲩⲥⲓⲟⲥ ⲛⲉⲙⲁⲕ ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉⲛⲉϩ ⲧⲏⲣⲟⲩ ⲁⲙⲏⲛ",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "بالنعمة والرأفات ومحبة البشر اللواتي لابنك الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح هذا الذي من قبله المجد والإكرام والعزة والسجود تليق بك معه ومع الروح القدس المحيى المساوي لك الآن وكل أوان وإلى دهر الدهور آمين.",
+            "en": "Through the grace, mercy and love of mankind of Your only begotten Son, our Lord God and Saviour, Jesus Christ. Glory, honour, dominion and worship are due to You together with Him and the life giving and consubstantial Holy Spirit, now and forever. Amen."
+          },
+          "tokens": []
+        }
+      ],
+      "keyWords": ["amhn"],
+      "source": {
+        "name": "Coptic for All — صلاة الشكر (قبطي وعربي من نفس الصفحة)",
+        "url": "https://copticforall.com/hymn-library/thanks-giving/"
+      }
+    },
+    {
+      "id": "psalm-50",
+      "title": { "ar": "المزمور الخمسون", "en": "Psalm 50 (LXX) / 51" },
+      "titleCoptic": "ⲛⲁⲓ ⲛⲏⲓ ⲫⲛⲟⲩϯ",
+      "occasion": ["daily", "agpeya"],
+      "level": 1,
+      "audio": null,
+      "lines": [
+        {
+          "id": "verse-1", "role": "none",
+          "coptic": "ⲛⲁⲓ ⲛⲏⲓ ⲫⲛⲟⲩϯ ⲕⲁⲧⲁⲡⲉⲕⲛⲓϣϯ ⲛ̀ⲛⲁⲓ: ⲛⲉⲙⲕⲁⲧⲁⲡ̀ⲁ̀ϣⲁⲓ ⲛ̀ⲧⲉⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ ⲉⲕⲉ̀ⲥⲱⲗϫ ⲛ̀ⲧⲁⲁ̀ⲙⲟⲛⲓⲁ̀: ⲉⲕⲉ̀ⲣⲁϧⲧ ⲛ̀ϩⲟⲩⲟ̀ ⲉ̀ⲃⲟⲗ ϩⲁⲧⲁⲁ̀ⲛⲟⲙⲓⲁ ⲟⲩⲟϩ ⲉⲕⲉ̀ⲧⲟⲩⲃⲟⲓ ⲉ̀ⲃⲟⲗ ϩⲁⲡⲁⲛⲟⲃⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "ارحمني يا الله كعظيم رحمتك، ومثل كثرة رأفتك تمحو إثمي. اغسلني كثيرا من إثمي ومن خطيتي طهرني.",
+            "en": "Have mercy upon me, O God, according to Your great mercy; and according to the multitude of Your compassions blot out my iniquity. Wash me thoroughly from my iniquity, and cleanse me from my sin."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-2", "role": "none",
+          "coptic": "ϫⲉⲧⲁⲁ̀ⲛⲟⲙⲓⲁ̀ ⲁ̀ⲛⲟⲕ ϯⲥⲱⲟⲩⲛ ⲙ̀ⲙⲟⲥ: ⲟⲩⲟϩ ⲡⲁⲛⲟⲃⲓ ⲙ̀ⲡⲁⲙ̀ⲑⲟ ⲉ̀ⲃⲟⲗ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لأني أنا عارف بإثمي وخطيتي أمامي في كل حين.",
+            "en": "For I am conscious of my iniquity; and my sin is at all times before me."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-3", "role": "none",
+          "coptic": "ⲛⲑⲟⲕ ⲙ̀ⲙⲁⲩⲁⲧⲕ ⲁⲓⲉⲣⲛⲟⲃⲓ ⲉ̀ⲣⲟⲕ: ⲟⲩⲟϩ ⲡⲓⲡⲉⲧϩⲱⲟⲩ ⲁⲓⲁⲓϥ ⲙ̀ⲡⲉⲕⲙ̀ⲑⲟ ⲉ̀ⲃⲟⲗ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لك وحدك أخطأت، والشر قدامك صنعت.",
+            "en": "Against You only I have sinned, and done evil before You."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-4", "role": "none",
+          "coptic": "ϩⲟⲡⲱⲥ ⲛ̀ⲧⲉⲕⲙⲁⲓ ϧⲉⲛⲛⲉⲕⲥⲁϫⲓ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲕϭ̀ⲣⲟ ⲉⲕⲛⲁϭⲓϩⲁⲡ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لكي تتبرر في أقوالك. وتغلب إذا حوكمتُ.",
+            "en": "That You might be just in Your sayings, and might overcome when You are judged."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-5", "role": "none",
+          "coptic": "ϩⲏⲡⲡⲉ ⲅⲁⲣ ϧⲉⲛϩⲁⲛⲁ̀ⲛⲟⲙⲓⲁ̀ ⲁⲩⲉⲣⲃⲟⲕⲓ ⲙ̀ⲙⲟⲓ: ⲟⲩⲟϩ ϧⲉⲛϩⲁⲛⲛⲟⲃⲓ ⲁ̀ ⲧⲁⲙⲁⲩ ϭⲓϣϣⲱⲟⲩ ⲙ̀ⲙⲟⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لأني هاأنذا بالإثم حبل بي، وبالخطايا ولدتني أمي.",
+            "en": "For, behold, I was conceived in iniquities, and in sins my mother conceived me."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-6", "role": "none",
+          "coptic": "ϩⲏⲡⲡⲉ ⲅⲁⲣ ⲁⲕⲙⲉⲛⲣⲉ ⲑ̀ⲙⲏⲓ: ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙⲛⲏⲉⲧⲉ ⲛ̀ⲥⲉⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ ⲁⲛ ⲛ̀ⲧⲉⲧⲉⲕⲥⲟⲫⲓⲁ ⲁⲕⲧⲁⲙⲟⲓ ⲉ̀ⲣⲱⲟⲩ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لأنك هكذا قد أحببت الحق، إذ أوضحت لي غوامض حكمتك ومستوراتها.",
+            "en": "For, behold, You have loved the truth: You have manifested to me the hidden and unrevealed things of Your wisdom."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-7", "role": "none",
+          "coptic": "ⲉⲕⲉ̀ⲛⲟⲩϫϧ ⲉ̀ϫⲱⲓ ⲙ̀ⲡⲉⲕϣⲉⲛϩⲩⲥⲱⲡⲟⲛ: ⲉⲓⲉ̀ⲧⲟⲩⲃⲟ ⲉⲕⲉ̀ⲣⲁϧⲧ ⲉⲓⲉ̀ⲟⲩⲃⲁϣ ⲉ̀ϩⲟⲧⲉ ⲟⲩⲭⲓⲱⲛ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "تنضح على بزوفاك فأطهر، تغسلني فأبيض أكثر من الثلج.",
+            "en": "You shall sprinkle me with Your hyssop, and I shall be purified: You shall wash me, and I shall be made whiter than snow."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-8", "role": "none",
+          "coptic": "ⲉⲕⲉⲑ̀ⲣⲓⲥⲱⲧⲉⲙ ⲉ̀ⲟⲩⲑⲉⲗⲏⲗ ⲛⲉⲙⲟⲩⲟⲩⲛⲟϥ: ⲉⲩⲉ̀ⲑⲉⲗⲏⲗ ⲛ̀ϫⲉⲛⲓⲕⲁⲥ ⲉⲧⲑⲉⲃⲓⲏⲟⲩⲧ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "تسمعني سرورا وفرحا، فتبتهج عظامي المنسحقة.",
+            "en": "You shall make me to hear gladness and joy: the humbled bones shall rejoice."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-9", "role": "none",
+          "coptic": "ⲙⲁⲧⲁⲥⲑⲟ ⲙ̀ⲡⲉⲕϩⲟ ⲥⲁⲃⲟⲗ ⲛ̀ⲛⲁⲛⲟⲃⲓ: ⲟⲩⲟϩ ⲛⲁⲁ̀ⲛⲟⲙⲓⲁ̀ ⲧⲏⲣⲟⲩ ⲉⲕⲉ̀ⲥⲟⲗϫⲟⲩ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "اصرف وجهك عن خطاياي، وامح كل آثامي.",
+            "en": "Turn away Your face from my sins, and blot out all my iniquities."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-10", "role": "none",
+          "coptic": "ⲟⲩϩⲏⲧ ⲉϥⲟⲩⲁⲃ ⲉⲕⲉ̀ⲥⲟⲛⲧϥ ⲛ̀ϧⲏⲧ ⲫⲛⲟⲩϯ: ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲉϥⲥⲟⲩⲧⲱⲛ ⲁ̀ⲣⲓⲧϥ ⲙ̀ⲃⲉⲣⲓ ϧⲉⲛⲛⲏⲉⲧⲥⲁϧⲟⲩⲛ ⲙ̀ⲙⲟⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "قلبا نقيا اخلق في يا الله، وروحا مستقيما جدده في أحشائي.",
+            "en": "Create in me a clean heart, O God; and renew a right spirit in my inward parts."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-11", "role": "none",
+          "coptic": "ⲙⲡⲉⲣⲃⲉⲣⲃⲱⲣⲧ ⲉ̀ⲃⲟⲗ ϩⲁⲡⲉⲕϩⲟ: ⲟⲩⲟϩ ⲡⲉⲕⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲙ̀ⲡⲉⲣⲟⲗϥ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لا تطرحني من قدام وجهك وروحك القدوس لا تنزعه منى.",
+            "en": "Do not cast me away from Your face; and do not remove Your Holy Spirit from me."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-12", "role": "none",
+          "coptic": "ⲙⲟⲓ ⲛⲏⲓ ⲙ̀ⲡ̀ⲑⲉⲗⲏⲗ ⲛ̀ⲧⲉⲡⲉⲕⲟⲩϫⲁⲓ: ⲟⲩⲟϩ ⲛ̀ϩ̀ⲣⲏⲓ ϧⲉⲛⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲛ̀ϩⲏⲅⲉⲙⲱⲛⲓⲕⲟⲛ ⲙⲁⲧⲁϫⲣⲟⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "امنحني بهجة خلاصك، وبروح رئاسي عضدني.",
+            "en": "Give me the joy of Your salvation: and uphold me with a directing spirit."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-13", "role": "none",
+          "coptic": "ⲉⲓⲉ̀ⲧ̀ⲥⲁⲃⲉ ⲛⲓⲁⲛⲟⲙⲟⲥ ϩⲓⲛⲉⲕⲙⲱⲓⲧ: ⲟⲩⲟϩ ⲛⲓⲁⲥⲉⲃⲏⲥ ⲉⲩⲉ̀ⲕⲟⲧⲟⲩ ϩⲁⲣⲟⲕ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "فأعلم الأثمة طرقك والمنافقون إليك يرجعون.",
+            "en": "Then I shall teach the transgressors Your ways; and the ungodly men shall turn to You."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-14", "role": "none",
+          "coptic": "ⲛⲁϩⲙⲉⲧ ⲉ̀ⲃⲟⲗ ϧⲉⲛϩⲁⲛⲥ̀ⲛⲟϥ ⲫⲛⲟⲩϯ: ⲫⲛⲟⲩϯ ⲛ̀ⲧⲉⲧⲁⲥⲱⲧⲏⲣⲓⲁ: ⲉϥⲉ̀ⲑⲉⲗⲏⲗ ⲛ̀ϫⲉⲡⲁⲗⲁⲥ ϧⲉⲛⲧⲉⲕⲇⲓⲕⲉⲟⲥⲩⲛⲏ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "نجني من الدماء يا الله إله خلاصي، فيبتهج لساني بعدلك.",
+            "en": "Deliver me from blood, O God, the God of my salvation: and my tongue shall rejoice in Your righteousness."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-15", "role": "none",
+          "coptic": "ⲡϭⲟⲓⲥ ⲉⲕⲉ̀ⲟⲩⲱⲛ ⲛ̀ⲛⲁⲥ̀ⲫⲟⲧⲟⲩ ⲟⲩⲟϩ ⲉ̀ⲣⲉⲣⲱⲓ ϫⲱ ⲙ̀ⲡⲉⲕⲥ̀ⲙⲟⲩ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "يا رب افتح شفتي، فيخبر فمي بتسبيحك.",
+            "en": "O Lord, You shall open my lips; and my mouth shall declare Your praise."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-16", "role": "none",
+          "coptic": "ϫⲉⲉ̀ⲛⲉ ⲁⲕⲟⲩⲱϣ ϣⲟⲩϣⲱⲟⲩϣⲓ: ⲛⲁⲓⲛⲁϯ ⲟⲛ ⲡⲉ: ϩⲁⲛϭⲗⲓⲗ ⲛ̀ϫⲟϥϫⲉϥ ⲙ̀ⲡⲉⲕϯⲙⲁϯ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲟⲩ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "لأنك لو آثرت الذبيحة لكنت الآن أعطي، ولكنك لا تسر بالمحرقات.",
+            "en": "For if You desired sacrifice, I would have given it: You do not take pleasure in burnt offerings."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-17", "role": "none",
+          "coptic": "ⲡⲓϣⲟⲩϣⲱⲟⲩϣⲓ ⲛ̀ⲧⲉⲫⲛⲟⲩϯ ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ ⲡⲉ: ⲟⲩϩⲏⲧ ⲉϥⲧⲉⲛⲛⲏⲟⲩⲧ ⲟⲩⲟϩ ⲉϥⲉ̀ⲑⲉⲃⲓⲏⲟⲩⲧ ⲫⲁⲓ ⲛ̀ⲛⲉ ⲫⲛⲟⲩϯ ϣⲟϣϥ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "فالذبيحة لله روح منسحق. القلب المنكسر والمتواضع لا يرذله الله.",
+            "en": "The sacrifice of God is a broken spirit: a broken and humbled heart God shall not despise."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-18", "role": "none",
+          "coptic": "ⲁⲣⲓⲡⲉⲑⲛⲁⲛⲉϥ ⲡϭⲟⲓⲥ ϧⲉⲛⲡⲉⲕϯⲙⲁϯ ⲉ̀ⲥⲓⲱⲛ: ⲟⲩⲟϩ ⲛⲓⲥⲟⲃⲧ ⲛ̀ⲧⲉⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ ⲙⲁⲣⲟⲩⲕⲟⲧⲟⲩ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "أنعم يا رب بمسرتك على صهيون، ولتبن أسوار أورشليم.",
+            "en": "Do good, O Lord, in Your good pleasure to Zion; and let the walls of Jerusalem be built."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-19", "role": "none",
+          "coptic": "ⲧⲟⲧⲉ ⲉⲕⲉ̀ϯⲙⲁϯ ⲉ̀ϫⲉⲛϩⲁⲛϣⲟⲩϣⲱⲟⲩϣⲓ ⲙ̀ⲙⲉⲑⲙⲏⲓ: ⲟⲩⲁⲛⲁⲫⲟⲣⲁ ⲛⲉⲙϩⲁⲛϭⲗⲓⲗ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "حينئذ تسر بذبائح البر قربانا ومحرقات.",
+            "en": "Then You shall be pleased with sacrifices of righteousness, offering, and burnt sacrifices."
+          },
+          "tokens": []
+        },
+        {
+          "id": "verse-20", "role": "none",
+          "coptic": "ⲧⲟⲧⲉ ⲉⲩⲉ̀ⲓ̀ⲛⲓ ⲛ̀ϩⲁⲛⲙⲁⲥⲓ ⲉ̀ⲡ̀ⲱϣⲓ ⲉ̀ϫⲉⲛⲡⲉⲕⲙⲁⲛ̀ⲉⲣϣⲱⲟⲩϣⲓ.",
+          "translit": { "ar": "" },
+          "translation": {
+            "ar": "ويقربون على مذابحك العجول.",
+            "en": "Then they shall offer calves upon Your altar."
+          },
+          "tokens": []
+        }
+      ],
+      "keyWords": [],
+      "source": {
+        "name": "قبطي: SCRIPTORIUM بحيري مزمور 50 (CC BY 4.0، عبارات TEI). عربي وإنجليزي: الأجبية على agpeya.org / Prime — المزمور الخمسون",
+        "url": "https://data.copticscriptorium.org/urn:cts:copticLit:ot.pss.bohairic_ed:50"
+      }
     }
   ]
 }

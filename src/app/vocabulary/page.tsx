@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
-import { VocabularyView } from "@/components/VocabularyView";
-import { publishedWords, toWordCardModel } from "@/lib/words";
+import { VocabularyHome } from "@/components/VocabularyHome";
+import {
+  countByKind,
+  countPublishedByGroup,
+  publishedWords,
+} from "@/lib/words";
 
 export const metadata: Metadata = {
   title: "الكلمات",
 };
 
 export default function VocabularyPage() {
-  const words = publishedWords().map(toWordCardModel);
-  return <VocabularyView words={words} current="all" />;
+  const words = publishedWords();
+  const kinds = countByKind(words);
+  return (
+    <VocabularyHome
+      total={words.length}
+      byGroup={countPublishedByGroup()}
+      drills={kinds.drill}
+    />
+  );
 }
