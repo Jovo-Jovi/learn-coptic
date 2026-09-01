@@ -13,6 +13,13 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · S13b · tap highlight not black in dark
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- `--highlight` gold wash + `.prayer-hl` so `<mark>` is not UA Mark (black
+  under `color-scheme: dark`). Same class on the selected Coptic token.
+
+Open: owner grammar table. S13c audio.
+
 ## 2026-09-01 · ship · S16 S13b S11
 Model: Cursor Grok 4.6 | Commit: ba8e1b6 | Result: pass
 - Pushed remaining local code: word `normalized`/`lemma`, prayer tap

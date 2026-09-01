@@ -40,7 +40,8 @@ Update it in the same commit as the work it describes.
 - `words.json` — 8635 · teaching 147 + Andreas 8488 · `normalized` + `lemma`
 - `prayers.json` — 4 prayers, tokens on every line. khen-efran l1 reviewed
   glosses kept. Tap highlights Coptic + sourced Arabic in the same line (no
-  sheet). Many tokens stay unmarked until stored grammar rules exist.
+  sheet). Gold `--highlight` wash in dark (UA `<mark>` is black). Many tokens
+  stay unmarked until stored grammar rules exist.
   `khen-efran` still points at missing `/audio/prayers/` (S13c).
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 - Routes: previous plus **`/quiz`**. Leitner key `learn-coptic:leitner`.

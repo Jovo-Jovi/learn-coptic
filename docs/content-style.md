@@ -121,5 +121,6 @@ stub peel. Do not invent a match. Full prefix/suffix grammar rules will
 be supplied by the owner, stored as data, and used later. Until then,
 `arHighlight` (must occur once in the line) or a unique teaching-set gloss
 after peeling ⲉⲧ/ⲉⲑ, one article, or a possessive, plus a short Arabic
-suffix (اسمك), is all the highlighter may do.
+suffix (اسمك), is all the highlighter may do. The wash is `--highlight`
+(gold on the card), not `surface-2`: UA `<mark>` is black in dark mode.
 

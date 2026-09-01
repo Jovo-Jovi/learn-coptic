@@ -33,7 +33,7 @@ function TranslationAr({
   return (
     <p dir="rtl" className="mt-3 text-base text-text">
       {parts.before}
-      <mark className="rounded-sm bg-surface-2 px-0.5 text-text ring-1 ring-hairline">
+      <mark className="prayer-hl rounded-sm px-0.5">
         {parts.match}
       </mark>
       {parts.after}
@@ -91,7 +91,7 @@ export function PrayerReader({
                       className={cn(
                         "inline-flex min-h-11 items-center rounded-lg px-1 text-start",
                         "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
-                        selected ? "bg-surface-2 ring-1 ring-hairline" : null,
+                        selected ? "prayer-hl" : null,
                       )}
                     >
                       <CopticPaint
