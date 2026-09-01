@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `752d855` (pronunciation rules + letter audio). S9 GATE passed 2026-09-01.
+**Last commit:** `7e79753` (Andreas vocab, search, sourced prayers). S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · 0 unpublished · 0/32 letters missing audio · 8635/8635 words missing audio
 
@@ -36,6 +36,7 @@ on `/prayers` (text + Arabic gloss, no audio).
   · 6 drills have `meaning: null`; 5 drills have a meaning
 - `prayers.json` — 4 prayers (`khen-efran`, `lords-prayer`, `thanksgiving`,
   `psalm-50`). No real recording. Translit empty on the three new ones.
+  Manuscript keys via `copticToAthanasiusKey` (backtick jinkim, not U+0300).
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 - Group tokens `--group-N-from`/`to`/`glow`; `--group-N` aliases from
 - Shell live. `/` `/about` `/alphabet` `/alphabet/[1-7]` `/group/[1-7]`

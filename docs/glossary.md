@@ -26,6 +26,8 @@ The UI marks drills تمرين قراءة — مش كلمة في القاموس.
 Coptic glyph. Stored on letters and words. Default UI never shows it.
 Optional manuscript mode (`data-coptic-font="athanasius"`) paints it with
 the mapped TTF; Unicode stays in the DOM for copy and screen readers.
+Jinkim in those keys is a backtick before the letter (`` `n ``), matching
+how the explorer typed; Unicode Coptic keeps the grave after the letter (ⲛ̀).
 
 **Demotic-derived letters** — ϣ ϥ ϧ ϩ ϫ ϭ ϯ. They live at U+03E2–03EF in the
 Greek block, not the Coptic block. Naive regexes miss them.

@@ -5,6 +5,7 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { LettersFile, WordsFile, PrayersFile, CurriculumFile } from "../src/data/schema/index.js";
+import { copticToAthanasiusKey } from "../src/lib/letters";
 import { getSearchRecords } from "../src/lib/search";
 
 const read = (f: string) => JSON.parse(readFileSync(new URL(`../src/data/json/${f}`, import.meta.url), "utf8"));
@@ -73,6 +74,15 @@ P.forEach((p) => {
     const dur = p.audio?.full.durationSec;
     if (dur && (ln.endSec ?? 0) > dur) fail(`prayer ${p.id}/${ln.id} runs past the recording`);
     prev = ln.startSec;
+  });
+  p.lines.forEach((ln) => {
+    const mapped = copticToAthanasiusKey(ln.coptic);
+    if (mapped?.includes("\u0300")) {
+      fail(`prayer ${p.id}/${ln.id} manuscript keys still contain combining jinkim`);
+    }
+    if (ln.coptic.includes("\u0300") && mapped && !mapped.includes("`")) {
+      fail(`prayer ${p.id}/${ln.id} has Unicode jinkim but no Athanasius backtick`);
+    }
   });
 });
 

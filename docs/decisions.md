@@ -135,7 +135,10 @@ picker faces.
 Default paint stays Unicode (FreeSerif / Noto). Manuscript mode sets
 `data-coptic-font="athanasius"` and `CopticPaint` shows stored
 `athanasiusKey` through the mapped face. Unicode remains in the DOM for
-copy and screen readers. Missing keys fall back to Unicode.
+copy and screen readers. Missing keys fall back to Unicode. Reverse-mapped
+prayer strings use the same keystrokes as `words.json`: jinkim is backtick
+before the letter, never combining grave after. ASCII `:` in a source line
+is punctuation; that cmap slot is capital ti.
 
 Other CS / Antinoou / Coptic1 files are still absent and stay out. A
 second mapped face that needs a different keymap needs a new ADR. A

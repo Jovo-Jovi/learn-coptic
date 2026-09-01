@@ -33,7 +33,8 @@ export const notoCoptic = Noto_Sans_Coptic({
  */
 export const athanasius = localFont({
   src: "./fonts/Athanasuis-Plain.ttf",
-  display: "swap",
+  display: "block",
+  adjustFontFallback: false,
   variable: "--font-athanasius",
   fallback: ["serif"],
 });

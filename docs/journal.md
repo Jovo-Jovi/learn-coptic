@@ -13,8 +13,20 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 - what is still open
 ```
 
+## 2026-09-01 · prayers · manuscript keys (jinkim)
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (bugfix)
+- Prayer Unicode was already the sourced Coptic. Manuscript paint was
+  passing combining grave U+0300 through; Athanasius jinkim is a
+  zero-width backtick *before* the letter (same as `words.json`).
+- ASCII `:` in Psalm 50 is punctuation; that slot is capital ti, so it
+  maps to middle dot for manuscript paint.
+- Athanasius `next/font`: `display: "block"`, no Arial metric fallback,
+  so punctuation keys do not flash as Latin `]` / `;`.
+
+Open: S11 Leitner. S13 needs a real recording.
+
 ## 2026-09-01 · prayers · الربانية، الشكر، المزمور الخمسون
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a numbered plan step)
+Model: Cursor Grok 4.6 | Commit: 7e79753 | Result: n/a (not a numbered plan step)
 - Added three sourced prayers to `prayers.json` plus `/prayers` reader.
   Lord's Prayer and Thanksgiving: Coptic + Arabic from Coptic for All
   named pages. Psalm 50 Coptic: SCRIPTORIUM Bohairic CC BY 4.0; Arabic:
@@ -24,7 +36,7 @@ Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a numbered plan 
 Open: S11 Leitner. S13 needs a real recording.
 
 ## 2026-09-01 · S12 · Arabic→Coptic search
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+Model: Cursor Grok 4.6 | Commit: 7e79753 | Result: pass
 - `/search` with Fuse over 8667 records. Arabic gloss first
   (`يد` → ⲧⲟⲧ). Index JSON written at `validate` to
   `src/data/generated/search-records.json` (not fetched). Header «بحث».
@@ -32,7 +44,7 @@ Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
 Open: S11 Leitner still not built.
 
 ## 2026-09-01 · vocab · Andreas harvest + practice reading
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a plan step)
+Model: Cursor Grok 4.6 | Commit: 7e79753 | Result: n/a (not a plan step)
 - Harvested 8488 Andreas lemmas into `words.json` (CC BY-SA). Arabic
   gloss copied; translit empty. Validator 8635 words.
 - `/vocabulary` is a group index. `/practice` shows 11 reading drills
@@ -42,7 +54,7 @@ Open: S11 Leitner still next numbered step. Translit on harvested rows
 empty until a human writes church pronunciation.
 
 ## 2026-09-01 · sources · Word and prayer resource index
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (not a plan step)
+Model: Cursor Grok 4.6 | Commit: 7e79753 | Result: n/a (not a plan step)
 - Added `docs/sources.md`: largest lexicons, church prayer libraries, SCRIPTORIUM Bohairic ~750k, CDO ~11k lemmas. No JSON ingest.
 - Pointed `docs/README.md` at it.
 
