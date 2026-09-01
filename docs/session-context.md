@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `7e79753` (Andreas vocab, search, sourced prayers). S9 GATE passed 2026-09-01.
+**Last commit:** `07cbea7` (prayer manuscript jinkim). S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · 0 unpublished · 0/32 letters missing audio · 8635/8635 words missing audio
 

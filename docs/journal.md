@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-09-01 · prayers · manuscript keys (jinkim)
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: n/a (bugfix)
+Model: Cursor Grok 4.6 | Commit: 07cbea7 | Result: n/a (bugfix)
 - Prayer Unicode was already the sourced Coptic. Manuscript paint was
   passing combining grave U+0300 through; Athanasius jinkim is a
   zero-width backtick *before* the letter (same as `words.json`).
