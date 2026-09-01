@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-09-01 · S13b · grammar table later; unmarked tokens expected
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+Model: Cursor Grok 4.6 | Commit: ca7cc5f | Result: pass
 - Documented that many prayer tokens correctly have no Arabic highlight.
   Full prefix/suffix grammar rules will be owner-supplied, stored as data,
   and used later. Stub peel stays; do not invent matches.
