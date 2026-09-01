@@ -14,7 +14,7 @@ Model: <who wrote it> | Commit: <sha> | Result: pass / fail / partial
 ```
 
 ## 2026-09-01 · S13b · tap highlight not black in dark
-Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+Model: Cursor Grok 4.6 | Commit: 962330e | Result: pass
 - `--highlight` gold wash + `.prayer-hl` so `<mark>` is not UA Mark (black
   under `color-scheme: dark`). Same class on the selected Coptic token.
 

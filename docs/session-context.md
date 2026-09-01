@@ -7,7 +7,7 @@ Update it in the same commit as the work it describes.
 
 **Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `ba8e1b6`. S9 GATE passed 2026-09-01.
+**Last commit:** `962330e`. S9 GATE passed 2026-09-01.
 **Live:** https://learn-coptic.vercel.app
 **Validator:** ✓ 32 letters, 8635 words, 4 prayers, 2 levels · teaching 147 · S16 hygiene report · every prayer line has tokens
 
