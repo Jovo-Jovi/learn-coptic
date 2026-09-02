@@ -89,13 +89,15 @@ to `arabicHint`, IPA, quiz hints, or letter cards.
 ## Search
 
 `/search` is Arabic-first lookup: type a gloss, see Coptic. Coptic and letter
-names also work. Results show the glyph and the Arabic together — meaning is
-not hidden. Empty translit stays hidden.
+names also work. Results show the glyph, the Arabic gloss, and `النطق:`
+together — meaning is not hidden. `النطق` is unique teaching `translit.ar`
+when it exists, otherwise the stored-rule engine (`src/lib/pronounce.ts`).
+If no stored translit and no rule fires, hide the line. Do not invent.
 
 Meaning stays hidden until the learner taps a real `<button>` (`aria-expanded`).
-Not hover. The Coptic word and `translit.ar` stay visible while the back opens.
-If `translit.ar` is empty (Andreas harvest), hide the line — do not guess a
-pronunciation from spelling.
+Not hover. The Coptic word and the reading line stay visible while the back
+opens. If `translit.ar` is empty, the card front may show the engine reading
+(ADR-024). That is applying stored letter rules, not guessing from spelling.
 
 - `lexicon` — ordinary card.
 - `name` — same card plus a small badge: اسم علم.
@@ -120,15 +122,17 @@ blanks looks broken; a page with none, or a finished theme, looks designed.
 ## Prayers
 
 `/prayers` lists every row in `prayers.json`. Each line is Coptic (LTR
-isolate) then the Arabic gloss. Empty `translit.ar` is hidden — do not guess
-church pronunciation. English is a small LTR line under the Arabic. Cite the
-source URL on the prayer page. Do not type a prayer line from memory.
+isolate) then the Arabic gloss. Empty *line* `translit.ar` is hidden — do
+not guess a whole-line church reading. Token tap may still show engine
+`النطق` from stored letter rules (ADR-024). English is a small LTR line
+under the Arabic. Cite the source URL on the prayer page. Do not type a
+prayer line from memory.
 
 Tap-a-word (S13b + S17): dictionary first, then grammar peel. Tap shows
-the stored Arabic meaning under the line, and highlights a unique span in
-the prayer translation when one exists. A token with **no** meaning is
-expected when the surface form is not in the dictionary and peel does not
-leave a unique stem. Do not invent a match. The wash is
-`--highlight` (gold on the card), not `surface-2`: UA `<mark>` is black in
-dark mode.
+the stored Arabic meaning under the line, the stored-rule `النطق` line,
+and highlights a unique span in the prayer translation when one exists.
+A token with **no** meaning is expected when the surface form is not in
+the dictionary and peel does not leave a unique stem. Do not invent a
+match. The wash is `--highlight` (gold on the card), not `surface-2`: UA
+`<mark>` is black in dark mode. Do not send the learner to `/lab`.
 

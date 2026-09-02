@@ -232,6 +232,11 @@ Harvest Arabic is only a *search key* into that line’s sourced
 `translation.ar` (ADR-022). Unmarked liturgical tokens remain expected.
 Do not fill `words.json` in bulk.
 
+Learner surfaces (prayer tap, word card, search) may show stored-rule النطق
++ existing Arabic gloss (ADR-024). See `docs/word-analysis-ux.md`. Lab peel
+(`/lab/analyze`) stays out of this ship until GATE **PASS**.
+
+
 ### S18 · Dictionary leftovers and prayer gaps
 Inventory is `docs/gaps.md`. Do not invent glosses. Do not merge
 KELLIA English into `meaning.ar`.
