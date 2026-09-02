@@ -56,5 +56,11 @@ Harvest Arabic may only search a sourced prayer line (ADR-022).
 
 **pronunciation.json** — two Bohairic systems, diphthongs, jinkim,
 pitfalls, reading drills. Letter `rules[]` stay explorer Greco-Bohairic
-(ADR-017); this file does not replace them.
+(ADR-017); this file does not replace them. Learner `النطق` on cards,
+prayer tap, and search is `src/lib/pronounce.ts` (ADR-024). Lab peel is
+not this.
+
+**النطق** — learner sound line. Teaching `translit.ar` if unique and
+filled; else stored rules. Quiet notes (ج / چ, كسرة طويلة) sit beside
+it. فتحة صريحة is lab-only.
 

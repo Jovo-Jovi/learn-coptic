@@ -1,13 +1,15 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId, useMemo, useState } from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import type { WordCardModel } from "@/lib/words";
 import { CopticPaint } from "@/components/CopticPaint";
 import { AudioButton } from "@/components/AudioButton";
+import { SpeakLines } from "@/components/SpeakLines";
 import { getLetterById } from "@/lib/letters";
 import { SPRING } from "@/lib/motion";
+import { learnerSpeak } from "@/lib/pronounce";
 import { cn } from "@/lib/utils";
 
 export function WordCard({ word }: { word: WordCardModel }) {
@@ -15,6 +17,15 @@ export function WordCard({ word }: { word: WordCardModel }) {
   const panelId = useId();
   const isDrill = word.kind === "drill";
   const isName = word.kind === "name";
+  const speak = useMemo(
+    () =>
+      learnerSpeak(word.coptic, {
+        storedTranslit: word.translitAr,
+        isProperName: isName,
+      }),
+    [word.coptic, word.translitAr, isName],
+  );
+  const reading = word.translitAr || speak.text;
 
   return (
     <article
@@ -55,8 +66,8 @@ export function WordCard({ word }: { word: WordCardModel }) {
             mapped={word.mapped}
             className="word-coptic glyph-fill text-glyph-word inline-block leading-none sm:text-glyph-word-md"
           />
-          {word.translitAr ? (
-            <span className="text-sm text-text-dim">{word.translitAr}</span>
+          {reading ? (
+            <span className="text-sm text-text-dim">{reading}</span>
           ) : null}
           {isDrill ? (
             <span className="text-sm font-medium text-text">
@@ -88,6 +99,7 @@ export function WordCard({ word }: { word: WordCardModel }) {
             {word.partOfSpeechAr ? (
               <p className="text-sm text-text-dim">{word.partOfSpeechAr}</p>
             ) : null}
+            <SpeakLines speak={speak} showText={false} align="center" />
             {word.letterIds.length > 0 ? (
               <ul className="flex max-w-full flex-wrap justify-center gap-2">
                 {word.letterIds.map((id) => {

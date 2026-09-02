@@ -52,6 +52,7 @@ export default async function PrayerPage({
       </p>
       <p className="mt-4 text-sm text-text-dim">
         اضغط على الكلمة القبطي. اللي تقابلها في العربي تتعلم في نفس السطر.
+        تحتها المعنى والنطق من القواعد المخزّنة.
       </p>
       <PrayerLines prayer={prayer} />
       {prayer.source ? (

@@ -5,18 +5,20 @@ Update it in the same commit as the work it describes.
 
 ---
 
-**Repo:** https://github.com/Jovo-Jovi/learn-coptic · `main` · local `C:\Users\Marco\Desktop\learn-coptic`
+**Repo:** https://github.com/Jovo-Jovi/learn-coptic · branch `test/layered-word-analysis`
 **Stack:** Next 16, App Router, TS, Tailwind, Zod, Fuse.js. No backend.
-**Last commit:** `0c0cc3d`. S9 GATE passed 2026-09-01.
-**Live:** https://learn-coptic.vercel.app
-**Validator:** ✓ 32 letters, 11858 words, 4 prayers, 2 levels · teaching 147 · grammar 10/10 · 13 parseReady (S17 test) · S16 hygiene report · every prayer line has tokens
+**Last commit:** `9f6ae1b` on main. This branch ships learner pronounce + gloss
+(ADR-024). Lab peel is not in this commit.
+**Live:** https://learn-coptic.vercel.app (production still S17 test slice)
+**Validator:** ✓ 32 letters, 11858 words · teaching 147 · 13 parseReady
 
 ## Current position
 
 **Done:** S0–S12, S13a, **S16**, **S13b**, **S11**. S17 parse **test slice**
 (GATE not PASS). S18 Andreas leftovers + unique Thabet lemmas harvested.
-**Next:** human S17 **PASS**. Prayer-token blanks in `docs/gaps.md`. S13c
-audio. S14. S15.
+Learner النطق + gloss on prayer tap, word cards, search (`src/lib/pronounce.ts`).
+**Next:** human S17 **PASS** before merging lab peel. Pronounce embed is the
+only analysis piece meant for main (see `docs/word-analysis-ux.md`).
 **Blocked on:** Coptic for All / agpeya.org grant note. Harvest Arabic
 unverified as dictionary. Most prayer tokens still unmarked (ADR-022).
 **Not started:** S10b (optional), S13c, S14, S15. S18 prayer blanks / grants.
@@ -62,4 +64,6 @@ unverified as dictionary. Most prayer tokens still unmarked (ADR-022).
 - ADR-020: never guess prayer glosses; teaching-set `wordId` only.
 - ADR-022: S17 test parse; harvest is a search key into the prayer line only.
 - ADR-023: Thabet unique lemmas only; never overwrite stored rows.
+- Production speak: `src/lib/pronounce.ts` + `SpeakLines` on prayers,
+  word cards, search. No `analyzeWord` on those surfaces (ADR-024).
 - `legacy/` and `.extract/` are gitignored.

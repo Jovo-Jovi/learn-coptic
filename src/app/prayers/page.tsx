@@ -17,6 +17,7 @@ export default function PrayersPage() {
       <h1 className="text-2xl font-semibold text-text">الصلوات</h1>
       <p className="mt-4 text-base text-text">
         قبطي بحيري، والمعنى بالعربي تحت كل سطر. من غير تسجيل دلوقتي.
+        اضغط كلمة في الصلاة: المعنى والنطق يظهروا تحت السطر.
       </p>
       <ul className="mt-8 flex flex-col gap-3">
         {prayers.map((prayer) => (
