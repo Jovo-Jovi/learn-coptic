@@ -86,9 +86,8 @@ function elseFollowKeys(
   rule: Letter["rules"][number],
 ): string[] {
   if (rule.follow) return tokensFromFollow(rule.follow);
-  const self = new Set(
-    [letter.athanasiusKey.upper, letter.athanasiusKey.lower].filter(Boolean),
-  );
+  const keymap = letter.athanasiusKey;
+  const self = new Set(keymap ? [keymap.upper, keymap.lower] : []);
   const fromCond = followKeys(rule).filter((key) => !self.has(key));
   if (fromCond.length > 0) return fromCond;
   const paired = letter.rules.find((other) => {
