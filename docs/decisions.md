@@ -316,8 +316,12 @@ feature. Production prayer tap keeps `parseCoptic` until S17 GATE **PASS**.
 
 Stored-rule pronunciation is ready enough to embed: unique teaching
 `translit.ar` if present, else `letter.rules[]` and `pronunciation.json`
-(diphthongs, jinkim). Never invent a sound. Greek-only and حالة خاصة rules
-stay unused. Same-letter two sounds (ϫ → ج then چ) may be a small note.
+(diphthongs, jinkim). Never invent a sound. Greek-only rules (كي ش/خ,
+سيما زاي after ⲙ, تاف دال after ⲛ) apply when the word is longer than
+and ends in the six owner endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ (as os is an on in),
+or when a stored `spellList` stem covers that letter. Coptic كي stays ك.
+Coptic حالة خاصة (صاد/طاء) stay unused. Same-letter
+two sounds (ϫ → ج then چ) may be a small note.
 Routine extras such as فتحة صريحة stay out of the learner UI.
 
 Arabic gloss on those surfaces is the gloss already stored (word meaning,
@@ -330,6 +334,9 @@ Full cut list: `docs/word-analysis-ux.md`.
 
 **Cost:** harvest words without `translit.ar` now show an engine reading.
 That reading can still be wrong if a stored rule is the wrong match; blank
-is still required when no rule fires.
+is still required when no rule fires. Native words that happen to end in
+ⲟⲛ / ⲁⲛ / ⲁⲥ (ⲥⲟⲛ، ⲣⲁⲛ) are treated as Greek for letter rules; كي is
+unchanged on those. Stems the six endings miss sit in `spellList`
+(not a bulk harvest etymology dump).
 
 

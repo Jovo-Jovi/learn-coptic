@@ -98,8 +98,15 @@ dupKeys.forEach((ids, k) => {
 // ---- 3. Cross-references --------------------------------------------
 L.forEach((l) => l.exampleWords.forEach((w) => { if (!wordIds.has(w)) fail(`letter ${l.id} → unknown word ${w}`); }));
 L.forEach((l) => l.rules.forEach((r) => r.examples.forEach((w) => { if (!wordIds.has(w)) fail(`letter ${l.id} rule ${r.id} → unknown word ${w}`); })));
-for (const row of [...Pron.diphthongs.flatMap((d) => d.examples), ...Pron.marks.flatMap((m) => m.examples), ...Pron.drills]) {
-  if (row.wordId && !wordIds.has(row.wordId)) fail(`pronunciation.json unknown word ${row.wordId}`);
+for (const row of [
+  ...Pron.diphthongs.flatMap((d) => d.examples),
+  ...Pron.marks.flatMap((m) => m.examples),
+  ...Pron.drills,
+  ...Pron.spellList,
+]) {
+  if ("wordId" in row && row.wordId && !wordIds.has(row.wordId)) {
+    fail(`pronunciation.json unknown word ${row.wordId}`);
+  }
 }
 W.forEach((w) => {
   w.teaches.forEach((t) => { if (!letterIds.has(t)) fail(`word ${w.id} → unknown letter ${t}`); });
@@ -210,7 +217,7 @@ console.log(
   `  · grammar-rules ${G.points.length}/${G.pointsExpected} points, ${G.affixes.length} affix rows, ${G.affixes.filter((a) => a.parseReady).length} parseReady (S17 test set)`,
 );
 console.log(
-  `  · pronunciation ${Pron.systems.length} systems, ${Pron.diphthongs.length} clusters, ${Pron.drills.length} drills`,
+  `  · pronunciation ${Pron.systems.length} systems, ${Pron.diphthongs.length} clusters, ${Pron.drills.length} drills, ${Pron.spellList.length} spellList`,
 );
 console.log(
   `  · S16 hygiene — teaching ${teaching.length}, harvest ${harvest.length}, lemma null ${lemmaNull.length}, homograph keys ${homographs.length} (report only)`,

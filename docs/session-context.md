@@ -17,6 +17,8 @@ Update it in the same commit as the work it describes.
 **Done:** S0–S12, S13a, **S16**, **S13b**, **S11**. S17 parse **test slice**
 (GATE not PASS). S18 Andreas leftovers + unique Thabet lemmas harvested.
 Learner النطق + gloss on prayer tap, word cards, search (`src/lib/pronounce.ts`).
+Greek letter rules use six endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ (as os is an on in)
+plus `pronunciation.json` `spellList` for كي stems those endings miss.
 **Next:** human S17 **PASS** before merging lab peel. Pronounce embed is the
 only analysis piece meant for main (see `docs/word-analysis-ux.md`).
 **Blocked on:** Coptic for All / agpeya.org grant note. Harvest Arabic
@@ -52,7 +54,8 @@ unverified as dictionary. Most prayer tokens still unmarked (ADR-022).
   `khen-efran` still points at missing `/audio/prayers/` (S13c).
 - `curriculum.json` — Level 1 complete, Level 2 stubbed
 - `grammar-rules.json` — **10/10** owner notes; **13** affixes parseReady (test)
-- `pronunciation.json` — two systems, diphthongs, jinkim, pitfalls, drills
+- `pronunciation.json` — two systems, diphthongs, jinkim, pitfalls, drills,
+  **spellList** (كي Coptic vs Greek stems the six endings miss)
 - Routes: previous plus **`/quiz`**. Leitner key `learn-coptic:leitner`.
 - Production: https://learn-coptic.vercel.app.
 - GitHub `README.md` lists live learner features (audio, search, quiz,
@@ -65,5 +68,6 @@ unverified as dictionary. Most prayer tokens still unmarked (ADR-022).
 - ADR-022: S17 test parse; harvest is a search key into the prayer line only.
 - ADR-023: Thabet unique lemmas only; never overwrite stored rows.
 - Production speak: `src/lib/pronounce.ts` + `SpeakLines` on prayers,
-  word cards, search. No `analyzeWord` on those surfaces (ADR-024).
+  word cards, search. Six Greek endings turn on stored Greek letter
+  rules. No `analyzeWord` on those surfaces (ADR-024).
 - `legacy/` and `.extract/` are gitignored.

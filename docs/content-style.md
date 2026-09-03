@@ -86,6 +86,13 @@ Bohairic without a human decision.
 pronunciations stay extra `rules[]` cards. Do not add ص / ز or ط / د
 to `arabicHint`, IPA, quiz hints, or letter cards.
 
+Greek vs Coptic for letter rules: the owner named six endings
+(as os is an on in → ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ). A stored `spellList` in
+`pronunciation.json` covers verified stems those endings miss
+(ⲭⲉⲣⲉ، ⲭⲱⲣⲁ، ⲭⲏⲙⲓ…). Do not bulk-tag harvest. Do not invent ⲏⲥ /
+ⲏⲛ / ⲱⲙⲉⲛ. Unique teaching `translit.ar` still wins on cards.
+On `/letter/khi` the list is «قائمة خاصة».
+
 ## Search
 
 `/search` is Arabic-first lookup: type a gloss, see Coptic. Coptic and letter

@@ -1,7 +1,8 @@
 /**
  * Stored-rule Coptic → Arabic sounds. Production and lab share this file.
  * Never invent a sound: if no stored rule matches, leave that segment blank.
- * Greek-only rules stay unused — the engine cannot know the etymology.
+ * Greek-only rules fire on the six loan endings (as os is an on in), a
+ * stored `spellList` stem, or `ctx.isGreekLoan`.
  */
 import type { Letter } from "@/data/schema";
 import { copticLetterCount, normalizeCoptic } from "@/lib/coptic-text";
@@ -25,6 +26,8 @@ export type PronounceSeg = {
 export type PronounceCtx = {
   /** Stored `kind: name` or a unique gloss that marks a proper name. */
   isProperName?: boolean;
+  /** Force Greek letter rules. Unset: the six loan endings. */
+  isGreekLoan?: boolean;
 };
 
 export type SpeakNote = {
@@ -43,6 +46,9 @@ const QUIET_NOTES = new Set(["فتحة صريحة", "طويلة", "قصيرة"])
 const VOWELS = new Set(["ⲁ", "ⲉ", "ⲏ", "ⲓ", "ⲟ", "ⲩ", "ⲱ"]);
 const JINKIM = "\u0300";
 const LATIN_KEY = /^(OU|[A-Z{\]])$/;
+
+/** Owner 2026-09-03: as os is an on in. Do not add ⲏⲥ / ⲏⲛ. */
+export const GREEK_LOAN_ENDINGS = ["ⲁⲥ", "ⲟⲥ", "ⲓⲥ", "ⲁⲛ", "ⲟⲛ", "ⲓⲛ"] as const;
 
 function glyphForKey(key: string): string | null {
   return getLetterByAthanasiusKey(key)?.unicode.lower ?? null;
@@ -72,6 +78,24 @@ function followKeys(rule: Letter["rules"][number]): string[] {
   const fromFollow = tokensFromFollow(rule.follow);
   if (fromFollow.length > 0) return fromFollow;
   return tokensFromParens(rule.condition.ar);
+}
+
+/** "الحروف السابقة" on a Greek else-rule is the paired follow list, not (X). */
+function elseFollowKeys(
+  letter: Letter,
+  rule: Letter["rules"][number],
+): string[] {
+  if (rule.follow) return tokensFromFollow(rule.follow);
+  const keymap = letter.athanasiusKey;
+  const self = new Set(keymap ? [keymap.upper, keymap.lower] : []);
+  const fromCond = followKeys(rule).filter((key) => !self.has(key));
+  if (fromCond.length > 0) return fromCond;
+  const paired = letter.rules.find((other) => {
+    if (other.id === rule.id) return false;
+    const ar = cond(other);
+    return isGreekOnly(ar) && !isElseRule(ar) && followKeys(other).length > 0;
+  });
+  return paired ? followKeys(paired) : [];
 }
 
 function nextMatches(keys: string[], nextBases: string[]): boolean {
@@ -140,6 +164,74 @@ function units(folded: string): Unit[] {
   return out;
 }
 
+/** Six endings, and the word is longer than the ending (so ⲁⲛ negation stays Coptic). */
+function lettersOnlyOf(surface: string): string {
+  return units(foldCopticLower(surface))
+    .map((unit) => unit.base)
+    .join("");
+}
+
+function endsWithGreekLoan(lettersOnly: string): boolean {
+  return GREEK_LOAN_ENDINGS.some(
+    (end) => lettersOnly.length > end.length && lettersOnly.endsWith(end),
+  );
+}
+
+type SpellForm = {
+  letters: string;
+  origin: "greek" | "coptic";
+  match: "span" | "exact";
+};
+
+function spellForms(): SpellForm[] {
+  return getPronunciation()
+    .spellList.map((row) => ({
+      letters: lettersOnlyOf(row.coptic),
+      origin: row.origin,
+      match: row.match ?? (row.origin === "greek" ? "span" : "exact"),
+    }))
+    .filter((row) => row.letters.length > 0);
+}
+
+function coverAt(
+  lettersOnly: string,
+  index: number,
+  forms: SpellForm[],
+): SpellForm | null {
+  let best: SpellForm | null = null;
+  for (const form of forms) {
+    if (form.match === "exact") {
+      if (lettersOnly === form.letters) {
+        if (!best || form.letters.length >= best.letters.length) best = form;
+      }
+      continue;
+    }
+    let from = 0;
+    while (from <= lettersOnly.length - form.letters.length) {
+      const at = lettersOnly.indexOf(form.letters, from);
+      if (at < 0) break;
+      if (index >= at && index < at + form.letters.length) {
+        if (!best || form.letters.length > best.letters.length) best = form;
+      }
+      from = at + 1;
+    }
+  }
+  return best;
+}
+
+function greekAt(lettersOnly: string, index: number, forms: SpellForm[]): boolean {
+  const hit = coverAt(lettersOnly, index, forms);
+  if (hit) return hit.origin === "greek";
+  return endsWithGreekLoan(lettersOnly);
+}
+
+export function looksGreekLoan(surface: string): boolean {
+  const lettersOnly = lettersOnlyOf(surface);
+  const forms = spellForms();
+  if (lettersOnly.length === 0) return false;
+  return [...lettersOnly].some((_, index) => greekAt(lettersOnly, index, forms));
+}
+
 function cond(rule: Letter["rules"][number]): string {
   return rule.condition.ar;
 }
@@ -172,6 +264,18 @@ function isRestWordsRule(ar: string): boolean {
   return ar.includes("بقية الكلمات") || ar.includes("فيما عدا ذلك");
 }
 
+function isCopticDefault(ar: string): boolean {
+  return ar.includes("الكلمات القبطية");
+}
+
+function ruleAllowed(rule: Letter["rules"][number], greek: boolean): boolean {
+  const ar = cond(rule);
+  if (isGreekOnly(ar)) return greek;
+  if (isSpecialCase(ar)) return false;
+  if (greek && isCopticDefault(ar)) return false;
+  return true;
+}
+
 /** Isolated letter names use أ (أو، إي). Inside a word the أ drops. */
 function inWordSound(ar: string, atStart: boolean): string {
   const core = ar.replace(/\s*(طويلة|قصيرة)\s*/g, "").trim();
@@ -199,6 +303,7 @@ function pickRule(
   index: number,
   stream: Unit[],
   ctx: PronounceCtx,
+  greek: boolean,
 ): { ar: string; noteAr: string | null; ruleId: string } | null {
   const nextBases = stream.slice(index + 1).map((u) => u.base);
   const prevBase = stream[index - 1]?.base;
@@ -208,14 +313,12 @@ function pickRule(
   const betweenConsonants = prevIsConsonant && (nextIsConsonant || atEnd);
   const unit = stream[index]!;
 
-  const usable = letter.rules.filter(
-    (rule) => !isGreekOnly(cond(rule)) && !isSpecialCase(cond(rule)),
-  );
+  const usable = letter.rules.filter((rule) => ruleAllowed(rule, greek));
 
   for (const rule of usable) {
     const ar = cond(rule);
     if (!isElseRule(ar)) continue;
-    const keys = followKeys(rule);
+    const keys = elseFollowKeys(letter, rule);
     if (keys.length === 0) continue;
     if (nextMatches(keys, nextBases)) continue;
     const hit = fromRule(rule);
@@ -305,6 +408,8 @@ export function pronounceCoptic(
 } {
   const folded = foldCopticLower(surface);
   const stream = units(folded);
+  const lettersOnly = stream.map((unit) => unit.base).join("");
+  const forms = spellForms();
   const diphthongs = getPronunciation()
     .diphthongs.slice()
     .sort((a, b) => [...b.cluster].length - [...a.cluster].length);
@@ -336,7 +441,8 @@ export function pronounceCoptic(
       i += 1;
       continue;
     }
-    const picked = pickRule(letter, i, stream, ctx);
+    const greek = ctx.isGreekLoan ?? greekAt(lettersOnly, i, forms);
+    const picked = pickRule(letter, i, stream, ctx, greek);
     if (!picked) {
       gaps.push(`لا نطق مخزّن لـ ${unit.base}`);
       i += 1;
