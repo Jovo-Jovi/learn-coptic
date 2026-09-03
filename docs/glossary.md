@@ -61,6 +61,7 @@ prayer tap, and search is `src/lib/pronounce.ts` (ADR-024). Lab peel is
 not this.
 
 **النطق** — learner sound line. Teaching `translit.ar` if unique and
-filled; else stored rules. Quiet notes (ج / چ, كسرة طويلة) sit beside
-it. فتحة صريحة is lab-only.
+filled; else stored rules. Greek letter rules need one of six endings
+(ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ) or a `spellList` stem. Quiet notes (ج / چ, كسرة
+طويلة) sit beside it. فتحة صريحة is lab-only.
 

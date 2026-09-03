@@ -7,6 +7,7 @@ import { LetterBackNav } from "@/components/LetterBackNav";
 import { LetterHero } from "@/components/LetterHero";
 import { LetterNeighbors } from "@/components/LetterNeighbors";
 import { RulesAccordion } from "@/components/RulesAccordion";
+import { PronounceSpellList } from "@/components/PronounceSpellList";
 import { MixedCopticText } from "@/components/MixedCopticText";
 import {
   GROUP_DIGIT_AR,
@@ -76,6 +77,8 @@ export default async function LetterPage({ params }: PageProps<"/letter/[id]">) 
         </p>
 
         <RulesAccordion letter={letter} />
+
+        <PronounceSpellList letterId={letter.id} />
 
         <LetterNeighbors prev={prev} next={next} />
       </div>

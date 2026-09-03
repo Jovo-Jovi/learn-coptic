@@ -11,6 +11,10 @@ and **existing Arabic gloss** only (ADR-024).
   card, prayer tap caption (teaching first, else unique harvest as ADR-022).
 - النطق from `src/lib/pronounce.ts`: unique teaching `translit.ar` wins;
   otherwise letter `rules[]` + `pronunciation.json` diphthongs / jinkim.
+  Greek كي / سيما-زاي / تاف-دال use the six endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ
+  (as os is an on in), plus a stored `spellList` for stems those endings
+  miss (ⲭⲉⲣⲉ ش، ⲭⲱⲣⲁ خ، ⲭⲏⲙⲓ ك). Do not add ⲏⲥ / ⲏⲛ unless the owner
+  names them. Coptic حالة خاصة (صاد/طاء) stay unused.
 - Quiet notes only when a stored extra changes the reading (ϫ ج then چ,
   كسرة طويلة). Not `فتحة صريحة` / `طويلة` / `قصيرة` on every vowel.
 - Surfaces: prayer tap (stay on the line), word-card expand, `/search` hit.
