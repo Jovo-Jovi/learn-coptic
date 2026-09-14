@@ -242,6 +242,12 @@
   --text-glyph-card-xl--line-height: 1;
   --text-glyph: 6rem;
   --text-glyph--line-height: 1;
+  --text-glyph-md: 7.5rem;
+  --text-glyph-md--line-height: 1;
+  --text-glyph-lg: 10rem;
+  --text-glyph-lg--line-height: 1;
+  --text-glyph-xl: 12rem;
+  --text-glyph-xl--line-height: 1;
   --text-glyph-word: 1.75rem;
   --text-glyph-word--line-height: 1.25;
   --text-glyph-word-md: 2.25rem;
