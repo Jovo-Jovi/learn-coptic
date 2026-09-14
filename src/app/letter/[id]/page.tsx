@@ -44,7 +44,7 @@ export default async function LetterPage({ params }: PageProps<"/letter/[id]">) 
 
   return (
     <article className="w-full min-w-0 py-8">
-      <div className="mx-auto w-full max-w-2xl">
+      <div className="mx-auto w-full max-w-2xl lg:max-w-4xl">
         <LetterBackNav
           groupHref={`/alphabet/${letter.group}`}
           groupLabel={`المجموعة ${GROUP_DIGIT_AR[letter.group]}`}

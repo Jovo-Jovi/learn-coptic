@@ -39,7 +39,7 @@ export function LetterHero({ letter }: { letter: Letter }) {
             <CopticPaint
               unicode={letter.unicode.upper}
               mapped={letter.athanasiusKey?.upper}
-              className="glyph-fill text-glyph inline-block leading-none"
+              className="glyph-fill text-glyph sm:text-glyph-md lg:text-glyph-lg xl:text-glyph-xl inline-block leading-none"
             />
           </span>
           <span className="flex flex-col items-center gap-2">
@@ -48,7 +48,7 @@ export function LetterHero({ letter }: { letter: Letter }) {
               <CopticPaint
                 unicode={letter.unicode.lower}
                 mapped={letter.athanasiusKey?.lower}
-                className="glyph-fill text-glyph inline-block leading-none"
+                className="glyph-fill text-glyph sm:text-glyph-md lg:text-glyph-lg xl:text-glyph-xl inline-block leading-none"
               />
             </motion.span>
           </span>
