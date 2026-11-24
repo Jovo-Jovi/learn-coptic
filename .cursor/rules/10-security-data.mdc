@@ -1,0 +1,11 @@
+---
+description: Secrets, data protection, the boundary gate and the content rules
+alwaysApply: true
+---
+- No credential, key, token, connection string or real personal data in code, commits, fixtures, logs or reports. The product needs no secret at all (`docs/SECURITY_MODEL.md`); an `.env*` file is never committed. Fixtures are synthetic or copied from the committed JSON.
+- Boundary gate (non-waivable, profile A): nothing collects, stores or sends a visitor's data. The only browser storage is the three zones of the `devos:boundary` line in `docs/BOUNDARY_MODEL.md` (quiz progress, theme and Coptic face, the search box), all under `localStorage` keys `learn-coptic:*`, all on the visitor's own device. Outside a zone there is no `<form>`, `<input>`, cookie, local/session storage or `route.ts` handler. Beacons, analytics, trackers and third-party scripts are never allowed. `guard:boundary` fails the build on them. A new zone is a signed OD.
+- Never edit `src/data/json/**` to make a build or a test pass: report and stop. Never invent a Coptic letter, word, gloss, transliteration, `athanasiusKey` or codepoint: leave it null and say so. A change to `src/data/json/**`, `src/data/schema/**`, `next.config.ts` or `public/sw.js` stops at the developer's gate (OD-07).
+- The learner's saved progress (`learn-coptic:leitner`, format version 1) is never dropped: a new format migrates the old one, with a test.
+- No contact data (phone, email, address) as literals in source. `guard:literals` fails the build on phone or email literals.
+- Never weaken the security headers in `next.config.ts` (CSP `default-src 'self'`, nosniff, `X-Frame-Options: DENY`, Referrer-Policy, Permissions-Policy). No outside script, font, image, audio or analytics host: everything is served from the site itself.
+- Every new font, recording, image or dictionary source records its licence in the same task (`docs/security.md`); a reciter's audio ships only with their written consent.

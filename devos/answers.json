@@ -1,0 +1,58 @@
+{
+  "name": "learn-coptic",
+  "key": "LEARN-COPTIC",
+  "brief": "learn-coptic (Arabic title \"تعلّم القبطي البحيري\") is a free, Arabic-first website for learning to read Bohairic Coptic, the dialect the Coptic Orthodox Church uses today. It teaches the 32 letters with audio, then words, four prayers and quizzes. It works on a phone, with no account and no download.\nIt is for church learners: deacons learning the letters, Sunday-school teachers sharing a link in a church group, and adults who grew up hearing Bohairic and want to read it.",
+  "users": "",
+  "stores_data": false,
+  "sign_in": false,
+  "languages": [
+    "en"
+  ],
+  "deploy": "none",
+  "visibility": "public",
+  "type": "web-app",
+  "stack": "next",
+  "modules": {
+    "database": "none",
+    "storage": "none",
+    "auth": "none",
+    "payments": "none",
+    "email": "none",
+    "jobs": "none",
+    "search": "none",
+    "product-ai": "none",
+    "hosting": "none",
+    "observability": "none",
+    "media": "none"
+  },
+  "scope": "full",
+  "contract_version": "2",
+  "registry_link": true,
+  "blueprint_agent": {
+    "tool": "claude",
+    "model": "claude-opus-5-5",
+    "effort": "high"
+  },
+  "attachments": [],
+  "adopted": {
+    "stage": "production",
+    "head": "9f6ae1b0a0560e6d29e5b10fd4809689b40eeb76",
+    "engine": "1.13.13",
+    "aside": [
+      {
+        "from": ".cursor/rules/00-project.mdc",
+        "to": "docs/before-adopt/cursor-rules/00-project.mdc"
+      },
+      {
+        "from": "docs/decisions.md",
+        "to": "docs/before-adopt/decisions.md",
+        "case": "docs/DECISIONS.md"
+      },
+      {
+        "from": "docs/glossary.md",
+        "to": "docs/before-adopt/glossary.md",
+        "case": "docs/GLOSSARY.md"
+      }
+    ]
+  }
+}
