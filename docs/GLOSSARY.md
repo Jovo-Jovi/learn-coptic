@@ -72,6 +72,10 @@ Harvest Arabic may only search a sourced prayer line (OD-31).
 **pronunciation.json** — two Bohairic systems, diphthongs, jinkim, pitfalls, reading drills. Letter `rules[]` stay
 explorer Greco-Bohairic (OD-26); this file does not replace them.
 
+**النطق** — the learner sound line (`src/lib/pronounce.ts`). Teaching `translit.ar` if unique and filled; else stored
+rules. Greek letter rules need one of six endings (ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ) or a `spellList` stem. Quiet notes (ج / چ,
+كسرة طويلة) sit beside it. فتحة صريحة is lab-only.
+
 **Learner** — the person using the site. There is no account, so there is no "user" record of any kind: a learner's
 progress, theme and Coptic face exist only in their own browser.
 

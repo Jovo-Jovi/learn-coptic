@@ -5,7 +5,7 @@ except by a plan the developer merges.
 
 - **OD-01 to OD-09** are DEV_OS's adoption decisions. They are DRAFT until the developer merges the adoption pull
   request: **that merge is the confirming act** for all nine.
-- **OD-10 to OD-32** are the project's own decisions, ADR-001 to ADR-023, carried over word for word in substance from
+- **OD-10 to OD-33** are the project's own decisions, ADR-001 to ADR-024, carried over word for word in substance from
   `docs/before-adopt/decisions.md` (which stays as the project's record, unchanged). They were the owner's decisions
   before the adoption and stay SIGNED. Their numbering keeps the ADR id: OD-(9+n) is ADR-00n.
 
@@ -330,3 +330,18 @@ already exist are skipped, and no existing gloss changes. `translit.ar` stays em
 jinkim becomes a combining grave, as in the Andreas rows. The Greek-mapped notepad file and the Andreas grammar PDFs
 on that Archive item stay out; PDM is a mark, not a licence grant for Dawoud. **Cost:** the harvest Arabic is still
 unverified; two Coptic–Arabic dumps sit in one lexicon.
+
+### OD-33 — Pronounce engine may ship; lab peel stays out (ADR-024)
+**Status:** SIGNED — carried from ADR-024. The lab layered peel (`src/lib/analysis/`, `/lab/analyze`) is not a learner
+feature. Production prayer tap keeps `parseCoptic` until S17 GATE **PASS**. Stored-rule pronunciation is ready enough
+to embed: unique teaching `translit.ar` if present, else `letter.rules[]` and `pronunciation.json` (diphthongs,
+jinkim). Never invent a sound. Greek-only rules (كي ش/خ, سيما زاي after ⲙ, تاف دال after ⲛ) apply when the word is
+longer than and ends in the six owner endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ (as os is an on in), or when a stored `spellList`
+stem covers that letter. Coptic كي stays ك. Coptic حالة خاصة (صاد/طاء) stay unused. Same-letter two sounds (ϫ → ج
+then چ) may be a small note. Routine extras such as فتحة صريحة stay out of the learner UI. Arabic gloss on those
+surfaces is the gloss already stored (word meaning, prayer tap caption per OD-31). Harvest is not composed into a new
+meaning. Surfaces: prayer tap (in place), word card, `/search`. No new nav tab. Lab links («حلّل في المختبر») stay
+off those surfaces. Full cut list: `docs/word-analysis-ux.md`. **Cost:** harvest words without `translit.ar` now show
+an engine reading. That reading can still be wrong if a stored rule is the wrong match; blank is still required when
+no rule fires. Native words that happen to end in ⲟⲛ / ⲁⲛ / ⲁⲥ (ⲥⲟⲛ، ⲣⲁⲛ) are treated as Greek for letter rules; كي
+is unchanged on those. Stems the six endings miss sit in `spellList` (not a bulk harvest etymology dump).
