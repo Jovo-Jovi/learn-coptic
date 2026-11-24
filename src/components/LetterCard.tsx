@@ -26,7 +26,7 @@ export function LetterCard({ letter }: { letter: Letter }) {
         whileTap={{ y: 0 }}
         transition={SPRING}
         className={cn(
-          "card-face relative z-10 flex min-h-[150px] flex-col items-center justify-center gap-2 p-5 no-underline lg:p-7",
+          "card-face relative z-10 flex min-h-[150px] flex-col items-center justify-center gap-2 p-5 no-underline lg:min-h-[280px] lg:gap-3 lg:p-8",
           "focus-visible:ring-2 focus-visible:ring-text focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none",
         )}
       >
@@ -38,13 +38,13 @@ export function LetterCard({ letter }: { letter: Letter }) {
           <CopticPaint
             unicode={letter.unicode.lower}
             mapped={letter.athanasiusKey?.lower}
-            className="glyph-fill text-glyph-card sm:text-glyph-card-md lg:text-glyph-card-lg inline-block leading-none"
+            className="glyph-fill text-glyph-card sm:text-glyph-card-md lg:text-glyph-card-lg xl:text-glyph-card-xl inline-block leading-none"
           />
         </motion.span>
-        <span className="text-center text-base font-semibold leading-tight text-text">
+        <span className="text-center text-base font-semibold leading-tight text-text lg:text-xl">
           {name}
         </span>
-        <span className="text-center text-sm leading-tight text-text-dim">{sound}</span>
+        <span className="text-center text-sm leading-tight text-text-dim lg:text-base">{sound}</span>
       </MotionLink>
     </div>
   );

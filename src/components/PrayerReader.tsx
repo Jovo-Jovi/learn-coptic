@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react";
 import type { Prayer } from "@/data/schema";
 import { CopticPaint } from "@/components/CopticPaint";
+import { SpeakLines } from "@/components/SpeakLines";
 import { highlightKey, splitHighlight } from "@/lib/arabic-highlight";
 import { copticToAthanasiusKey } from "@/lib/letters";
+import type { LearnerSpeak } from "@/lib/pronounce";
 import { cn } from "@/lib/utils";
 
 const ROLE_AR: Record<Prayer["lines"][number]["role"], string | null> = {
@@ -45,10 +47,12 @@ export function PrayerReader({
   prayer,
   highlights,
   captions = {},
+  speaks = {},
 }: {
   prayer: Prayer;
   highlights: Record<string, string>;
   captions?: Record<string, string>;
+  speaks?: Record<string, LearnerSpeak>;
 }) {
   const [open, setOpen] = useState<{ lineId: string; index: number } | null>(
     null,
@@ -123,15 +127,26 @@ export function PrayerReader({
                   : null
               }
             />
-            {open?.lineId === line.id &&
-            captions[highlightKey(line.id, open.index)] ? (
-              <p className="mt-2 text-base font-semibold text-text">
-                {captions[highlightKey(line.id, open.index)]}
-              </p>
-            ) : open?.lineId === line.id ? (
-              <p className="mt-2 text-sm text-text-dim">
-                مفيش معنى في القاموس للكلمة دي بعد.
-              </p>
+            {open?.lineId === line.id ? (
+              <div className="mt-2 flex flex-col gap-1">
+                {captions[highlightKey(line.id, open.index)] ? (
+                  <p className="text-base font-semibold text-text">
+                    {captions[highlightKey(line.id, open.index)]}
+                  </p>
+                ) : (
+                  <p className="text-sm text-text-dim">
+                    مفيش معنى في القاموس للكلمة دي بعد.
+                  </p>
+                )}
+                <SpeakLines
+                  speak={
+                    speaks[highlightKey(line.id, open.index)] ?? {
+                      text: null,
+                      notes: [],
+                    }
+                  }
+                />
+              </div>
             ) : null}
             {line.translation.en ? (
               <p className="mt-1 text-sm text-text-dim" dir="ltr">

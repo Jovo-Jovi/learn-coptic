@@ -347,6 +347,16 @@ export const PronunciationExample = z.object({
 });
 export type PronunciationExample = z.infer<typeof PronunciationExample>;
 
+export const SpellListRow = z.object({
+  id: slug,
+  coptic: copticText,
+  origin: z.enum(["greek", "coptic"]),
+  /** greek defaults to span; coptic defaults to exact (so ⲭⲱ ≠ ⲭⲱⲣⲁ). */
+  match: z.enum(["span", "exact"]).optional(),
+  wordId: slug.optional(),
+});
+export type SpellListRow = z.infer<typeof SpellListRow>;
+
 export const PronunciationFile = z.object({
   ...fileMeta,
   dialect: z.literal("bohairic"),
@@ -382,5 +392,7 @@ export const PronunciationFile = z.object({
     }),
   ).default([]),
   drills: z.array(PronunciationExample).default([]),
+  /** Verified stems the six Greek endings miss. Do not bulk-tag harvest. */
+  spellList: z.array(SpellListRow).default([]),
 });
 export type PronunciationFile = z.infer<typeof PronunciationFile>;

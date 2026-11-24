@@ -1,3 +1,9 @@
+## 2026-09-03 · ship pronounce + gloss
+Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
+- ADR-024 and `docs/word-analysis-ux.md`. `src/lib/pronounce.ts` on prayer
+  tap, word cards, and `/search`. Teaching translit wins; else stored rules.
+  Lab peel is not in this commit.
+
 ## 2026-09-02 · S18 · Thabet unique lemmas
 Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass (unique only)
 - `docs/dictionary/` Osama Thabet northern-dialect dump (IA PDM 1.0).

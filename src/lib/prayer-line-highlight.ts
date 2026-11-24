@@ -1,3 +1,4 @@
+import type { Word } from "@/data/schema";
 import { highlightFromGloss } from "@/lib/arabic-highlight";
 import { grammarStems } from "@/lib/coptic-affix";
 import {
@@ -21,6 +22,15 @@ export type TokenHighlightCtx = {
 
 /** Unique teaching-set gloss keyed by folded / normalized Coptic. Two hits → omit. */
 export function uniqueTeachingGlossByCoptic(): Map<string, string> {
+  return uniqueTeachingField((word) => word.meaning?.ar ?? "");
+}
+
+/** Unique teaching-set `translit.ar`. Two different readings → omit. */
+export function uniqueTeachingTranslitByCoptic(): Map<string, string> {
+  return uniqueTeachingField((word) => word.translit.ar);
+}
+
+function uniqueTeachingField(pick: (word: Word) => string): Map<string, string> {
   const buckets = new Map<string, string[]>();
   function push(key: string, ar: string) {
     const list = buckets.get(key);
@@ -28,7 +38,7 @@ export function uniqueTeachingGlossByCoptic(): Map<string, string> {
     else buckets.set(key, [ar]);
   }
   for (const word of teachingWords()) {
-    const ar = word.meaning?.ar;
+    const ar = pick(word).trim();
     if (!ar) continue;
     const folded = foldCopticLower(word.coptic);
     push(folded, ar);
@@ -39,6 +49,17 @@ export function uniqueTeachingGlossByCoptic(): Map<string, string> {
   for (const [key, ars] of buckets) {
     const uniq = [...new Set(ars)];
     if (uniq.length === 1 && uniq[0]) out.set(key, uniq[0]);
+  }
+  return out;
+}
+
+export function foldedNameKeys(): Set<string> {
+  const out = new Set<string>();
+  for (const word of getWords()) {
+    if (!word.published || word.kind !== "name") continue;
+    const folded = foldCopticLower(word.coptic);
+    out.add(folded);
+    out.add(normalizeCoptic(folded));
   }
   return out;
 }

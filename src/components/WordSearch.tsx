@@ -4,6 +4,7 @@ import { useEffect, useId, useMemo, useState } from "react";
 import Link from "next/link";
 import Fuse from "fuse.js";
 import { CopticPaint } from "@/components/CopticPaint";
+import { SpeakLines } from "@/components/SpeakLines";
 import {
   FUSE_OPTIONS,
   SEARCH_LIMIT,
@@ -13,6 +14,7 @@ import {
   type SlimSearchRecord,
 } from "@/lib/search-core";
 import { easternDigits } from "@/lib/letters";
+import { learnerSpeak } from "@/lib/pronounce";
 import { cn } from "@/lib/utils";
 import records from "@/data/generated/search-records.json";
 
@@ -93,6 +95,10 @@ export function WordSearch() {
 
 function SearchHitCard({ hit }: { hit: SearchRecord }) {
   const isLetter = hit.type === "letter";
+  const speak = learnerSpeak(hit.coptic, {
+    storedTranslit: hit.type === "word" ? hit.translitAr : null,
+    isProperName: hit.wordKind === "name",
+  });
   return (
     <article
       data-group={hit.group ?? undefined}
@@ -112,12 +118,10 @@ function SearchHitCard({ hit }: { hit: SearchRecord }) {
         mapped={hit.mapped}
         className="word-coptic glyph-fill text-glyph-word inline-block leading-none"
       />
-      {hit.translitAr && hit.type === "word" ? (
-        <p className="text-sm text-text-dim">{hit.translitAr}</p>
-      ) : null}
       {hit.label ? (
         <p className="text-base font-semibold text-text">{hit.label}</p>
       ) : null}
+      <SpeakLines speak={speak} />
       <p>
         <Link
           href={hit.href}

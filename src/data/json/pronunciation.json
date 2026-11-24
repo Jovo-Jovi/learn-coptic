@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-01",
+  "updated": "2026-09-03",
   "dialect": "bohairic",
-  "provenance": "Owner Bohairic pronunciation notes 2026-09-01. Coptic copied from those notes. Letter names on the site stay the curriculum forms (ADR-017 explorer). Arabic–sound comparisons in the notes are approximate.",
+  "provenance": "Owner Bohairic pronunciation notes 2026-09-01. Coptic copied from those notes. Letter names on the site stay the curriculum forms (ADR-017 explorer). Arabic–sound comparisons in the notes are approximate. Spell list 2026-09-03: verified كي stems the six endings miss (owner teaching set + ⲉⲩⲭⲏ / ⲁⲣⲭⲏ).",
   "systems": [
     {
       "id": "church-modern",
@@ -140,5 +140,19 @@
       "translit": { "ar": "إبتشويس بِي بانو-تي" },
       "translation": { "ar": "الرب هو إلهي" }
     }
+  ],
+  "spellList": [
+    { "id": "khimi", "coptic": "ⲭⲏⲙⲓ", "origin": "coptic", "match": "span", "wordId": "khimi" },
+    { "id": "xw", "coptic": "ⲭⲱ", "origin": "coptic", "match": "exact", "wordId": "xw" },
+    { "id": "xrwm", "coptic": "ⲭⲣⲱⲙ", "origin": "coptic", "match": "span", "wordId": "xjnkrwm" },
+    { "id": "xrour", "coptic": "ⲭⲣⲟⲩⲣ", "origin": "coptic", "match": "span", "wordId": "jnkxrour" },
+    { "id": "laxlax", "coptic": "ⲗⲁⲭⲗⲁⲭ", "origin": "coptic", "match": "span", "wordId": "laxlax" },
+    { "id": "xere", "coptic": "ⲭⲉⲣⲉ", "origin": "greek", "wordId": "xere" },
+    { "id": "xhra", "coptic": "ⲭⲏⲣⲁ", "origin": "greek", "wordId": "xhra" },
+    { "id": "xiwn", "coptic": "ⲭⲓⲱⲛ", "origin": "greek", "wordId": "xiwn" },
+    { "id": "xwra", "coptic": "ⲭⲱⲣⲁ", "origin": "greek", "wordId": "xwra" },
+    { "id": "euxarictia", "coptic": "ⲉⲩⲭⲁⲣⲓⲥⲧⲓⲁ", "origin": "greek", "wordId": "euxarictia" },
+    { "id": "euxh", "coptic": "ⲉⲩⲭⲏ", "origin": "greek", "wordId": "euxh" },
+    { "id": "arxh", "coptic": "ⲁⲣⲭⲏ", "origin": "greek", "wordId": "arxh" }
   ]
 }
