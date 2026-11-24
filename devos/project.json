@@ -1,0 +1,140 @@
+{
+  "$comment": "This file is yours; devos.config.json is generated from devos/engine.defaults.json and this file; edit here, then run node scripts/devos/config.mjs --write.",
+  "project": "LEARN-COPTIC",
+  "scenario": "new",
+  "ui": true,
+  "screens": {
+    "pages": [
+      "/",
+      "/alphabet",
+      "/letter/alpha",
+      "/quiz",
+      "/prayers"
+    ]
+  },
+  "reviewer": {
+    "$comment": "OD-07: the content data and its schema are the developer's decision; the headers (CSP) and the service worker reach every visitor and every installed phone. A PASS that changes one of them stops at the human gate and is reviewed deep.",
+    "deep_paths_extra": [
+      "src/data/**",
+      "public/sw.js",
+      "scripts/validate.mts",
+      "src/app/manifest.ts"
+    ],
+    "human_gate_paths_extra": [
+      "src/data/json/**",
+      "src/data/schema/**",
+      "next.config.ts",
+      "public/sw.js"
+    ],
+    "human_gate_imports_extra": [
+      "next-auth",
+      "next-auth/**",
+      "@auth/**",
+      "@clerk/**",
+      "better-auth",
+      "better-auth/**",
+      "lucia",
+      "lucia/**",
+      "passport",
+      "passport-*",
+      "iron-session",
+      "firebase/auth",
+      "firebase-admin/auth",
+      "@supabase/auth-helpers-*",
+      "stripe",
+      "@stripe/**",
+      "@paddle/**",
+      "@lemonsqueezy/**",
+      "@paypal/**",
+      "react-native-purchases"
+    ]
+  },
+  "guards": {
+    "$comment": "I18N_MODEL.md: one interface language (Arabic) with its strings in the components; there is no message catalogue, so the default `en` catalogue is removed.",
+    "i18n": {
+      "catalogues": {
+        "en": null
+      }
+    }
+  },
+  "structure": {
+    "$comment": "STACK.md §3: src/data is the one feature area that already has a folder and a public entry (its Zod schema and the JSON files the loaders read). The flat src/lib and src/components files are the baseline. Each new feature area the phases build is a folder under src/features with an index.ts, created by the task that first builds it.",
+    "modules": {
+      "data": {
+        "dir": "src/data",
+        "public": [
+          "src/data/schema/index.ts",
+          "src/data/json/letters.json",
+          "src/data/json/words.json",
+          "src/data/json/prayers.json",
+          "src/data/json/curriculum.json",
+          "src/data/json/grammar-rules.json",
+          "src/data/json/pronunciation.json",
+          "src/data/generated/search-records.json"
+        ]
+      },
+      "lessons": {
+        "dir": "src/features/lessons",
+        "public": [
+          "src/features/lessons/index.ts"
+        ]
+      },
+      "word-art": {
+        "dir": "src/features/word-art",
+        "public": [
+          "src/features/word-art/index.ts"
+        ]
+      },
+      "prayer-audio": {
+        "dir": "src/features/prayer-audio",
+        "public": [
+          "src/features/prayer-audio/index.ts"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "$comment": "OD-05: DEV_OS runs a Node project's package.json scripts with pnpm; npm stays the project's own package manager and the deploy's. typecheck and test are the scripts T01 adds.",
+    "id": "next",
+    "commands": {
+      "install": "pnpm install --frozen-lockfile",
+      "typecheck": "pnpm run typecheck",
+      "lint": "pnpm run lint",
+      "test": "pnpm run test",
+      "build": "pnpm run build"
+    }
+  },
+  "agents": {
+    "reviewer": {
+      "id": "cursor-grok-4-7-xhigh",
+      "tool": "cursor",
+      "model": "grok-4.7-xhigh"
+    },
+    "reviewer_light": null,
+    "pool": [
+      {
+        "id": "cursor-grok-4-7-low",
+        "tool": "cursor",
+        "model": "grok-4.7-low",
+        "default": false,
+        "note": "strengths: docs, fast and cheap"
+      },
+      {
+        "id": "cursor-grok-4-7-high",
+        "tool": "cursor",
+        "model": "grok-4.7-high",
+        "default": false,
+        "note": "strengths: i18n"
+      },
+      {
+        "id": "cursor-grok-4-7-xhigh",
+        "tool": "cursor",
+        "model": "grok-4.7-xhigh",
+        "default": true,
+        "note": "strengths: ui, motion, accessibility, backend, data, security, devops, tests, deep reasoning"
+      }
+    ],
+    "policy": "reviewer-picks",
+    "raise_on_retry": false
+  }
+}

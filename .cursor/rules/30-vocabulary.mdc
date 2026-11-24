@@ -1,0 +1,9 @@
+---
+description: Enforced vocabulary for identifiers (from docs/GLOSSARY.md §3)
+alwaysApply: true
+---
+- Forbidden bare nouns in type, interface, class, enum and route-segment names: `item items entry entries data info record records user users account accounts profile card cards text term`.
+- Use the qualified names: item, entry, record, data, info → name the entity (`Word`, `SearchRecord`, `GrammarAffix`, `PrayerLine`); card → `LetterCard`, `WordCard`, `LeitnerCard`; text → `CopticText` or `ArabicGloss` (never let Coptic and Arabic be confused); term → `GlossaryTerm`. user, account, profile → forbidden: the product has no accounts and keeps nothing about a person; the person is a **learner**, and their state is `LeitnerState` in their own browser.
+- The entity names of `docs/GLOSSARY.md` §1 (`Letter`, `Word`, `Prayer`, `PrayerLine`, `Level`, `Lesson`, `GrammarPoint`, `GrammarSection`, `GrammarTable`, `GrammarExample`, `GrammarAffix`, `PronunciationFile`, `AudioClip`, `Artwork`, `GroupId`, `LeitnerBox`, `LeitnerCard`, `LeitnerState`, `SearchRecord`) are used exactly. A bare forbidden noun is a defect; `guard:naming` fails the build on it. Local variable names are outside this rule.
+- Word kinds are `lexicon`, `drill` and `name`. A drill is never presented as dictionary content; the **teaching set** (147 rows) is not "every word with a group".
+- Route segments in use are the project's (`alphabet`, `group`, `letter`, `vocabulary`, `search`, `practice`, `quiz`, `prayers`, `about`); a new one is English, ASCII and lower case, and its learner-facing label is Arabic with Eastern digits (١..٧).

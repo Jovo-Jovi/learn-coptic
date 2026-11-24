@@ -1,0 +1,60 @@
+---
+description: Core context and hard constraints for the learn-coptic project
+alwaysApply: true
+---
+
+# learn-coptic — project rules
+
+A free Arabic-first website for learning the **Bohairic** Coptic alphabet, then
+vocabulary, prayers, and grammar. No accounts, no backend, phone-first.
+Converted from a folder of standalone HTML files.
+
+## Stack (do not substitute)
+
+Next.js App Router · TypeScript strict · Tailwind · Zod · Vercel.
+No database. No auth. No server routes. Progress lives in `localStorage`.
+Fuse.js for search. `next/font` for all fonts, self-hosted.
+
+## Non-negotiable rules
+
+1. **Never edit files in `src/data/json/` to make a build or test pass.**
+   If the validator fails, report the conflict and stop. Data changes are a
+   human decision. This is the single most important rule in this repo.
+2. **Default Coptic paint is Unicode.** Optional manuscript mode (Athanasius
+   Plain) paints stored `athanasiusKey` with the mapped TTF. Unicode stays in
+   the DOM for copy and screen readers. Never invent keys. Never use a mapped
+   face as a Unicode `font-family`.
+3. **Mapped Coptic TTFs may ship as an optional picker face** when the file is
+   in `src/app/fonts/` and the keymap is this project's explorer
+   `athanasiusKey`. A Unicode cmap is required only to use a file as a
+   *Unicode* face. Files not in the repo stay out (CS Avva Shenouda, Pope
+   Shenouda III, CS Pishoi, CS New Athanasius, Antinoou, Coptic1). Default
+   Coptic remains GNU FreeSerif + Noto Sans Coptic.
+4. **Never invent Coptic letters, words, glosses, or Unicode codepoints.**
+   If data is missing, leave it null and say so. A wrong glyph teaches a person
+   the wrong thing — that is worse than a blank.
+5. **Arabic is the primary language.** Page chrome is `dir="rtl"`. Every Coptic
+   or Latin string is wrapped in an LTR isolate. English is a secondary line.
+6. **No new dependencies** without saying why in the response first.
+7. `npm run validate` must pass before you report a step complete.
+
+## Data model
+
+`src/data/json/` is the only source of truth — HTML is never the database.
+`src/data/schema/index.ts` (Zod) defines the shape. `npm run validate` checks
+shape plus cross-references and runs automatically on `prebuild`.
+
+- `letters.json` — 32 letters, one home `group` (1–7) each
+- `words.json` — `kind: lexicon | drill | name`; `published: false` hides drafts
+- `prayers.json` — line-level `startSec`/`endSec` into one full recording
+- `curriculum.json` — levels → lessons; `kind: "grammar"` lessons use MDX
+
+## Working style
+
+Small steps. One route or one component per turn. Show the diff, not the whole
+file. If a step is underspecified, ask one question rather than guessing.
+Never mark a step done that you have not run.
+
+When a step is done, tick it in `IMPLEMENTATION_PLAN.md` and update
+`docs/journal.md`, `docs/session-context.md`, and any other doc the work made
+stale. See `.cursor/rules/10-step-closeout.mdc`.
