@@ -10,7 +10,9 @@
     "prebuild": "npm run validate",
     "validate": "tsx scripts/validate.mts",
     "seed:letters": "node scripts/seed-letters.mjs",
-    "extract": "node scripts/extract-from-html.mjs"
+    "extract": "node scripts/extract-from-html.mjs",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --test \"tests/**/*.test.ts\""
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

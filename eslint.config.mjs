@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // DEV_OS's method files: checked by the engine, never changed by a product task.
+    "scripts/devos/**",
+    "scripts/guards/**",
+    "devos/**",
+    ".devos/**",
+    ".cursor/**",
   ]),
 ]);
 
