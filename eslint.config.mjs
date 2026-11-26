@@ -19,6 +19,18 @@ const eslintConfig = defineConfig([
     ".devos/**",
     ".cursor/**",
   ]),
+  // These four files are the adoption baseline; the rule stays an error in every other file.
+  {
+    files: [
+      "src/components/FontSelect.tsx",
+      "src/components/MeaningPractice.tsx",
+      "src/components/QuizSession.tsx",
+      "src/components/ThemeToggle.tsx",
+    ],
+    rules: {
+      "react-hooks/set-state-in-effect": "warn",
+    },
+  },
 ]);
 
 export default eslintConfig;

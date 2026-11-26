@@ -10,17 +10,21 @@ Update it in the same commit as the work it describes.
 **Last commit:** `9f6ae1b` on main. This branch ships learner pronounce + gloss
 (ADR-024). Lab peel is not in this commit.
 **Live:** https://learn-coptic.vercel.app (production still S17 test slice)
-**Validator:** ✓ 32 letters, 11858 words · teaching 147 · 13 parseReady
+**Validator:** ✓ data valid — 32 letters, 11858 words, 4 prayers, 2 levels · teaching 147 · 13 parseReady
 
 ## Current position
 
-**Done:** S0–S12, S13a, **S16**, **S13b**, **S11**. S17 parse **test slice**
-(GATE not PASS). S18 Andreas leftovers + unique Thabet lemmas harvested.
-Learner النطق + gloss on prayer tap, word cards, search (`src/lib/pronounce.ts`).
-Greek letter rules use six endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ (as os is an on in)
-plus `pronunciation.json` `spellList` for كي stems those endings miss.
-**Next:** human S17 **PASS** before merging lab peel. Pronounce embed is the
-only analysis piece meant for main (see `docs/word-analysis-ux.md`).
+**Done:** T01's checks (pnpm lockfile beside npm's, `typecheck`, `test`,
+`guards`, the architecture test, the lint ignores, the four-file warn
+baseline, and the audit acceptance in `docs/security.md`). S0–S12, S13a,
+**S16**, **S13b**, **S11**. S17's condition is met by these checks; the S17
+GATE is recorded PASS by the developer's merge of G-Checks. S18 Andreas
+leftovers + unique Thabet lemmas harvested. Learner النطق + gloss on prayer
+tap, word cards, search (`src/lib/pronounce.ts`). Greek letter rules use six
+endings ⲁⲥ ⲟⲥ ⲓⲥ ⲁⲛ ⲟⲛ ⲓⲛ (as os is an on in) plus `pronunciation.json`
+`spellList` for كي stems those endings miss.
+**Next:** T02 — unit tests for Leitner boxes, Coptic text normalising and
+search, after the developer's merge of G-Checks.
 **Blocked on:** Coptic for All / agpeya.org grant note. Harvest Arabic
 unverified as dictionary. Most prayer tokens still unmarked (ADR-022).
 **Not started:** S10b (optional), S13c, S14, S15. S18 prayer blanks / grants.

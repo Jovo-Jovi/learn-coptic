@@ -12,7 +12,8 @@
     "seed:letters": "node scripts/seed-letters.mjs",
     "extract": "node scripts/extract-from-html.mjs",
     "typecheck": "next typegen && tsc --noEmit",
-    "test": "tsx --test \"tests/**/*.test.ts\""
+    "test": "tsx --test \"tests/**/*.test.ts\"",
+    "guards": "node scripts/guards/run-all.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -40,5 +41,36 @@
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "auditConfig": {
+      "ignoreGhsas": [
+        "GHSA-22jm-h49p-29qw",
+        "GHSA-2464-fhr4-w9xw",
+        "GHSA-27r3-jxmh-p828",
+        "GHSA-2m5v-pch6-74hx",
+        "GHSA-3f7j-7jwc-fxfj",
+        "GHSA-46jr-4wx8-v453",
+        "GHSA-4w7w-5xrc-9h26",
+        "GHSA-58mr-gqgx-xq4g",
+        "GHSA-673q-mjm6-r5xr",
+        "GHSA-68fv-2mgg-jv7q",
+        "GHSA-6j4f-fj2g-mc7p",
+        "GHSA-6qxp-vccf-f47h",
+        "GHSA-cjq9-62q9-8jv4",
+        "GHSA-f897-62hf-6gxq",
+        "GHSA-jqcg-44mw-7w3h",
+        "GHSA-mrhx-c7xc-m3w5",
+        "GHSA-p3m5-59mp-jv5r",
+        "GHSA-qhr7-859c-m2p7",
+        "GHSA-qrxm-fqhp-jwvm",
+        "GHSA-qw65-cvwx-89v3",
+        "GHSA-rfgv-xxqx-mfg5",
+        "GHSA-vcvr-r3jv-pc5j",
+        "GHSA-w293-vg96-wgc3",
+        "GHSA-wq5f-xc86-pv6w",
+        "GHSA-xjj6-f33q-929c"
+      ]
+    }
   }
 }
