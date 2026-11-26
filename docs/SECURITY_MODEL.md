@@ -46,7 +46,7 @@ needs one changes the CSP and is a signed OD.
 | A bulk edit of `words.json` (11,858 rows) goes wrong | edits by a reviewed script that refuses to write on a mismatch, never by hand; the validator and the developer's gate |
 | Saved progress is silently dropped | `learn-coptic:leitner` v1 is migrated, never discarded (`docs/STACK.md` §7) |
 | A broken service worker reaches installed phones | `public/sw.js` changes bump the cache name and stop at the developer's gate (OD-07) |
-| A dependency brings a vulnerability | `guard:deps`: every new package named in the fence, `pnpm audit` with no high or critical advisory (PR-85) |
+| A dependency brings a vulnerability | `guard:deps`: every new package named in the fence, `pnpm audit` with no high or critical advisory (PR-85). The adoption-tree ids in `docs/security.md` are the PR-85 acceptance, not a claim the components are patched. |
 | A licence is missing | every font, recording, image and dictionary source records its licence when it is added (`docs/security.md`) |
 | Preview deploys are public | nothing unreleased goes in `public/` (`docs/security.md`) |
 

@@ -11,3 +11,11 @@ carried the project's 23 ADRs into `docs/DECISIONS.md` as OD-10 to OD-32 and its
 (the originals stay in `docs/before-adopt/`), declared the three browser-storage and form zones the code already has
 in `docs/BOUNDARY_MODEL.md`, and planned the open work as T01–T12 in `docs/PHASES.md`. Nothing in the product changed.
 Fence T01 makes DEV_OS's checks run on the code as it is.
+
+## 2026-11-26 — T01 checks on the code as it is
+
+T01 kept the pnpm lockfile beside npm's and added the `guards` script, a warning baseline for
+`react-hooks/set-state-in-effect` in the four adoption components, and the PR-85 acceptance of the 25
+adoption-tree advisories in `docs/security.md`. No package was added and no version changed. The acceptance
+is not a patch. The next action still waits on the developer's merge of G-Checks, including the Vercel
+install and build commands (OD-05 §3). That merge records S17's GATE as PASS.

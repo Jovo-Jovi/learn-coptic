@@ -1,3 +1,16 @@
+## 2026-11-26 · T01 · DEV_OS adoption
+Model: Cursor Grok 4.7 | Commit: uncommitted | Result: pass
+- T01 (DEV_OS adoption). `pnpm-lock.yaml` sits beside npm's lockfile. Scripts
+  `typecheck`, `test` and `guards`. One architecture test. Lint ignores the
+  five DEV_OS folders, and `react-hooks/set-state-in-effect` warns only in the
+  four adoption components. The 25 adoption-tree advisory ids are accepted in
+  `docs/security.md`. No package was added and no version changed. That
+  acceptance is not a patch.
+- Still open: the Vercel Install Command `npm ci` and Build Command
+  `npm run build` (OD-05 §3), before the developer's merge of G-Checks.
+  S17's condition (`npm run validate` and `npm run build` green) is met by
+  these checks, so the S17 GATE is recorded PASS by that merge.
+
 ## 2026-09-03 · ship pronounce + gloss
 Model: Cursor Grok 4.6 | Commit: uncommitted | Result: pass
 - ADR-024 and `docs/word-analysis-ux.md`. `src/lib/pronounce.ts` on prayer

@@ -67,6 +67,38 @@ Lockfile committed. No new dependency without a stated reason. `npm audit` and
 a manual look at anything with fewer than ~100k weekly downloads before adding.
 Prefer zero-dependency over convenient.
 
+These 25 ids are accepted for the adoption tree only. No package was added and
+no version changed. This is not a patch. `src/app/icon.tsx` and
+`src/app/apple-icon.tsx` call `ImageResponse` from `next/og` with a constant
+glyph (GHSA-vcvr-r3jv-pc5j). The developer's merge of G-Checks is the
+confirming act. A later task owns any upgrade.
+
+- `GHSA-22jm-h49p-29qw` — `@modelcontextprotocol/sdk` — high
+- `GHSA-2464-fhr4-w9xw` — `next` — critical
+- `GHSA-27r3-jxmh-p828` — `body-parser` — high
+- `GHSA-2m5v-pch6-74hx` — `undici` — high
+- `GHSA-3f7j-7jwc-fxfj` — `systeminformation` — high
+- `GHSA-46jr-4wx8-v453` — `@modelcontextprotocol/sdk` — high
+- `GHSA-4w7w-5xrc-9h26` — `undici` — high
+- `GHSA-58mr-gqgx-xq4g` — `fast-uri` — high
+- `GHSA-673q-mjm6-r5xr` — `next` — critical
+- `GHSA-68fv-2mgg-jv7q` — `source-map-js` — high
+- `GHSA-6j4f-fj2g-mc7p` — `brace-expansion` — high
+- `GHSA-6qxp-vccf-f47h` — `@modelcontextprotocol/sdk` — high
+- `GHSA-cjq9-62q9-8jv4` — `next` — high
+- `GHSA-f897-62hf-6gxq` — `@modelcontextprotocol/sdk` — high
+- `GHSA-jqcg-44mw-7w3h` — `proxy-addr` — critical
+- `GHSA-mrhx-c7xc-m3w5` — `zod` — high
+- `GHSA-p3m5-59mp-jv5r` — `next` — high
+- `GHSA-qhr7-859c-m2p7` — `brace-expansion` — high
+- `GHSA-qrxm-fqhp-jwvm` — `undici` — high
+- `GHSA-qw65-cvwx-89v3` — `fast-uri` — high
+- `GHSA-rfgv-xxqx-mfg5` — `undici` — high
+- `GHSA-vcvr-r3jv-pc5j` — `next` — critical
+- `GHSA-w293-vg96-wgc3` — `undici` — high
+- `GHSA-wq5f-xc86-pv6w` — `sharp` — high
+- `GHSA-xjj6-f33q-929c` — `undici` — high
+
 ## Headers
 
 Set in `next.config.ts` for every route: CSP, `X-Content-Type-Options: nosniff`,
