@@ -15,7 +15,7 @@ merge of that unit's acceptance pull request.
 
 | Task | Phase | Station | Name | Risk | Gate | Done | Verdict |
 |---|---|---|---|---|---|---|---|
-| T01 | P01 | J4 | DEV_OS checks run on the code as it is | 3 | G-Checks | [ ] | — |
+| T01 | P01 | J4 | DEV_OS checks run on the code as it is | 3 | G-Checks | [ ] | FAIL a1 — docs/reviews/T01-a1.md |
 | T02 | P01 | J4 | Unit tests: Leitner boxes, Coptic text normalising and search | 2 | — | [ ] | — |
 | T03 | P01 | J4 | Unit tests: prayer tokenizer, affix peel and Arabic highlighting | 2 | — | [ ] | — |
 | T04 | P01 | J4 | Browser evidence tools and one end-to-end test of the core flow | 2 | G-Tests | [ ] | — |
